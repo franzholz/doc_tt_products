@@ -14,7 +14,7 @@ EXT: Shop System
 .. only:: html
 
     :Classification:
-        documentation
+        tt_products
 
     :Version:
         |release|

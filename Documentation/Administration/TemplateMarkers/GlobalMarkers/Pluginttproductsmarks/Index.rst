@@ -8,11 +8,11 @@
 
 .. _administration-template-markers-global-markers-pluginttproductsmarks:
 
-::
+: ::
 
-plugin.tt_products.marks {
-  my_marker = Come soon back to our shop!
-}
+	plugin.tt_products.marks {
+	  my_marker = Come soon back to our shop!
+	}
 
 
 ###MY_MARKER###
@@ -29,7 +29,7 @@ plugin.tt_products.marks {
 	.. _tsMarks:
 
 marks
-"""""""
+"""""
 .. container:: table-row
 
    Property
@@ -43,7 +43,7 @@ marks
 	.. _tsMarkerFile:
 
 markerFile
-"""""""
+""""""""""
 .. container:: table-row
 
    Property

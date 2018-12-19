@@ -108,17 +108,14 @@ radio                                                            boolean        
                                                                                                          selector-box.
 ---------------------------------------------------------------  --------------------------------------  -------------------------------------------------------  -----------
 template                                                         string                                  **(Radio layout only)**
-
-                                                                                                         If .radio is true, this string is the 'template' for
-                                                                                                         the radio items.
+(2.12.0)
+                                                                                                         Iif .radio is true, this string is the 'template' for the radio items.
 
                                                                                                          **Default is (in one line):**
 
-                                                                                                         <nobr>###IMAGE### <input type="radio"
-                                                                                                         name="recs[tt_products]['.$pskey.']" onClick="submit()"
-                                                                                                         value="###VALUE###"###CHECKED###>
-                                                                                                         ###TITLE###</nobr><br>
----------------------------------------------------------------  --------------------------------------  -------------------------------------------------------  -----------
+template = <input type="radio" name="recs[tt_products][###PSKEY###]###INPUTADDITION###" onClick="###SUBMIT###" value="###VALUE###"###CHECKED###> ###TITLE### &nbsp;&nbsp;&nbsp; ###IMAGE###<br>
+
+																									---------------------------------------------------------------  --------------------------------------  -------------------------------------------------------  -----------
 wrap                                                             string                                  **(Select layout only)**
 
                                                                                                          If .radio is false, this string wraps the <option> tags
