@@ -1,63 +1,48 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+..  _start:
 
-.. include:: Includes.txt
+=======================
+Shop System tt_products
+=======================
 
-.. _start:
+Shop system extension for the TYPO3 CMS
 
-================
-EXT: Shop System
-================
+..  note::
+    This documentation guide was automatically created by the init command of
+    the TYPO3 Documentation Rendering Container. See
+    `Rendering container <https://docs.typo3.org/permalink/h2document:rendering>`_
+    for details.
 
-.. only:: html
-
-    :Classification:
-        tt_products
-
-    :Version:
-        |release|
-
-    :Language:
-        en
-
-    :Description:
-        Documentation for the Shop System tt_products. 
-
-    :Keywords:
-        forAdmins, forIntermediates
-
-    :Copyright:
-        2016
-
-    :Author:
-        Franz Holzinger
-
-    :Email:
-        franz@ttproducts.de
-
-    :License:
-        This document is published under the Open Publication License
-        available from http://www.opencontent.org/openpub/
-
-    :Rendered:
-        |today|
-
-    The content of this document is related to TYPO3,
-    a GNU/GPL CMS/Framework available from `www.typo3.org <https://typo3.org/>`__.
-
-
-    **Table of Contents**
-
-.. toctree::
-    :maxdepth: 3
+..  toctree::
+    :glob:
     :titlesonly:
+    :hidden:
 
-    Introduction/Index
-    UsersManual/Index
-    Administration/Index
-    Configuration/Index
-    KnownProblems/Index
-    TodoList/Index
-    Changelog/Index
+    */Index
+    Installation
+    Configuration
+    GetHelp
+    *
+
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
+
+    ..  card:: :ref:`Installation <installation>`
+
+        Explains how to install this extension in Composer-based and Classic
+        TYPO3 installations.
+
+    ..  card:: :ref:`Configuration <configuration>`
+
+                Learn how to configure this extension.
+        
+    ..  card:: :ref:`Frequently Asked Questions (FAQ) <faq>`
+
+        These questions have been frequently asked.
+
+    ..  card:: :ref:`How to get help <help>`
+
+        Learn where to get help and how to report issues you found.
