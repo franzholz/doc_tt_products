@@ -8,7 +8,7 @@
     >
     <project
         title="Shop System tt_products"
-        copyright="The contributors"
+        copyright="Franz Holzinger"
     />
     <extension
         class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"

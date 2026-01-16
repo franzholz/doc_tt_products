@@ -18,7 +18,7 @@ BROWSE_LINKS                                                          for browsi
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
 DELIVERYCOSTS                                          value          sum of delivery costs and payment costs
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-DELIVERY_... NOTE NOTE_DISPLAY DESIRED_DATE            value          see also PERSON_...                                                             BASKET_INFO_TEMPLATE
+DELIVERY\_... NOTE NOTE_DISPLAY DESIRED_DATE            value          see also PERSON\_...                                                             BASKET_INFO_TEMPLATE
 
                                                                       input field note for order output field note with <br>
                                                                       instead of linebreaks desired delivery date of the
@@ -85,10 +85,10 @@ ORDER_STATUS_TIME,                                     value          order valu
 
 ORDER_STATUS, ORDER_STATUS_INFO, ORDER_STATUS_COMMENT
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-PERSON_... NAME, ADDRESS, TELEPHONE,                   value          address information fields have to be connected with a
-                                                                      prefix PERSON_... the customer of the order
+PERSON\_... NAME, ADDRESS, TELEPHONE,                   value          address information fields have to be connected with a
+                                                                      prefix PERSON\_... the customer of the order
 FAX, EMAIL,
-                                                                      DELIVERY_... the recipient of the order
+                                                                      DELIVERY\_... the recipient of the order
 COMPANY,
 
 CITY,
