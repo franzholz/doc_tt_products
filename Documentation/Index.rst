@@ -16,11 +16,18 @@ Shop system extension for the TYPO3 CMS
     :glob:
     :titlesonly:
     :hidden:
+    :maxdepth: 3
 
     */Index
     Installation
     Configuration
     GetHelp
+    Introduction/Index
+    UsersManual/Index
+    Administration/Index
+    Configuration/Index
+    KnownProblems/Index
+    TodoList/Index
     *
 
 ..  card-grid::
@@ -38,7 +45,7 @@ Shop system extension for the TYPO3 CMS
     ..  card:: :ref:`Configuration <configuration>`
 
                 Learn how to configure this extension.
-        
+
     ..  card:: :ref:`Frequently Asked Questions (FAQ) <faq>`
 
         These questions have been frequently asked.
