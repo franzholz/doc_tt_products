@@ -1,9 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
 
 
 .. _configuration-pricecalc-discountprice-and:
@@ -11,11 +5,11 @@
 Pricecalc, discountprice and creditpoints configuration
 -------------------------------------------------------
 
-Setup only. 
+Setup only.
 
 The pricecalc gives you the possibility to build the price sum of products using a calculation
 table. The discount price will be used for all users who belong to the group set in
-discountGroupName. 
+discountGroupName.
 
 =========  =============================  =======================================================  ========
 Property:  Data type:                     Description:                                             Default:

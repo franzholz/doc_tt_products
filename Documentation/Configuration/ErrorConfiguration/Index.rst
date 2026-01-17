@@ -1,17 +1,10 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
-
 
 .. _configuration-error-configuration:
 
 Error configuration
 -------------------
 
-Setup only. 
+Setup only.
 
 You can set the behaviour of tt_products in case of errors. The file pi1/locallang.xml contains the
 list of tags for the error messages.

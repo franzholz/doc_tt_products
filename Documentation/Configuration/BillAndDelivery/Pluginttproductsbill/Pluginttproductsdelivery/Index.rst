@@ -1,17 +1,10 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../../Includes.txt
-
 
 .. _configuration-bill-and-delivery-pluginttproductsbill-pluginttproductsdelivery:
 
 plugin.tt_products.delivery {
 """""""""""""""""""""""""""""
 
-generation = 
+generation =
 
 }
 

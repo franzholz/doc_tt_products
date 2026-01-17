@@ -1,10 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
-
 
 .. _introduction-what-does-it-do:
 
@@ -36,7 +29,7 @@ The Typo3 shop extension gives you the facility for...
 - Some methods for price calculation with rebate for resellers
 - Display orders: order can be displayed on per fe-user basis (CODE=ORDERS)
 - Creditpoint system: customers can save credit points per each order. Saved points will give them a
-  discount for newer orders or certain products can be "bought" with these points. 
+  discount for newer orders or certain products can be "bought" with these points.
 - Voucher system: if a new customer indicates when registrating that she/he was tipped by another
   existing customer, this customers gets a credit point bonus. The new customer gets a discount on
   first order.

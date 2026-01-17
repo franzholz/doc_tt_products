@@ -1,22 +1,15 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
-
 
 .. _configuration-bill-and-delivery:
 
 Bill and Delivery Configuration
 -------------------------------
 
-Setup only. 
+Setup only.
 
 These are some settings if you want to use the feature of the creation and usage of bill and
 delivery sheets. They are generated in the folder “fileadmin/data/bill”.
 
-**Example:** 
+**Example:**
 
 .. toctree::
     :maxdepth: 2

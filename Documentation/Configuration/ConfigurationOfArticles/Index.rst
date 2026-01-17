@@ -1,10 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
-
 
 .. _configuration-configuration-of-articles:
 
@@ -24,7 +17,7 @@ additional possible values are
 
 EMAIL, PAYMENT, LISTRELATED (LIST for related products)
 
-**Example:** 
+**Example:**
 
 .. toctree::
     :maxdepth: 2

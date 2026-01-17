@@ -1,10 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
-
 
 .. _users-manual-note-pluginttproductsconfttproductslistdisplaycolumns1:
 
@@ -30,4 +23,4 @@ If you want to use the variant fields (colour, quantity ...), you must also set 
 will be calculated incorrectly.
 
 Many adaptations can be undertaken by way of the constant editor. For entering in the shop page,
-most should be directed in the template's setup field and constant editor. 
+most should be directed in the template's setup field and constant editor.

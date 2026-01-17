@@ -1,9 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
 
 
 .. _configuration-tracking-configuration:
@@ -11,11 +5,11 @@
 Tracking Configuration
 ----------------------
 
-Setup only. 
+Setup only.
 
 These are some settings if you want to change the display of the tracking page.
 
-**Example:** 
+**Example:**
 
 .. toctree::
     :maxdepth: 2

@@ -1,10 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../Includes.txt
-
 
 .. _introduction:
 
@@ -19,7 +12,7 @@ You should read the `German tutorial
 '`TYPO3 4.2 E-Commerce
 <https://www.packtpub.com/design-build-feature-rich-online-store-using-typo3-4-2-e-commerce/book>`__
 ' before you start with it. Watch this `introduction video
-<http://www.youtube.com/watch?v=IQFDvgVJDXA>`__ `. <http://www.youtube.com/watch?v=IQFDvgVJDXA>`__ 
+<http://www.youtube.com/watch?v=IQFDvgVJDXA>`__ `. <http://www.youtube.com/watch?v=IQFDvgVJDXA>`__
 See the extension addons_tt_products for newer example template files.
 
 This extension only works with PHP5.

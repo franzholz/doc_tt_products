@@ -1,9 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
 
 
 .. _configuration-form-configuration:
@@ -11,11 +5,11 @@
 Form configuration
 ------------------
 
-Setup only. 
+Setup only.
 
 There are several forms which can be configured. Put the code after the form settings.
 
-**Example:** 
+**Example:**
 
 .. toctree::
     :maxdepth: 2

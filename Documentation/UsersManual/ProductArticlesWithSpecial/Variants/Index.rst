@@ -1,10 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../../Includes.txt
-
 
 .. _users-manual-product-articles-with-special-variants:
 
@@ -36,14 +29,14 @@ variants:
 #. In the TSSetup for the template add
 #.     If you are using columns to List your products like in the Bananaguard example, you also need
 #.     All this tells TYPO3 to read from the product articles and display a dropdown selection box if
-       variants are used. 
+       variants are used.
 #.     Add the parent product.  This is the primary information that is displayed in the frontend
        List and Single views, ie description, image etc. Create a new entry in the Web > List mode.
-       Select Product from the available options.  You will need to fill out the following fields: 
-       Title 
+       Select Product from the available options.  You will need to fill out the following fields:
+       Title
 
 
-  - InStock (must have at least 1 to display in the frontend) 
+  - InStock (must have at least 1 to display in the frontend)
   - Category (if applicable)
   - Price (this should be the cheapest price for the cheapest size - corresponding to the cheapest
     product article which we will set up next)
@@ -59,19 +52,19 @@ variants:
     Add the product variants Here we create the different sizes for the parent product. The
     information is pretty basic, you use to clarify different prices, item numbers (for keeping
     track of stock), amount of stock etc. Each product variant must relate to one of the sizes (or
-    colour etc) we listed in the parent product. 
+    colour etc) we listed in the parent product.
 
--     Create a new entry in the Web > List mode. 
--     Select Product Articles from the available options. 
+-     Create a new entry in the Web > List mode.
+-     Select Product Articles from the available options.
 -     Fill out the Title (this will appear in the shopping basket) and
 -     Instock
 -     Price
 -     If this variant is the cheapest version this should be the same as the price listed in the
       Parent Product.
 
-#.     Changes to the html template  This is the last thing to do. 
+#.     Changes to the html template  This is the last thing to do.
 
--     You'll need to add new fields to the ###ITEM_LIST_TEMPLATE### and ###ITEM_SINGLE_DISPLAY###. 
+-     You'll need to add new fields to the ###ITEM_LIST_TEMPLATE### and ###ITEM_SINGLE_DISPLAY###.
 -     The Code Listing below for the variant selection box needs to be added and must sit inside of
       the form tags. Also note that any information between ###display_variant1### or
       ###display_variant2### tags will not be displayed if that variant is not used. This is a
