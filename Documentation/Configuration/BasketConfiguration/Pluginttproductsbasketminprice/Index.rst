@@ -27,6 +27,10 @@
     :required: true
     :type: array of string
 
+     maximum price which the products may reach to get a permission to buy them.
+     E.g. only products of a total price of at most 2500 shall be accepted. 
+     The products which have the 'no maximum price' checked, will not be counted here.
+
 **Example:**
      
 ..  code-block:: typoscript
@@ -75,7 +79,6 @@
 Property:  Data type:          Description:                                            Default:
 =========  ==================  ======================================================  ======================
 
----------  ------------------  ------------------------------------------------------  ----------------------
 ---------  ------------------  ------------------------------------------------------  ----------------------
 activity   *array of string*   activity configuration
 
