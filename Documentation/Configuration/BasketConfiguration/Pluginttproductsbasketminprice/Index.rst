@@ -18,28 +18,31 @@
         value = 250
     }
 
+.. _configuration-basket-basketmaxprice:
+
+..  confval:: basket.maxPrice
+    :name: configuration-basket-basketmaxprice
+    :required: true
+    :type: array of string
+
+    maximum price which the products may reach to get a permission to buy them. E.g. only products of a total
+    price of at most 2500 shall be accepted. The product which have the 'no maximum price' checked, will not be
+    counted here.
+
+..  code-block:: typoscript
+    :caption: example basket.maxPrice
+
+    plugin.tt_products.basket.maxPrice {
+        type = price
+        collect = goodstotal
+        value = 2500
+    }
+
+
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<=========  ==================  ======================================================  ======================
 Property:  Data type:          Description:                                            Default:
 =========  ==================  ======================================================  ======================
-minPrice   *array of string*   
----------  ------------------  ------------------------------------------------------  ----------------------
-maxPrice   *array of string*   maximum price which the products may reach to get a
-                               permission to buy them. E.g. only products of a total
-                               price of at most 2500 shall be accepted. The products
-                               which have the 'no maximum price' checked, will not be
-                               counted here.
 
-                               **Example:**
-
-                               maxPrice {
-
-                               type = price
-
-                               collect = goodstotal
-
-                               value = 2500
-
-                               }
 ---------  ------------------  ------------------------------------------------------  ----------------------
 view       *array of string*   basket view configuration                               *showAmount = basket*
 
