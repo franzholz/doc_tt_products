@@ -6,3 +6,5 @@ Configuration
 =============
 
 Describe how to configure the extension.
+
+    Configuration/Index
