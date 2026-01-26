@@ -1,37 +1,27 @@
+.. _configuration-basket-basketminprice:
 
-.. _configuration-basket-configuration-pluginttproductsbasketminprice:
+..  confval:: basket.minPrice
+    :name: configuration-basket-basketminprice
+    :required: true
+    :type: array of string
 
-plugin.tt_products.basket.minPrice {
-""""""""""""""""""""""""""""""""""""
+    minimum price which the products must reach to get a permission to buy them. E.g. only products of a total
+    price of at least 250 shall be accepted. The products which have the 'no minimum price checked, will not be
+    counted here.
 
-type = price
+..  code-block:: typoscript
+    :caption: example basket.minPrice
 
-collect = goodstotal
+    plugin.tt_products.basket.minPrice {
+        type = price
+        collect = goodstotal
+        value = 250
+    }
 
-value = 250
-
-}
-
-=========  ==================  ======================================================  ======================
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<=========  ==================  ======================================================  ======================
 Property:  Data type:          Description:                                            Default:
 =========  ==================  ======================================================  ======================
-minPrice   *array of string*   minimum price which the products must reach to get a
-                               permission to buy them. E.g. only products of a total
-                               price of at least 250 shall be accepted. The products
-                               which have the 'no minimum price checked, will not be
-                               counted here.
-
-                               **Example:**
-
-                               minPrice {
-
-                               type = price
-
-                               collect = goodstotal
-
-                               value = 250
-
-                               }
+minPrice   *array of string*   
 ---------  ------------------  ------------------------------------------------------  ----------------------
 maxPrice   *array of string*   maximum price which the products may reach to get a
                                permission to buy them. E.g. only products of a total
