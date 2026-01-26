@@ -74,6 +74,35 @@
     }
      
 
+.. _configuration-basket-activity:
+
+..  confval:: basket.activity
+    :name: configuration-basket-activity
+    :required: true
+    :type: array of string
+
+    activity configuration
+    Possible activities are:
+    basket, info, payment, verify, finalize, overview
+    *   check:
+        *   address: if the required fields have been filled in (see requiredInfoFields)
+        *   agb: if the trading conditions checkbox has been clicked
+        *   basket: if the basket has entries.
+        *   edit_variant: if the edit variants follows some restrictions
+    *   clear:
+        *   memo: If the MEMO for the items shall be cleared.
+
+    **Example:**
+     
+    ..  code-block:: typoscript
+        :caption: example basket.maxPrice
+
+        basket.activity.payment {
+            check = address,agb,basket
+        }
+
+
+
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<=========  ==================  ======================================================  ======================
 Property:  Data type:          Description:                                            Default:
