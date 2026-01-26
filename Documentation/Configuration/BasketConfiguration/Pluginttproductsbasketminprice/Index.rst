@@ -1,7 +1,7 @@
 .. _configuration-basket-basketminprice:
 
 ..  confval:: basket.minPrice
-    :name: configuration-basket-minprice
+    :name: minimum allowed price
     :required: true
     :type: array of string
 
@@ -23,7 +23,7 @@
 .. _configuration-basket-maxprice:
 
 ..  confval:: basket.maxPrice
-    :name: configuration-basket-maxprice
+    :name: maximum allowed price
     :required: true
     :type: array of string
 
@@ -45,7 +45,7 @@
 .. _configuration-basket-basket-view:
 
 ..  confval:: basket.view
-    :name: configuration-basket-view
+    :name: basket view
     :required: true
     :type: array of string
     :default: showAmount = basket
@@ -77,7 +77,7 @@
 .. _configuration-basket-activity:
 
 ..  confval:: basket.activity
-    :name: configuration-basket-activity
+    :name: basket activity
     :required: true
     :type: array of string
 
@@ -105,7 +105,7 @@
 .. _configuration-basket-store:
 
 ..  confval:: basket.store
-    :name: configuration-basket-store
+    :name: store former items in the basket
     :required: true
     :type: boolean
 
@@ -116,7 +116,7 @@
 .. _configuration-basket-round:
 
 ..  confval:: basket.round
-    :name: configuration-basket-round
+    :name: round format of basket items
     :required: true
     :type: string
 
