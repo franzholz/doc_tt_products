@@ -9,17 +9,17 @@
     price of at least 250 shall be accepted. The products which have the 'no minimum price checked, will not be
     counted here.
 
-**Example:**
+    **Example:**
 
-..  code-block:: typoscript
-    :caption: example basket.minPrice
+    ..  code-block:: typoscript
+        :caption: example basket.minPrice
 
-    plugin.tt_products.basket.minPrice {
-        type = price
-        collect = goodstotal
-        value = 250
-    }
-
+        plugin.tt_products.basket.minPrice {
+            type = price
+            collect = goodstotal
+            value = 250
+        }
+ 
 .. _configuration-basket-maxprice:
 
 ..  confval:: basket.maxPrice
@@ -31,16 +31,16 @@
      E.g. only products of a total price of at most 2500 shall be accepted. 
      The products which have the 'no maximum price' checked, will not be counted here.
 
-**Example:**
+    **Example:**
      
-..  code-block:: typoscript
-    :caption: example basket.maxPrice
+    ..  code-block:: typoscript
+        :caption: example basket.maxPrice
 
-    plugin.tt_products.basket.maxPrice {
-        type = price
-        collect = goodstotal
-        value = 2500
-    }
+        plugin.tt_products.basket.maxPrice {
+            type = price
+            collect = goodstotal
+            value = 2500
+        }
 
 .. _configuration-basket-basket-view:
 
@@ -59,13 +59,13 @@
     *   where: SQL where condition for products
     *   checked: preselected product uid
 
-**Example:**
+    **Example:**
 
-..  code-block:: typoscript
-    :caption: example basket.minPrice
+    ..  code-block:: typoscript
+        :caption: example basket.minPrice
 
-    plugin.tt_products.basket.view.input {
-        10.label = Buy:
+        plugin.tt_products.basket.view.input {
+            10.label = Buy:
         10.type = radio
         10.where = uid IN (12,13,14,15)
         10.checked = 12
