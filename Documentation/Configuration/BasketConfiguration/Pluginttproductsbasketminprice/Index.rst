@@ -113,23 +113,27 @@
     site. Then items are added to the basket only once.
 
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<=========  ==================  ======================================================  ======================
-Property:  Data type:          Description:                                            Default:
-=========  ==================  ======================================================  ======================
+.. _configuration-basket-round:
 
----------  ------------------  ------------------------------------------------------  ----------------------
-round      string              Rounding format for the prices in the basket.
+..  confval:: basket.round
+    :name: configuration-basket-round
+    :required: true
+    :type: string
 
-                               round.discount ... rounding format for the discount
-                               from the discount field
+    Rounding format for the prices in the basket.
 
-                               **Example:**
+        * round.discount ... rounding format for the discount from the discount field
 
-                               basket {
+    **Example:**
+     
+    ..  code-block:: typoscript
+        :caption: example basket.round
 
-                               round = .XX
+        basket {
+              round = .XX
+              round.discount = .XX
+        }
 
-                               round.discount = .XX
 
-                               }
-=========  ==================  ======================================================  ======================
+
+
