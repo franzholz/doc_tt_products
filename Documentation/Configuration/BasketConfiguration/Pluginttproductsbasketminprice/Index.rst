@@ -62,7 +62,7 @@
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: example basket.minPrice
+        :caption: example basket.view
 
         plugin.tt_products.basket.view.input {
             10.label = Buy:
@@ -95,54 +95,28 @@
     **Example:**
      
     ..  code-block:: typoscript
-        :caption: example basket.maxPrice
+        :caption: example basket.activity
 
         basket.activity.payment {
             check = address,agb,basket
         }
 
 
+.. _configuration-basket-store:
+
+..  confval:: basket.store
+    :name: configuration-basket-store
+    :required: true
+    :type: boolean
+
+    If set to 0, then no basket will be stored. This is only usefull, if you have several shop plugins on a
+    site. Then items are added to the basket only once.
 
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<=========  ==================  ======================================================  ======================
 Property:  Data type:          Description:                                            Default:
 =========  ==================  ======================================================  ======================
 
----------  ------------------  ------------------------------------------------------  ----------------------
-activity   *array of string*   activity configuration
-
-                               Possible activities are:
-
-                               basket, info, payment, verify, finalize, overview
-
-                               check:
-
-                               address … if the required fields have been filled in
-                               (see requiredInfoFields)
-
-                               agb … if the trading conditions checkbox has been
-                               clicked
-
-                               basket … if the basket has entries.
-
-                               edit_variant .. if the edit variants follows some
-                               restrictions
-
-                               clear:
-
-                               memo … If the MEMO for the items shall be cleared.
-
-                               **Example:**
-
-                               basket.activity.payment {
-
-                               check = address,agb,basket
-
-                               }
----------  ------------------  ------------------------------------------------------  ----------------------
-store      boolean             If set to 0, then no basket will be stored. This is
-                               only usefull, if you have several shop plugins on a
-                               site. Then items are added to the basket only once.
 ---------  ------------------  ------------------------------------------------------  ----------------------
 round      string              Rounding format for the prices in the basket.
 
