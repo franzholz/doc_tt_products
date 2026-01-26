@@ -1,7 +1,7 @@
 .. _configuration-billdelivery-generation:
 
 ..  confval:: configuration-billdelivery-generation
-    :name: configuration-billdelivery-generation
+    :name: bill or delivery generation
     :required: true
     :type: string
 
