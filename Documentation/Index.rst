@@ -19,9 +19,8 @@ Shop system extension for the TYPO3 CMS
     :maxdepth: 3
 
     */Index
-    Installation
-    Configuration
     GetHelp
+    Installation
     Introduction/Index
     UsersManual/Index
     Administration/Index
