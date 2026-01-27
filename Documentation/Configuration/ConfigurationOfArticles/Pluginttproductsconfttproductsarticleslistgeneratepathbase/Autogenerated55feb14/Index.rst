@@ -7,10 +7,10 @@
     :default: fileadmin/img
 
     path to the image folders where the images for generateImage are located.
-    Pairs of field names and the count of the first characters to be used 
+    Pairs of field names and the count of the first characters to be used
     to form the name of the image file.
 
-    Pairs of field names and the count of the first characters to be used to 
+    Pairs of field names and the count of the first characters to be used to
     form the name of the image file.
     *    type:     tablefields
     *    fieldname name of the table field
@@ -30,11 +30,11 @@
 .. _configuration-articles-products-categories-images-generate-image:
 
 ..  confval:: generateImage
-    :name: image generation 
+    :name: image generation
     :required: true
     :type: array of string
 
-    Pairs of field names and the count of the first characters to be used 
+    Pairs of field names and the count of the first characters to be used
     to form the name of the image file.
 
     *    type: tablefields, foreigntable (for field of another table)
@@ -75,7 +75,7 @@
 .. _configuration-articles-products-categories-images-image-marker:
 
 ..  confval:: imageMarker
-    :name: image markers 
+    :name: image markers
     :required: true
     :type: array of string
 
@@ -148,7 +148,7 @@
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: fetch images from the table tt_content 
+        :caption: fetch images from the table tt_content
 
         plugin.tt_products.conf.tt_products.ALL.fetchImage {
               type = foreigntable
@@ -156,51 +156,61 @@
         }
 
 
+.. _configuration-articles-products-categories-images-language:
 
-((auto-generated 55feb))
+..  confval:: language
+    :name:  language file for translation
+    :required: false
+    :type: array of string
+
+    The name of a language file with translations from the default language into another language.
+
+    *    type:
+        *    csv: The values are separated by ';' and newline characters
+        *    noTranslation: do not use the language overlay table
+        *    field: the translation is in fields
+        *    table: the translation overlay table
+
+    *    file: Path and name of the file
+    *    field: name of the field on left and new value on right side
+    *    marker ... Like CSV, but markers inside of the database table contents are substituted
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: use csv file for translations
+
+        [globalVar = GP:L = 1]
+        plugin.tt_products.conf.tt_products_cat.ALL.language {
+            type = csv
+            file = fileadmin/data/EnglishCategories.csv
+        }
+
+        [GLOBAL]
+
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: use the subtitle for translations
+
+        plugin.tt_products.conf.tt_products_cat.ALL.language {
+            type = field
+            field.title = subtitle
+        }
+
+
+
+
+
 """"""""""""""""""""""""
 
 =========================  ===========================  =======================================================  ========================
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-language                   *array of string*            The name of a language file with translations from the
-                                                        default language into another language.
-
-                                                        type:
-
-                                                        file: Path and name of the file
-
-                                                        field: name of the field on left and new value on right
-                                                        side
-
-                                                        marker ... Like CSV, but markers inside of the database
-                                                        table contents are substituted
-
-                                                        **Example:**
-
-                                                        [globalVar = GP:L = 1]
-
-                                                        plugin.tt_products.conf.tt_products_cat.ALL.language {
-
-                                                        type = csv
-
-                                                        file = fileadmin/data/EnglishCategories.csv
-
-                                                        }
-
-                                                        [GLOBAL]
-
-                                                        **Example:**
-
-                                                        plugin.tt_products.conf.tt_products_cat.ALL.language {
-
-                                                        type = field
-
-                                                        field.title = subtitle
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 image                      IMAGE cObject                Image is copied into the others via TypoScript and can
                                                         be used for several code fields.
