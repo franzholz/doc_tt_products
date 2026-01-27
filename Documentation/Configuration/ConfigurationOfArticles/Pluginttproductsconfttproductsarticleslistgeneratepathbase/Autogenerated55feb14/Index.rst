@@ -123,6 +123,18 @@
          plugin.tt_products.conf.tt_products.ALL.limitImage = 10
 
 
+.. _configuration-articles-products-categories-images-order-by:
+
+..  confval:: orderBy
+    :name: Max items displayed
+    :required: true
+    :type: string
+    :default: sorting
+
+    List of the fields by which the items will be ordered.
+
+
+
 
 
 ((auto-generated 55feb))
@@ -131,12 +143,8 @@
 =========================  ===========================  =======================================================  ========================
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-orderBy                    string                       List of the fields by which the items will be ordered.   sorting
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 fetchImage                 string                       If set, the images for the output table are taken from
                                                         the images of another table
