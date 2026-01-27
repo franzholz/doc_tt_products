@@ -135,6 +135,26 @@
 
 
 
+.. _configuration-articles-products-categories-images-fetch-image:
+
+..  confval:: fetchImage
+    :name:  fetch images from another table
+    :required: true
+    :type: int+
+    :default: 1
+
+    If set, the images for the output table are taken from the images of another table
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: fetch images from the table tt_content 
+
+        plugin.tt_products.conf.tt_products.ALL.fetchImage {
+              type = foreigntable
+              table = tt_content
+        }
+
 
 
 ((auto-generated 55feb))
@@ -144,20 +164,6 @@
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
 
-
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-fetchImage                 string                       If set, the images for the output table are taken from
-                                                        the images of another table
-
-                                                        **Example:**
-
-                                                        plugin.tt_products.conf.tt_products.ALL.fetchImage {
-
-                                                        type = foreigntable
-
-                                                        table = tt_content
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 language                   *array of string*            The name of a language file with translations from the
                                                         default language into another language.
