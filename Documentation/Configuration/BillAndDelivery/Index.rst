@@ -9,8 +9,6 @@ Setup only.
 These are some settings if you want to use the feature of the creation and usage of bill and
 delivery sheets. They are generated in the folder “fileadmin/data/bill”.
 
-**Example:**
-
 .. toctree::
     :maxdepth: 2
     :titlesonly:
