@@ -1,3 +1,21 @@
+.. _configuration-articles-products-categories-images-generate-path:
+
+..  confval:: generatePath
+    :name: some-unique-label
+    :required: true
+    :type: array of string
+    :default: fileadmin/img
+
+    path to the image folders where the images for generateImage are located.
+    Pairs of field names and the count of the first characters to be used 
+    to form the name of the image file.
+
+    Pairs of field names and the count of the first characters to be used to 
+    form the name of the image file.
+    *    type ... tablefields
+    *    fieldname ... name of the table field*
+
+
 
 .. _configuration-configuration-of-articles-pluginttproductsconfttproductsarticleslistgeneratepathbase:
 
