@@ -105,6 +105,23 @@
    The maximum number of items displayed on a list view.
 
 
+.. _configuration-articles-products-categories-images-limit-image:
+
+..  confval:: limitImage
+    :name:  Max image items displayed
+    :required: true
+    :type: int+
+    :default: 1
+
+   The maximum number of images for one item displayed on the view.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: maximum of 10 images to be shown on all display views
+
+         plugin.tt_products.conf.tt_products.ALL.limitImage = 10
+
 
 
 
@@ -117,12 +134,7 @@ Property:                  Data type:                   Description:            
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-limitImage                 int+                         Max image items displayed. The maximum number of images  1
-                                                        for one item displayed on the view.
 
-                                                        **Example:**
-
-                                                        plugin.tt_products.conf.tt_products.ALL.limitImage = 10
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 orderBy                    string                       List of the fields by which the items will be ordered.   sorting
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
