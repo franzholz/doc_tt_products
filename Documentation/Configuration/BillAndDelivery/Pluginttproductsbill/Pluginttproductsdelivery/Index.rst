@@ -5,12 +5,30 @@
 .. _configuration-billdelivery-generation:
 
 ..  confval:: configuration-billdelivery-generation
-    :name: bill or delivery generation
+    :name: generation of a bill or delivery sheet
     :required: true
     :type: string
 
     Defines the behaviour for the generation of the bill/delivery sheet.
         * auto: Generation will be done when the order is finalized.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+    :caption: automatic generation of a bill
+
+    plugin.tt_products.bill {
+        generation = auto
+    }
+
+    **Example:**
+
+    ..  code-block:: typoscript
+    :caption: no generation of a delivery sheet
+
+    plugin.tt_products.delivery {
+        generation =
+    }
 
 
 
