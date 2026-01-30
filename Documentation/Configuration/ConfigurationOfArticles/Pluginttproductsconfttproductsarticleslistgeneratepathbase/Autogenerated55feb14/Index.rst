@@ -455,6 +455,66 @@
         }
 
 
+.. _configuration-articles-products-categories-images-control-fields:
+
+..  confval:: controlFields
+    :name:  use fields for control
+    :required: false
+    :type: *array of string*
+    :default: newItemDays -> starttime
+
+    newitemdays ... name of the field to use with the newItemDays function
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+    controlFields {
+        newItemDays = starttime
+    }
+
+
+.. _configuration-articles-products-categories-images-display-fields:
+
+..  confval:: displayFields
+    :name:  display configuration for fields
+    :required: false
+    :type: *array of string*
+
+    Definitions how to display some fields.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+    displayFields {
+        note = RTEcssText
+    }
+
+
+
+.. _configuration-articles-products-categories-images-field-link:
+
+..  confval:: fieldLink
+    :name:  The definition for the field links
+    :required: false
+    :type: *array of typolink*
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+    conf.tt_products.ALL {
+        fieldLink {
+            datasheet.ATagParams=class="datasheetClass"
+        }
+    }
+
+
 
 
 """"""""""""""""""""""""
@@ -463,45 +523,7 @@
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-controlFields              *array of string*            Control fields                                           newItemDays -> starttime
 
-                                                        newitemdays ... name of the field to use with the
-                                                        newItemDays function
-
-                                                        **Example:**
-
-                                                        controlFields {
-
-                                                        newItemDays = starttime
-
-                                                        }
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-displayFields              *array of cObject*           Display fields
-
-                                                        Definitions how to display some fields.
-
-                                                        **Example:**
-
-                                                        displayFields {
-
-                                                        note = RTEcssText
-
-                                                        }
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-fieldLink                  *array of typolink*          The definition for the field links.
-
-                                                        **Example:**
-
-                                                        conf.tt_products.ALL {
-
-                                                        fieldLink {
-
-                                                        datasheet.ATagParams=class="datasheetClass"
-
-                                                        }
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 fe_users                   *array of string*            FE user fields for limitations
 
