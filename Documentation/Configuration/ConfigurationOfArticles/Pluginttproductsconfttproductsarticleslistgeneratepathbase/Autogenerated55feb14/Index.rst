@@ -405,6 +405,30 @@
     So instead of listing the products of category 1 all products of all categories will be listed.
 
 
+.. _configuration-articles-products-categories-images-only-childs-of-current:
+
+..  confval:: onlyChildsOfCurrent
+    :name:  show only the childs of the current category
+    :required: false
+    :type: boolean
+
+    If set, the child items (e.g. subcategories) will only be displayed for the current item (category).
+
+
+
+.. _configuration-articles-products-categories-images-root-childs-of-current:
+
+..  confval:: rootChildsOfCurrent
+    :name:  show only the childs of the current category
+    :required: false
+    :type: boolean
+
+    If set, the child items of the currently selected item
+    will be shown on the root level.
+
+
+
+
 
 """"""""""""""""""""""""
 
@@ -413,13 +437,6 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
-
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-onlyChildsOfCurrent        boolean                      If set, the child items (e.g. subcategories) will only
-                                                        be displayed for the current item (category).
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-rootChildsOfCurrent        boolean                      If set, the child items of the currently selected item
-                                                        will be shown on the root level.
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 field                      *array of cObject*           Use cObjects for the display of some fields. By default
                                                         the field's contents are printed as is. Only the image
