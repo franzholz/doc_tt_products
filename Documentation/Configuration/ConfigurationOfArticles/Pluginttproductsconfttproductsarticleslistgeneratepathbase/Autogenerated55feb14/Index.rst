@@ -226,6 +226,27 @@
         }
 
 
+.. _configuration-articles-products-categories-images-joined-images-wrap:
+
+..  confval:: joinedImagesWrap
+    :name:  image cObject
+    :required: false
+    :type: stdWrap
+
+    Wrap around all images. separateImage must be 0. This will be wrapped around the 
+    HTML output of the joined images.
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: joinedImagesWrap
+
+        joinedImagesWrap.wrap = <div id=”myimageid”> |</div>
+
+
+
+
 
 
 """"""""""""""""""""""""
@@ -234,15 +255,6 @@
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-joinedImagesWrap           -> stdWrap                   Wrap around all images. separateImage must be 0. This
-                                                        will be wrapped around the HTML output of the joined
-                                                        images.
-
-                                                        **Example:**
-
-                                                        joinedImagesWrap.wrap = <div id=”myimageid”>
-                                                        |</div>
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 filter                     *array of string*            Use only table records which apply to a filter on a
                                                         field or parameter base.
