@@ -515,6 +515,81 @@
     }
 
 
+.. _configuration-articles-products-categories-images-control-feusers:
+
+..  confval:: fe_users
+    :name:  FE user fields for limitations
+    :required: false
+    :type: *array of string*
+
+    date_of_birth.period: This period of time since the FE user's birth must have been passed, 
+        if products with uid 12 oder 24 are in the basket.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+    fe_users {
+         date_of_birth.period.y = 12
+         where = uid IN (12, 24)
+    }
+
+
+
+.. _configuration-articles-products-categories-images-view:
+
+..  confval:: view
+    :name:  code view configuration
+    :required: false
+    :type: *array of string*
+
+    *    sortselect:   array of form elements    
+    *    filterselect: filtering
+    *    browser:       configuration for the record browser with types div2007  
+    *    showFirstLast: if the first and last link is shown.
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+    view.sortSelect {
+         1 {
+            label = sort by
+            type = select
+            attribute {
+               onchange=submit();
+            }
+            valueArray {
+              10.label = title
+              10.value = 1
+              10.field = title
+            }
+        }
+    }
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+    view.browser = div2007
+    view.browser {
+           browseLinksWrap = <div class="browseLinksWrap">|</div>
+           disabledLinkWrap = <span class="disabledLinkWrap">|</span>
+           inactiveLinkWrap = <span class="inactiveLinkWrap">|</span>
+           activeLinkWrap = <span class="activeLinkWrap">|</span>
+           disabledNextLinkWrap = <span class="pagination-next">|</span>
+           inactiveNextLinkWrap = <span class="pagination-next">|</span>
+           disabledPreviousLinkWrap = <span class="pagination-previous">|</span>
+           inactivePreviousLinkWrapn = <span class="pagination-previous">|</span>
+    }
+    
+    
+
 
 
 """"""""""""""""""""""""
@@ -524,94 +599,6 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-fe_users                   *array of string*            FE user fields for limitations
-
-                                                        period
-
-                                                        date_of_birth.period ... This period of time since the
-                                                        FE user's birth must have been passed, if products with
-                                                        uid 12 oder 24 are in the basket.
-
-                                                        **Example:**
-
-                                                        fe_users {
-
-                                                        date_of_birth.period.y = 12
-
-                                                        where = uid IN (12, 24)
-
-                                                        }
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-view                       *array of string*            code view configuration
-
-                                                        sortselect … array of form elements
-
-                                                        filterselect … filtering
-
-                                                        **Example:**
-
-                                                        view.sortSelect {
-
-                                                        1 {
-
-                                                        label = sort by
-
-                                                        type = select
-
-                                                        attribute {
-
-                                                        onchange=submit();
-
-                                                        }
-
-                                                        valueArray {
-
-                                                        10.label = title
-
-                                                        10.value = 1
-
-                                                        10.field = title
-
-                                                        }
-
-                                                        }
-
-                                                        }
-
-                                                        browser … configuration for the record browser with
-                                                        types div2007  showFirstLast … if the first and last
-                                                        link is shown.
-
-                                                        **Example:**
-
-                                                        view.browser = div2007
-
-                                                        view.browser {
-
-                                                        browseLinksWrap = <div class="browseLinksWrap">|</div>
-
-                                                        disabledLinkWrap = <span
-                                                        class="disabledLinkWrap">|</span>
-
-                                                        inactiveLinkWrap = <span
-                                                        class="inactiveLinkWrap">|</span>
-
-                                                        activeLinkWrap = <span class="activeLinkWrap">|</span>
-
-                                                        disabledNextLinkWrap = <span
-                                                        class="pagination-next">|</span>
-
-                                                        inactiveNextLinkWrap = <span
-                                                        class="pagination-next">|</span>
-
-                                                        disabledPreviousLinkWrap = <span
-                                                        class="pagination-previous">|</span>
-
-                                                        inactivePreviousLinkWrapn = <span
-                                                        class="pagination-previous">|</span>
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 subpart                    *array of string*            This determines the behaviour of the display of the
                                                         subparts.
