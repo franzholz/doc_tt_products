@@ -245,7 +245,7 @@
         joinedImagesWrap.wrap = <div id=”myimageid”> |</div>
 
 
-.. _configuration-articles-products-categories-images-joined-images-filter:
+.. _configuration-articles-products-categories-images-filter:
 
 ..  confval:: filter
     :name:  filter on table records
@@ -290,6 +290,57 @@
    It will filter all records of the table to use only those where the title has characters and a 1 on the last position.
 
 
+.. _configuration-articles-products-categories-images-urlparams:
+
+..  confval:: urlparams
+    :name:  tt_products URL parameter
+    :required: false
+    :type: string
+
+    Comma separated list of tt_products URL parameters which must have a value. Otherwise no items will be displayed.
+    Normally no products shall be shown below a category list when no category has been selected yet. If you leave this empty, 
+    then all products will be listed in the list view when no category parameter is given and you have a category list view on the page.
+
+
+.. _configuration-articles-products-categories-images-display-columns:
+
+..  confval:: displayColumns
+    :name:  Number of columns on the display
+    :required: false
+    :type: array
+
+    You have to adapt your template using special template markers. The :php:`ITEM_SINGLE_PRE_HTML` 
+    and :php:`ITEM_SINGLE_POST_HTML` must surround your :php:`<TD>-</TD>` tags, so the table 
+    will be created correctly. The first number is the order in the category hierarchy.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: display columns 3 on first category level
+
+        displayColumns {
+            1 = 3
+        }
+
+
+    **Example:**
+
+    ..  code-block:: html
+        :caption: HTML part to support columns
+
+        <!-- ###ITEM_SINGLE### begin--> 
+         ###ITEM_SINGLE_PRE_HTML### 
+         <td height="150" bgcolor="###GC1###" valign="bottom" align="center"> 
+         <!--###LINK_ITEM###--> ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E### 
+         <!--###LINK_ITEM###--> 
+         <br> 
+         ###PRODUCT_IMAGE### <br> 
+         ###GW1B### item count: ###GW1E### <INPUT size="3" maxlength="4" type="text" name="###FIELD_NAME###" value="###FIELD_QTY###"> 
+         <p> </td> 
+         ###ITEM_SINGLE_POST_HTML### 
+         <!-- ###ITEM_SINGLE### end -->
+
+
 
 """"""""""""""""""""""""
 
@@ -298,46 +349,6 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-urlparams                  string                       Comma separated list of tt_products URL parameters
-                                                        which must have a value. Otherwise no items will be
-                                                        displayed.
-
-                                                        Normally no products shall be shown below a category
-                                                        list when no category has been selected yet. If you
-                                                        leave this empty, then all products will be listed in
-                                                        the list view when no category parameter is given and
-                                                        you have a category list view on the page.
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-displayColumns             array                        Number of columns on the display
-
-                                                        You have to adapt your template using special template
-                                                        markers. The ITEM_SINGLE_PRE_HTML and
-                                                        ITEM_SINGLE_POST_HTML must surround your <TD>-</TD>
-                                                        tags, so the table will be created correctly. The first
-                                                        number is the order in the category hierarchy.
-
-                                                        **Example:**
-
-                                                        displayColumns {
-
-                                                        1 = 3
-
-                                                        }
-
-                                                        **Example:**
-
-                                                        <!-- ###ITEM_SINGLE### begin-->
-                                                        ###ITEM_SINGLE_PRE_HTML###   <td height="150"
-                                                        bgcolor="###GC1###" valign="bottom" align="center">
-                                                        <!--###LINK_ITEM###-->
-                                                        ###GW1B###<b>###PRODUCT_TITLE###</b>###GW1E###
-                                                        <!--###LINK_ITEM###-->   <br>   ###PRODUCT_IMAGE###
-                                                        <br>   ###GW1B### item count: ###GW1E### <INPUT
-                                                        size="3" maxlength="4" type="text"
-                                                        name="###FIELD_NAME###" value="###FIELD_QTY###">   <p>
-                                                        </td>   ###ITEM_SINGLE_POST_HTML###   <!--
-                                                        ###ITEM_SINGLE### end -->
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 displayHeader              string                       Each list view of items can have a header for the
                                                         category. Normally the header is shown and after it all
