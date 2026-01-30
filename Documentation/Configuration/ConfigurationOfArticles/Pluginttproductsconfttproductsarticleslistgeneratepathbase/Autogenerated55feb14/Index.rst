@@ -656,27 +656,36 @@
     }
 
 
+.. _configuration-articles-products-categories-images-hide-id:
+
+..  confval:: hideID
+    :name:  hide id
+    :required: false
+    :type: *int+*
+
+    The ID of the item for which the whole shop plugin gets hidden (invisible). Use this with care! 
+    The shop plugin will not be shown in the FE if the table's url parameter is set to one of these
+    elements of the comma separated list of values.
 
 
-""""""""""""""""""""""""
+.. _configuration-articles-products-categories-images-hide-zero:
 
-=========================  ===========================  =======================================================  ========================
-Property:                  Data type:                   Description:                                             Default:
-=========================  ===========================  =======================================================  ========================
+..  confval:: hideZero
+    :name:  hide with no parameter (only categories)
+    :required: false
+    :type: boolean
+
+    If true then a plugin is hidden if no category parameter with a uid is given.	
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-hideID                     int+                         The ID of the item for which the whole shop plugin gets
-                                                        hidden (invisible). Use this with care! The shop plugin
-                                                        will not be shown in the FE if the table's url
-                                                        parameter is set to one of these elements of the comma
-                                                        separated list of values.
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-hideZero                   boolean                      If true then a plugin is hidden if no category
-                                                        parameter with a uid is given.
-(only categories)
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-hideChildless              boolean                      If true then a plugin is hidden if a category parameter
-                                                        with a uid is given which has no child category. This
-(only categories)                                       can only be used with hierarchical categories.
-=========================  ===========================  =======================================================  ========================
+.. _configuration-articles-products-categories-images-hide-childless:
+
+..  confval:: hideChildless
+    :name:  hide childs (only with hierarchical categories)
+    :required: false
+    :type: boolean
+
+    If true then a plugin is hidden if a category parameter with a uid is given which has no child category.
+    This can only be used with hierarchical categories.
+
+
