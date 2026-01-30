@@ -202,6 +202,29 @@
         }
 
 
+.. _configuration-articles-products-categories-images-image:
+
+..  confval:: image
+    :name:  image cObject
+    :required: false
+    :type: IMAGE cObject
+
+    Image is copied into the others via TypoScript and can be used for several code fields.
+
+
+    **Example:**
+
+    :php:`###PRODUCT_IMAGE1:M###` 
+
+    ..  code-block:: typoscript
+        :caption: Image cObect
+
+        plugin.tt_products.conf.tt_products.ALL.image.m {
+            wrap = |<br />
+            file.maxW = 320
+            file.maxH = 280
+        }
+
 
 
 
@@ -211,11 +234,6 @@
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-image                      IMAGE cObject                Image is copied into the others via TypoScript and can
-                                                        be used for several code fields.
-
-                                                        **Example:**
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 joinedImagesWrap           -> stdWrap                   Wrap around all images. separateImage must be 0. This
                                                         will be wrapped around the HTML output of the joined
