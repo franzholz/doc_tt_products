@@ -342,6 +342,32 @@
 
 
 
+.. _configuration-articles-products-categories-images-display-header:
+
+..  confval:: displayHeader
+    :name:  Header of the display
+    :required: false
+    :type: string
+
+    Each list view of items can have a header for the category. Normally the header is shown and 
+    after it all items of this category. But sometimes you want to show the header always with each product.
+
+    values:
+    *    always:  The category and product block is repeated always with each product*    
+    *    current: The current category is taken and not a second category
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: display columns 3 on first category level
+
+        displayHeader {
+            1 = always
+        }
+
+
+
 """"""""""""""""""""""""
 
 =========================  ===========================  =======================================================  ========================
@@ -349,21 +375,7 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-displayHeader              string                       Each list view of items can have a header for the
-                                                        category. Normally the header is shown and after it all
-                                                        items of this category. But sometimes you want to show
-                                                        the header always with each product.
 
-                                                        values
-
-                                                        **Example:**
-
-                                                        displayHeader {
-
-                                                        1 = always
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 requiredFields             string                       Fields which must be read in from the database table
                                                         even if not marker for them is found in the used
