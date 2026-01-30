@@ -611,7 +611,6 @@
     }
 
 
-
 .. _configuration-articles-products-categories-images-marks:
 
 ..  confval:: marks
@@ -637,6 +636,27 @@
 
 
 
+.. _configuration-articles-products-categories-images-tag-mark:
+
+..  confval:: tagmark (only categories in LIST)
+    :name:  tag mark
+    :required: false
+    :type: *array*
+
+    defines how the marker :php:`###CATALLTAGS###` is filled with the tags of the categories.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: tag marker
+
+    tagmark {
+        parents = 1
+        prefix = cat
+    }
+
+
+
 
 """"""""""""""""""""""""
 
@@ -645,19 +665,6 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-tagmark                    array                        defines how the marker ###CATALLTAGS### is filled with
-                                                        the tags of the categories.
-(only categories in LIST)
-                                                        **Example:**
-
-                                                        tagmark {
-
-                                                        parents = 1
-
-                                                        prefix = cat
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 hideID                     int+                         The ID of the item for which the whole shop plugin gets
                                                         hidden (invisible). Use this with care! The shop plugin
