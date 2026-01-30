@@ -428,6 +428,32 @@
 
 
 
+.. _configuration-articles-products-categories-images-field:
+
+..  confval:: field
+    :name:  cObject for a field
+    :required: false
+    :type: *array of cObject*
+
+    Use :php:`cObjects` for the display of some fields. By default the field's contents are printed as is. 
+    Only the image field is used to draw an :php:`IMAGE`. Use :typoscript:`untouched=1` to get the original value 
+    (might be needed for the note field).
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+        field {
+            title = COA
+            title {
+                untouched = 0
+                10 = TEXT
+                10.value = ###PRODUCT_TITLE###  in sizes  ###PRODUCT_SIZE###
+                10.wrap = Title: - | -
+            }
+        }
+
 
 
 """"""""""""""""""""""""
@@ -437,34 +463,6 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-field                      *array of cObject*           Use cObjects for the display of some fields. By default
-                                                        the field's contents are printed as is. Only the image
-                                                        field is used to draw an IMAGE.
-
-                                                        Use ”untouched=1” to get the original value (might
-                                                        be needed for the note field).
-
-                                                        **Example:**
-
-                                                        field {
-
-                                                        title = COA
-
-                                                        title {
-
-                                                        untouched = 0
-
-                                                        10 = TEXT
-
-                                                        10.value = ###PRODUCT_TITLE### in sizes
-                                                        ###PRODUCT_SIZE###
-
-                                                        10.wrap = Title: - | -
-
-                                                        }
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 fieldIndex                 int+/**Array of integers**   Index for fields with multiple contents. This is only
                                                         used to define which article images shall overwrite
