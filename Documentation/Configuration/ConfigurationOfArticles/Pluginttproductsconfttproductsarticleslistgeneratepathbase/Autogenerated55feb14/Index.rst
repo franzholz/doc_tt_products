@@ -367,6 +367,14 @@
         }
 
 
+.. _configuration-articles-products-categories-images-required-fields:
+
+..  confval:: requiredFields
+    :name:  required fields for the database tables in list views
+    :required: false
+    :type: string
+
+    Fields which must be read in from the database table even if not marker for them is found in the used template subpart.
 
 """"""""""""""""""""""""
 
@@ -375,11 +383,6 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
-
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-requiredFields             string                       Fields which must be read in from the database table
-                                                        even if not marker for them is found in the used
-                                                        template subpart.
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 special                    *array of string*            Special treatment for the table. Only used with
                                                         category parameters.
