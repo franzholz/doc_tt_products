@@ -589,6 +589,52 @@
     }
     
     
+.. _configuration-articles-products-categories-images-subpart:
+
+..  confval:: subpart
+    :name:  subpart behaviour
+    :required: false
+    :type: *array of string*
+
+    This determines the behaviour of the display of the subparts.
+
+    *    show:  :typoscript:`default`: if a record for a default category must be shown even if no product is found
+           (for cat). This is used if you have a default category on each page and the category header should always be shown.   
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: field
+
+    subpart.ITEM_CATEGORY {
+        show = default
+    }
+
+
+
+.. _configuration-articles-products-categories-images-marks:
+
+..  confval:: marks
+    :name:  marks
+    :required: false
+    :type: *array*
+
+    Self defined markers for the record.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: table based markers
+
+    marks {
+        mymarker = COA
+        mymarker {
+            10 = TEXT
+            10.value = ###PRODUCT_TITLE###  in sizes  ###PRODUCT_SIZE###
+            10.wrap = Title: - | -
+        }
+    }
+
 
 
 
@@ -599,43 +645,6 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-subpart                    *array of string*            This determines the behaviour of the display of the
-                                                        subparts.
-
-                                                        show … default. if a record for a default category
-                                                        must be shown even if no product is found (for cat).
-                                                        This is used if you have a default category on each
-                                                        page and the category header should always be shown.
-
-                                                        **Example:**
-
-                                                        subpart.ITEM_CATEGORY {
-
-                                                        show = default
-
-                                                        }
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-marks                      array                        Self defined markers for the record.
-
-                                                        **Example:**
-
-                                                        marks {
-
-                                                        mymarker = COA
-
-                                                        mymarker {
-
-                                                        10 = TEXT
-
-                                                        10.value = ###PRODUCT_TITLE### in sizes
-                                                        ###PRODUCT_SIZE###
-
-                                                        10.wrap = Title: - | -
-
-                                                        }
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 tagmark                    array                        defines how the marker ###CATALLTAGS### is filled with
                                                         the tags of the categories.
