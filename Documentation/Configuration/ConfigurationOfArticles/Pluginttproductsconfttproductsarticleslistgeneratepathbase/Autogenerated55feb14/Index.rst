@@ -376,6 +376,36 @@
 
     Fields which must be read in from the database table even if not marker for them is found in the used template subpart.
 
+
+.. _configuration-articles-products-categories-images-special:
+
+..  confval:: special
+    :name:  filter on table records
+    :required: false
+    :type: *array of string*
+
+    Special treatment for the table. Only used with category parameters.
+    *   all: This uid stands for all uids. 'all=all' means that all uids are always allowed. The tt_products[cat] parameter is ignored.
+    *   no:  This uid shall never be considered
+
+   field: name of the field on left and value on right side
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: joinedImagesWrap
+
+        special {
+            all = 1
+        }
+
+
+    Table tt_products_cat:
+    This will display the products of all categories if the parameter :php:`tt_products[cat] = 1'`is :typoscript:`max_note_lengthset`. 
+    So instead of listing the products of category 1 all products of all categories will be listed.
+
+
+
 """"""""""""""""""""""""
 
 =========================  ===========================  =======================================================  ========================
@@ -383,24 +413,7 @@ Property:                  Data type:                   Description:            
 =========================  ===========================  =======================================================  ========================
 
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-special                    *array of string*            Special treatment for the table. Only used with
-                                                        category parameters.
 
-                                                        **Example:**
-
-                                                        special {
-
-                                                        all = 1
-
-                                                        }
-
-                                                        Table tt_products_cat:
-
-                                                        This will display the products of all categories if the
-                                                        parameter 'tt_products[cat] = 1' is max_note_lengthset.
-                                                        So instead of listing the products of category 1 all
-                                                        products of all categories will be listed.
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 onlyChildsOfCurrent        boolean                      If set, the child items (e.g. subcategories) will only
                                                         be displayed for the current item (category).
