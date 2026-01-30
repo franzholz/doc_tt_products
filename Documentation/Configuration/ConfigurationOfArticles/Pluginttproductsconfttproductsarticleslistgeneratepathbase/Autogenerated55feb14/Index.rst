@@ -245,7 +245,49 @@
         joinedImagesWrap.wrap = <div id=”myimageid”> |</div>
 
 
+.. _configuration-articles-products-categories-images-joined-images-filter:
 
+..  confval:: filter
+    :name:  filter on table records
+    :required: false
+    :type: *array of string*
+
+    Use only table records which apply to a filter on a field or parameter base.
+    *   param ... GET/PUT parameter (value: gp) or predefined
+    *   regexp ... use a regular expression
+    *   where ... use WHERE conditions
+
+   field: name of the field on left and value on right side
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: joinedImagesWrap
+
+        filter {
+            regexp {
+                field {
+                    title = [:alpha:]+[:blank:]+1[:blank:]+
+                }
+            }
+        }
+
+        filter {
+            where {
+                field {
+                    bargain = 1
+                }
+            }
+        }
+
+        filter {
+             param {
+                 cat = gp
+             }
+        }
+
+
+   It will filter all records of the table to use only those where the title has characters and a 1 on the last position.
 
 
 
@@ -255,58 +297,7 @@
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
 
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-filter                     *array of string*            Use only table records which apply to a filter on a
-                                                        field or parameter base.
 
-                                                        type:
-
-                                                        field: name of the field on left and value on right
-                                                        side
-
-                                                        **Example:**
-
-                                                        filter {
-
-                                                        regexp {
-
-                                                        field {
-
-                                                        alpha:]+[:blank:]+1[:blank:]+
-
-                                                        }
-
-                                                        }
-
-                                                        }
-
-                                                        filter {
-
-                                                        where {
-
-                                                        field {
-
-                                                        bargain = 1
-
-                                                        }
-
-                                                        }
-
-                                                        }
-
-                                                        filter {
-
-                                                        param {
-
-                                                        cat = gp
-
-                                                        }
-
-                                                        }
-
-                                                        Will filter all records of the table to use only those
-                                                        where the title has characters and a 1 on the last
-                                                        position.
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 urlparams                  string                       Comma separated list of tt_products URL parameters
                                                         which must have a value. Otherwise no items will be
