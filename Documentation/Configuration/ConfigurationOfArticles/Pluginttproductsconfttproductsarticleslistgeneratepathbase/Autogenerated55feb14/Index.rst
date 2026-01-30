@@ -456,30 +456,13 @@
 
 
 
+
 """"""""""""""""""""""""
 
 =========================  ===========================  =======================================================  ========================
 Property:                  Data type:                   Description:                                             Default:
 =========================  ===========================  =======================================================  ========================
 
-
--------------------------  ---------------------------  -------------------------------------------------------  ------------------------
-fieldIndex                 int+/**Array of integers**   Index for fields with multiple contents. This is only
-                                                        used to define which article images shall overwrite
-                                                        which products images. On the left side you have the
-                                                        index of the image (starting with 1) and on the right
-                                                        the destinamtion index of the image. The marker for the
-                                                        first image would be ###<TABLESHORT>_IMAGE2###.
-
-                                                        fieldIndex {
-
-                                                        image {
-
-                                                        1 = 2
-
-                                                        }
-
-                                                        }
 -------------------------  ---------------------------  -------------------------------------------------------  ------------------------
 controlFields              *array of string*            Control fields                                           newItemDays -> starttime
 
