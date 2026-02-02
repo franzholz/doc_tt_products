@@ -1,12 +1,18 @@
 
-.. _configuration-download-configuration-pluginttproductsdownload10:
+.. _configuration-download-where:
 
-plugin.tt_products.download.10 {
-""""""""""""""""""""""""""""""""
+download.where
+""""""""""""""
 
-where.tt_products = uid = 12
+    **Example:**
 
-}
+    ..  code-block:: typoscript
+        :caption: download where condition
+
+        plugin.tt_products.download.10 {
+            where.tt_products = uid = 12
+        }
+
 
 .. toctree::
     :maxdepth: 2
