@@ -1,7 +1,4 @@
-.. _configuration-control:
 
-Control Configuration:
-^^^^^^^^^^^^^^^^^^^^^^
 
 .. _configuration-control-param:
 
