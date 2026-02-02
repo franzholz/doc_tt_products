@@ -99,6 +99,8 @@ Selectable Payment / Shipping / Handling Items
            14 = 2.5
         }
 
+.. _configuration-payment-shipping-handling-items-price-factor-weight
+
 ..  confval:: priceFactWeight
     :name: Price is calculated from weight of all products - shipping ONLY
     :required: false
@@ -106,6 +108,7 @@ Selectable Payment / Shipping / Handling Items
 
     Will be added to price. The weight is multiplied with this factor to increase the shipping price.
   
+.. _configuration-payment-shipping-handling-items-price-factor-count:
 
 ..  confval:: priceFactCount
     :name: Price is calculated from count of all products.  - shipping ONLY
@@ -115,6 +118,8 @@ Selectable Payment / Shipping / Handling Items
     Will be added to price. The product's count is multiplied with this factor to increase the shipping price.
 
 
+.. _configuration-payment-shipping-handling-items-percentage-of-goods-total:
+
 ..  confval:: percentOfGoodstotal
     :name: Percent of the total of goods prices
     :required: false
@@ -122,6 +127,7 @@ Selectable Payment / Shipping / Handling Items
 
     Price of item, calculated from a percentage of the total amount before payment/shipping
   
+.. _configuration-payment-shipping-handling-items-percentage-of-total-shipping:
 
 ..  confval:: percentOfTotalShipping
     :name: Percent of the total of shipping prices - payment only
@@ -130,6 +136,7 @@ Selectable Payment / Shipping / Handling Items
 
     If set the payment costs are calculated in the percentage of the total product tax price inclusive the shipping tax price.
 
+.. _configuration-payment-shipping-handling-items-credit-cards:
 
 ..  confval:: creditcards
     :name: credit cards  - payment only
@@ -144,6 +151,7 @@ Selectable Payment / Shipping / Handling Items
     *    2 ... Mastercard
     *    3 ... Visa
 
+.. _configuration-payment-shipping-handling-items-credit-card-select:
 
 ..  confval:: creditcardSelect
     :name: credit cards selection - payment only
@@ -204,10 +212,26 @@ Selectable Payment / Shipping / Handling Items
               }
          }
             
+.. _configuration-payment-shipping-handling-items-accounts:
+
+..  confval:: accounts
+    :name: allowed bank account - payment only
+    :required: false
+    :type: boolean
+
+    If set the payment with booking from the entered bank account will be allowed.
+
+.. _configuration-payment-shipping-handling-items-asterisk:
+
+..  confval:: useAsterisk
+    :name: use asterisk - payment only
+    :required: false
+    :type: int+
+    :default: 1
+
+    If set then the account and credit data is replaced with asterisks after having been entered..
 
 
 
 
   
-
-
