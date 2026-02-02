@@ -17,7 +17,6 @@
         }
 
 
-
 .. _configuration-download-where:
 
 ..  confval:: generatePath
@@ -34,7 +33,6 @@
     *    *fieldname*: name of the table field
 
 
-
     **Example:**
 
     ..  code-block:: typoscript
@@ -47,51 +45,37 @@
         }
 
 
+.. _configuration-download-generate-download:
+
+..  confval:: generateDownload
+    :name: generate download file names
+    :required: false
+    :type: array of string
+
+    Pairs of field names and the count of the first characters to be used to form the name of the download file.
+
+    *    type: tablefields, foreigntable (for field of another table)
+    *    field.fieldname: name of the table field
+    *    table: use another table and its configuration to get the image
+    *    uid_local: use the value of this local field of the current table
+    *    uid_foreign: use this field of the foreign table to find a match
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: EXT:my_extension/ext_localconf.php
+
+        DOWNLOAD.generateDownload {
+            type = tablefields
+            field.itemnumber = 6
+        }
+        
+        DOWNLOAD.generateDownload {
+            type = foreigntable
+            table = tt_products_articles
+            uid_local = uid
+            uid_foreign = pid
+            field.itemnumber = 6
+        }
 
 
-================  ==================  ======================================================  ========
-Property:         Data type:          Description:                                            Default:
-================  ==================  ======================================================  ========
-----------------  ------------------  ------------------------------------------------------  --------
-generateDownload  *array of string*   Pairs of field names and the count of the first
-                                      characters to be used to form the name of the download
-                                      file.
-
-                                      type ... tablefields, foreigntable (for field of
-                                      another table)
-
-                                      *field.fieldname ... name of the table field*
-
-                                      table ... use another table and its configuration to
-                                      get the image
-
-                                      uid_local ... use the value of this local field of the
-                                      current table
-
-                                      uid_foreign ... use this field of the foreign table to
-                                      find a match
-
-                                      **Example:**
-
-                                      DOWNLOAD.generateDownload {
-
-                                      type = tablefields
-
-                                      field.itemnumber = 6
-
-                                      }
-
-                                      DOWNLOAD.generateDownload {
-
-                                      type = foreigntable
-
-                                      table = tt_products_articles
-
-                                      uid_local = uid
-
-                                      uid_foreign = pid
-
-                                      field.itemnumber = 6
-
-                                      }
-================  ==================  ======================================================  ========
