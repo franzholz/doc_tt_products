@@ -1,12 +1,17 @@
 
-.. _configuration-control-configuration-pluginttproductscontrollistparam:
+.. _configuration-control-list-param:
 
-plugin.tt_products.control.LIST.param {
-"""""""""""""""""""""""""""""""""""""""
+plugin.tt_products.control.LIST.param
+"""""""""""""""""""""""""""""""""""""
 
-ignore = pp
+    **Example:**
 
-}
+    ..  code-block:: typoscript
+        :caption: control.LIST.param
+
+        plugin.tt_products.control.LIST.param {
+            ignore = pp
+        }
 
 .. toctree::
     :maxdepth: 2
