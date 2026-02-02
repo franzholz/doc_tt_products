@@ -99,6 +99,29 @@ Selectable Payment / Shipping / Handling Items
            14 = 2.5
         }
 
+..  confval:: priceFactWeight
+    :name: Price is calculated from weight of all products - shipping ONLY
+    :required: false
+    :type: double
+
+    Will be added to price. The weight is multiplied with this factor to increase the shipping price.
+  
+
+..  confval:: priceFactCount
+    :name: Price is calculated from count of all products.  - shipping ONLY
+    :required: false
+    :type: double
+
+    Will be added to price. The product's count is multiplied with this factor to increase the shipping price.
+
+
+..  confval:: percentOfGoodstotal
+    :name: Percent of the total of goods prices
+    :required: false
+    :type: double
+
+    Price of item, calculated from a percentage of the total amount before payment/shipping
+  
 
 
 
