@@ -99,12 +99,87 @@ Payment, shipping and handling configuration
 
     If :typoscript'`radio` is true, this string is the 'template' layout for the radio items.
 
-       **Example:**
+       **Default:**
 
     ..  code-block:: typoscript
         :caption: default template in one line
 
         <nobr>###IMAGE### <input type="radio" name="recs[tt_products]['.$pskey.']" onClick="submit()" value="###VALUE###"###CHECKED###> ###TITLE###</nobr><br>
+
+
+.. _configuration-payment-shipping-handling-wrap:
+
+..  confval:: wrap
+    :name: layout for select option
+    :required: false
+    :type: string
+    :default: see below
+
+    If .radio is false, this string wraps the <option> tags in a <select>-tag!
+
+       **Default:**
+
+    ..  code-block:: typoscript
+        :caption: default template in one line
+
+        <select name="recs[tt_products]['.$key.']" onChange="submit()">|</select>
+
+
+.. _configuration-payment-shipping-handling-tax-percentage:
+
+..  confval:: TAXpercentage
+    :name: TAX/VAT percentage
+    :required: false
+    :type: double
+    :default: from global config
+
+    Double value (!) (means, "use . as decimal point")
+    This substitutes priceNoTax. This can be different to the global tax with the same name.
+
+
+       **Example:**
+
+    ..  code-block:: typoscript
+        :caption: default template in one line
+
+        # Danish payment TAX is 25%:
+        payment.TAXpercentage = 25.00
+
+
+.. _configuration-payment-shipping-handling-tax-included:
+
+..  confval:: TAXincluded
+    :name: TAX is included in the prices
+    :required: false
+    :type: boolean
+    :default: from global
+
+    Set this, if TAX is included in the payment/shipping prices
+
+.. _configuration-payment-shipping-handling-lines:
+
+..  confval:: multiple linew
+    :name: see example of the meaning
+    :required: false
+    :type: array of integers
+
+    Enter a line for each option.
+
+       **Example:**
+
+    ..  code-block:: typoscript
+        :caption: default template in one line
+
+        TAXpercentage = 12
+        10.title = Credit card
+        10.image.file = typo3/sysext/cms/tslib/media/logos/dankort.gif
+        10.price =
+        10.percentOfGoodstotal = 0
+        10.calculationScript = EXT:tt_products/pi1/products_comp_calcScript.inc
+        
+        30.title = By mail
+        30.image.file = typo3/sysext/cms/tslib/media/logos/postdanmark.gif
+        30.price = 40
 
 
 
