@@ -78,3 +78,34 @@ Payment, shipping and handling configuration
         }
 
 
+.. _configuration-payment-shipping-handling-radio:
+
+..  confval:: radio
+    :name: radio button layout
+    :required: false
+    :type: boolean
+    :default: 0
+
+    If set, you get radio button layout. If not, selector-box.
+
+
+.. _configuration-payment-shipping-handling-template:
+
+..  confval:: template (radio layout only)
+    :name: layout for radio buttons
+    :required: false
+    :type: string
+    :default: see below
+
+    If :typoscript'`radio` is true, this string is the 'template' layout for the radio items.
+
+       **Example:**
+
+    ..  code-block:: typoscript
+        :caption: default template in one line
+
+        <nobr>###IMAGE### <input type="radio" name="recs[tt_products]['.$pskey.']" onClick="submit()" value="###VALUE###"###CHECKED###> ###TITLE###</nobr><br>
+
+
+
+
