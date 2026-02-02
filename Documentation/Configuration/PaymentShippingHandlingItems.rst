@@ -372,7 +372,71 @@ Selectable Payment / Shipping / Handling Items
         40.excludeHandling = 20,70
 
 
+.. _configuration-payment-shipping-handling-replace-payment:
+
+..  confval:: replacePayment
+    :name: replace payment options - shipping only
+    :required: false
+    :type: list of integers
+
+    This is a list of payment settings which will be overridden if this shipping method has been selected.
+
+    Example:
+    ..  code-block:: typoscript
+        :caption: excludePayment for pickup in store
+
+        40.title = China
+        40.replacePayment.10.title = Payment with China
+        40.replacePayment.10.price = 100
 
 
+. _configuration-payment-shipping-handling-show:
 
-  
+..  confval:: show
+    :name: show this item
+    :required: true
+    :type: boolean
+    :default: 1
+
+    If set, the item is shown  in the list.
+    
+
+. _configuration-payment-shipping-handling-show-limit:
+
+..  confval:: showLimit
+    :name: show with as many items in the basket
+    :required: true
+    :type: double
+    :default: 0
+
+    If set, then this item will only get shown when there is at least this number of products in the basket. 
+    *    0: always show this item
+
+
+. _configuration-payment-shipping-handling-type:
+
+..  confval:: type
+    :name: type of handling - payment only
+    :required: true
+    :type: string
+
+    *    fe_users: the payment can be configured via the fe_users table
+
+. _configuration-payment-shipping-handling-visible-for-group-id:
+
+..  confval:: visibleForGroupID
+    :name: visible for front end group - payment only
+    :required: true
+    :type: string
+
+    This payment method is only available, if a user is logged in and member of this frontend user group
+
+
+. _configuration-payment-shipping-handling-add-required-info-fields:
+
+..  confval:: addRequiredInfoFields
+    :name: additional required fields for a selected payment option - payment only
+    :required: false
+    :type: string
+
+    Additional required fields in the INFO page, if this payment method is selected. Useful for credit card payment.
