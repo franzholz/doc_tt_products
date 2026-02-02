@@ -123,5 +123,91 @@ Selectable Payment / Shipping / Handling Items
     Price of item, calculated from a percentage of the total amount before payment/shipping
   
 
+..  confval:: percentOfTotalShipping
+    :name: Percent of the total of shipping prices - payment only
+    :required: false
+    :type: double
+
+    If set the payment costs are calculated in the percentage of the total product tax price inclusive the shipping tax price.
+
+
+..  confval:: creditcards
+    :name: credit cards  - payment only
+    :required: false
+    :type: string
+
+    Comma separated list of allowed uids for the creditcards.
+    See file :file:`localland_db.xml` about the values. :php:`sys_products_cards.cc_type.I`
+
+    *    0: American Express
+    *    1 ... Diners Club
+    *    2 ... Mastercard
+    *    3 ... Visa
+
+
+..  confval:: creditcardSelect
+    :name: credit cards selection - payment only
+    :required: false
+    :type: array of form elements
+
+    If set, the month and year for the credit card are selectable from select boxes.
+    Subvalues: :typoscript:`mm` (month) and :typoscript:`yy` (year)
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: replaceTAXpercentage depending on sum
+
+        creditcardSelect {
+              mm {
+                label = Month
+                valueArray {
+                  10.label = 1
+                  10.value = 1
+                  20.label = 2
+                  20.value = 2
+                  30.label = 3
+                  30.value = 3
+                  40.label = 4
+                  40.value = 4
+                  50.label = 5
+                  50.value = 5
+                  60.label = 6
+                  60.value = 6
+                  70.label = 7
+                  70.value = 7
+                  80.label = 8
+                  80.value = 8
+                  90.label = 9
+                  90.value = 9
+                  100.label = 10
+                  100.value = 10
+                  110.label = 11
+                  110.value = 11
+                  120.label = 12
+                  120.value = 12
+                }
+              }
+            
+              yy {
+                label = Year
+                type = recs[creditcard][endtime_yy]=select
+                valueArray {
+                  10.label = 2010
+                  10.value = 2010
+                  20.label = 2011
+                  20.value = 2011
+                  30.label = 2012
+                  30.value = 2012
+                  40.label = 2013
+                  40.value = 2013
+              }
+            }
+            
+
+
+
+
+  
 
 
