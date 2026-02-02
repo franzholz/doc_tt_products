@@ -1,6 +1,5 @@
 
-
-.. _configuration-control-configuration:
+.. _configuration-control:
 
 Control configuration
 ---------------------
