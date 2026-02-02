@@ -312,6 +312,65 @@ Selectable Payment / Shipping / Handling Items
           gatewaymode = form
         }
 
+.. _configuration-payment-shipping-handling-handle-url:
+
+..  confval:: handleURL
+    :name: handle url
+    :required: false
+    :type: string
+
+    If set, this handleURL is called instead of the THANKS-url (by PIDthanks) in order to let eg. a handleScript process the information if payment by credit card or so.
+
+.. _configuration-payment-shipping-handling-handle-target:
+
+..  confval:: handleTarget
+    :name: handle form target
+    :required: false
+    :type: string
+
+    Alternative target for the form.
+
+
+.. _configuration-payment-shipping-handling-exclude-payment:
+
+..  confval:: excludePayment
+    :name: exclude payment options - shipping only
+    :required: false
+    :type: string
+
+    This is a list of payment method keys (their numbers) which are not available given a certain delivery form. For instance 
+    if people pick up goods in the store, you don't want them to transfer money or pay online but just order the goods. 
+    So you can exclude those payment methods.
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: excludePayment for pickup in store
+
+        40.title = Pick up in store
+        40.excludePayment = 10,40
+
+
+.. _configuration-payment-shipping-handling-exclude-handling:
+
+..  confval:: excludeHandling
+    :name: exclude handling options - shipping only
+    :required: false
+    :type: string
+
+    This is a list of handling method keys (their numbers) which are not available given a certain delivery form.
+    For instance if people pick up goods in the store, you don't need a packaging for transport. So you can exclude those handling methods
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: excludePayment for pickup in store
+
+        40.title = Pick up in store
+        40.excludeHandling = 20,70
+
 
 
 
