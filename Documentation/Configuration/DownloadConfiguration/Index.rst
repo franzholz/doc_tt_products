@@ -1,5 +1,5 @@
 
-.. _configuration-download-configuration:
+.. _configuration-download:
 
 Download configuration
 ----------------------
