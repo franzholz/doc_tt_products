@@ -262,8 +262,56 @@ Selectable Payment / Shipping / Handling Items
 
     PHP script which is included in a “blank” function and it should be written to manipulate amounts in the internal arrays.
     This script could be used to calculate a special fee regarding a payment/shipping item. For an example of application, 
-    see media/script/products_comp_calcScript.inc which shows you how to raise the final amount with 5.75% of it's
-    own value as to compensate for fees to international credit card organisations. Properties of the calculation script is passed to the function as $conf array.
+    see :file:`media/script/products_comp_calcScript.inc` which shows you how to raise the final amount with 5.75% of it's
+    own value as to compensate for fees to international credit card organisations. Properties of the calculation script is passed to the function as :php:`$conf` array.
+
+
+.. _configuration-payment-shipping-handling-handle-script:
+
+..  confval:: handleScript
+    :name: handle script
+    :required: false
+    :type: resource
+
+    PHP script which is included in a “blank” method called from products_basket() in user_products class when the order is finalized.
+    This function must take care of displaying templates during the payment process with a payment gateway as well as finalizing the order afterwards.
+    See :file:`payment_DIBS.php` in addons_tt_products for an example. A HTML-template file follows.
+    Properties of the handle script is passed to the function as :php:`$conf` array. The content of the variable :php:`$content` is returned as content.
+
+
+.. _configuration-payment-shipping-handling-handle-lib:
+
+..  confval:: handleLib
+    :name: handle library - payment only
+    :required: false
+    :type: string / array
+
+    Name of the TYPO3 library to handle the Payment. Currently you can set only 'transactor' here to use the Payment Transactor Library Extension.
+
+    array values:
+    *    extName: name of the specific Payment Library (SPL) extension
+    *    paymentMethod: method of the SPL (e.g. paymentlib_transcentral_cc_mastercard)
+    *    currency:     currency to use
+    *    templateFile: template file for the display of the payment
+    *    gatewaymode:  mode of the gateway (form / request)
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: transactor for Mastercard
+
+        40.title = Mastercard
+        40.handleLib = transactor
+        40.image.file = EXT:tt_products/res/icons/fe/mastercard.gif
+        40.handleLib {
+          extName = transcentral
+          paymentMethod = paymentlib_transcentral_cc_mastercard
+          Currency = $
+          templateFile = EXT:tt_products/template/paymentlib.tmpl
+          gatewaymode = form
+        }
+
 
 
 
