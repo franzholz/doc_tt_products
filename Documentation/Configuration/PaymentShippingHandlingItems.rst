@@ -232,6 +232,40 @@ Selectable Payment / Shipping / Handling Items
     If set then the account and credit data is replaced with asterisks after having been entered..
 
 
+.. _configuration-payment-shipping-handling-bulkily-addition:
+
+..  confval:: bulkilyAddition
+    :name: bulkily addition - shipping only
+    :required: false
+    :type: int+
+    :default: 1
+
+    Factor to multiply with a product which is bulkily
+
+
+.. _configuration-payment-shipping-handling-items-bulkily-fee-tax:
+
+..  confval:: bulkilyFeeTax
+    :name: bulkily fee tax - shipping only
+    :required: false
+    :type: int+
+
+    Tax fee in percent for shipping of bulkily
+
+
+.. _configuration-payment-shipping-handling-calculation-script:
+
+..  confval:: calculationScript
+    :name: bulkily addition - shipping only
+    :required: false
+    :type: resource
+
+    PHP script which is included in a “blank” function and it should be written to manipulate amounts in the internal arrays.
+    This script could be used to calculate a special fee regarding a payment/shipping item. For an example of application, 
+    see media/script/products_comp_calcScript.inc which shows you how to raise the final amount with 5.75% of it's
+    own value as to compensate for fees to international credit card organisations. Properties of the calculation script is passed to the function as $conf array.
+
+
 
 
   
