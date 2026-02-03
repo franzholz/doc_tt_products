@@ -50,15 +50,89 @@ discountGroupName.
             20.prod.5 = 29.99
         }
 
+    *    discountprice: discount price calculation
+
+    Here the single prices for products are calculated depending on the count of articles, if type=count.
+    The additive settings tells if all the products are counted together even from different lines.
+    Use type = count and prod.type = percent if you want to give a rebate in percentage instead of the total price. 
+    But you must set a sql condition in this case in order not all products will offer this reduction.
+ 
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: discount price calculation with where
+
+        discountprice.50 {
+            type = count
+            sql.where = color = 'rot'
+            prod.type = percent
+            prod.0 = 6
+        }
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: discount price calculation with where
+
+        discountprice.50 {
+            type = count
+            sql.where = color = 'rot'
+            prod.type = percent
+            prod.0 = 6
+        }
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: discount price calculation with where
+
+        discountprice {
+            10.type = count
+            10.field = price
+            10.additive = 0
+            10.sql.where =
+            10.prod.1 = 4.99
+            10.prod.100 = 2.49
+            10.prod.1050 = 2.39
+            20.type = count
+            20.field = price
+            20.sql.where =
+            20.prod.1 = 6.99
+            20.prod.100 = 2.59
+            20.prod.1050 = 2.49
+        }
+
+
+    *    Credit points:
+    This tells you how many credit points someone will get if he buys articles in the shop. 
+    The right values are the percentage of the price of the ordered articles, if type=price.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: credit points
+
+        creditpoints {
+            pricefactor = 0.5
+            10.type = price
+            10.prod.1   = 0.02
+            10.prod.101 = 0.04
+            10.prod.501 = 0.06
+        }
+
+.. _configuration-pricecalc-discountprice-creditpoints-additive:
+
+..  confval:: additive
+    :name: counting together of parts - only for discount price
+    :required: false
+    :type: double
+  
+    Only valid for discount price. If set all the products with any of these discount prices are counted 
+    together to calculate which discount price will apply. If unset only the products of the same price are counted.
 
 
 
-
----------  -----------------------------  -------------------------------------------------------  --------
-additive   double                         Only valid for discount price. If set all the products
-                                          with any of these discount prices are counted together
-                                          to calculate which discount price will apply. If unset
-                                          only the products of the same price are counted.
 ---------  -----------------------------  -------------------------------------------------------  --------
 type       string                         Meaning of the right edge integer which usually gets
                                           calculated: count ... the products count (pricecalc and
