@@ -132,20 +132,24 @@ discountGroupName.
     together to calculate which discount price will apply. If unset only the products of the same price are counted.
 
 
+.. _configuration-pricecalc-discountprice-creditpoints-type:
 
----------  -----------------------------  -------------------------------------------------------  --------
-type       string                         Meaning of the right edge integer which usually gets
-                                          calculated: count ... the products count (pricecalc and
-                                          discountprice only) price ... the total price of all
-                                          articles is used (creditpoints only)
----------  -----------------------------  -------------------------------------------------------  --------
-sql        select                         SQL conditions over the records.
-=========  =============================  =======================================================  ========
+..  confval:: type
+    :name: meaning of the right part
+    :required: false
+    :type: string
+  
+    Meaning of the right edge integer which usually gets calculated:
+    *    count: the products count  (pricecalc and discountprice only)
+    *    price: the total price of all articles is used (creditpoints only)
 
-[tsref:(script).productsLib.payment/(script).productsLib.shipping]
 
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
+.. _configuration-pricecalc-discountprice-creditpoints-sql:
 
-    CreditpointsConfiguration/Index
+..  confval:: sql
+    :name: SQL condition
+    :required: false
+    :type: string
+  
+    SQL conditions over the records
+
