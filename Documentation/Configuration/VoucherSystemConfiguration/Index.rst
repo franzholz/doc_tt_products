@@ -14,8 +14,13 @@ can be anything hard to guess to obtain a price reduction.
 
 **Example:**
 
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
+..  code-block:: typoscript
+    :caption: EXT:my_extension/ext_localconf.php
 
-    Pluginttproductsvoucher/Index
+    plugin.tt_products.voucher {
+       table = my_voucher_table
+    }
+
+
+
+
