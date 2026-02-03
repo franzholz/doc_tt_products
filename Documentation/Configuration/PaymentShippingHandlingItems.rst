@@ -261,9 +261,11 @@ Selectable Payment / Shipping / Handling Items
     :type: resource
 
     PHP script which is included in a “blank” function and it should be written to manipulate amounts in the internal arrays.
-    This script could be used to calculate a special fee regarding a payment/shipping item. For an example of application, 
-    see :file:`media/script/products_comp_calcScript.inc` which shows you how to raise the final amount with 5.75% of it's
-    own value as to compensate for fees to international credit card organisations. Properties of the calculation script is passed to the function as :php:`$conf` array.
+    This script could be used to calculate a special fee regarding a payment/shipping item.
+    It is not recommended to use this feature. Write your own TYPO3 extension instead which is based on hooks.
+    Properties of the calculation script is passed to the function as :php:`$confScript` array.
+    The resulting prices need to be written into the variables :php:`$priceShippingTax` and 
+    :php:`$priceShippingNoTax`.
 
 
 .. _configuration-payment-shipping-handling-handle-script:
