@@ -6,6 +6,10 @@ Known problems
 ==============
 
 
+.. _known-problems-general:
+
+General:
+--------
 
 
 - Always use the version of the Table Library and fh_library as described in the Extension Manager
