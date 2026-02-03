@@ -1,8 +1,8 @@
 
-.. _configuration-voucher-system-configuration:
+.. _configuration-voucher-system:
 
-Voucher System Configuration
-----------------------------
+Voucher System
+--------------
 
 Setup only.
 
@@ -12,14 +12,27 @@ customer who has invited his friend will get a price reduction at his next shopp
 table is set here then this will work only together with the voucher extension and the voucher code
 can be anything hard to guess to obtain a price reduction.
 
-**Example:**
 
-..  code-block:: typoscript
-    :caption: EXT:my_extension/ext_localconf.php
+.. _configuration-voucher-system-table:
 
-    plugin.tt_products.voucher {
-       table = my_voucher_table
-    }
+..  confval:: table
+    :name: table name
+    :required: false
+    :type: string
+
+    Name of the table where the voucher codes are stored. It must have a column fe_users_uid with the uid of the FE user.
+    If this is empty the voucher code will be stored in the fe_users table in the column tt_products_vouchercode.
+
+    **Example:**
+    
+    ..  code-block:: typoscript
+        :caption: define voucher table
+    
+        plugin.tt_products.voucher {
+           table = my_voucher_table
+        }
+
+
 
 
 
