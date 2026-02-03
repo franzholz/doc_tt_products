@@ -41,7 +41,48 @@ Payment / Shipping / Handling Item Prices
         }
 
 
+.. _configuration-payment-shipping-handling-items-prices-calc:
 
+..  confval:: calc
+    :name: price calculations - shipping only
+    :required: false
+    :type: array
+
+    the shippingcalc price calculations to be used. (see chapter shipping cost calculation)
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: price calculation deferred to line 10 of another configuration
+
+        plugin.tt_products.shipping { 
+             10.title = Parcel 
+             10.price.calc {
+                 use = 10
+             }
+        }
+
+
+.. _configuration-payment-shipping-handling-items-prices-no-costs-amount:
+
+..  confval:: noCostsAmount
+    :name: no cost for minimum amount - shipping only
+    :required: false
+    :type: double
+
+    When the total amount for the products reaches this value then no costs will be calculated.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: price calculation deferred to line 10 of another configuration
+
+        plugin.tt_products.shipping { 
+             10.title = Parcel 
+             10.price.type = count 
+             10.price.noCostsAmount = 200 
+             10.price.1 = 1.5 
+        }
 
 
 
