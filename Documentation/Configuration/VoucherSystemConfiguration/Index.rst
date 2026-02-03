@@ -33,6 +33,27 @@ can be anything hard to guess to obtain a price reduction.
         }
 
 
+.. _configuration-voucher-system-amount:
+
+..  confval:: amount
+    :name: price reduction
+    :required: false
+    :type: double
+
+    Price reduction for the voucher if the fe_users table is used.
+
+
+.. _configuration-voucher-system-price:
+
+..  confval:: price
+    :name: price reduction
+    :required: false
+    :type: double
+
+    Price for a voucher when used as a refund for the invitation of a friend	
+
+
+
 
 
 
