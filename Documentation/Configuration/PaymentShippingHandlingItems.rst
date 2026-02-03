@@ -442,3 +442,30 @@ Selectable Payment / Shipping / Handling Items
     :type: string
 
     Additional required fields in the INFO page, if this payment method is selected. Useful for credit card payment.
+
+
+. _configuration-payment-shipping-handling-where-static-countries:
+
+..  confval:: where_static_countries
+    :name: SQL Where for countries - shipping only
+    :required: true
+    :type: string
+
+    Set a SQL WHERE condition to follow for the selected country in the static_countries table of the static_info_tables extension.
+
+    Example:
+    ..  code-block:: typoscript
+        :caption: excludePayment for pickup in store
+
+        plugin.tt_products.shipping { 
+             10.title = Parcel Germany 
+             10.where.static_countries = cn_short_local = 'Deutschland'
+             10.price = 5.9
+             20.title = Parcel EU ###STATICCOUNTRIES_CN_SHORT_EN###
+             20.where.static_countries = cn_eu_member = 1 AND cn_short_local != 'Deutschland'
+             20.price = 8.9
+             30.title = Outside EU ###STATICCOUNTRIES_CN_SHORT_EN###
+             30.where.static_countries = cn_eu_member <> 1
+             30.price = 15
+        }
+
