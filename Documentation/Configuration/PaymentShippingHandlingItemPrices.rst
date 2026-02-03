@@ -16,3 +16,17 @@ Payment / Shipping / Handling Item Prices
     *    price:  the total products price	
 
 
+.. _configuration-payment-shipping-handling-items-prices-where-pid-min-price:
+
+..  confval:: WherePIDMinPrice
+    :name: minimum price - shipping only
+    :required: false
+    :type: int+
+
+    Set a minimum price for shipping if there is an item in the basket which is from the sysfoldepaymentActivityr of this PID.
+    Where 155 is the PID and 7.5 is the minimum price taken for shipping costs when at least one product in the basket comes from the page with that PID.
+
+
+
+
+
