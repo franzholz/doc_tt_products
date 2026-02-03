@@ -20,6 +20,9 @@ Configuration
     BasketConfiguration/Index
     ControlConfiguration/Index
     DownloadConfiguration/Index
+    PaymentShippingAndHandling
+    PaymentShippingHandlingItems
+    PaymentShippingHandlingItemPrices
     PaymentShippingAndHandling/Index
     ShippingCostCalculation/Index
     PricecalcDiscountpriceAnd/Index
