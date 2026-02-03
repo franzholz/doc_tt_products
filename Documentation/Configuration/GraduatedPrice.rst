@@ -1,0 +1,1 @@
+Graduated price configuration
