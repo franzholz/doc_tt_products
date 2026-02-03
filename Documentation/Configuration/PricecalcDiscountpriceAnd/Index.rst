@@ -153,3 +153,56 @@ discountGroupName.
   
     SQL conditions over the records
 
+
+
+.. _configuration-pricecalc-discountprice-creditpoints-creditpoints:
+
+Creditpoints Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+See above for the main configuration of creditpoints.
+
+
+.. _configuration-creditpoints-pricefactor:
+
+..  confval:: pricefactor
+    :name: price factor for creditpoint to price conversion
+    :required: false
+    :type: double
+    :default: 0
+
+    Used to calculate how much money someone will get for his creditpoints. 
+    2 creditpoins will give 1 Euro or the currency of your choice.
+    In this example one creditpoint of a product will have the value of 50 Cent.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: price calculation without where
+
+        creditpoints {
+            pricefactor = 0.5
+        }
+
+
+.. _configuration-creditpoints-mode:
+
+..  confval:: mode
+    :name: mode of treatment for credit points
+    :required: false
+    :type: string
+
+    Normally you must create you HTML template with entry fields for the amount of creditpoins you want to use.
+    Change this to the mode 'auto'. Then all necessary creditpoints wil be used automatically.
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: price calculation without where
+
+        creditpoints {
+            mode = auto
+        }
+
+
