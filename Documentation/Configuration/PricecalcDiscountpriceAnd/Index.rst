@@ -1,9 +1,8 @@
-
-
-.. _configuration-pricecalc-discountprice-and:
+.. _configuration-pricecalc-discountprice-creditpoints:
 
 Pricecalc, discountprice and creditpoints configuration
 -------------------------------------------------------
+
 
 Setup only.
 
@@ -11,10 +10,50 @@ The pricecalc gives you the possibility to build the price sum of products using
 table. The discount price will be used for all users who belong to the group set in
 discountGroupName.
 
-=========  =============================  =======================================================  ========
-Property:  Data type:                     Description:                                             Default:
-=========  =============================  =======================================================  ========
-prod       *two-edged list of integers*
+.. _configuration-pricecalc-discountprice-creditpoints-prod:
+
+..  confval:: type
+    :name: product calculations 
+    :required: false
+    :type: two-edged list of integers
+    :default: 0
+
+    The left edge of integers correspond to lines belonging together, the meaning of the right edge depends
+    on the settings for each line. With pricecalc you will get a rebate only with the listed amounts, 
+    with discount price you will get a rebate also for all amounts in between.
+
+    *    pricecalc: price calculation
+
+    Special Prices for the products. Where 1 product costs 4.99, 2 products will cost 8.99. 
+    With discount price this will form the price for one product. With pricecalc it is the price 
+    for all products together where 1 has cost 4.99 in the products folder. The discountprice overrides 
+    the pricecalc if possible, because this should be cheaper then. A price calculation from here will get replaced if price2 is used.
+    Attention: getDiscountPrice must be 1 if you want to allow it for all customers.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: price calculation without where
+
+        pricecalc {
+            10.type = count
+            10.field = price
+            10.sql.where = 
+            10.prod.1 = 4.99
+            10.prod.2 = 8.99
+            10.prod.5 = 19.99
+            20.type = count
+            20.field = price
+            20.sql.where = 
+            20.prod.1 = 6.99
+            20.prod.2 = 13.98
+            20.prod.5 = 29.99
+        }
+
+
+
+
+
 ---------  -----------------------------  -------------------------------------------------------  --------
 additive   double                         Only valid for discount price. If set all the products
                                           with any of these discount prices are counted together
