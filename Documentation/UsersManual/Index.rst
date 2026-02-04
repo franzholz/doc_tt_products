@@ -9,7 +9,6 @@ Users manual
     :titlesonly:
 
     Note/Index
-    Minibasket/Index
     CalculationScript/Index
     Discount/Index
     LinkForProductsOfTheLast/Index
@@ -22,6 +21,4 @@ Users manual
     GiftCertificates/Index
     ModifyThePageMenu/Index
     YouCanAddTheNumberOf/Index
-    Example/Index
     ProductArticlesWithSpecial/Index
-    EditVariant/Index

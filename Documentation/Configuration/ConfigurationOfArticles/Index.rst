@@ -1,25 +1,26 @@
 
-.. _configuration-configuration-of-articles:
+.. _configuration-of-articles:
 
 Configuration of Articles, Products, Categories, Pages, Addresses and Images
 ----------------------------------------------------------------------------
 
 Setup only.
 
-The last but one/two value will be the name of the view. It can be 'ALL', if it is valid for all
+The last but one/two value will be the name of the view. It can be :typoscript:`ALL`, if it is valid for all
 views..
 
 Views correspond to the code field:
 
-*    SINGLE
-*    LIST
-*    BASKET
+*    :typoscript:`SINGLE`
+*    :typoscript:`LIST`
+*    :typoscript:`BASKET`
 
 additional possible values are
 
-*    EMAIL
-*    PAYMENT
-*    LISTRELATED (LIST for related products)
+*    :typoscript:`EMAIL`
+*    :typoscript:`PAYMENT`
+*    :typoscript:`LISTRELATED` (:typoscript:`LIST`  for related products)
+
 
 **Example:**
 

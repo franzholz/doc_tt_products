@@ -22,7 +22,5 @@ The flexforms in the backup are always activated automatically.
     Installation/Index
     HandlingOfCategories/Index
     HandlingOfImages/Index
-    Important/Index
     TemplateMarkers/Index
     AutomaticCreationOfFrontend/Index
-    ProductProperties/Index

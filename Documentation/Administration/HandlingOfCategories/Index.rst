@@ -10,10 +10,12 @@ There are multiple ways to create a shop. The usual way is to create sysfolders 
 If you want to make bigger shops with hierarchical categories you shall install the
 mbi_products_categories and maybe also the nsb_cat2menu extension. Sponsors will get a working version of mbi_products_categories with which you can assign many categories to one products via a mm-table. Only with this it will be possible to show a product in the list view under multiple categories.
 
-**Example of tt_products/ext_localconf.php:**
+**Example:**
 
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
+..  code-block:: php
+    :caption: tt_products/ext_localconf.php unset pageAsCategory
 
-    Typo3confvarsextconfttproductspageascategory/Index
+    $TYPO3_CONF_VARS['EXTCONF']['tt_products']['pageAsCategory'] = 0;
+
+
+
