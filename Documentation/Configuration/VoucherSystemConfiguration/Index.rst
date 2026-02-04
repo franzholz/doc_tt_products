@@ -24,10 +24,10 @@ can be anything hard to guess to obtain a price reduction.
     If this is empty the voucher code will be stored in the fe_users table in the column tt_products_vouchercode.
 
     **Example:**
-    
+
     ..  code-block:: typoscript
         :caption: define voucher table
-    
+
         plugin.tt_products.voucher {
            table = my_voucher_table
         }
@@ -50,11 +50,6 @@ can be anything hard to guess to obtain a price reduction.
     :required: false
     :type: double
 
-    Price for a voucher when used as a refund for the invitation of a friend	
-
-
-
-
-
+    Price for a voucher when used as a refund for the invitation of a friend
 
 
