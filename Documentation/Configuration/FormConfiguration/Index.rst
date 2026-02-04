@@ -11,20 +11,13 @@ There are several forms which can be configured. Put the code after the form set
 
 **Example:**
 
+    ..  code-block:: typoscript
+        :caption: searchform for the shop
 
-
-.. _configuration-form-configuration-pluginttproductsformsearchdataname:
-
-plugin.tt_products.form.SEARCH.data.name = ShopSearchForm
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+        plugin.tt_products.form.SEARCH.data.name = ShopSearchForm
 
 
 
-.. _configuration-form-configuration-pluginttproductsformsearchdataname-u:
-
-u
-"
 
 ===========  ===========================  ======================================================  =======================
 Property:    Data type:                   Description:                                            Default:
