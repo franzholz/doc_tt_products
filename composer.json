@@ -1,0 +1,16 @@
+{
+   "name": "jambagecom/doc-tt-products",
+   "type": "typo3-cms-extension",
+   "description": "Documentation for tt_products",
+   "license": "GPL-2.0-or-later",
+   "require": {
+        "typo3/cms-core": "^9.5 || ^10.4 || ^11.5 || ^12.4 || ^13.4"
+   },
+   "autoload": {
+   },
+   "extra": {
+      "typo3/cms": {
+         "extension-key": "doc_tt_products"
+      }
+   }
+}
