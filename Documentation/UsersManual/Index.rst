@@ -21,4 +21,3 @@ Users manual
     GiftCertificates/Index
     ModifyThePageMenu/Index
     YouCanAddTheNumberOf/Index
-    ProductArticlesWithSpecial/Index
