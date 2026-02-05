@@ -1,0 +1,36 @@
+
+.. _administration-important:
+
+Important
+^^^^^^^^^
+
+You have to rename the marker :html:`###FIELD_NAME###` to :html:`###FIELD_NAME_BASKET###` in the :html:`BASKET_TEMPLATE`.
+
+Some of the TypoScript settings do not function via the constants field and must be entered in the setup field. Only those settings which can be found using the Constants Editor or in the file "static/css_styled/constants.txt" are valid constants. You must include the "Shop System CSS Styled" into your "static template records" of your TYPO3 template.
+
+A negative value of a product at "in stock" does not have any more a special function. This has been replaced by a checkbox "always on stock".
+
+Change the former input fields for a search into
+
+..  code-block:: html
+    :caption: search term entry
+
+    <INPUT size="30" maxlength="100" type="text" name="sword" value="###SWORD###">
+
+The marker :html:`###SWORDS###` must be changed into :html:`###SWORD###`, and the name attribute into "sword".
+
+
+
+
+.. _administration-important-template-files:
+
+Template files
+^^^^^^^^^^^^^^
+
+You need to make the following settings in the template files for the shop so it will work:
+
+<input type="hidden" name="mode_update" value="1">
+
+<input type="submit" name="products_update" value="update basket">
+
+Put this into your FORM html of the BASKET_TEMPLATE.
