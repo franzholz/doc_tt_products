@@ -16,7 +16,7 @@
         edit-on-github-branch="main"
         interlink-shortcode="jambagecom/tt-products"
         project-home="https://www.ttproducts.de"
-        project-issues="https://jambage.com/kontakt/forum.html"
+        project-issues="https://github.com/franzholz/tt_products/issues"
         project-repository="https://github.com/franzholz/tt_products"
         typo3-core-preferred="stable"
     />

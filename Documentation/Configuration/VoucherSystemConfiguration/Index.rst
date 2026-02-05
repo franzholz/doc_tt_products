@@ -6,12 +6,12 @@ Voucher System
 
 Setup only.
 
-The voucher codes must be stored in a database table. Normally the fe_users table will be used. A
-voucher will be used as the FE user name of the person who has invited another one to the shop. The
-customer who has invited his friend will get a price reduction at his next shopping. If another
-table is set here then this will work only together with the voucher extension and the voucher code
-can be anything hard to guess to obtain a price reduction.
-
+The voucher codes must be stored in a database table. Normally the fe_users table
+will be used. A voucher will be used as the FE user name of the person who has
+invited another one to the shop. The customer who has invited his friend will get a price
+reduction at his next shopping. If another table is set here then this will work only together
+with the voucher extension and the voucher code can be anything hard
+to guess to obtain a price reduction.
 
 .. _configuration-voucher-system-table:
 
@@ -33,7 +33,7 @@ can be anything hard to guess to obtain a price reduction.
         }
 
 
-.. _configuration-voucher-system-amount:
+.. _configuration-voucher-system-price-reduction:
 
 ..  confval:: amount
     :name: price reduction
@@ -46,7 +46,7 @@ can be anything hard to guess to obtain a price reduction.
 .. _configuration-voucher-system-price:
 
 ..  confval:: price
-    :name: price reduction
+    :name: system price
     :required: false
     :type: double
 

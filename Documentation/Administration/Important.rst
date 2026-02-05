@@ -1,5 +1,8 @@
 
+.. _administration-important:
 
+Important
+^^^^^^^^^
 
 You have to rename the marker :html:`###FIELD_NAME###` to :html:`###FIELD_NAME_BASKET###` in the :html:`BASKET_TEMPLATE`.
 

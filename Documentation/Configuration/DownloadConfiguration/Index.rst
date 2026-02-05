@@ -8,14 +8,14 @@ Setup only.
 
 You can configure the generation of downloads here.
 
-**Example:**
-
-
 
 .. _configuration-download-where:
 
-download.where
-""""""""""""""
+..  confval:: download.where
+    :name: SQL where for download
+    :required: false
+    :type: array of string
+
 
     **Example:**
 
@@ -27,14 +27,6 @@ download.where
         }
 
 
-
-
-.. _configuration-download-where:
-
-..  confval:: where
-    :name: SQL where condition
-    :required: false
-    :type: array of string
 
     SQL where condition about the table tt_products.
 
@@ -48,7 +40,7 @@ download.where
         }
 
 
-.. _configuration-download-where:
+.. _configuration-download-generated-path:
 
 ..  confval:: generatePath
     :name: generate path

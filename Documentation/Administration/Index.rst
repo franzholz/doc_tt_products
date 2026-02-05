@@ -23,4 +23,5 @@ The flexforms in the backup are always activated automatically.
     HandlingOfCategories/Index
     TemplateMarkers/Index
     AutomaticCreationOfFrontend/Index
-    Important
+    ,/Important
+    TypoScript/Setup

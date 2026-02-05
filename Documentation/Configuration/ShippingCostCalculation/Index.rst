@@ -7,14 +7,16 @@ Shipping Cost Calculation shippingcalc / handlingcalc
 
 Setup only.
 
-The calculation of the shipping costs can be even more complex. Even the order of the calculation is
-relevant. This is necessary if you use two different calculation modes simultaneously. The highest
-price will be used by default.
+The calculation of the shipping costs can be even more complex.
+Even the order of the calculation is relevant.
+This is necessary if you use two different calculation modes simultaneously.
+The highest price will be used by default.
+
 
 .. _configuration-shipping-cost-calculation-type:
 
 ..  confval:: type
-    :name: type of calculation 
+    :name: type of calculation
     :required: false
     :type: string
 
@@ -40,7 +42,7 @@ price will be used by default.
 .. _configuration-shipping-cost-calculation-sql:
 
 ..  confval:: sql
-    :name: SQL condition
+    :name: calculation SQL condition
     :required: false
     :type: string
 

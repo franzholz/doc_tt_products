@@ -1,25 +1,22 @@
-
 .. _configuration-of-articles:
 
-Configuration of Articles, Products, Categories, Pages, Addresses and Images
-----------------------------------------------------------------------------
-
+Articles, Products, Categories, Pages, Addresses and Images
+-----------------------------------------------------------
 Setup only.
 
-The last but one/two value will be the name of the view. It can be :typoscript:`ALL`, if it is valid for all
-views..
+The last but one/two value will be the name of the view. It can be :typoscript:`ALL`, if it is valid for all views.
 
 Views correspond to the code field:
 
-*    :typoscript:`SINGLE`
-*    :typoscript:`LIST`
-*    :typoscript:`BASKET`
+*   :typoscript:`SINGLE`
+*   :typoscript:`LIST`
+*   :typoscript:`BASKET`
 
 additional possible values are
 
-*    :typoscript:`EMAIL`
-*    :typoscript:`PAYMENT`
-*    :typoscript:`LISTRELATED` (:typoscript:`LIST`  for related products)
+*   :typoscript:`EMAIL`
+*   :typoscript:`PAYMENT`
+*   :typoscript:`LISTRELATED` (:typoscript:`LIST`  for related products)
 
 
 **Example:**
@@ -27,8 +24,8 @@ additional possible values are
 ..  code-block:: typoscript
     :caption: generatePath
 
-    plugin.tt_products.conf.tt_products_articles.LIST.generatePath.base = fileadmin/images
-    plugin.tt_products.conf.tt_products.LIST.orderBy = sorting
+   plugin.tt_products.conf.tt_products_articles.LIST.generatePath.base = fileadmin/images
+   plugin.tt_products.conf.tt_products.LIST.orderBy = sorting
 
 
 .. _configuration-articles-products-categories-images-generate-path:
@@ -48,10 +45,11 @@ additional possible values are
     *    type:     tablefields
     *    fieldname name of the table field
 
+
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: EXT:my_extension/ext_localconf.php
+        :caption: generatePath for all codes
 
         ALL.generatePath {
             type = tablefields
@@ -70,20 +68,21 @@ additional possible values are
     Pairs of field names and the count of the first characters to be used
     to form the name of the image file.
 
-    *    type: tablefields, foreigntable (for field of another table)
-    *    prefix ... a prefix to the image filename
-         *field.fieldname ... name of the table field*
-    *    separator ... separator in the filename between the
+    *   type: tablefields, foreigntable (for field of another table)
+    *   prefix ... a prefix to the image filename
+    *   field.fieldname ... name of the table field*
+    *   separator ... separator in the filename between the
                 matched beginning of the filename and the end part of the filename.
-    *    table ... use another table and its configuration to get the image
-    *    uid_local ... use the value of this local field of the current table
-    *    uid_foreign ... use this field of the foreign table to find a match
+    *   table ... use another table and its configuration to get the image
+    *   uid_local ... use the value of this local field of the current table
+    *   uid_foreign ... use this field of the foreign table to find a match
 
     The file names will be like :file: 41000_1.jpg . A product will
     have multiple images if there are more files with a
     similar file name, e.g. :file: 41000_2.jpg  .
 
-        **Example:**
+
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: select the image by filenames
@@ -135,7 +134,7 @@ additional possible values are
     :type: int+
     :default: 50
 
-   The maximum number of items displayed on a list view.
+    The maximum number of items displayed on a list view.
 
 
 .. _configuration-articles-products-categories-images-limit-image:
@@ -146,7 +145,8 @@ additional possible values are
     :type: int+
     :default: 1
 
-   The maximum number of images for one item displayed on the view.
+    The maximum number of images for one item displayed on the view.
+
 
     **Example:**
 
@@ -159,7 +159,7 @@ additional possible values are
 .. _configuration-articles-products-categories-images-order-by:
 
 ..  confval:: orderBy
-    :name: Max items displayed
+    :name: SQL Order By
     :required: true
     :type: string
     :default: sorting
@@ -262,7 +262,7 @@ additional possible values are
 .. _configuration-articles-products-categories-images-joined-images-wrap:
 
 ..  confval:: joinedImagesWrap
-    :name:  image cObject
+    :name:  wrap around joined images
     :required: false
     :type: stdWrap
 
@@ -285,12 +285,12 @@ additional possible values are
     :required: false
     :type: *array of string*
 
-    Use only table records which apply to a filter on a field or parameter base.
-    *   param ... GET/PUT parameter (value: gp) or predefined
-    *   regexp ... use a regular expression
-    *   where ... use WHERE conditions
+        Use only table records which apply to a filter on a field or parameter base.
+        *   param:  GET/PUT parameter (value: gp) or predefined
+        *   regexp: use a regular expression
+        *   where:  use WHERE conditions
+        *   field:  name of the field on left and value on right side
 
-   field: name of the field on left and value on right side
 
     **Example:**
 
@@ -320,7 +320,7 @@ additional possible values are
         }
 
 
-   It will filter all records of the table to use only those where the title has characters and a 1 on the last position.
+    It will filter all records of the table to use only those where the title has characters and a 1 on the last position.
 
 
 .. _configuration-articles-products-categories-images-urlparams:
@@ -413,15 +413,15 @@ additional possible values are
 .. _configuration-articles-products-categories-images-special:
 
 ..  confval:: special
-    :name:  filter on table records
+    :name:  special treatment
     :required: false
     :type: *array of string*
 
     Special treatment for the table. Only used with category parameters.
     *   all: This uid stands for all uids. 'all=all' means that all uids are always allowed. The tt_products[cat] parameter is ignored.
     *   no:  This uid shall never be considered
+    * field: name of the field on left and value on right side
 
-   field: name of the field on left and value on right side
 
     **Example:**
 
@@ -433,7 +433,7 @@ additional possible values are
         }
 
 
-    Table tt_products_cat:
+    Table :php:`tt_products_cat`:
     This will display the products of all categories if the parameter :php:`tt_products[cat] = 1'`is :typoscript:`max_note_lengthset`.
     So instead of listing the products of category 1 all products of all categories will be listed.
 
@@ -452,7 +452,7 @@ additional possible values are
 .. _configuration-articles-products-categories-images-root-childs-of-current:
 
 ..  confval:: rootChildsOfCurrent
-    :name:  show only the childs of the current category
+    :name:  show only the childs of the root categories
     :required: false
     :type: boolean
 
@@ -464,7 +464,7 @@ additional possible values are
 .. _configuration-articles-products-categories-images-field:
 
 ..  confval:: field
-    :name:  cObject for a field
+    :name:  cObject IMAGE for a field
     :required: false
     :type: *array of cObject*
 
@@ -503,9 +503,9 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: field
 
-    controlFields {
-        newItemDays = starttime
-    }
+        controlFields {
+            newItemDays = starttime
+        }
 
 
 .. _configuration-articles-products-categories-images-display-fields:
@@ -517,14 +517,15 @@ additional possible values are
 
     Definitions how to display some fields.
 
+
     **Example:**
 
     ..  code-block:: typoscript
         :caption: field
 
-    displayFields {
-        note = RTEcssText
-    }
+        displayFields {
+            note = RTEcssText
+        }
 
 
 
@@ -541,11 +542,11 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: field
 
-    conf.tt_products.ALL {
-        fieldLink {
-            datasheet.ATagParams=class="datasheetClass"
+        conf.tt_products.ALL {
+            fieldLink {
+                datasheet.ATagParams=class="datasheetClass"
+            }
         }
-    }
 
 
 .. _configuration-articles-products-categories-images-control-feusers:
@@ -563,10 +564,10 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: field
 
-    fe_users {
-         date_of_birth.period.y = 12
-         where = uid IN (12, 24)
-    }
+        fe_users {
+            date_of_birth.period.y = 12
+            where = uid IN (12, 24)
+        }
 
 
 
@@ -588,20 +589,20 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: field
 
-    view.sortSelect {
-         1 {
-            label = sort by
-            type = select
-            attribute {
-               onchange=submit();
-            }
-            valueArray {
-              10.label = title
-              10.value = 1
-              10.field = title
+        view.sortSelect {
+            1 {
+                label = sort by
+                type = select
+                attribute {
+                onchange=submit();
+                }
+                valueArray {
+                10.label = title
+                10.value = 1
+                10.field = title
+                }
             }
         }
-    }
 
 
     **Example:**
@@ -609,17 +610,17 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: field
 
-    view.browser = div2007
-    view.browser {
-           browseLinksWrap = <div class="browseLinksWrap">|</div>
-           disabledLinkWrap = <span class="disabledLinkWrap">|</span>
-           inactiveLinkWrap = <span class="inactiveLinkWrap">|</span>
-           activeLinkWrap = <span class="activeLinkWrap">|</span>
-           disabledNextLinkWrap = <span class="pagination-next">|</span>
-           inactiveNextLinkWrap = <span class="pagination-next">|</span>
-           disabledPreviousLinkWrap = <span class="pagination-previous">|</span>
-           inactivePreviousLinkWrapn = <span class="pagination-previous">|</span>
-    }
+        view.browser = div2007
+        view.browser {
+            browseLinksWrap = <div class="browseLinksWrap">|</div>
+            disabledLinkWrap = <span class="disabledLinkWrap">|</span>
+            inactiveLinkWrap = <span class="inactiveLinkWrap">|</span>
+            activeLinkWrap = <span class="activeLinkWrap">|</span>
+            disabledNextLinkWrap = <span class="pagination-next">|</span>
+            inactiveNextLinkWrap = <span class="pagination-next">|</span>
+            disabledPreviousLinkWrap = <span class="pagination-previous">|</span>
+            inactivePreviousLinkWrapn = <span class="pagination-previous">|</span>
+        }
 
 
 .. _configuration-articles-products-categories-images-subpart:
@@ -639,9 +640,9 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: field
 
-    subpart.ITEM_CATEGORY {
-        show = default
-    }
+        subpart.ITEM_CATEGORY {
+            show = default
+        }
 
 
 .. _configuration-articles-products-categories-images-marks:
@@ -658,14 +659,14 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: table based markers
 
-    marks {
-        mymarker = COA
-        mymarker {
-            10 = TEXT
-            10.value = ###PRODUCT_TITLE###  in sizes  ###PRODUCT_SIZE###
-            10.wrap = Title: - | -
+        marks {
+            mymarker = COA
+            mymarker {
+                10 = TEXT
+                10.value = ###PRODUCT_TITLE###  in sizes  ###PRODUCT_SIZE###
+                10.wrap = Title: - | -
+            }
         }
-    }
 
 
 
@@ -683,10 +684,10 @@ additional possible values are
     ..  code-block:: typoscript
         :caption: tag marker
 
-    tagmark {
-        parents = 1
-        prefix = cat
-    }
+        tagmark {
+            parents = 1
+            prefix = cat
+        }
 
 
 .. _configuration-articles-products-categories-images-hide-id:

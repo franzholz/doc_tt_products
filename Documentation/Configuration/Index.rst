@@ -10,6 +10,7 @@ Configuration
 
     Faq/Index
     Files/Index
+    BasketConfiguration
     Description/Index
     Reference/Index
     DisplayModesCode/Index
@@ -26,4 +27,5 @@ Configuration
     OrderConfirmation/Index
     BillAndDelivery/Index
     TrackingConfiguration/Index
+    GraduatedPrice
     ErrorConfiguration/Index

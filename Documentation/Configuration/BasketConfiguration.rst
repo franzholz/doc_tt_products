@@ -1,4 +1,9 @@
-.. _configuration-basket-basketminprice:
+.. _configuration-basket
+
+
+Basket
+------
+
 
 ..  confval:: basket.minPrice
     :name: minimum allowed price
@@ -8,6 +13,7 @@
     minimum price which the products must reach to get a permission to buy them. E.g. only products of a total
     price of at least 250 shall be accepted. The products which have the 'no minimum price checked, will not be
     counted here.
+
 
     **Example:**
 
@@ -19,7 +25,8 @@
             collect = goodstotal
             value = 250
         }
- 
+
+
 .. _configuration-basket-maxprice:
 
 ..  confval:: basket.maxPrice
@@ -28,11 +35,11 @@
     :type: array of string
 
      maximum price which the products may reach to get a permission to buy them.
-     E.g. only products of a total price of at most 2500 shall be accepted. 
+     E.g. only products of a total price of at most 2500 shall be accepted.
      The products which have the 'no maximum price' checked, will not be counted here.
 
     **Example:**
-     
+
     ..  code-block:: typoscript
         :caption: example basket.maxPrice
 
@@ -42,6 +49,7 @@
             value = 2500
         }
 
+
 .. _configuration-basket-basket-view:
 
 ..  confval:: basket.view
@@ -50,7 +58,7 @@
     :type: array of string
     :default: showAmount = basket
 
-    basket view configuration  
+    basket view configuration
     showAmount … basket … if the amount of items in the basket is shown with each product in single and list view.
 
     *   0     … if the default amount with each product is always zero (needed for caching)
@@ -72,7 +80,7 @@
         10.name = Radiobox1
         10.params =
     }
-     
+
 
 .. _configuration-basket-activity:
 
@@ -93,7 +101,7 @@
         *   memo: If the MEMO for the items shall be cleared.
 
     **Example:**
-     
+
     ..  code-block:: typoscript
         :caption: example basket.activity
 
@@ -125,7 +133,7 @@
         * round.discount ... rounding format for the discount from the discount field
 
     **Example:**
-     
+
     ..  code-block:: typoscript
         :caption: example basket.round
 
@@ -133,7 +141,5 @@
               round = .XX
               round.discount = .XX
         }
-
-
 
 

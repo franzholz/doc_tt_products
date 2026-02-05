@@ -64,7 +64,7 @@ Selectable Payment / Shipping / Handling Items
            see below for additional parameters
 
    Price of item, including or excluding VAT, depends on TAXincluded.
-   You use integers to specify the minimal number of items for which the price is valid. 
+   You use integers to specify the minimal number of items for which the price is valid.
    6 items and more will cost 5.8 in this example.
 
     **Example:**
@@ -83,10 +83,10 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double of integers
 
-    If set as double, the general TAXpercentage will be overridden by this value. 
-    You can alternatively use it as an array. You give the tax to replace on the left side, 
+    If set as double, the general TAXpercentage will be overridden by this value.
+    You can alternatively use it as an array. You give the tax to replace on the left side,
     and the new tax value on the right side. This will replace all taxes of items of zero tax
-    by a tax of 8% and it will replace all items of 14% with a tax of 2,5%  instead. 
+    by a tax of 8% and it will replace all items of 14% with a tax of 2,5%  instead.
     Use this to set different taxes for different countries.
 
     **Example:**
@@ -107,7 +107,7 @@ Selectable Payment / Shipping / Handling Items
     :type: double
 
     Will be added to price. The weight is multiplied with this factor to increase the shipping price.
-  
+
 .. _configuration-payment-shipping-handling-items-price-factor-count:
 
 ..  confval:: priceFactCount
@@ -126,7 +126,7 @@ Selectable Payment / Shipping / Handling Items
     :type: double
 
     Price of item, calculated from a percentage of the total amount before payment/shipping
-  
+
 .. _configuration-payment-shipping-handling-items-percentage-of-total-shipping:
 
 ..  confval:: percentOfTotalShipping
@@ -196,7 +196,7 @@ Selectable Payment / Shipping / Handling Items
                   120.value = 12
                 }
               }
-            
+
               yy {
                 label = Year
                 type = recs[creditcard][endtime_yy]=select
@@ -211,7 +211,7 @@ Selectable Payment / Shipping / Handling Items
                   40.value = 2013
               }
          }
-            
+
 .. _configuration-payment-shipping-handling-items-accounts:
 
 ..  confval:: accounts
@@ -256,7 +256,7 @@ Selectable Payment / Shipping / Handling Items
 .. _configuration-payment-shipping-handling-calculation-script:
 
 ..  confval:: calculationScript
-    :name: bulkily addition - shipping only
+    :name: calculation script - shipping only
     :required: false
     :type: resource
 
@@ -264,7 +264,7 @@ Selectable Payment / Shipping / Handling Items
     This script could be used to calculate a special fee regarding a payment/shipping item.
     It is not recommended to use this feature. Write your own TYPO3 extension instead which is based on hooks.
     Properties of the calculation script is passed to the function as :php:`$confScript` array.
-    The resulting prices need to be written into the variables :php:`$priceShippingTax` and 
+    The resulting prices need to be written into the variables :php:`$priceShippingTax` and
     :php:`$priceShippingNoTax`.
 
 
@@ -340,8 +340,8 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: string
 
-    This is a list of payment method keys (their numbers) which are not available given a certain delivery form. For instance 
-    if people pick up goods in the store, you don't want them to transfer money or pay online but just order the goods. 
+    This is a list of payment method keys (their numbers) which are not available given a certain delivery form. For instance
+    if people pick up goods in the store, you don't want them to transfer money or pay online but just order the goods.
     So you can exclude those payment methods.
 
 
@@ -401,7 +401,7 @@ Selectable Payment / Shipping / Handling Items
     :default: 1
 
     If set, the item is shown  in the list.
-    
+
 
 . _configuration-payment-shipping-handling-show-limit:
 
@@ -411,7 +411,7 @@ Selectable Payment / Shipping / Handling Items
     :type: double
     :default: 0
 
-    If set, then this item will only get shown when there is at least this number of products in the basket. 
+    If set, then this item will only get shown when there is at least this number of products in the basket.
     *    0: always show this item
 
 
@@ -457,8 +457,8 @@ Selectable Payment / Shipping / Handling Items
     ..  code-block:: typoscript
         :caption: excludePayment for pickup in store
 
-        plugin.tt_products.shipping { 
-             10.title = Parcel Germany 
+        plugin.tt_products.shipping {
+             10.title = Parcel Germany
              10.where.static_countries = cn_short_local = 'Deutschland'
              10.price = 5.9
              20.title = Parcel EU ###STATICCOUNTRIES_CN_SHORT_EN###

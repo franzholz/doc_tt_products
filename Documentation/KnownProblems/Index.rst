@@ -26,3 +26,11 @@ General:
   You should set the pid_list to inform the shop where to search for the products.
 - **Pay attention to all legal claims of all the countries where you ship the goods to!**
 - The plugin does not produce any output See the checklist above.
+
+
+.. toctree::
+    :maxdepth: 2
+    :titlesonly:
+
+    Checklist/Index
+
