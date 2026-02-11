@@ -5,6 +5,11 @@
 Handling of Categories
 ----------------------
 
+
+list-of-page-types-spacer:
+
+`ReST Cheat sheet: Using reStructuredText in TYPO3 Documentation <typo3/reference-coreapi:list-of-page-types-sysfolder>`_
+
 There are multiple ways to create a shop. The usual way is to create sysfolders for the products and lists and single sites where the products are displayed. If you want to build a bigger shop with TYPO3, this will become a little bit unhandy.
 
 If you want to make bigger shops with hierarchical categories you shall install the
