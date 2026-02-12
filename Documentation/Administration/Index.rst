@@ -19,7 +19,6 @@ The flexforms in the back end are always activated automatically.
     :maxdepth: 2
     :titlesonly:
 
-    Installation/Index
     HandlingOfCategories/Index
     TemplateMarkers/Index
     AutomaticCreationOfFrontend/Index
