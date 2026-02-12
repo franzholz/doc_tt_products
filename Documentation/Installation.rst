@@ -33,5 +33,7 @@ the Extension Manager.
 Recommended Third Party Extensions
 ==================================
 
-This extension works best in union with static_info_tables, static_info_tables_taxes,
-agency, rtehtmlarea, mbi_products_categories, transactor and taxajax.
+This extension works best in union with :composer:`sjbr/static-info-tables`, :composer:`jambagecom/static-info-tables-taxes`,
+:composer:`jambagecom/agency`, :composer:`typo3/cms-rte-ckeditor`, :composer:`jambagecom/mbi-products-categories`,
+:composer:`jambagecom/transactor` and :composer:`jambagecom/taxajax`.
+
