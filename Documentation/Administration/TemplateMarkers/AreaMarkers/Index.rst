@@ -71,9 +71,6 @@ MEMO_NOT_LOGGED_IN                        error message that use has not been lo
 ----------------------------------------  -------------------------------------------------------  -----
 ORDERS_LIST_TEMPLATE                      display of the order list
 ----------------------------------------  -------------------------------------------------------  -----
-TRACKING_EMAIL_GIFTNOTIFY_TEMPLATE        notification to the gift recipient in the order
-                                          tracking
-----------------------------------------  -------------------------------------------------------  -----
 TRACKING_ENTER_NUMBER
 ----------------------------------------  -------------------------------------------------------  -----
 TRACKING_WRONG_NUMBER
