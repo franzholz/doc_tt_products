@@ -51,15 +51,15 @@ EMAIL_PLAINTEXT_TEMPLATE                  the email notification text
 
                                           The first line is the subject.
 ----------------------------------------  -------------------------------------------------------  -----
-EMAIL_NEWUSER_TEMPLATE                    email after creation of new frontend use
+EMAIL_NEWUSER_TEMPLATE                    email after creation of new front end use
 ----------------------------------------  -------------------------------------------------------  -----
 ITEM_LIST_TEMPLATE                        the listing of products on the starting LIST page
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SEARCH
+ITEM_SEARCH                               
 ----------------------------------------  -------------------------------------------------------  -----
 ITEM_SEARCH_EMPTY
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY
+ITEM_SINGLE_DISPLAY                       single
 ----------------------------------------  -------------------------------------------------------  -----
 ITEM_SINGLE_DISPLAY_NOT_IN_STOCK          single display when item is not in stock
 ----------------------------------------  -------------------------------------------------------  -----
