@@ -23,5 +23,5 @@ The flexforms in the back end are always activated automatically.
     HandlingOfCategories/Index
     TemplateMarkers/Index
     AutomaticCreationOfFrontend/Index
-    ,/Important
+    Important
     TypoScript/Setup
