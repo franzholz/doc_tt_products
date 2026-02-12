@@ -6,7 +6,7 @@
 Where to get help
 =================
 
-Find an answer or ask a new question in the `official TYPO3 forum <https://www.jambage.com/kontakt/forum/shop-system>>`_
+Find an answer or ask a new question in the `official TYPO3 forum <https://www.jambage.com/kontakt/forum/shop-system>`_
 or via email `Contact <https://www.jambage.com/kontakt>`_.
 
 ..  _report-issues:
