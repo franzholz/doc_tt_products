@@ -20,9 +20,10 @@ They are generated in the folder :file:`fileadmin/data/bill`.
     Defines the behaviour for the generation of the bill/delivery sheet.
     *    auto: Generation will be done when the order is finalized.
 
-    Example:
+    **Example:**
+
     ..  code-block:: typoscript
-        :caption: automatice generation of a bill
+        :caption: automise generation of a bill without a delivery sheet
     
         plugin.tt_products.bill {
            generation = auto
@@ -52,10 +53,14 @@ They are generated in the folder :file:`fileadmin/data/bill`.
     :required: true
     :type: string / arry
 
-    Name of the PHP library to handle the PDF generation. Currently you can set only 'PhpWord' here.
+    Name of the PHP library to handle the PDF generation. Currently you can set only :typoscript:`PhpWord` here.
 
-    Example:
-    bill.handleLib =  PhpWord
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: automise generation of a bill without a delivery sheet
+    
+        bill.handleLib =  PhpWord
     
     array values:
     path ... file path to the library, relative to the TYPO3 directory
