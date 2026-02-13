@@ -10,17 +10,17 @@ are valid constants.
 
 
 
-
-
 .. _administration-important-template-files:
 
 Template files
 ^^^^^^^^^^^^^^
 
-You need to make the following settings in the template files for the shop so it will work:
+You need to have the following lines in the template files for the shop so the change of the number of items in the basket will work:
 
-<input type="hidden" name="mode_update" value="1">
+..  code-block:: html
+    :caption: required hidden input elements for the basket
 
-<input type="submit" name="products_update" value="update basket">
+    <input type="hidden" name="mode_update" value="1">
+    <input type="submit" name="products_update" value="update basket">
 
-Put this into your FORM html of the BASKET_TEMPLATE.
+Put this into your :html:`FORM` html of the BASKET_TEMPLATE.
