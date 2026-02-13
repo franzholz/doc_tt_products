@@ -43,8 +43,8 @@ Additional possible values are
 
     Pairs of field names and the count of the first characters to be used to
     form the name of the image file.
-    *    type:     tablefields
-    *    fieldname name of the table field
+    *    type:      tablefields
+    *    fieldname: name of the table field
 
 
     **Example:**
@@ -94,6 +94,12 @@ Additional possible values are
 
             separator = _
         }
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: select the image path by the article table
 
         ALL.generateImage {
             type = foreigntable
