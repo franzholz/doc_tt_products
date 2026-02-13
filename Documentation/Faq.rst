@@ -16,7 +16,7 @@ Frequently Asked Questions (FAQ)
 
         See chapter :ref:`installation`.
 
-    ..  accordion-item:: How to can I include the TypoScript?
+    ..  accordion-item:: How can I include the TypoScript?
         :name: configuration
         :header-level: 2
 
