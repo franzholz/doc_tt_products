@@ -66,9 +66,10 @@ They are generated in the folder :file:`fileadmin/data/bill`.
     path ... file path to the library, relative to the TYPO3 directory
     rendererLibrary.path ... file path to the helper library to generate formats which the main library cannot handle
 
-    Example:
+    **Example:**
+
     ..  code-block:: typoscript
-        :caption: automatice generation of a bill by PhpWord
+        :caption: automatice generation of a bill by PhpWord by a master branch
         
         bill.handleLib = PhpWord
         bill.handleLib {
