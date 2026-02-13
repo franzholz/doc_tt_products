@@ -4,9 +4,9 @@
 Important
 ^^^^^^^^^
 
-Some of the TypoScript settings do not function via the constants field and must be entered in the setup field. Only those settings which can be found using the Constants Editor or in the file "static/css_styled/constants.txt" are valid constants. You must include the "Shop System CSS Styled" into your "static template records" of your TYPO3 template.
-
-A negative value of a product at "in stock" does not have any more a special function. This has been replaced by a checkbox "always on stock".
+Some of the TypoScript settings do not function via the constants area and can be entered in the setup area only. 
+Only those settings which can be found using the Constants Editor or in the file :file:`static/css_styled/constants.txt`
+are valid constants. 
 
 Change the former input fields for a search into
 
