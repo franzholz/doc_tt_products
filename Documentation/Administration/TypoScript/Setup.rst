@@ -7,15 +7,11 @@ TypoScript Setup
 
 
 
-
-
 Properties
 ==========
 
 ..  contents::
     :local:
-
-
 
 ..  _setup-template-file:
 
@@ -31,19 +27,24 @@ templateFile
     See example in 'addons_tt_products/Resources/Private/Templates/collection/products_template.tmpl'
     You can also specify a CODE and ERROR for error cases.
     (siehe display mode)
+
     **Example:**
 
     ..  code-block::typoscript
-        :caption:  plugin.tt_products.templateFile
+        :caption:  set templateFile
 
-    plugin.tt_products {
-        templateFile = EXT:/addons_tt_products/Resources/Private/Templates/collection/example_template_bill_de.tmpl
-    }
+        plugin.tt_products {
+            templateFile = EXT:/addons_tt_products/Resources/Private/Templates/collection/example_template_bill_de.tmpl
+        }
 
-    plugin.tt_products {
-        templateFile.LIST = EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html
-    }
+    **Example:**
 
+    ..  code-block::typoscript
+        :caption:  set templateFile.LIST
+
+        plugin.tt_products {
+            templateFile.LIST = EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html
+        }
 
 
 ..  _template-suffix:
