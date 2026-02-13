@@ -6,30 +6,7 @@ Control configuration
 
 Setup only.
 
-You can configure the behaviour of the views here. Insert the CODE after control.
-
-**Example:**
-
-.. _configuration-control-list-param:
-
-plugin.tt_products.control.LIST.param
-"""""""""""""""""""""""""""""""""""""
-
-    **Example:**
-
-    ..  code-block:: typoscript
-        :caption: control.LIST.param
-
-        plugin.tt_products.control.LIST.param {
-            ignore = pp
-        }
-
-.. toctree::
-    :maxdepth: 2
-    :titlesonly:
-
-
-
+You can configure the behaviour of the control for the views here. Insert the CODE after :typoscript:`control`.
 
 
 .. _configuration-control-param:
@@ -49,7 +26,7 @@ plugin.tt_products.control.LIST.param
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: control param
+        :caption: control param to ignore the parameter pp, use the backPID and read the item from the cat parameter
 
         param {
             ignore = pp
