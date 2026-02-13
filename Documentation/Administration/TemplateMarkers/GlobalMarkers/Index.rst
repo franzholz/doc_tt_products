@@ -4,7 +4,7 @@
 global markers
 ^^^^^^^^^^^^^^
 
-The global markers are allowed to be used with all subparts. You can even define new markers.
+The global markers are allowed to be used within all subparts. You can even define your own markers.
 
 **Example:**
 
@@ -23,15 +23,6 @@ The global markers are allowed to be used with all subparts. You can even define
 
 
 .. _administration-template-markers-global-markers-pluginttproductsmarks:
-
-: ::
-
-	plugin.tt_products.marks {
-	  my_marker = Come soon back to our shop!
-	}
-
-
-###MY_MARKER###
 
 .. container:: ts-properties
 
