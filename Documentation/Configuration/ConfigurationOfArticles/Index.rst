@@ -1,10 +1,10 @@
-.. _configuration-of-articles:
+.. _configuration-articles-products-categories-images:
 
 Articles, Products, Categories, Pages, Addresses and Images
 -----------------------------------------------------------
 Setup only.
 
-The last but one/two value will be the name of the view. It can be :typoscript:`ALL`, if it is valid for all views.
+The last but one/two value will be the name of the view. :typoscript:`ALL` means it is valid for all views.
 
 Views correspond to the code field:
 
@@ -12,7 +12,7 @@ Views correspond to the code field:
 *   :typoscript:`LIST`
 *   :typoscript:`BASKET`
 
-additional possible values are
+Additional possible values are
 
 *   :typoscript:`EMAIL`
 *   :typoscript:`PAYMENT`
@@ -24,9 +24,10 @@ additional possible values are
 ..  code-block:: typoscript
     :caption: generatePath
 
-   plugin.tt_products.conf.tt_products_articles.LIST.generatePath.base = fileadmin/images
-   plugin.tt_products.conf.tt_products.LIST.orderBy = sorting
-
+   plugin.tt_products.conf {
+       tt_products_articles.LIST.generatePath.base = fileadmin/images
+       tt_products.LIST.orderBy = sorting
+   }
 
 .. _configuration-articles-products-categories-images-generate-path:
 
@@ -69,17 +70,17 @@ additional possible values are
     to form the name of the image file.
 
     *   type: tablefields, foreigntable (for field of another table)
-    *   prefix ... a prefix to the image filename
-    *   field.fieldname ... name of the table field*
-    *   separator ... separator in the filename between the
-                matched beginning of the filename and the end part of the filename.
-    *   table ... use another table and its configuration to get the image
-    *   uid_local ... use the value of this local field of the current table
-    *   uid_foreign ... use this field of the foreign table to find a match
+    *   prefix: a prefix to the image filename
+    *   field.fieldname: name of the table field*
+    *   separator: separator in the filename between the
+                   matched beginning of the filename and the end part of the filename.
+    *   table:     use another table and its configuration to get the image
+    *   uid_local: use the value of this local field of the current table
+    *   uid_foreign: use this field of the foreign table to find a match
 
-    The file names will be like :file: 41000_1.jpg . A product will
+    The file names will be like :file:`41000_1.jpg`. A product will
     have multiple images if there are more files with a
-    similar file name, e.g. :file: 41000_2.jpg  .
+    similar file name, e.g. :file:`41000_2.jpg` .
 
 
     **Example:**
