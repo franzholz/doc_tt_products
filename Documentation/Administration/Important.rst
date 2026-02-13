@@ -8,14 +8,6 @@ Some of the TypoScript settings do not function via the constants area and can b
 Only those settings which can be found using the Constants Editor or in the file :file:`static/css_styled/constants.txt`
 are valid constants. 
 
-Change the former input fields for a search into
-
-..  code-block:: html
-    :caption: search term entry
-
-    <INPUT size="30" maxlength="100" type="text" name="sword" value="###SWORD###">
-
-The marker :html:`###SWORDS###` must be changed into :html:`###SWORD###`, and the name attribute into "sword".
 
 
 
