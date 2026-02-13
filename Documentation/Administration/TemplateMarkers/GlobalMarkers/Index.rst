@@ -7,7 +7,6 @@ global markers
 The global markers are allowed to be used within all subparts on any position. You can define your own markers.
 
 
-+++++++++++++++++++++++++++++++++++
 	.. configuration_marks:
 
 ..  confval:: marks
