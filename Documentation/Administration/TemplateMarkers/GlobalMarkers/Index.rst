@@ -4,23 +4,7 @@
 global markers
 ^^^^^^^^^^^^^^
 
-The global markers are allowed to be used within all subparts. You can even define your own markers.
-
-**Example:**
-
-..  code-block:: typoscript
-    :caption: define marker MY_MARKER
-
-    plugin.tt_products.marks {
-        my_marker = Come soon back to our shop!
-    }
-
-
-..  code-block:: html
-    :caption: use HTML template marker MY_MARKER
-
-    ###MY_MARKER###
-
+The global markers are allowed to be used within all subparts on any position. You can define your own markers.
 
 
 +++++++++++++++++++++++++++++++++++
@@ -33,6 +17,15 @@ The global markers are allowed to be used within all subparts. You can even defi
 
     self defined markers
 
+	**Example:**
+	
+	..  code-block:: typoscript
+	    :caption: define marker MY_MARKER
+	
+	    plugin.tt_products.marks {
+	        my_marker = Come soon back to our shop!
+	    }
+	
 
 	.. configuration_marker_file:
 
@@ -45,5 +38,17 @@ The global markers are allowed to be used within all subparts. You can even defi
 	 The marker file with the translations
 
 	 **Example: (Setup)**:
-	 :typoscript:`plugin.tt_products.markerFile = EXT:myext/marker/fr.locallang.xlf` t3tsref:data-type-resource
+
+	..  code-block:: html
+	    :caption: use HTML template marker MY_MARKER
+	
+	    ###MY_MARKER###
+
+
+	 **Example: (Setup)**:
+
+	..  code-block:: typoscript
+	    :caption: markerFile for translations
+	
+		plugin.tt_products.markerFile = EXT:myext/marker/fr.locallang.xlf
 
