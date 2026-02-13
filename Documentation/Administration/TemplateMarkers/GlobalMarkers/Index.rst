@@ -1,5 +1,5 @@
 
-.. _administration-template-markers-global-markers:
+.. _administration-global-markers:
 
 global markers
 ^^^^^^^^^^^^^^
@@ -22,43 +22,28 @@ The global markers are allowed to be used within all subparts. You can even defi
     ###MY_MARKER###
 
 
-.. _administration-template-markers-global-markers-pluginttproductsmarks:
 
-.. container:: ts-properties
++++++++++++++++++++++++++++++++++++
+	.. configuration_marks:
 
-	=========================== ===================================== ====================
-	Property                    Data type                             Default
-	=========================== ===================================== ====================
-	marks_
-	markerFile_
-	Constants: file.markerFile
-	=========================== ===================================== ====================
+..  confval:: marks
+    :name: global-marks
+    :required: false
+    :type: array
 
-	.. _tsMarks:
-
-marks
-"""""
-.. container:: table-row
-
-   Property
-         marks
-   Data type
-         array
-   Description
-         self defined markers
+    self defined markers
 
 
-	.. _tsMarkerFile:
+	.. configuration_marker_file:
 
-markerFile
-""""""""""
-.. container:: table-row
+..  confval:: markerFile
+    :name: global-marks
+    :required: false
+    :type: array
 
-   Property
-         markerFile **Constants:** file.markerFile
-   Data type
-         resource / **array of string**
-   Description
-         The marker file with the translations. (v2.9)
-         **Example: (Setup)**:
-         :typoscript:`plugin.tt_products.markerFile = EXT:myext/marker/fr.locallang.xlf` t3tsref:data-type-resource
+    **Constants:**:  :typoscript:`file.markerFile`
+	 The marker file with the translations
+
+	 **Example: (Setup)**:
+	 :typoscript:`plugin.tt_products.markerFile = EXT:myext/marker/fr.locallang.xlf` t3tsref:data-type-resource
+
