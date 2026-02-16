@@ -10,7 +10,7 @@ The global markers are allowed to be used within all subparts on any position. Y
 	.. configuration_marks:
 
 ..  confval:: marks
-    :name: global-marks
+    :name: global marks
     :required: false
     :type: array
 
@@ -29,7 +29,7 @@ The global markers are allowed to be used within all subparts on any position. Y
 	.. configuration_marker_file:
 
 ..  confval:: markerFile
-    :name: global-marks
+    :name: global marker file
     :required: false
     :type: array
 
