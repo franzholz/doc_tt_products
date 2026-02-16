@@ -23,7 +23,7 @@ products_template_htmlmail.tmpl              '.._htmlmail.tmpl' is a HTML-wrap f
 example_template_bill_de.tmpl                bananaguard.de template with examples for bill and
                                              delivery sheet in German
 -------------------------------------------  -----------------------------------------------------
-product_detail.tmpl l                        Example templates for gift certificates, creditpoints
+product_detail.tmpl                          Example templates for gift certificates, creditpoints
 product_proefpakketten.tmpl                  and voucher system in Dutch
 shop-a-box.tmpl producten.tmpl  
 -------------------------------------------  -----------------------------------------------------
