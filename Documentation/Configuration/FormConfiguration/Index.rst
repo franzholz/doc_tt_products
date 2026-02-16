@@ -65,6 +65,12 @@ There are several forms which can be configured. Put the code after the form set
         }
 
 
+..  confval:: image
+    :name: image
+    :type: IMAGE
+
+     Image to display
+
 ..  confval:: imageImport
     :name: data array
     :type: *array of fields*  
