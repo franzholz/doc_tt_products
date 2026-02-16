@@ -71,6 +71,7 @@ There are several forms which can be configured. Put the code after the form set
 
      Image to display
 
+
 ..  confval:: imageImport
     :name: data array
     :type: *array of fields*  
@@ -89,10 +90,6 @@ There are several forms which can be configured. Put the code after the form set
             10.prod.2 = delft-round.gif  
         }
 
-
------------  ---------------------------  ------------------------------------------------------  -----------------------
-image        IMAGE                        Image to display.
------------  ---------------------------  ------------------------------------------------------  -----------------------
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
 layout       string                       This defines how the input field and other markers are
                                           placed towards each other.
