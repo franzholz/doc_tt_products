@@ -23,14 +23,15 @@ templateFile
 ------------
 
 ..  confval:: templateFile
-    :name: templateFile
+    :name: template file
     :type: resource
 
     Same as :typoscript:`file.templateFile` from Constants.
     The template-file.
-    See example in 'addons_tt_products/Resources/Private/Templates/collection/products_template.tmpl'
-    You can also specify a CODE and ERROR for error cases.
-    (siehe display mode)
+    See example in :composer:`addons_tt_products` :file:`Resources/Private/Templates/collection/products_template.tmpl`
+    You can also specify a :typoscript:`CODE` and :typoscript:`ERROR` for error cases.
+    (see display mode)
+
     **Example:**
 
     ..  code-block::typoscript
@@ -52,10 +53,10 @@ templateSuffix
 --------------
 
 ..  confval:: templateSuffix
-    :name: template-suffix
+    :name: template suffix
     :type: string
 
-    This suffix is appended to all template's major subparts.
+    This suffix is appended to all templates' major subparts.
 
 
 ..  _fe:
@@ -64,10 +65,10 @@ fe
 --
 
 ..  confval:: fe
-    :name: fe
+    :name: front end output
     :type: boolean
 
-    If FE output is used. You can turn the FE output off.
+    If front end output is used. You can turn off the front end output.
     This is useful for a callback script (see CODE SCRIPT).
     No template file is needed in this case.
 
@@ -79,11 +80,11 @@ pid_list
 --------
 
 ..  confval:: pid_list
-    :name: pid-list
+    :name: pid list
     :type: list of page_id's
 
     The pids from where to fetch categories, products and so on.
-    Default is the current page. Accepts multiple pid's separated by comma.
+    Default is the current page. Accepts multiple pids separated by comma.
 
 
 ..  _default-code:
@@ -92,7 +93,7 @@ defaultCode
 -----------
 
 ..  confval:: defaultCode
-    :name: default-code
+    :name: default code
     :type: string
 
     The default code (see below) if the value is empty. By default it is not set
