@@ -1,18 +1,18 @@
 
 .. _configuration-display-modes-code:
 
-Display Modes (CODE)
+Display Modes / CODE
 --------------------
 
 Here comes a list of the possible display types of the plugin.
 
-Code to define, what the script does. In the backend these entries are made using flexforms instead
-of the Codes (capital letters). Use the codefields ony in TypoScript setup.
+**Code** to define, what the script does. In the back end flexforms these entries are shown as **display modes** instead
+of the Codes (in capital letters). Use the codefields only in setup.
 
 =======================================  ========================  =======================================================
 Display Mode:                            CODE:                     Description:
 =======================================  ========================  =======================================================
-Products: list                           LIST                      isting of the products
+Products: list                           LIST                      listing of the products
 ---------------------------------------  ------------------------  -------------------------------------------------------
 Products: list gifts                     LISTGIFTS                 listing of gifts
 ---------------------------------------  ------------------------  -------------------------------------------------------
@@ -95,7 +95,7 @@ DAM Categories: menu                     MENUDAMCAT                DAM category 
 ---------------------------------------  ------------------------  -------------------------------------------------------
 DAM Categories: single                   SINGLEDAMCAT              DAM category single view
 ---------------------------------------  ------------------------  -------------------------------------------------------
-Articles: list                           LISTARTICLES              listing of articles
+Articles: list                           LISTARTICLES              list of articles
 ---------------------------------------  ------------------------  -------------------------------------------------------
 Addresses: list                          LISTAD                    list of addresses
 ---------------------------------------  ------------------------  -------------------------------------------------------
