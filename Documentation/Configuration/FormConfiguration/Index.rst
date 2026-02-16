@@ -76,9 +76,9 @@ There are several forms which can be configured. Put the code after the form set
     :name: data array
     :type: *array of fields*  
 
-     Fetch the images corresponding to values.
+    Fetch the images corresponding to values.
 
-      **Example:**
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: select for for adddresses
@@ -90,16 +90,25 @@ There are several forms which can be configured. Put the code after the form set
             10.prod.2 = delft-round.gif  
         }
 
------------  ---------------------------  ------------------------------------------------------  -----------------------
-layout       string                       This defines how the input field and other markers are
-                                          placed towards each other.
 
-                                          **Example:**
+..  confval:: layout
+    :name: layout
+    :type: string 
 
-                                          This substitutes the "###INPUT###" with the input tag
-                                          and the "###IMAGE###' with image data.
+    This defines how the input field and other markers are placed towards each other.
 
-                                          <tr><td>###INPUT###</td><td>###IMAGE###</td></tr>
+      **Example:**
+    
+      This substitutes the "###INPUT###" with the input tag
+      and the "###IMAGE###' with image data.
+    
+      ..  code-block:: html
+          :caption: substitution with input tag and image data
+      
+           <tr><td>###INPUT###</td><td>###IMAGE###</td></tr>
+
+
+
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
 panel        *array of string*            only for ORDERS.
 
