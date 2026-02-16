@@ -6,7 +6,7 @@ Error configuration
 
 Setup only.
 
-You can set the behaviour of tt_products in case of errors. The file pi1/locallang.xml contains the
+You can set the behaviour of tt_products in case of errors. The file :file:`Resources/Private/Language/Pi1/locallang.xlf` contains the
 list of tags for the error messages.
 
 
