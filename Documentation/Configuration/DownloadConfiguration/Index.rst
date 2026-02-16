@@ -28,7 +28,7 @@ You can configure the generation of downloads here.
 
 
 
-    SQL where condition about the table tt_products.
+    SQL where condition about the table :php:`tt_products`.
 
     **Example:**
 

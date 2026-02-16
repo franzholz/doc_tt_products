@@ -1,9 +1,9 @@
 
 
-.. _administration-template-markers-single-markers:
+.. _administration-template-markers-single-markers-datasheet-for-the-product:
 
-single markers
-^^^^^^^^^^^^^^
+datasheet for the product
+"""""""""""""""""""""""""
 
 **Example**  for a wrap:
 
@@ -14,10 +14,10 @@ single markers
 
 
 
-.. _administration-template-markers-single-markers-datasheet-for-the-product:
+.. _administration-template-markers-single-markers:
 
-datasheet for the product
-"""""""""""""""""""""""""
+single markers
+^^^^^^^^^^^^^^
 
 =====================================================  =============  ==============================================================================  ==========================================
 Marker:                                                Type:          Description:                                                                    Area:

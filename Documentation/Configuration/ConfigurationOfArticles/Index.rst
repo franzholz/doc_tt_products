@@ -1,4 +1,4 @@
-.. _configuration-of-articles:
+.. _configuration-articles-products-categories-images:
 
 Articles, Products, Categories, Pages, Addresses and Images
 -----------------------------------------------------------
@@ -24,8 +24,12 @@ additional possible values are
 ..  code-block:: typoscript
     :caption: generatePath
 
-   plugin.tt_products.conf.tt_products_articles.LIST.generatePath.base = fileadmin/images
-   plugin.tt_products.conf.tt_products.LIST.orderBy = sorting
+   plugin.tt_products {
+       conf {
+           tt_products_articles.LIST.generatePath.base = fileadmin/images
+           tt_products.LIST.orderBy = sorting
+       }
+   }
 
 
 .. _configuration-articles-products-categories-images-generate-path:
@@ -698,7 +702,7 @@ additional possible values are
     :type: *int+*
 
     The ID of the item for which the whole shop plugin gets hidden (invisible). Use this with care!
-    The shop plugin will not be shown in the FE if the table's url parameter is set to one of these
+    The shop plugin will not be shown in the front end if the table's url parameter is set to one of these
     elements of the comma separated list of values.
 
 
