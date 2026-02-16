@@ -97,34 +97,33 @@ There are several forms which can be configured. Put the code after the form set
 
     This defines how the input field and other markers are placed towards each other.
 
-      **Example:**
+    **Example:**
     
-      This substitutes the "###INPUT###" with the input tag
-      and the "###IMAGE###' with image data.
+    This substitutes the "###INPUT###" with the input tag
+    and the "###IMAGE###' with image data.
     
-      ..  code-block:: html
-          :caption: substitution with input tag and image data
+    ..  code-block:: html
+        :caption: substitution with input tag and image data
       
-           <tr><td>###INPUT###</td><td>###IMAGE###</td></tr>
+        <tr><td>###INPUT###</td><td>###IMAGE###</td></tr>
 
 
+..  confval:: panel
+    :name: panel only for ORDERS
+    :type: *array of string*  
 
------------  ---------------------------  ------------------------------------------------------  -----------------------
-panel        *array of string*            only for ORDERS.
+    Inserts a panel with various clickable buttons.
 
-                                          Inserts a panel with various clickable buttons.
+    **Example:**
+        
+    ..  code-block:: html
+        :caption: substitution with input tag and image data
+      
+        form.ORDERS.panel.input.10 {
+            marker = button1
+            label = Sort by title:
+            name = Button1
+            params =
+        }
 
-                                          **Example:**
 
-                                          form.ORDERS.panel.input.10 {
-
-                                          marker = button1
-
-                                          label = Sort by title:
-
-                                          name = Button1
-
-                                          params =
-
-                                          }
-===========  ===========================  ======================================================  =======================
