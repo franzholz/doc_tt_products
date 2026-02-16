@@ -28,7 +28,7 @@ templateFile
 
     Same as :typoscript:`file.templateFile` from Constants.
     The template-file.
-    See example in :composer:`addons_tt_products` :file:`Resources/Private/Templates/collection/products_template.tmpl`
+    See example in :composer:`jambagecom/addons_tt_products` :file:`Resources/Private/Templates/collection/products_template.tmpl`
     You can also specify a :typoscript:`CODE` and :typoscript:`ERROR` for error cases.
     (see display mode)
 
