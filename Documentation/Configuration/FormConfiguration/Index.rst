@@ -73,7 +73,7 @@ There are several forms which can be configured. Put the code after the form set
 
 
 ..  confval:: imageImport
-    :name: data array
+    :name: image import
     :type: *array of fields*  
 
     Fetch the images corresponding to values.
