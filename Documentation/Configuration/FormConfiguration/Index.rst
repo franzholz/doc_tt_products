@@ -34,28 +34,37 @@ There are several forms which can be configured. Put the code after the form set
     :default: *depends on codefield*
 
     Every entry in the dataArray is numeric and has four
-    main properties, **label** , **type** , **value**  and
-    **required** . 'label' and 'value' have stdWrap
-    properties.
+    main properties
+
+    *   **label** 
+    *   **type**
+    *   **value**
+    *   **required**
+
+    'label' and 'value' have stdWrap properties.
     
     params ... Put additional parameters here.
 
     **Example:**
 
-    form.SELECTAD.dataArray {
-        10.label =
-        10.type = tt_products[address]=select
-        10.params = onchange="submit();"
-    }
+    ..  code-block:: typoscript
+        :caption: select for for adddresses
 
-      Enhancement for the selection of variants with
-      selectColor, … specification.
+        form.SELECTAD.dataArray {
+            10.label =
+            10.type = tt_products[address]=select
+            10.params = onchange="submit();"
+        }
 
-      form.ALL.selectColor.dataArray {
+      Enhancement for the selection of variants with selectColor, … specification.
 
-      10.params = onchange="submit();"
+    ..  code-block:: typoscript
+        :caption: select for for adddresses
 
-      }
+        form.ALL.selectColor.dataArray {
+            10.params = onchange="submit();"
+        }
+
 
 
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
