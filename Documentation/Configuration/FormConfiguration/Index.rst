@@ -1,6 +1,6 @@
 
 
-.. _configuration-form-configuration:
+.. _configuration-form:
 
 Form configuration
 ------------------
@@ -8,6 +8,17 @@ Form configuration
 Setup only.
 
 There are several forms which can be configured. Put the code after the form settings.
+
+
+..  confval:: data
+    :name: data of form
+    :type: string/->stdWrap
+    :default: *depends on codefield*
+
+    This is the data that sets up the form.     
+
+    *   name: name of the form. 
+    *   If empty, default values will be used.
 
 **Example:**
 
@@ -17,43 +28,36 @@ There are several forms which can be configured. Put the code after the form set
         plugin.tt_products.form.SEARCH.data.name = ShopSearchForm
 
 
+..  confval:: dataArray
+    :name: data array
+    :type: *[array of form elements]*
+    :default: *depends on codefield*
+
+    Every entry in the dataArray is numeric and has four
+    main properties, **label** , **type** , **value**  and
+    **required** . 'label' and 'value' have stdWrap
+    properties.
+    
+    params ... Put additional parameters here.
+
+    **Example:**
+
+    form.SELECTAD.dataArray {
+        10.label =
+        10.type = tt_products[address]=select
+        10.params = onchange="submit();"
+    }
+
+      Enhancement for the selection of variants with
+      selectColor, … specification.
+
+      form.ALL.selectColor.dataArray {
+
+      10.params = onchange="submit();"
+
+      }
 
 
-===========  ===========================  ======================================================  =======================
-Property:    Data type:                   Description:                                            Default:
-===========  ===========================  ======================================================  =======================
-data         string/->stdWrap             This is the data that sets up the form.                 *depends on codefield*
-
-                                          name: name of the form. If empty, default values will
-                                          be used.
------------  ---------------------------  ------------------------------------------------------  -----------------------
-dataArray    *[array of form elements]*   Every entry in the dataArray is numeric and has four
-                                          main properties, **label** , **type** , **value**  and
-                                          **required** . 'label' and 'value' have stdWrap
-                                          properties.
-
-                                          params ... Put additional parameters here.
-
-                                          **Example:**
-
-                                          form.SELECTAD.dataArray {
-
-                                          10.label =
-
-                                          10.type = tt_products[address]=select
-
-                                          10.params = onchange="submit();"
-
-                                          }
-
-                                          Enhancement for the selection of variants with
-                                          selectColor, … specification.
-
-                                          form.ALL.selectColor.dataArray {
-
-                                          10.params = onchange="submit();"
-
-                                          }
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
 image        IMAGE                        Image to display.
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
