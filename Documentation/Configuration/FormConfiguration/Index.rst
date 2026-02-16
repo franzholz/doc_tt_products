@@ -31,7 +31,6 @@ There are several forms which can be configured. Put the code after the form set
 ..  confval:: dataArray
     :name: data array
     :type: *[array of form elements]*
-    :default: *depends on codefield*
 
     Every entry in the dataArray is numeric and has four
     main properties
@@ -66,25 +65,28 @@ There are several forms which can be configured. Put the code after the form set
         }
 
 
+..  confval:: imageImport
+    :name: data array
+    :type: *array of fields*  
+
+     Fetch the images corresponding to values.
+
+      **Example:**
+
+    ..  code-block:: typoscript
+        :caption: select for for adddresses
+
+        form.ALL.selectColor.imageImport {
+            10.sql.where =
+            10.prod.0 = earth-round.gif   
+            10.prod.1 = marigold-round.gif
+            10.prod.2 = delft-round.gif  
+        }
+
 
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
 image        IMAGE                        Image to display.
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
-imageImport  *array of fields*            Fetch the images corresponding to values.
-
-                                          **Example:**
-
-                                          form.ALL.selectColor.imageImport {
-
-                                          10.sql.where =
-
-                                          10.prod.0 = earth-round.gif
-
-                                          10.prod.1 = marigold-round.gif
-
-                                          10.prod.2 = delft-round.gif
-
-                                          }
 -----------  ---------------------------  ------------------------------------------------------  -----------------------
 layout       string                       This defines how the input field and other markers are
                                           placed towards each other.
