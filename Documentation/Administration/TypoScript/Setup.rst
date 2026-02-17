@@ -114,14 +114,48 @@ code
 
 ..  confval:: code
     :name: code
-    :type: string
+    :type: string /stdWrap
+    :default: HELP
 
-    The default code (see below) if the value is empty. By default it is not set
-    and a help screen will appear. You should not set anything here.
+    see chapter 'display mode'
 
-    **Example:**
 
-    ..  code-block:: typoscript
-        :caption:  defaultCode = HELP
+..  _default-article-id:
 
-        defaultCode = HELP
+defaultArticleID
+----------------
+
+..  confval:: defaultArticleID
+    :name: default article ID
+    :type: int+
+
+    The default article uid number for the single display is used when the link to the script did not contain a 'tt_products[article]' parameter.
+
+..  _default-product-id:
+
+defaultProductID
+----------------
+
+..  confval:: defaultProductID
+    :name: default product ID
+    :type: int+
+
+    The default product uid number for the single display is used when the link to the script did not contain a 'tt_products[product]' parameter.
+    Set this default value when you get an error message like: 
+    “GET/POST var 'tt_products[product]' was missing.”
+
+
+..  _default-category-id:
+
+defaultCategoryID
+-----------------
+
+..  confval:: defaultCategoryID
+    :name: default category ID
+    :type: int+
+
+    The default category uid number for the list display is used when the link to the script did not contain a 'tt_products[cat]' parameter. 
+    Use this if you want only products of this category displayed in the list view as a default.
+
+
+
