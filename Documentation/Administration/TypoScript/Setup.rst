@@ -590,6 +590,82 @@ substitutePagetitle
     *   3   : bread crumb
 
 
+..  _css:
 
+CSS
+---
+
+..  confval:: CSS
+    :name: Cascading Stylesheets settings
+    :type: *see below*
+
+    Set the CSS files.
+
+
+..  _js:
+
+js
+--
+
+..  confval:: js
+    :name: JavaScript settings
+    :type: *see below*
+
+    Set the JavaScript files.
+
+
+..  _conf:
+
+conf
+----
+
+..  confval:: conf
+    :name: table settings
+    :type: *see below*
+
+    configurations of the tables	
+
+
+..  _no_single_view_on_list:
+
+NoSingleViewOnList
+------------------
+
+..  confval:: NoSingleViewOnList
+    :name: no single view on list
+    :type: boolean
+    :default: 0 (false)
+
+    Usually you get the link to the single item view on the display page of the LIST code. 
+    If you however want to create your own pages for single view with SINGLE code you must set this to 1.
+
+
+..  _item_marker_array:
+
+itemMarkerArrayFunc
+-------------------
+
+..  confval:: itemMarkerArrayFunc
+    :name: no single view on list
+    :type: *function-name*
+    :default: 0 (false)
+
+    Every time a product is displayed be it in the basket, list or single view, the method :php:`getItemMarkerArray()` 
+    in :php:`tx_ttproducts_marker` is called. This function fills in and returns an array, so called markerArray(),
+    with key/values for template substitution.
+    If you enter a valid function name here (see datatype 'function-name' for details!) that array will be passed
+    to that function as the second parameter. The first parameter will be the TypoScript properties to :php:`itemMarkerArrayFunc`.
+
+    Parent PHP-Object reference:
+    .parentObj property is hardcoded to be a reference to the calling user_products object (PHP).
+    
+    **Example:**
+    (provided that a function or class is included!)
+
+..  code-block:: typoscript
+    :caption: define an itemMarkerArrayFunc
+
+    itemMarkerArrayFunc = user_addFieldsMarkerArr
+    itemMarkerArrayFunc.simpleOption = 1
 
 
