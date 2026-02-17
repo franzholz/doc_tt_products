@@ -3,14 +3,13 @@
 Pricecalc, discountprice and creditpoints configuration
 -------------------------------------------------------
 
-
 Setup only.
 
 The pricecalc gives you the possibility to build the price sum of products using a calculation
 table. The discount price will be used for all users who belong to the group set in
-discountGroupName.
+:typoscript:`discountGroupName`.
 
-.. _configuration-pricecalc-discountprice-creditpoints-prod:
+.. _configuration-pricecalc-discountprice-prod:
 
 ..  confval:: type
     :name: product calculations 
@@ -19,16 +18,16 @@ discountGroupName.
     :default: 0
 
     The left edge of integers correspond to lines belonging together, the meaning of the right edge depends
-    on the settings for each line. With pricecalc you will get a rebate only with the listed amounts, 
+    on the settings for each line. With :typoscript:`pricecalc` you will get a rebate only with the listed amounts, 
     with discount price you will get a rebate also for all amounts in between.
 
     *    pricecalc: price calculation
 
     Special Prices for the products. Where 1 product costs 4.99, 2 products will cost 8.99. 
-    With discount price this will form the price for one product. With pricecalc it is the price 
-    for all products together where 1 has cost 4.99 in the products folder. The discountprice overrides 
-    the pricecalc if possible, because this should be cheaper then. A price calculation from here will get replaced if price2 is used.
-    Attention: getDiscountPrice must be 1 if you want to allow it for all customers.
+    With discount price this will form the price for one product. With :typoscript:`pricecalc` it is the price 
+    for all products together where 1 has cost 4.99 in the products folder. The :typoscript:`discountprice` overrides 
+    the :typoscript:`pricecalc` if possible, because this should be cheaper then. A price calculation from here will get replaced if price2 is used.
+    Attention: :typoscript:`getDiscountPrice` must be 1 if you want to allow it for all customers.
 
     **Example:**
 
@@ -53,8 +52,8 @@ discountGroupName.
     *    discountprice: discount price calculation
 
     Here the single prices for products are calculated depending on the count of articles, if type=count.
-    The additive settings tells if all the products are counted together even from different lines.
-    Use type = count and prod.type = percent if you want to give a rebate in percentage instead of the total price. 
+    The :typoscript:`additive` settings tells if all the products are counted together even from different lines.
+    Use :typoscript:`type = count` and :typoscript:`prod.type = percent` if you want to give a rebate in percentage instead of the total price. 
     But you must set a sql condition in this case in order not all products will offer this reduction.
  
     **Example:**
@@ -69,15 +68,14 @@ discountGroupName.
             prod.0 = 6
         }
 
-
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: discount price calculation with where
+        :caption: discount price calculation for red colored products
 
         discountprice.50 {
             type = count
-            sql.where = color = 'rot'
+            sql.where = color = 'red'
             prod.type = percent
             prod.0 = 6
         }
@@ -85,7 +83,7 @@ discountGroupName.
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: discount price calculation with where
+        :caption: discount price calculation without where
 
         discountprice {
             10.type = count
@@ -105,6 +103,7 @@ discountGroupName.
 
 
     *    Credit points:
+
     This tells you how many credit points someone will get if he buys articles in the shop. 
     The right values are the percentage of the price of the ordered articles, if type=price.
 
@@ -121,7 +120,7 @@ discountGroupName.
             10.prod.501 = 0.06
         }
 
-.. _configuration-pricecalc-discountprice-creditpoints-additive:
+.. _configuration-pricecalc-discountprice-additive:
 
 ..  confval:: additive
     :name: counting together of parts - only for discount price
@@ -132,7 +131,7 @@ discountGroupName.
     together to calculate which discount price will apply. If unset only the products of the same price are counted.
 
 
-.. _configuration-pricecalc-discountprice-creditpoints-type:
+.. _configuration-pricecalc-discountprice-type:
 
 ..  confval:: type
     :name: meaning of the right part
@@ -140,11 +139,10 @@ discountGroupName.
     :type: string
   
     Meaning of the right edge integer which usually gets calculated:
-    *    count: the products count  (pricecalc and discountprice only)
+    *    count: the products count  (:typoscript:`pricecalc` and :typoscript:`discountprice` only)
     *    price: the total price of all articles is used (creditpoints only)
 
-
-.. _configuration-pricecalc-discountprice-creditpoints-sql:
+.. _configuration-pricecalc-discountprice-sql:
 
 ..  confval:: sql
     :name: SQL condition
@@ -155,7 +153,7 @@ discountGroupName.
 
 
 
-.. _configuration-pricecalc-discountprice-creditpoints-creditpoints:
+.. _configuration-creditpoints:
 
 Creditpoints Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
