@@ -243,4 +243,239 @@ rootPageID
     The upper most page ID from where you want to start to list them as categories.
 
 
+..  _recursive:
+
+recursive
+---------
+
+..  confval:: recursive
+    :name: recursive level for pages
+    :type: int+
+    :default: 99
+
+    Number of recursive sublevels of pids to select tt_products from in lists.
+
+
+..  _domain:
+
+domain
+------
+
+..  confval:: domain
+    :name: recursive level for pages
+    :type: string
+
+    The url of the shop. If not set, it will be detected automatically. Will replace :html:`###DOMAIN###` markers.
+
+
+..  _alt-main-markers:
+
+altMainMarkers
+--------------
+
+..  confval:: altMainMarkers
+    :name: alternative main subpart markers
+    :type: *array of string*
+
+    Lets you specify alternative subpart markers for the various main template designs in the shopping basket system.
+    This is the list of main subparts you can override:
+
+    ..  code-block:: php
+        :caption: main subpart markers with may get an alternative marker name
+    
+        TRACKING_WRONG_NUMBER
+        TRACKING_ENTER_NUMBER
+        BASKET_REQUIRED_INFO_MISSING
+        BASKET_TEMP
+        ITEM_SINGLE_DISPLAY_RECORDINSERT
+        ITEM_SINGLE_DISPLAY
+        ITEM_SEARCH
+        ITEM_LIST_TEMPLATE
+        ITEM_SEARCH_EMPTY
+        BASKET_TEMPLATE
+        BASKET_INFO_TEMPLATE
+        BASKET_PAYMENT_TEMPLATE
+        BASKET_ORDERCONFIRMATION_TEMPLATE
+        EMAIL_PLAINTEXT_TEMPLATE
+        BILL_TEMPLATE
+        DELIVERY_TEMPLATE
+    
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: main subpart markers with may get an alternative marker name
+    
+        altMainMarkers.BASKET_TEMPLATE =  BASKET_DESIGN2
+        altMainMarkers.BASKET_TEMPLATE.wrap = ### | ###
+
+    This example changes the main subpart marker for the regular basket display from the default :html:`###BASKET_TEMPLATE###` 
+    to the custom supplied design :html:`###BASKET_DESIGN2###` (found in the same template HTML-file)
+
+
+..  _std_search_field_ext:
+
+stdSearchFieldExt
+-----------------
+
+..  confval:: stdSearchFieldExt
+    :name: list of search fields
+    :type: *list of fields*
+    :default: title,subtitle,note
+
+    Default internal list is title,subtitle,note. You can specify your default fields here.
+
+
+..  _limit:
+
+limit
+-----
+
+..  confval:: limit
+    :name: maximum items displayed
+    :type: int+
+    :default: 99
+
+    The maximum number of items displayed on one page.
+
+
+..  _separate-image:
+
+separateImage
+-------------
+
+..  confval:: separateImage
+    :name: show each image separately
+    :type: boolean
+    :default: 0
+
+    Normally all images are shown combined together. With separateImage=on you can use a :html:`###PRODUCT_IMAGE3###` 
+    for each image number (starting with 1) separatly.
+
+
+..  _image:
+
+image
+-----
+
+..  confval:: image
+    :name: image for single view
+    :type: IMAGE cObject
+    :default: see :file:`setup.typoscript`
+
+    The image configuration in single display
+
+
+..  _list_image:
+
+listImage
+---------
+
+..  confval:: listImage
+    :name: image for list view
+    :type: IMAGE cObject
+    :default: see :file:`setup.typoscript`
+
+    The image configuration in list display
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: reset the ListImage
+
+        listImage >
+        listImage {
+          altImgResource.import = uploads/media/
+          altImgResource.import.field = media
+          altImgResource.import.listNum = 0
+          altText.data = field:title
+        }
+
+    That way, attached images are not copied to and displayed from
+    :file:`/typo3temp/` (which gives trouble with transparent backgrounds) but directly linked from :file:`/uploads/pics/`.
+    The line with :typoscript:`altText` leads to the drawing of an alternative text.
+
+
+..  _list_image_has_childs:
+
+listImageHasChilds
+------------------
+
+..  confval:: listImageHasChilds
+    :name: list image for items having childs (DAM only)
+    :type: IMAGE cObject
+    :default: see :file:`setup.typoscript`
+
+    The image configuration in list display if there is a filter for a category on the page and this category has childs.
+
+    see listImage
+
+
+..  _basket_image:
+
+basketImage
+-----------
+
+..  confval:: basketImage
+    :name: image for basket display
+    :type: IMAGE cObject
+    :default: see :file:`setup.typoscript`
+
+    The image configuration in basket display
+
+
+..  _data_sheet_icon:
+
+datasheetIcon
+-------------
+
+..  confval:: datasheetIcon
+    :name: data sheet icon
+    :type: IMAGE cObject / *Array of integers (only setup)*
+    :default: see :file:`setup.typoscript`
+
+    The image icon for the datasheet. Replaces ###ICON_DATASHEET###
+
+    If it is an array, then it consists of a file type and a file name.
+    
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: EXT:my_extension/ext_localconf.php
+    
+        plugin.tt_products.datasheetIcon {
+               10.fileext = pdf
+               10.file = fileadmin/img/pdf-icon.png
+               20.fileext = doc
+               20.file = fileadmin/img/msword-icon.png
+        }
+
+
+..  _basket_pic:
+
+basketPic
+---------
+
+..  confval:: basketPic
+    :name: basket picture
+    :type: string
+    :default: see :file:`setup.typoscript`
+
+    URL link to the basket image
+
+
+
+..  _click_into_basket:
+
+clickIntoBasket
+---------------
+
+..  confval:: clickIntoBasket
+    :name: click into the basket
+    :type: boolean
+    :default: 0 (false)
+
+    If set you will be directed into the basket page after putting a product into the basket. This only works if PIDbasket has been set.
+
+
+
 
