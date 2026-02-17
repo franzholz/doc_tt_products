@@ -158,4 +158,89 @@ defaultCategoryID
     Use this if you want only products of this category displayed in the list view as a default.
 
 
+..  _default-page-id:
+
+defaultPageID
+--------------
+
+..  confval:: defaultPageID
+    :name: default page ID
+    :type: int+
+
+    The default category uid number for the list display is used when the link to the script did not contain a 'tt_products[pid]' parameter.
+    Use this if you use pages as categories and want only products of this category displayed in the list view as a default.
+
+
+..  _default-dam-category-id:
+
+defaultDAMCategoryID
+--------------------
+
+..  confval:: defaultDAMCategoryID
+    :name: default DAM category ID
+    :type: int+
+
+    See defaultCategoryID, but for DAM categories and the 'tt_products[damcat]' parameter.
+
+
+..  _product-dam-category-id:
+
+productDAMCategoryID
+--------------------
+
+..  confval:: productDAMCategoryID
+    :name: product DAM category ID
+    :type: int+
+
+    DAM category of products to be used in DAM lists.
+
+
+..  _root-address-id:
+
+rootAddressID
+-------------
+
+..  confval:: rootAddressID
+    :name: root address ID
+    :type: int+
+
+    The upper most address ID from where you want to start to list addresses.
+
+
+..  _root-category-id:
+
+rootCategoryID
+--------------
+
+..  confval:: rootCategoryID
+    :name: root category ID
+    :type: int+
+
+    The upper most category ID from where you want to start to list categories.
+
+
+..  _root-dam-category-id:
+
+rootDAMCategoryID
+-----------------
+
+..  confval:: rootDAMCategoryID
+    :name: root DAM category ID
+    :type: int+
+
+    The upper most DAM category ID from where you want to start to list DAM categories.
+
+
+..  _root-page-id:
+
+rootPageID
+----------
+
+..  confval:: rootPageID
+    :name: root page ID
+    :type: int+
+
+    The upper most page ID from where you want to start to list them as categories.
+
+
 
