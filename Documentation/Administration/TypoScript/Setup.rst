@@ -463,7 +463,6 @@ basketPic
     URL link to the basket image
 
 
-
 ..  _click_into_basket:
 
 clickIntoBasket
@@ -475,6 +474,121 @@ clickIntoBasket
     :default: 0 (false)
 
     If set you will be directed into the basket page after putting a product into the basket. This only works if PIDbasket has been set.
+
+
+..  _click_into_basket:
+
+clickIntoList
+-------------
+
+..  confval:: clickIntoList
+    :name: click into the list
+    :type: boolean
+    :default: 0 (false)
+
+    If set you will be directed into the list page from the single view after putting a product into the basket. This only works if PIDlistDisplay has been set.
+
+
+..  _max_basket_quantity:
+
+basketMaxQuantity
+-----------------
+
+..  confval:: basketMaxQuantity
+    :name: maximum basket quantity
+    :type: int+ / string
+    :default: 100000
+
+    The maximum integer value for the quantity of an item in the basket.
+    'inStock': Only the number of items which are currently in stock can be put into the basket.
+    'creditpoint': Items can only be put into the basket if the FE user has enough credit points.
+
+
+..  _quantity_is_float:
+
+quantityIsFloat
+---------------
+
+..  confval:: quantityIsFloat
+    :name: basket quantity is a float value
+    :type: boolean
+    :default: 100000
+
+    quantityIsFloat	boolean	If set the basket count can be a float value.	
+
+
+..  _no_image_available:
+
+noImageAvailable
+----------------
+
+..  confval:: noImageAvailable
+    :name: alternative image
+    :type: resource
+
+    The image file displayed if no image was attached to a product. This image is processed by the :typoscript:`IMAGE` :php:`cObject`
+    which is active in the actual display of that image. That is, one of the above :typoscript:`IMAGE` :php:`cObject`s.	
+
+
+..  _display_list_cat_header:
+
+displayListCatHeader
+--------------------
+
+..  confval:: displayListCatHeader
+    :name: display category header in list
+    :type: boolean
+    :default: 1 (true)
+
+    If this option is set, the category headers (page titles) will automatically be displayed in the product lists. 
+    This is not always convenient because you might have chosen a header-title for the "list" content element.
+
+
+..  _display__basketcat_header:
+
+displayBasketCatHeader
+----------------------
+
+..  confval:: displayBasketCatHeader
+    :name: display category header in basket
+    :type: boolean
+    :default: 0 (false)
+
+    If this option is set, the category headers (page titles) will automatically be displayed in the basket lists.
+
+
+..  _display_cat_list_type:
+
+displayCatListType
+------------------
+
+..  confval:: displayCatListType
+    :name: display category header in basket
+    :type: string
+    :default: ul
+
+    Define the HTML main tag for the display of the categories in the category list view.
+    Use the new plugin 'Categories: menu' instead of the former displayCatListType=ul.	ul
+
+
+..  _substitute_page_title:
+
+substitutePagetitle
+-------------------
+
+..  confval:: substitutePagetitle
+    :name: substitute the page title
+    :type: int+
+    :default: 1
+
+    Set the page title in single view:
+
+    *   1   : product title
+    *   2   : product subtitle
+    *  12   : product title and subtitle
+    *  21   : product subtitle and title
+    *   3   : bread crumb
+
 
 
 
