@@ -9,25 +9,6 @@ Setup only.
 These are some settings if you want to change the behaviour of the order confirmation.
 
 
-**Example:**
-
-..  code-block:: typoscript
-    :caption: use the subtitle for translations
-
-    plugin.tt_products.finalize {
-        productsFilter {
-            10 {
-                 pid = 12
-                 email = myemail@mytypo3site1.com
-            }
-            20 {
-                 pid = 12
-                 email = myemail@mytypo3site2.com
-            }
-        }
-    }
-
-
 .. _configuration-order-confirmation-products-filter:
 
 ..  confval:: productsFilter
@@ -43,5 +24,22 @@ These are some settings if you want to change the behaviour of the order confirm
     *    email: a list of email addresses
 
 
+    **Example:**
+    
+    ..  code-block:: typoscript
+        :caption: use the subtitle for translations
+    
+        plugin.tt_products.finalize {
+            productsFilter {
+                10 {
+                     pid = 12
+                     email = myemail@mytypo3site1.com
+                }
+                20 {
+                     pid = 12
+                     email = myemail@mytypo3site2.com
+                }
+            }
+        }
 
 
