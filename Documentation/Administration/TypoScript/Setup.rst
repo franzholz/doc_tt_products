@@ -1017,4 +1017,67 @@ parseFunc
         parseFunc.denyTags = *
 
 
+..  _category-header:
+
+categoryHeader
+--------------
+
+..  confval:: categoryHeader
+    :name: Generates the category header.
+    :type: cObject
+
+    **Example:***
+
+    ..  code-block:: typoscript
+        :caption: parseFunc
+    
+        categoryHeader = TEXT
+        categoryHeader.current = 1
+
+
+..  _breadcrumb:
+
+breadcrumb
+----------
+
+..  confval:: breadcrumb
+    :name: Generates a breadcrumb line.
+    :type: cObject
+
+
+..  _tax-percentage:
+
+TAXpercentage
+-------------
+
+..  confval:: TAXpercentage
+    :name: Sales TAX/VAT percentage.
+    :type: cObject
+
+    Double value (!) (means, "use . as decimal point")
+
+    **Example:***
+
+    ..  code-block:: typoscript
+        :caption: set TAXpercentage
+    
+        # Danish sales TAX is 25%:
+        TAXpercentage = 25.00
+
+
+..  _tax-included:
+
+TAXincluded
+-----------
+
+..  confval:: TAXincluded
+    :name: TAX is included in the prices
+    :type: boolean
+
+    Set this, if TAX is included in the database prices! ( ... and of course: 
+    Clear this, if TAX is not included in the database prices and should be added in the display of items)
+    All profieldLinkcessing will take this flag into account and calculate prices accordingly.
+
+
+
 
