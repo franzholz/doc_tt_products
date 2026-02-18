@@ -262,7 +262,7 @@ domain
 ------
 
 ..  confval:: domain
-    :name: recursive level for pages
+    :name: domain
     :type: string
 
     The url of the shop. If not set, it will be detected automatically. Will replace :html:`###DOMAIN###` markers.
