@@ -1272,7 +1272,7 @@ loginUserInfoAddress
 --------------------
 
 ..  confval:: loginUserInfoAddress
-    :name: edit and lock login user information
+    :name: login user information address
     :type: boolean
 
     If lockLoginUserInfo is set, this switch makes that the address field is filled in from address, country, zip and city of the fe_user	
