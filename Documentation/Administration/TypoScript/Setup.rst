@@ -825,3 +825,130 @@ PIDthanks
     You must not set PIDfinalize if you use this.
 
 
+..  _pid-tracking:
+
+PIDtracking	
+-----------
+
+..  confval:: PIDtracking
+    :name: PID for the order tracking
+    :type: int+
+
+    The tracking is a front end tool to see and set the status of an order.
+
+
+..  _pid-biling:
+
+PIDbilling	
+----------
+
+..  confval:: PIDbilling
+    :name: PID for the generation of the bill
+    :type: int+
+
+
+..  _pid-delivery:
+
+PIDdelivery	
+-----------
+
+..  confval:: PIDdelivery
+    :name: PID for the generation of the delivery sheet
+    :type: int+
+
+
+..  _pid-memo:
+
+PIDmemo
+-------
+
+..  confval:: PIDmemo
+    :name: The ID of the memo page
+    :type: int+
+
+
+..  _pid-agb:
+
+PIDagb
+------
+
+..  confval:: PIDagb
+    :name: The ID of the agb page
+    :type: int+
+
+    The PID of a page with the general trading conditions (“AGB” in germany)
+    Only if this page id is set the AGB check will be active.
+
+
+..  _pid-revocation:
+
+PIDrevocation
+-------------
+
+..  confval:: PIDrevocation
+    :name: The PID of a page with the right of revocation.	
+    :type: int+
+
+
+..  _pid-user-folder:
+
+PIDuserFolder
+-------------
+
+..  confval:: PIDuserFolder
+    :name: The sysfolder, where the new users should be stored	
+    :type: int+
+
+
+..  _pid-related-products:
+
+pidsRelatedProducts
+-------------------
+
+..  confval:: pidsRelatedProducts
+    :name: Allowed pages for related products.
+    :type: int+
+
+
+..  _pids-addresses:
+
+pidsAddresses
+-------------
+
+..  confval:: pidsAddresses
+    :name: Allowed pages for addresses
+    :type: int+
+
+
+..  _uid-store:
+
+UIDstore
+--------
+
+..  confval:: UIDstore
+    :name: Shop data uid of fe_users
+    :type: int+
+
+    comma  separated list of UIDs of the fe_users table with the data of the shop.
+
+
+..  _payment-activity:
+
+paymentActivity
+---------------
+
+..  confval:: UIDstore
+    :name: Shop data uid of fe_users
+    :type: string
+    :default: finalize
+
+    When the payment with a payment script shall be executed.
+    Possible values:  
+
+    *   payment
+    *   finalize
+    *   verify
+
+
+
+
