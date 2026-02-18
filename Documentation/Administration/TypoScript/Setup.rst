@@ -1008,5 +1008,13 @@ parseFunc
     in the Note field you have to set the parseFunc.allowTags or use the denyTags.
     To make RTE working with HTML you have to set the following into the root page template. 
 
+    **Example:***
+
+    ..  code-block:: typoscript
+        :caption: parseFunc
+    
+        parseFunc.allowTags = table,tr,td,b,i,u,a,img,br,div,center,pre,font,hr,sub,sup,p,strong,em,li,ul,ol,blockquote,strike,span,h1,h2,h3,h4,h5,h6
+        parseFunc.denyTags = *
+
 
 
