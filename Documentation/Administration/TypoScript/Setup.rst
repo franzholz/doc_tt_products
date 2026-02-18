@@ -795,7 +795,33 @@ PIDpayment
     :name: PID for the payment page	
     :type: int+
 
-    On the payment page where name where the address is checked and the order is confirmed by the customer. 
+    On the payment page the address is checked and the order is confirmed by the customer. 
     You could change to a payment gateway from here.
+
+
+..  _pid-finalize:
+
+PIDfinalize	
+----------
+
+..  confval:: PIDfinalize
+    :name: PID for the finalization page	
+    :type: int+
+
+    The finalization page is the page directed to after the user has confirmed the order data. 
+    The order will get stored here.
+
+
+..  _pid-thanks:
+
+PIDthanks	
+---------
+
+..  confval:: PIDthanks
+    :name: PID for the thanks page	
+    :type: int+
+
+    The thanks page can be shown instead of the order confirmation. BASKET_ORDERTHANKS_TEMPLATE will be used. 
+    You must not set PIDfinalize if you use this.
 
 
