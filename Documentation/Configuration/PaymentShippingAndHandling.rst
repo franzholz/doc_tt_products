@@ -154,7 +154,7 @@ executed based on the settings. That's all allowed.
 .. _configuration-payment-shipping-handling-tax-included:
 
 ..  confval:: TAXincluded
-    :name: TAX is included in the prices
+    :name: TAX is included in the prices for shipping
     :required: false
     :type: boolean
     :default: from global
