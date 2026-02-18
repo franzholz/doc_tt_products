@@ -8,7 +8,6 @@ Configuration
     :maxdepth: 2
     :titlesonly:
 
-    Faq/Index
     Files/Index
     BasketConfiguration
     Description/Index
