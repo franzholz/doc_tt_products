@@ -646,7 +646,7 @@ itemMarkerArrayFunc
 -------------------
 
 ..  confval:: itemMarkerArrayFunc
-    :name: no single view on list
+    :name: function to get the markerArray for an item
     :type: *function-name*
     :default: 0 (false)
 
