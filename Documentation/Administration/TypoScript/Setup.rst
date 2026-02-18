@@ -1611,9 +1611,49 @@ statusDate_stdWrap		.
 	**Example:**
 
     ..  code-block:: typoscript
-        :caption: status code overview
+        :caption: stdWrap for status date
     
 		statusDate_stdWrap.strftime = %d-%m-%Y %H:%M
+
+
+..  _order-date-std-wrap:
+
+orderDate_stdWrap				
+-----------------
+
+..  confval:: orderDate_stdWrap	
+    :name: stdWrap for the order date
+    :type: stdWrap
+
+	**Example:**
+
+    ..  code-block:: typoscript
+        :caption: stdWrap for order date
+    
+		orderDate_stdWrap.strftime = %d-%m-%Y
+
+
+..  _use-by-date-std-wrap:
+
+usebyDate_stdWrap				
+-----------------
+
+..  confval:: usebyDate_stdWrap	
+    :name: stdWrap for the useby date
+    :type: stdWrap
+
+
+..  _card-end-date-std-wrap:
+
+cardEndDate_stdWrap				
+--------------------
+
+..  confval:: cardEndDate_stdWrap	
+    :name: stdWrap for credit card end time date
+    :type: stdWrap
+
+
+
 
 
 
