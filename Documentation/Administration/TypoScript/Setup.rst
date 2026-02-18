@@ -937,8 +937,8 @@ UIDstore
 paymentActivity
 ---------------
 
-..  confval:: UIDstore
-    :name: Shop data uid of fe_users
+..  confval:: paymentActivity
+    :name: payment activity
     :type: string
     :default: finalize
 
@@ -950,5 +950,49 @@ paymentActivity
     *   verify
 
 
+..  _advance-order-number-with-integer:
+
+advanceOrderNumberWithInteger
+-----------------------------
+
+..  confval:: advanceOrderNumberWithInteger
+    :name: order number advance between each order
+    :type: string
+    :default: finalize
+
+    If this value is set, then each time a new order is created the order-number counter will be incremented with
+    a random number between [first-integer] and [second integer] to cheat a little.  
+
+    **Example:**
+    *   1,10:  This will increment the counter randomly between 1 and 10
+    *   5,5:   This will increment the counter with 5 each time
+
+
+..  _always-advance-order-number:
+
+alwaysAdvanceOrderNumber
+------------------------
+
+..  confval:: alwaysAdvanceOrderNumber
+    :name: always advance the order number
+    :type: boolean
+    :default: 0 (false)
+
+    If set then the order number will always get increased and the empty order numbers are not reused. 
+    You have to set this if you use a payment script to pay via a payment system which does not accept duplicate order numbers.
+
+
+
+..  _always-update-order-amount:
+
+alwaysUpdateOrderAmount
+-----------------------
+
+..  confval:: alwaysUpdateOrderAmount
+    :name: always update the order amount
+    :type: boolean
+    :default: 0 (false)
+
+    If set then the entered order amount will always be updated and not increased by the entered number.
 
 
