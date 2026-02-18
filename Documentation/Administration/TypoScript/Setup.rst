@@ -675,7 +675,11 @@ PIDitemDisplay
 
 ..  confval:: PIDitemDisplay
     :name: PID for single item display
-    :type: PID for single item display
+    :type: PIDitemDisplay	int+/Array of integers
+
+    If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
+    If you set the type to sql, you can use conditions using several lines. The where string can contain the AND condition.
+    The pid for the first fulfilled condition will be returned.
 
     If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
     If you set the type to sql, you can use conditions using several lines. The where string can contain the
