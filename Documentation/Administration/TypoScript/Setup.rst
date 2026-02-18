@@ -1653,6 +1653,219 @@ cardEndDate_stdWrap
     :type: stdWrap
 
 
+..  _display-current-record:
+
+displayCurrentRecord				
+--------------------
+
+..  confval:: displayCurrentRecord	
+    :name: stdWrap for credit card end time date
+    :type: boolean
+
+	If set, certain settings are manipulated in order to let the script render a single item - the $cObj->data.
+	If this setting is set, the subpart marked ###ITEM_SINGLE_DISPLAY_RECORDINSERT### will be used 
+	instead of the regular subpart ###ITEM_SINGLE_DISPLAY### if it is found.
+
+
+..  _external-processing:
+
+externalProcessing				
+------------------
+
+..  confval:: externalProcessing	
+    :name: processing of the shopping basket
+    :type: cObject
+
+	This cObject may be used to call a function which manipulates the shopping basket. 
+	This manipulation could be based on settings in an external order system. 
+	The output is included in the top of the order (HTML) on the basket-page.
+    This cObject is executed each time the main_products method of the user_products class in productsLib is called 
+	and it's executed before any of the main processing. See the class for details.
+
+
+..  _external-processing-final:
+
+externalProcessing_final				
+------------------------
+
+..  confval:: externalProcessing_final	
+    :name: final processing of the shopping basket
+    :type: cObject
+
+	cObject for the final order confirmation template
+
+
+..  _external-finalizing:
+
+externalFinalizing				
+------------------
+
+..  confval:: externalFinalizing	
+    :name: final processing of the shopping basket
+    :type: cObject
+
+	This cObject may be used to call a function which clears settings in an external order system.
+	This is a sister to the above function and they should probably be used in conjunction somehow.
+	This function is called immediately after the finalize-function has been called.
+	For instance this function would be suitable for clearing any external basket facilitated by the .externalProcessing cObject
+	
+	Note: The output is NOT included anywhere.
+
+
+..  _wrap1:
+
+wrap1				
+-----
+
+..  confval:: wrap1	
+    :name: Global Wrap 1. 
+    :type: stdWrap
+
+	This will be splitted into the markers ###GW1B### and ###GW1E###. Don't change the input value by the settings, only wrap it in something.
+
+	**Example:**
+
+    ..  code-block:: typoscript
+        :caption: wrap1 split
+    
+		wrap1.wrap = <b> |</b>
+
+
+..  _wrap2:
+
+wrap2				
+-----
+
+..  confval:: wrap2	
+    :name: Global Wrap 2. 
+    :type: stdWrap
+
+	(see above) markers ###GW2B### and ###GW2E###	
+
+
+..  _wrap-in-base-class:
+
+wrapInBaseClass				
+---------------
+
+..  confval:: wrapInBaseClass	
+    :name: use base class wrap 
+    :type: boolean *S*
+
+	If true the output will be wrapped with <div class="tx-ttproducts-pi1"> | </div>
+
+
+..  _wrap-in-code:
+
+wrapInCode				
+----------
+
+..  confval:: wrapInCode	
+    :name: use base class wrap 
+    :type: boolean *S*
+
+	If set, then the output will be wrapped by
+
+	..  code-block:: html
+	    :caption: wrap the output by code uid
+
+	    <!-- START: tt-products-code-uid --><div id="tt-products-code-uid">
+ 		|</div><!-- END: tt-products-code-uid -->
+
+	'code' will be replaced by the code of the plugin. uid will be replaced by the field 'uid' of the table tt_products.
+
+
+..  _select-color:
+
+selectColor				
+-----------
+
+..  confval:: selectColor	
+    :name: Colour is selectable
+    :type: integer
+    :default: 1
+
+	If > 0 the colour of a product is selectable in a select box.
+
+
+..  _select-color-2:
+
+selectColor2				
+------------
+
+..  confval:: selectColor2	
+    :name: Colour 2 is selectable
+    :type: integer
+    :default: 1
+
+	If > 0 the 2nd colour of a product is selectable in a select box.
+
+
+..  _select-color-3:
+
+selectColor3				
+------------
+
+..  confval:: selectColor3	
+    :name: Colour 3 is selectable
+    :type: integer
+    :default: 1
+
+	If > 0 the 3rd colour of a product is selectable in a select box.
+
+
+..  _select-size:
+
+selectSize				
+----------
+
+..  confval:: selectSize	
+    :name: Size is selectable
+    :type: integer
+    :default: 1
+
+	If > 0 the size of a product is selectable in a select box.
+
+
+..  _select-size2:
+
+selectSize2				
+-----------
+
+..  confval:: selectSize2	
+    :name: Size 2 is selectable
+    :type: integer
+    :default: 1
+
+	If > 0 the 2nd size of a product is selectable in a select box.
+
+
+..  _select-size3:
+
+selectSize3				
+-----------
+
+..  confval:: selectSize3	
+    :name: Size 3 is selectable
+    :type: integer
+    :default: 1
+
+	If > 0 the 3rd size of a product is selectable in a select box.
+
+
+..  _nl2br-note:
+
+nl2brNote				
+---------
+
+..  confval:: nl2brNote	
+    :name: replace linefeeds in note
+    :type: integer
+    :default: 1
+
+	If true the linefeeds in the note field are replaced by <br />.
+
+
 
 
 
