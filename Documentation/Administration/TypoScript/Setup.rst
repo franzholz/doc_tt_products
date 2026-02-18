@@ -1239,3 +1239,81 @@ currencySymbol
     $
 
 
+..  _lock-login-user-info:
+
+lockLoginUserInfo
+------------------
+
+..  confval:: lockLoginUserInfo
+    :name: lock login user information<
+    :type: boolean
+    :default: 1 (true)
+
+    If set and a user is logged in, the address info of that fe_user gets filled in as billing address of the user. 
+    It is not possible to change this data.
+
+
+..  _edit-lock-login-info:
+
+editLockedLoginInfo
+-------------------
+
+..  confval:: editLockedLoginInfo
+    :name: edit and lock login user information
+    :type: boolean
+
+    If set and lockLoginUserInfo is set, then the filled in data is still editable for the order. 
+    You have to set the input HTML tags for this.
+
+
+..  _login-user-info-address:
+
+loginUserInfoAddress
+--------------------
+
+..  confval:: loginUserInfoAddress
+    :name: edit and lock login user information
+    :type: boolean
+
+    If lockLoginUserInfo is set, this switch makes that the address field is filled in from address, country, zip and city of the fe_user	
+
+
+..  _required-info-address:
+
+requiredInfoFields
+------------------
+
+..  confval:: requiredInfoFields
+    :name: required info fields  (only setup)
+    :type: boolean
+
+    List of the fields which are re quired in the address information This example gives you all possibilities.
+
+    **Example:**
+
+    ..  code-block:: php
+        :caption: requiredInfoFields
+    
+        requiredInfoFields = name,address,telephone,fax,email,company,city,zip,state,country
+
+    The subvalues 'billing' and 'delivery' are possible.
+
+    **Example:**
+
+    ..  code-block:: php
+        :caption: requiredInfoFields for delivery
+    
+        requiredInfoFields.delivery = name,address
+
+
+..  _order-number-prefix:
+
+orderNumberPrefix
+------------------
+
+..  confval:: orderNumberPrefix
+    :name: Prefix to the order numbers
+    :type: string
+
+    Max 10 chars. If this string starts with '%' then the rest will be interpreted as a PHP date format.
+
