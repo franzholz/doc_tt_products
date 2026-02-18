@@ -7,8 +7,6 @@ TypoScript Setup
 
 
 
-
-
 Properties
 ==========
 
@@ -1376,4 +1374,164 @@ orderEmail
     
         SELECT my_table_key_field FROM my_table WHERE my_table_key_field = $content_of_fe_users_key_field;
     
+
+..  _order-email-bcc:
+
+orderEmail_bcc
+--------------
+
+..  confval:: orderEmail_bcc
+    :name: BCC for order email
+    :type: array
+
+    BCC for the shop  admin's order confirmation
+
+
+..  _order-email-from:
+
+orderEmail_from
+---------------
+
+..  confval:: orderEmail_from
+    :name: sender email address for order email
+    :type: array
+
+    From email address for the confirmation email to customer
+
+
+..  _order-email-from:
+
+orderEmail_from
+---------------
+
+..  confval:: orderEmail_fromName		
+    :name: From name for order email
+    :type: array
+
+    From name for the confirmation email to customer.
+
+
+..  _order-email-to:
+
+orderEmail_to
+---------------
+
+..  confval:: orderEmail_to	
+    :name: Comma separated list of recipients of the order email. 
+    :type: *list of email addresses*
+
+    Shop and administrator/supervisor email addresses go here!
+
+
+..  _order-email-to-adddress:
+
+orderEmail_toAddress
+--------------------
+
+..  confval:: orderEmail_toAddress	
+    :name: order email to all addresses 
+    :type: boolean
+
+    If set, then the order email is sent to all addresses which are connected to the products in the basket.
+
+
+..  _order-email-radio:
+
+orderEmail_radio
+----------------
+
+..  confval:: orderEmail_radio	
+    :name: order email radio box
+    :type: *array of radio button number and email adresses*
+
+    Comma separated list of recipients of the order email if a radio box has been selected. 
+    The number is the radio box and the second number is the selected value.
+
+    **Example:**
+
+    ..  code-block:: php
+        :caption: orderEmail for radio box selection
+    
+        orderEmail_radio {
+           1.2 = inform@mytypo3site.de
+        }
+    
+
+..  _order-email-radio:
+
+orderEmail_toDelivery	
+----------------------
+
+..  confval:: orderEmail_toDelivery	
+    :name: send order email to delivery address
+    :type: boolean
+
+    If set, the email notification will be sent to the delivery email address and not to the billing email address.	
+
+
+..  _order-email-subject:
+
+orderEmail_subject		
+-------------------
+
+..  confval:: orderEmail_toDelivery	
+    :name: subject for order email
+    :type: string
+
+    Contents of the subject line if the first line in  ###EMAIL_PLAINTEXT_TEMPLATE### is empty.			
+
+
+..  _order-email-return-path:
+
+orderEmail_returnPath		
+---------------------
+
+..  confval:: orderEmail_returnPath	
+    :name: return path for order email
+    :type: string
+
+    Fills the 'Return-Path' of the email header. If the email of the recipient is invalid then the message will be sent to this address.		
+
+
+..  _order-email-htmlmail:
+
+orderEmail_htmlmail		
+---------------------
+
+..  confval:: orderEmail_htmlmail	
+    :name: send HTML format in order email
+    :type: boolean / string
+
+    If set, the order confirmation email is sent as HTML
+    If orderEmail_htmlmail.removeImagesWithPrefix is set, then the images and their HTML tags will not be sent in an email.
+	
+
+..  _order-email-htmlmail:
+
+orderEmail_apostrophe		.			
+---------------------
+
+..  confval:: orderEmail_htmlmail	
+    :name: send HTML format in order email
+    :type: string
+
+    Use these characters as apostrophe in the order email subject
+	
+
+..  _order-email-order2:
+
+orderEmail_order2		.			
+------------------
+
+..  confval:: orderEmail_htmlmail	
+    :name: send HTML format in order email
+    :type: string
+
+    If set, the shop admin receives 2 email order confirmations.
+    The same email like the customer with EMAIL_PLAINTEXT_TEMPLATE and also the one 
+    only for shop admins EMAIL_PLAINTEXT_TEMPLATE_SHOP if available.
+	
+
+
+
 
