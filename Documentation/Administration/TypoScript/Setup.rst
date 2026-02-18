@@ -982,7 +982,6 @@ alwaysAdvanceOrderNumber
     You have to set this if you use a payment script to pay via a payment system which does not accept duplicate order numbers.
 
 
-
 ..  _always-update-order-amount:
 
 alwaysUpdateOrderAmount
@@ -994,5 +993,20 @@ alwaysUpdateOrderAmount
     :default: 0 (false)
 
     If set then the entered order amount will always be updated and not increased by the entered number.
+
+
+..  _parse-func:
+
+parseFunc
+---------
+
+..  confval:: parseFunc
+    :name: parser function 
+    :type: see parseFunc
+
+    The product details are parsed by these properties. So if e.g. you want ot allow HTML-tags to create a table
+    in the Note field you have to set the parseFunc.allowTags or use the denyTags.
+    To make RTE working with HTML you have to set the following into the root page template. 
+
 
 
