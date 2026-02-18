@@ -675,7 +675,7 @@ PIDitemDisplay
 
 ..  confval:: PIDitemDisplay
     :name: PID for single item display
-    :type: PIDitemDisplay	int+/Array of integers
+    :type: int+/*Array of integers*
 
     If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
     If you set the type to sql, you can use conditions using several lines. The where string can contain the AND condition.
@@ -707,5 +707,95 @@ PIDitemDisplay
         PIDitemDisplay {
             10.type = pid
         }
+
+
+..  _pid-list-display:
+
+PIDlistDisplay
+--------------
+
+..  confval:: PIDitemDisplay
+    :name: PID for the item list display
+    :type: int+/*Array of integers*
+
+    Similar to PIDitemDisplay, however the category table is used here.	
+
+
+..  _pid-search:
+
+PIDsearch
+---------
+
+..  confval:: PIDsearch
+    :name: PID for search page
+    :type: int+
+
+    If you want all product searches to go to a specific page, enter the PID it here! NOTE: 
+    If you set this PID, all searchqueries will (must) be handled with a list content element with 
+    the display mode "Products: search" on that page.
+
+
+..  _pid-search:
+
+PIDsearch
+---------
+
+..  confval:: PIDbasket
+    :name: PID for the basket page
+    :type: int+
+
+    If you want ever change the number of items anywhere to go to a specific page
+    (eg. the shopping basket page), enter the PID here.
+
+
+..  _pid-store-root:
+
+PIDstoreRoot
+------------
+
+..  confval:: PIDstoreRoot
+    :name: PID for store root
+    :type: int+
+
+    This is the PID of the rootPage of the store. If not set the store will operate over all pages 
+    from the root of the site. But if the site has many pages, performance may improve.
+    You should better set pid_list instead of it.
+
+
+..  _pid-store-root:
+
+PID_sys_products_orders	
+-----------------------
+
+..  confval:: PID_sys_products_orders
+    :name: PID for the sys_products_orders records.
+    :type: int+
+
+    By default they will get the pid of the payment (finalize) page.	
+
+
+..  _pid-info:
+
+PIDinfo	
+-------
+
+..  confval:: PIDinfo
+    :name: PID for the info page	
+    :type: int+
+
+    On the info page name and address are entered.		
+
+
+..  _pid-payment:
+
+PIDpayment	
+----------
+
+..  confval:: PIDpayment
+    :name: PID for the payment page	
+    :type: int+
+
+    On the payment page where name where the address is checked and the order is confirmed by the customer. 
+    You could change to a payment gateway from here.
 
 
