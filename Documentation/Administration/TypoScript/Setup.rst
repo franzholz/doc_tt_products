@@ -1673,7 +1673,7 @@ externalProcessing
 ------------------
 
 ..  confval:: externalProcessing	
-    :name: processing of the shopping basket
+    :name: external processing of the shopping basket
     :type: cObject
 
 	This cObject may be used to call a function which manipulates the shopping basket. 
@@ -1689,7 +1689,7 @@ externalProcessing_final
 ------------------------
 
 ..  confval:: externalProcessing_final	
-    :name: final processing of the shopping basket
+    :name: final external processing of the shopping basket
     :type: cObject
 
 	cObject for the final order confirmation template
@@ -1701,7 +1701,7 @@ externalFinalizing
 ------------------
 
 ..  confval:: externalFinalizing	
-    :name: final processing of the shopping basket
+    :name: exernal finalizing of the order system
     :type: cObject
 
 	This cObject may be used to call a function which clears settings in an external order system.
