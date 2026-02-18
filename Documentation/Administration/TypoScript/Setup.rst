@@ -1659,7 +1659,7 @@ displayCurrentRecord
 --------------------
 
 ..  confval:: displayCurrentRecord	
-    :name: stdWrap for credit card end time date
+    :name: display the current record
     :type: boolean
 
 	If set, certain settings are manipulated in order to let the script render a single item - the $cObj->data.
