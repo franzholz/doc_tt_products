@@ -1300,7 +1300,7 @@ requiredInfoFields
 
     **Example:**
 
-    ..  code-block:: php
+    ..  code-block:: typoscript
         :caption: requiredInfoFields for delivery
     
         requiredInfoFields.delivery = name,address
@@ -1316,4 +1316,64 @@ orderNumberPrefix
     :type: string
 
     Max 10 chars. If this string starts with '%' then the rest will be interpreted as a PHP date format.
+
+
+..  _order-email:
+
+orderEmail
+----------
+
+..  confval:: orderEmail
+    :name: order email
+    :type: array
+
+    This defines additional confirmation emails containing suffixes, sender and receiver email addresses.
+
+    *   from:    'shop' will fetch orderEmail_from, 'customer' will fetch the customer email address.
+    *   to:       email of the receiver
+    *   suffix:   suffix to the '###EMAIL_PLAINTEXT_TEMPLATE_###' subpart.
+    *   returnPath: email address to use in the case of a failure to send the email
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: requiredInfoFields for delivery
+    
+        plugin.tt_products.orderEmail {
+               10.suffix = factory
+               10.from = shop
+               10.to = seller1@webshop-typo3.com
+               10.attachment = bill
+               20.suffix = logistic
+               20.from = customer
+               20.to = seller2@webshop-typo3.com
+               20.attachment = bill
+        }
+    
+    It is possible to send confirmation emails to the email address stored in a foreign table and where a foreign key has been added to the table fe_users.
+    
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: requiredInfoFields for delivery
+    
+        plugin.tt_products.orderEmail {
+           10000.suffix = shop
+           10000.from = customer
+           10000.to {
+              table = fe_users
+              field = key_field
+              foreign_table = my_table
+              foreign_field = my_table_key_field
+              foreign_email_field = my_table_email
+           }
+        }
+    
+    A SQL comparison will be made to fetch the email address:
+
+    ..  code-block:: php
+        :caption: user defined query for order email my_table
+    
+        SELECT my_table_key_field FROM my_table WHERE my_table_key_field = $content_of_fe_users_key_field;
+    
 
