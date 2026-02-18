@@ -35,14 +35,13 @@ templateFile
     ..  code-block::typoscript
         :caption:  plugin.tt_products.templateFile
 
-    plugin.tt_products {
-        templateFile = EXT:/addons_tt_products/Resources/Private/Templates/collection/example_template_bill_de.tmpl
-    }
-
-    plugin.tt_products {
-        templateFile.LIST = EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html
-    }
-
+	    plugin.tt_products {
+	        templateFile = EXT:/addons_tt_products/Resources/Private/Templates/collection/example_template_bill_de.tmpl
+	    }
+	
+	    plugin.tt_products {
+	        templateFile.LIST = EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html
+	    }
 
 
 ..  _template-suffix:
