@@ -1866,6 +1866,21 @@ nl2brNote
 	If true the linefeeds in the note field are replaced by <br />.
 
 
+..  _setup-use-articles:
+
+useArticles
+------------
+
+..  confval:: useArticles
+    :name: usage of articles
+    :type: integer
+    :default: 3
+
+    *   0: If you do not want to use the articles table then this must remain 0.
+    *   1: If you want to use products in different variants and have special prices for them in the articles table, then you have to set this to 1. All variants must be entered for the products and the articles. The article of a product is chosen if it contains all the selected variants. The instock of the articles table will be used instead of the products table. Articles are sold together with their related product.
+    *   2: No variants are used. No product is assigned to an article. The articles are sold without products.
+    *   3: The variants of the product need not be entered but are taken from the articles assigned to a product. No product is assigned to an article, but many articles are assigned to a product with the possibility of additional prices. Each article can have a part of the variants. If more than one article is added and can be part of the variants, then the additional prices are added and the text fields are chained.
+
 
 
 
