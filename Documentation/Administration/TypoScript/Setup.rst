@@ -669,3 +669,40 @@ itemMarkerArrayFunc
     itemMarkerArrayFunc.simpleOption = 1
 
 
+..  _pid-item-display:
+
+PIDitemDisplay
+--------------
+
+..  confval:: PIDitemDisplay
+    :name: PID for single item display
+    :type: PID for single item display
+
+    If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
+    If you set the type to sql, you can use conditions using several lines. The where string can contain the
+    AND condition. The pid for the first fulfilled condition will be returned.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: PIDitemDisplay with where conditions
+    
+        PIDitemDisplay {
+             10.type = sql 
+             10.where = color=red
+             10.pid = 142 
+             20.type = sql 
+             20.where = color=white 
+             20.pid = 143 
+        }
+        
+    If you set the type to pid then the pid of the record will be used.
+
+    ..  code-block:: typoscript
+        :caption: PIDitemDisplay with where conditions
+
+        PIDitemDisplay {
+            10.type = pid
+        }
+
+
