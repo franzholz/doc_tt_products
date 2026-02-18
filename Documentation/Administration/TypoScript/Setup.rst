@@ -648,7 +648,6 @@ itemMarkerArrayFunc
 ..  confval:: itemMarkerArrayFunc
     :name: function to get the markerArray for an item
     :type: *function-name*
-    :default: 0 (false)
 
     Every time a product is displayed be it in the basket, list or single view, the method :php:`getItemMarkerArray()` 
     in :php:`tx_ttproducts_marker` is called. This function fills in and returns an array, so called markerArray(),
