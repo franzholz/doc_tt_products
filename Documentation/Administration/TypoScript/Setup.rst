@@ -1761,7 +1761,7 @@ wrapInCode
 ----------
 
 ..  confval:: wrapInCode	
-    :name: use base class wrap 
+    :name: code wrap 
     :type: boolean *S*
 
 	If set, then the output will be wrapped by
