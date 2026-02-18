@@ -312,7 +312,7 @@ altMainMarkers
     to the custom supplied design :html:`###BASKET_DESIGN2###` (found in the same template HTML-file)
 
 
-..  _std_search_field_ext:
+..  _std-search-field-ext:
 
 stdSearchFieldExt
 -----------------
@@ -365,7 +365,7 @@ image
     The image configuration in single display
 
 
-..  _list_image:
+..  _list-image:
 
 listImage
 ---------
@@ -395,7 +395,7 @@ listImage
     The line with :typoscript:`altText` leads to the drawing of an alternative text.
 
 
-..  _list_image_has_childs:
+..  _list-image-has-childs:
 
 listImageHasChilds
 ------------------
@@ -410,7 +410,7 @@ listImageHasChilds
     see listImage
 
 
-..  _basket_image:
+..  _basket-image:
 
 basketImage
 -----------
@@ -423,7 +423,7 @@ basketImage
     The image configuration in basket display
 
 
-..  _data_sheet_icon:
+..  _data-sheet-icon:
 
 datasheetIcon
 -------------
@@ -450,7 +450,7 @@ datasheetIcon
         }
 
 
-..  _basket_pic:
+..  _basket-pic:
 
 basketPic
 ---------
@@ -463,7 +463,7 @@ basketPic
     URL link to the basket image
 
 
-..  _click_into_basket:
+..  _click-into-basket:
 
 clickIntoBasket
 ---------------
@@ -476,7 +476,7 @@ clickIntoBasket
     If set you will be directed into the basket page after putting a product into the basket. This only works if PIDbasket has been set.
 
 
-..  _click_into_basket:
+..  _click-into-basket:
 
 clickIntoList
 -------------
@@ -489,7 +489,7 @@ clickIntoList
     If set you will be directed into the list page from the single view after putting a product into the basket. This only works if PIDlistDisplay has been set.
 
 
-..  _max_basket_quantity:
+..  _max-basket-quantity:
 
 basketMaxQuantity
 -----------------
@@ -504,7 +504,7 @@ basketMaxQuantity
     'creditpoint': Items can only be put into the basket if the FE user has enough credit points.
 
 
-..  _quantity_is_float:
+..  _quantity-is-float:
 
 quantityIsFloat
 ---------------
@@ -517,7 +517,7 @@ quantityIsFloat
     quantityIsFloat	boolean	If set the basket count can be a float value.	
 
 
-..  _no_image_available:
+..  _no-image-available:
 
 noImageAvailable
 ----------------
@@ -530,7 +530,7 @@ noImageAvailable
     which is active in the actual display of that image. That is, one of the above :typoscript:`IMAGE` :php:`cObject`s.	
 
 
-..  _display_list_cat_header:
+..  _display-list-cat-header:
 
 displayListCatHeader
 --------------------
@@ -544,7 +544,7 @@ displayListCatHeader
     This is not always convenient because you might have chosen a header-title for the "list" content element.
 
 
-..  _display__basketcat_header:
+..  _display-basket-cat-header:
 
 displayBasketCatHeader
 ----------------------
@@ -557,7 +557,7 @@ displayBasketCatHeader
     If this option is set, the category headers (page titles) will automatically be displayed in the basket lists.
 
 
-..  _display_cat_list_type:
+..  _display-cat-list-type:
 
 displayCatListType
 ------------------
@@ -571,7 +571,7 @@ displayCatListType
     Use the new plugin 'Categories: menu' instead of the former displayCatListType=ul.	ul
 
 
-..  _substitute_page_title:
+..  _substitute-page-title:
 
 substitutePagetitle
 -------------------
@@ -626,7 +626,7 @@ conf
     configurations of the tables	
 
 
-..  _no_single_view_on_list:
+..  _no-single-view-on-list:
 
 NoSingleViewOnList
 ------------------
@@ -640,7 +640,7 @@ NoSingleViewOnList
     If you however want to create your own pages for single view with SINGLE code you must set this to 1.
 
 
-..  _item_marker_array:
+..  _item-marker-array-func:
 
 itemMarkerArrayFunc
 -------------------
