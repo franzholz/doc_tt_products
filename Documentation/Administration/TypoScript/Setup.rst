@@ -1583,8 +1583,39 @@ statusCodes		.
 		}	
 		
 	    If email-notification to the delivery email address of the customer is enabled by default for tracking
-		(he can change it himself in the tracking module later)
-		
+		(he can change it himself in the tracking module later)		
 	
+
+..  _order-update-codes:
+
+update_code		.			
+-----------
+
+..  confval:: update_code	
+    :name: update code for tracking
+    :type: string
+
+	The 'password' used by the administrator of the shop to go into the tracking system in the front end.
+    The password form field will appear if a BE_USER is logged in, but this password is still needed.
+
 	
-	
+..  _status-date-std-wrap:
+
+statusDate_stdWrap		.			
+------------------
+
+..  confval:: statusDate_stdWrap	
+    :name: stdWrap for status date
+    :type: stdWrap
+
+	**Example:**
+
+    ..  code-block:: typoscript
+        :caption: status code overview
+    
+		statusDate_stdWrap.strftime = %d-%m-%Y %H:%M
+
+
+
+
+
