@@ -1511,7 +1511,7 @@ orderEmail_apostrophe		.
 ---------------------
 
 ..  confval:: orderEmail_htmlmail	
-    :name: send HTML format in order email
+    :name: apostrophe in order email
     :type: string
 
     Use these characters as apostrophe in the order email subject
@@ -1522,9 +1522,10 @@ orderEmail_apostrophe		.
 orderEmail_order2		.			
 ------------------
 
-..  confval:: orderEmail_htmlmail	
-    :name: send HTML format in order email
-    :type: string
+..  confval:: orderEmail_order2	
+    :name: send 2 order email confirmations
+    :type: boolean
+    :default: 0 (false)
 
     If set, the shop admin receives 2 email order confirmations.
     The same email like the customer with EMAIL_PLAINTEXT_TEMPLATE and also the one 
