@@ -1079,5 +1079,163 @@ TAXincluded
     All profieldLinkcessing will take this flag into account and calculate prices accordingly.
 
 
+..  _tax-rates:
+
+TAXrates
+--------
+
+..  confval:: TAXrates
+    :name: TAX rates
+    :type: string
+
+    Comma separated list of tax rates. The first will be taken as tax A, the second as tax B aso.
+
+
+..  _tax-mode:
+
+TAXmode
+-------
+
+..  confval:: TAXmode
+    :name: TAX mode
+    :type: int+
+    :default: 1 
+
+    *   1: The net sums are added first. The tax is added on the final total net sum.
+    *   2: The gross price is calculated for every product. The total sum is calculated on the single gross prices.	1
+
+
+..  _price-dec:
+
+priceDec
+--------
+
+..  confval:: priceDec
+    :name: price decimals
+    :type: int+
+    :default: 2 
+
+
+..  _price-dec-point:
+
+priceDecPoint
+-------------
+
+..  confval:: priceDecPoint
+    :name: price decimal point
+    :type: string
+    :default: .
+
+
+..  _price-thousand-point:
+
+priceThousandPoint
+------------------
+
+..  confval:: priceThousandPoint
+    :name: price thousand point
+    :type: string
+
+    Enter the thousand separator, if any.
+
+
+..  _no-zero-decimal-point:
+
+noZeroDecimalPoint
+------------------
+
+..  confval:: noZeroDecimalPoint
+    :name: no decimal point for integer numbers
+    :type: boolean
+
+    If set then no decimal point is shown for integers.	
+
+
+..  _price-no-reseller:
+
+priceNoReseller
+---------------
+
+..  confval:: priceNoReseller
+    :name: price number for reseller
+    :type: int+
+
+    Price number for reseller, which can only be 2 at the moment. The price2 will however only be taken when its value is greater than 0. 
+    An enhancement extension must add more price fields if you want to use more price numbers.
+    Here is the way to get the price2 for a special user group:
+
+    **Example:**
+
+    ..  code-block:: php
+        :caption: active the price2 field for front end users with group 1
+    
+        [usergroup = 1]
+        priceNoReseller = 2
+        [global]
+        ...
+
+
+..  _percent-dec:
+
+percentDec
+----------
+
+..  confval:: percentDec
+    :name: Number of shown decimals of percentage values
+    :type: int+
+
+
+..  _percent-dec-point:
+
+percentDecPoint
+---------------
+
+..  confval:: percentDecPoint
+    :name: Percentage decimal point
+    :type: string
+
+
+..  _percent-thousand-point:
+
+percentThousandPoint
+--------------------
+
+..  confval:: percentThousandPoint
+    :name: Percentage Thousand point
+    :type: string
+
+    Enter the thousand separator, if any.
+
+
+..  _percent-no-zero-decimal-point:
+
+percentNoZeroDecimalPoint
+--------------------------
+
+..  confval:: percentNoZeroDecimalPoint
+    :name: Percentage without decimal point for integer
+    :type: string
+
+    If set then no decimal point is shown for integers.
+
+
+..  _currency-symbol:
+
+currencySymbol
+--------------
+
+..  confval:: currencySymbol
+    :name: Currency symbol
+    :type: string
+    :default: EURO
+
+    Used in shop administration.
+
+    **Example:**
+
+    EUR
+    DKR
+    USD
+    $
 
 
