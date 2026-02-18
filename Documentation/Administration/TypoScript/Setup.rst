@@ -1449,7 +1449,7 @@ orderEmail_radio
 
     **Example:**
 
-    ..  code-block:: php
+    ..  code-block:: typoscript
         :caption: orderEmail for radio box selection
     
         orderEmail_radio {
@@ -1532,6 +1532,59 @@ orderEmail_order2		.
     only for shop admins EMAIL_PLAINTEXT_TEMPLATE_SHOP if available.
 	
 
+..  _order-email-notify-default:
+
+email_notify_default		.			
+--------------------
+
+..  confval:: email_notify_default	
+    :name: email notification to the delivery address
+    :type: boolean
+
+    If email-notification to the delivery email address of the customer is enabled by default for tracking
+	(he can change it himself in the tracking module later)
+	
 
 
+..  _order-status-codes:
 
+statusCodes		.			
+-----------
+
+..  confval:: statusCodes	
+    :name: Status codes used in the tracking module.
+    :type: *Array of integers*
+
+	Numbers above 100 removes the order from the tracklist.
+	Number zero is the status of a non-finalized order (and non-finalized orders in the database may by time be regarded as garbage...)
+	Numbers of 50-59 is available for the customer to choose from.
+	Number 1 is reserved to be selected when an order goes from zero to 1 because it's confirmed. Number 1 cannot be selected by shop admin.
+	These will be written into ###STATUS_OPTIONS###  markers.
+	
+	**Example:**
+
+    ..  code-block:: typoscript
+        :caption: status code overview
+    
+		statusCodes {
+		    1 = Order submitted by user
+		    2 = Order is received and accepted by store
+		    10 = Shop is awaiting goods from third-party
+		    11 = Shop is awaiting customer payment
+		    12 = Shop is awaiting material from customer
+		    13 = Order has been payed
+		    20 = Goods shipped to customer
+		    30 = Other message from store
+		    50 = Customer request for cancelling
+		    51 = Message from customer to shop
+		    100 = Order shipped and closed
+		    101 = Order closed
+		    200 = Order cancelled
+		}	
+		
+	    If email-notification to the delivery email address of the customer is enabled by default for tracking
+		(he can change it himself in the tracking module later)
+		
+	
+	
+	
