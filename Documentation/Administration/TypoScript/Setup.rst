@@ -563,7 +563,7 @@ displayCatListType
 ------------------
 
 ..  confval:: displayCatListType
-    :name: display category header in basket
+    :name: display category list header type
     :type: string
     :default: ul
 
