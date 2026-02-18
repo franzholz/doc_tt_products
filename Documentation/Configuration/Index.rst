@@ -8,11 +8,9 @@ Configuration
     :maxdepth: 2
     :titlesonly:
 
-    Faq/Index
     Files/Index
     BasketConfiguration
     Description/Index
-    Reference/Index
     DisplayModesCode/Index
     ConfigurationOfArticles/Index
     FormConfiguration/Index
@@ -29,3 +27,4 @@ Configuration
     TrackingConfiguration/Index
     GraduatedPrice
     ErrorConfiguration/Index
+
