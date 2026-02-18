@@ -658,12 +658,12 @@ itemMarkerArrayFunc
     **Example:**
     (provided that a function or class is included!)
 
-..  code-block:: typoscript
-    :caption: define an itemMarkerArrayFunc
-
-    itemMarkerArrayFunc = user_addFieldsMarkerArr
-    itemMarkerArrayFunc.simpleOption = 1
-
+	..  code-block:: typoscript
+	    :caption: define an itemMarkerArrayFunc
+	
+	    itemMarkerArrayFunc = user_addFieldsMarkerArr
+	    itemMarkerArrayFunc.simpleOption = 1
+	
 
 ..  _pid-item-display:
 
@@ -1563,7 +1563,7 @@ statusCodes		.
 	**Example:**
 
     ..  code-block:: typoscript
-        :caption: status code overview
+        :caption: status code standard setup
     
 		statusCodes {
 		    1 = Order submitted by user
