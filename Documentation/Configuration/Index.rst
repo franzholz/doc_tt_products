@@ -11,7 +11,6 @@ Configuration
     Files/Index
     BasketConfiguration
     Description/Index
-    Reference/Index
     DisplayModesCode/Index
     ConfigurationOfArticles/Index
     FormConfiguration/Index
