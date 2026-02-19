@@ -2046,4 +2046,58 @@ outputFolder
     :default: fileadmin/data
 
 
+..  _member-of-group:
+
+memberOfGroup
+-------------
+
+..  confval:: memberOfGroup
+    :name: new front end user gets member of this group
+    :type: int+
+    :default: 1
+
+    The ID of the front end user group, the new users should be member of.
+
+
+..  _discount-group-name:
+
+discountGroupName
+-----------------
+
+..  confval:: discountGroupName
+    :name: name of the group for discount pricecalculation
+    :type: string
+
+
+..  _get-discount-price:
+
+getDiscountPrice
+----------------
+
+..  confval:: getDiscountPrice
+    :name: get discount price
+    :type: boolean
+
+    If set the discount price will be used even for normal customers
+    without having a frontend user in the discount group.
+
+
+..  _discount-price-mode:
+
+discountPriceMode
+-----------------
+
+..  confval:: discountPriceMode
+    :name: discount price mode
+    :type: integer
+
+    *   If unset, then the price field is used as the base to calculate the discount:
+        discount = (price – price2) / price
+         ... where price contains no discounts
+    *    set to 1:
+         discount = (price2 – price) / price2
+         ... where price contains the discounts
+
+    This is only needed for setting the behavior of the price2 markers.
+
 
