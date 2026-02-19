@@ -1608,12 +1608,13 @@ statusDate_stdWrap		.
     :name: stdWrap for status date
     :type: stdWrap
 
-	**Example:**
+
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: stdWrap for status date
     
-		statusDate_stdWrap.strftime = %d-%m-%Y %H:%M
+        statusDate_stdWrap.strftime = %d-%m-%Y %H:%M
 
 
 ..  _order-date-std-wrap:
