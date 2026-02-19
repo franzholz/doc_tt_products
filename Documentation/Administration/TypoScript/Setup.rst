@@ -34,7 +34,7 @@ templateFile
 
     **Example:**
 
-    ..  code-block::typoscript
+    ..  code-block:: typoscript
         :caption:  plugin.tt_products.templateFile
         
         plugin.tt_products {
