@@ -2342,5 +2342,26 @@ bulkilyWarning
     Text for ###BULKILY_WARNING### for bulk goods.
 
 
+..  _javascript:
+
+javaScript
+----------
+
+..  confval:: javaScript
+    :name: javaScript
+    :type: *array of integers*
+
+    Some JavaScript which will be included for ###JAVASCRIPT_10### markers..
+
+	**Example:**
+
+    ..  code-block:: typoscript
+        :caption: JavaScript functions
+
+        javaScript {
+            10.value = function addValues (a, b) { return a+b; }
+            20.value = function multiplyValues (a, b) { return a*b; }
+        }
+	
 
 
