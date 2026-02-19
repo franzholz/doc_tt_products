@@ -1561,8 +1561,9 @@ statusCodes		.
 	Numbers of 50-59 is available for the customer to choose from.
 	Number 1 is reserved to be selected when an order goes from zero to 1 because it's confirmed. Number 1 cannot be selected by shop admin.
 	These will be written into ###STATUS_OPTIONS###  markers.
-	
-	**Example:**
+
+
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: status code standard setup
