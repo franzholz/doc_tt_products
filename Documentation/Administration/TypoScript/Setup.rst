@@ -1566,23 +1566,23 @@ statusCodes		.
     ..  code-block:: typoscript
         :caption: status code standard setup
     
-		statusCodes {
-		    1 = Order submitted by user
-		    2 = Order is received and accepted by store
-		    10 = Shop is awaiting goods from third-party
-		    11 = Shop is awaiting customer payment
-		    12 = Shop is awaiting material from customer
-		    13 = Order has been payed
-		    20 = Goods shipped to customer
-		    30 = Other message from store
-		    50 = Customer request for cancelling
-		    51 = Message from customer to shop
-		    100 = Order shipped and closed
-		    101 = Order closed
-		    200 = Order cancelled
-		}	
-		
-	    If email-notification to the delivery email address of the customer is enabled by default for tracking
+        statusCodes {
+            1 = Order submitted by user
+            2 = Order is received and accepted by store
+            10 = Shop is awaiting goods from third-party
+            11 = Shop is awaiting customer payment
+            12 = Shop is awaiting material from customer
+            13 = Order has been payed
+            20 = Goods shipped to customer
+            30 = Other message from store
+            50 = Customer request for cancelling
+            51 = Message from customer to shop
+            100 = Order shipped and closed
+            101 = Order closed
+            200 = Order cancelled
+        }	
+
+		If email-notification to the delivery email address of the customer is enabled by default for tracking
 		(he can change it himself in the tracking module later)		
 	
 
