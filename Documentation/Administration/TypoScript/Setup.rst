@@ -1626,12 +1626,13 @@ orderDate_stdWrap
     :name: stdWrap for the order date
     :type: stdWrap
 
-	**Example:**
+
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: stdWrap for order date
     
-		orderDate_stdWrap.strftime = %d-%m-%Y
+        orderDate_stdWrap.strftime = %d-%m-%Y
 
 
 ..  _use-by-date-std-wrap:
@@ -1722,14 +1723,15 @@ wrap1
     :name: Global Wrap 1. 
     :type: stdWrap
 
-	This will be splitted into the markers ###GW1B### and ###GW1E###. Don't change the input value by the settings, only wrap it in something.
+    This will be splitted into the markers ###GW1B### and ###GW1E###. Don't change the input value by the settings, only wrap it in something.
 
-	**Example:**
+
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: wrap1 split
     
-		wrap1.wrap = <b> |</b>
+        wrap1.wrap = <b> |</b>
 
 
 ..  _wrap2:
