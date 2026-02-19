@@ -1543,7 +1543,6 @@ email_notify_default		.
 
     If email-notification to the delivery email address of the customer is enabled by default for tracking
 	(he can change it himself in the tracking module later)
-	
 
 
 ..  _order-status-codes:
@@ -1886,8 +1885,139 @@ useArticles
     *   3: The variants of the product need not be entered but are taken from the articles assigned to a product. No product is assigned to an article, but many articles are assigned to a product with the possibility of additional prices. Each article can have a part of the variants. If more than one article is added and can be part of the variants, then the additional prices are added and the text fields are chained.
 
 
+..  _keep-product-data:
+
+keepProductData
+---------------
+
+..  confval:: keepProductData
+    :name: keep product data
+    :type: boolean
+    :default: 1 (true)
+
+    If true, the product data are kept in the article markers if they are not 
+	empty and if the product is merged with a corresponding article which fits
+	in the variant fields.
+    Only used if useArticles = 3.
 
 
+..  _no-article-single-view:
 
+noArticleSingleView
+-------------------
+
+..  confval:: noArticleSingleView
+    :name: no article single view
+    :type: boolean
+    :default: 1 (true)
+
+    If true, then no article single view is used. 
+    Articles are instead linked to the product single view and 
+    the corresponding variant selection is shown.
+
+
+..  _price-tag-obj:
+
+priceTagObj
+-----------
+
+..  confval:: priceTagObj
+    :name: price tag object
+    :type: IMAGE cObjec
+
+    Image for the display of the price
+
+
+..  _use-price-tag:
+
+usePriceTag
+-----------
+
+..  confval:: usePriceTag
+    :name: use price tag
+    :type: boolean
+    :default: 0 (false)
+
+    If true, the priceTagObj will be used. If false, the text will be displayed.
+
+
+..  _use-static-info-country:
+
+useStaticInfoCountry
+--------------------
+
+..  confval:: useStaticInfoCountry
+    :name: use static info country
+    :type: boolean
+    :default: 0 (false)
+
+    If true the short fe_users static_info_country field will be used 
+    for country instead of the country field.
+
+
+..  _use-static-taxes:
+
+useStaticTaxes
+--------------
+
+..  confval:: useStaticTaxes
+    :name: use static taxes
+    :type: boolean
+    :default: 0 (false)
+
+    If true, the tax will be determined from the country and region
+    by the extension static_info_tables_taxes.
+
+
+..  _where-gift:
+
+whereGift
+---------
+
+..  confval:: whereGift
+    :name: where gift
+    :type: string
+
+    This SQL where clause defines which products will be treated as gifts.
+
+
+..  _where-gift-service:
+
+whereGiftService
+----------------
+
+..  confval:: whereGiftService
+    :name: where gift service
+    :type: string
+
+    This SQL where clause defines which products will be treated as gift services.
+
+
+..  _special-preparation:
+
+specialPreparation
+------------------
+
+..  confval:: specialPreparation
+    :name: special preparation
+    :type: string
+
+    This text will substitute your ###PRODUCT_SPECIAL_PREP### markers
+
+
+..  _create-users:
+
+createUsers
+-----------
+
+..  confval:: createUsers
+    :name: create users
+    :type: boolean
+    :default: 0 (false)
+
+    If you set this and PIDuserFolder, for each customer that is not logged in 
+    and his email address is not listed as user already, a new frontend user will be created.
+    An email with the username (his e-mail address) and the password will be sent 
+    to him (see ###EMAIL_NEWUSER_TEMPLATE###)
 
 
