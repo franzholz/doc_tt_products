@@ -1724,7 +1724,7 @@ wrap1
     :name: Global Wrap 1. 
     :type: stdWrap
 
-	This will be splitted into the markers ###GW1B### and ###GW1E###. Don't change the input value by the settings, only wrap it in something.
+    This will be splitted into the markers ###GW1B### and ###GW1E###. Don't change the input value by the settings, only wrap it in something.
 
 
     **Example:**
