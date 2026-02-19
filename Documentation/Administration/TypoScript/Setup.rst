@@ -2130,3 +2130,180 @@ AGBtarget
 
      target for the PIDagb link
 
+
+..  _agb-attachment:
+
+AGBattachment
+-------------
+
+..  confval:: AGBattachment
+    :name: AGB attachment
+    :type: resource
+    :default: fileadmin/agb.pdf
+
+    If this file exists, it will be attached to the order confirmation email
+    to the customer. The shop administrator won't receive the agb attachment,
+    but the CSV if you enable it
+
+
+..  _generate-xml:
+
+generateXML
+-----------
+
+..  confval:: generateXML
+    :name: generate XML
+    :type: boolean
+    :default: 0 (false)
+
+    Generates a XML file from each order. This file will be saved on the server 
+    and sent to the shop administrator per email (with the order confirmation)
+
+
+..  _xml-destination:
+
+XMLdestination
+--------------
+
+..  confval:: XMLdestination
+    :name: XML destination
+    :type: resource
+    :default: ../xmlorders/
+
+    The directory on the server, where the XML files should be saved.
+    This directory should not be accessible over http, because everyone
+    can read your customers and their orders.
+    So don't put this directory unter fileadmin, or rename it to 
+    something cryptical at least.
+
+
+..  _generate-csv:
+
+generateCSV
+-----------
+
+..  confval:: generateCSV
+    :name: generate CSV
+    :type: boolean
+    :default: 0 (false)
+
+    Generates a CSV file from each order. This file will be saved on 
+    the server and sent to the shop administrator per email 
+    (with the order confirmation)
+
+
+..  _csv-destination:
+
+CSVdestination
+--------------
+
+..  confval:: CSVdestination
+    :name: CSV destination
+    :type: resource
+    :default: ../csvorders/
+
+    The directory on the server, where the CSV files should be saved. 
+    This directory should not be accessible over http, because everyone 
+    can read your customers and their orders.
+    So don't put this directory unter fileadmin, or rename it to something cryptical at least.
+
+
+..  _csv-fields:
+
+CSVfields
+---------
+
+..  confval:: CSVfields
+    :name: CSV fields
+    :type: string
+    :default: ../csvorders/
+
+    Select which product data should be added to the CSV. By default 
+    these are all important fields except the note
+
+
+..  _csv-in-one-line:
+
+CSVinOneLine
+------------
+
+..  confval:: CSVinOneLine
+    :name: CSV in one line
+    :type: boolean
+    :default: 0 (false)
+
+    If you set this to 1, all additional information
+	(shipping, payment, address data, delivery note) will be appended to the 
+	first ordered item. This is good if you want to import these files somewhere.
+    If you leave this at 0, the file will be formatted for best view in programs like Excel.
+
+
+..  _csv-not-in-email:
+
+CSVnotInEmail
+-------------
+
+..  confval:: CSVnotInEmail
+    :name: CSV in one line
+    :type: boolean
+    :default: 0 (false)
+
+    If set no csv file will be appended to the email.
+
+
+..  _always-in-stock:
+
+alwaysInStock
+-------------
+
+..  confval:: alwaysInStock
+    :name: always in stock
+    :type: boolean
+    :default: 1 (true)
+
+    If set the stock will not get reduced if something has been bought.
+
+
+..  _show-not-in-stock:
+
+showNotinStock
+--------------
+
+..  confval:: showNotinStock
+    :name: show not in stock
+    :type: boolean
+    :default: 1 (true)
+
+    If set the items will be shown even if no product is in the stock
+
+
+..  _not-in-stock-message:
+
+notInStockMessage
+-----------------
+
+..  confval:: notInStockMessage
+    :name: not in stock message
+    :type: string
+    :default: Not in stock
+
+    See above. This will be shown if no items are in stock and 
+    showNotinStock is set.
+
+
+..  _warning-in-stock-limit:
+
+warningInStockLimit
+-------------------
+
+..  confval:: warningInStockLimit
+    :name: warning about the in stock limit
+    :type: string
+    :default: Not in stock
+
+    Amount of items in stock at which when reached a warning message is sent.
+
+
+
+
+
