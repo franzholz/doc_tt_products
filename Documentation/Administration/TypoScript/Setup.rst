@@ -1544,11 +1544,10 @@ email_notify_default		.
 
     If email-notification to the delivery email address of the customer is enabled by default for tracking
 	(he can change it himself in the tracking module later)
-	
 
 ..  _order-status-codes:
 
-statusCodes		.			
+statusCodes				
 -----------
 
 ..  confval:: statusCodes	
@@ -1583,8 +1582,8 @@ statusCodes		.
             200 = Order cancelled
          }	
 
-		If email-notification to the delivery email address of the customer is enabled by default for tracking
-		(he can change it himself in the tracking module later)		
+    If email-notification to the delivery email address of the customer is enabled by default for tracking
+    (he can change it himself in the tracking module later)		
 	
 
 ..  _order-update-codes:
@@ -1886,8 +1885,483 @@ useArticles
     *   3: The variants of the product need not be entered but are taken from the articles assigned to a product. No product is assigned to an article, but many articles are assigned to a product with the possibility of additional prices. Each article can have a part of the variants. If more than one article is added and can be part of the variants, then the additional prices are added and the text fields are chained.
 
 
+..  _keep-product-data:
+
+keepProductData
+---------------
+
+..  confval:: keepProductData
+    :name: keep product data
+    :type: boolean
+    :default: 1 (true)
+
+    If true, the product data are kept in the article markers if they are not 
+	empty and if the product is merged with a corresponding article which fits
+	in the variant fields.
+    Only used if useArticles = 3.
 
 
+..  _no-article-single-view:
 
+noArticleSingleView
+-------------------
+
+..  confval:: noArticleSingleView
+    :name: no article single view
+    :type: boolean
+    :default: 1 (true)
+
+    If true, then no article single view is used. 
+    Articles are instead linked to the product single view and 
+    the corresponding variant selection is shown.
+
+
+..  _price-tag-obj:
+
+priceTagObj
+-----------
+
+..  confval:: priceTagObj
+    :name: price tag object
+    :type: IMAGE cObjec
+
+    Image for the display of the price
+
+
+..  _use-price-tag:
+
+usePriceTag
+-----------
+
+..  confval:: usePriceTag
+    :name: use price tag
+    :type: boolean
+    :default: 0 (false)
+
+    If true, the priceTagObj will be used. If false, the text will be displayed.
+
+
+..  _use-static-info-country:
+
+useStaticInfoCountry
+--------------------
+
+..  confval:: useStaticInfoCountry
+    :name: use static info country
+    :type: boolean
+    :default: 0 (false)
+
+    If true the short fe_users static_info_country field will be used 
+    for country instead of the country field.
+
+
+..  _use-static-taxes:
+
+useStaticTaxes
+--------------
+
+..  confval:: useStaticTaxes
+    :name: use static taxes
+    :type: boolean
+    :default: 0 (false)
+
+    If true, the tax will be determined from the country and region
+    by the extension static_info_tables_taxes.
+
+
+..  _where-gift:
+
+whereGift
+---------
+
+..  confval:: whereGift
+    :name: where gift
+    :type: string
+
+    This SQL where clause defines which products will be treated as gifts.
+
+
+..  _where-gift-service:
+
+whereGiftService
+----------------
+
+..  confval:: whereGiftService
+    :name: where gift service
+    :type: string
+
+    This SQL where clause defines which products will be treated as gift services.
+
+
+..  _special-preparation:
+
+specialPreparation
+------------------
+
+..  confval:: specialPreparation
+    :name: special preparation
+    :type: string
+
+    This text will substitute your ###PRODUCT_SPECIAL_PREP### markers
+
+
+..  _create-users:
+
+createUsers
+-----------
+
+..  confval:: createUsers
+    :name: create users
+    :type: boolean
+    :default: 0 (false)
+
+    If you set this and PIDuserFolder, for each customer that is not logged in 
+    and his email address is not listed as user already, a new frontend user will be created.
+    An email with the username (his e-mail address) and the password will be sent 
+    to him (see ###EMAIL_NEWUSER_TEMPLATE###)
+
+
+..  _use-md5-password:
+
+useMd5Password
+--------------
+
+..  confval:: useMd5Password
+    :name: enable md5 password encryption
+    :type: boolean
+    :default: 0 (false)
+
+    Note: If set, passwords will be encrypted. Consider to install an
+    extension like kb_md5fepw and the newloginbox. 
+
+
+..  _output-folder:
+
+outputFolder
+------------
+
+..  confval:: outputFolder
+    :name: folder where the bill and delivery sheets are created
+    :type: string
+    :default: fileadmin/data
+
+
+..  _member-of-group:
+
+memberOfGroup
+-------------
+
+..  confval:: memberOfGroup
+    :name: new front end user gets member of this group
+    :type: int+
+    :default: 1
+
+    The ID of the front end user group, the new users should be member of.
+
+
+..  _discount-group-name:
+
+discountGroupName
+-----------------
+
+..  confval:: discountGroupName
+    :name: name of the group for discount pricecalculation
+    :type: string
+
+
+..  _get-discount-price:
+
+getDiscountPrice
+----------------
+
+..  confval:: getDiscountPrice
+    :name: get discount price
+    :type: boolean
+
+    If set the discount price will be used even for normal customers
+    without having a frontend user in the discount group.
+
+
+..  _discount-price-mode:
+
+discountPriceMode
+-----------------
+
+..  confval:: discountPriceMode
+    :name: discount price mode
+    :type: integer
+
+    *   If unset, then the price field is used as the base to calculate the discount:
+        discount = (price – price2) / price
+         ... where price contains no discounts
+    *    set to 1:
+         discount = (price2 – price) / price2
+         ... where price contains the discounts
+
+    This is only needed for setting the behavior of the price2 markers.
+
+
+..  _discount-field-mode:
+
+discountFieldMode
+-----------------
+
+..  confval:: discountFieldMode
+    :name: discount field mode
+    :type: integer
+
+    If set the discount field in the product and category table will be used 
+    to get a reducted price for a product.
+    Modes:
+    *   1 ... the highest discount from product and categories will be used
+    *   2 ... use the product discount if set, otherwise use the highest 
+        hierarchical category discount which is set.
+
+
+..  _agb-target:
+
+AGBtarget
+---------
+
+..  confval:: AGBtarget
+    :name: AGB target
+    :type: string
+    :default: _blank
+
+     target for the PIDagb link
+
+
+..  _agb-attachment:
+
+AGBattachment
+-------------
+
+..  confval:: AGBattachment
+    :name: AGB attachment
+    :type: resource
+    :default: fileadmin/agb.pdf
+
+    If this file exists, it will be attached to the order confirmation email
+    to the customer. The shop administrator won't receive the agb attachment,
+    but the CSV if you enable it
+
+
+..  _generate-xml:
+
+generateXML
+-----------
+
+..  confval:: generateXML
+    :name: generate XML
+    :type: boolean
+    :default: 0 (false)
+
+    Generates a XML file from each order. This file will be saved on the server 
+    and sent to the shop administrator per email (with the order confirmation)
+
+
+..  _xml-destination:
+
+XMLdestination
+--------------
+
+..  confval:: XMLdestination
+    :name: XML destination
+    :type: resource
+    :default: ../xmlorders/
+
+    The directory on the server, where the XML files should be saved.
+    This directory should not be accessible over http, because everyone
+    can read your customers and their orders.
+    So don't put this directory unter fileadmin, or rename it to 
+    something cryptical at least.
+
+
+..  _generate-csv:
+
+generateCSV
+-----------
+
+..  confval:: generateCSV
+    :name: generate CSV
+    :type: boolean
+    :default: 0 (false)
+
+    Generates a CSV file from each order. This file will be saved on 
+    the server and sent to the shop administrator per email 
+    (with the order confirmation)
+
+
+..  _csv-destination:
+
+CSVdestination
+--------------
+
+..  confval:: CSVdestination
+    :name: CSV destination
+    :type: resource
+    :default: ../csvorders/
+
+    The directory on the server, where the CSV files should be saved. 
+    This directory should not be accessible over http, because everyone 
+    can read your customers and their orders.
+    So don't put this directory unter fileadmin, or rename it to something cryptical at least.
+
+
+..  _csv-fields:
+
+CSVfields
+---------
+
+..  confval:: CSVfields
+    :name: CSV fields
+    :type: string
+    :default: ../csvorders/
+
+    Select which product data should be added to the CSV. By default 
+    these are all important fields except the note
+
+
+..  _csv-in-one-line:
+
+CSVinOneLine
+------------
+
+..  confval:: CSVinOneLine
+    :name: CSV in one line
+    :type: boolean
+    :default: 0 (false)
+
+    If you set this to 1, all additional information
+	(shipping, payment, address data, delivery note) will be appended to the 
+	first ordered item. This is good if you want to import these files somewhere.
+    If you leave this at 0, the file will be formatted for best view in programs like Excel.
+
+
+..  _csv-not-in-email:
+
+CSVnotInEmail
+-------------
+
+..  confval:: CSVnotInEmail
+    :name: CSV in one line
+    :type: boolean
+    :default: 0 (false)
+
+    If set no csv file will be appended to the email.
+
+
+..  _always-in-stock:
+
+alwaysInStock
+-------------
+
+..  confval:: alwaysInStock
+    :name: always in stock
+    :type: boolean
+    :default: 1 (true)
+
+    If set the stock will not get reduced if something has been bought.
+
+
+..  _show-not-in-stock:
+
+showNotinStock
+--------------
+
+..  confval:: showNotinStock
+    :name: show not in stock
+    :type: boolean
+    :default: 1 (true)
+
+    If set the items will be shown even if no product is in the stock
+
+
+..  _not-in-stock-message:
+
+notInStockMessage
+-----------------
+
+..  confval:: notInStockMessage
+    :name: not in stock message
+    :type: string
+    :default: Not in stock
+
+    See above. This will be shown if no items are in stock and 
+    showNotinStock is set.
+
+
+..  _warning-in-stock-limit:
+
+warningInStockLimit
+-------------------
+
+..  confval:: warningInStockLimit
+    :name: warning about the in stock limit
+    :type: string
+    :default: Not in stock
+
+    Amount of items in stock at which when reached a warning message is sent.
+
+
+..  _in-stock-pieces:
+
+inStockPieces
+-------------
+
+..  confval:: inStockPieces
+    :name: in stock pieces
+    :type: string
+    :default: pieces
+
+    This is the unit for items inStock. 
+
+
+..  _new-item-days:
+
+newItemDays
+-----------
+
+..  confval:: newItemDays
+    :name: days belonging to new items
+    :type: string
+    :default: pieces
+
+    In LISTNEWITEMS, the newly added items of the last n days will be shown.
+
+
+..  _bulkily-warning:
+
+bulkilyWarning
+--------------
+
+..  confval:: bulkilyWarning
+    :name: bulkily warning
+    :type: string
+
+    Text for ###BULKILY_WARNING### for bulk goods.
+
+
+..  _javascript:
+
+javaScript
+----------
+
+..  confval:: javaScript
+    :name: javaScript
+    :type: *array of integers*
+
+    Some JavaScript which will be included for ###JAVASCRIPT_10### markers..
+
+	**Example:**
+
+    ..  code-block:: typoscript
+        :caption: JavaScript functions
+
+        javaScript {
+            10.value = function addValues (a, b) { return a+b; }
+            20.value = function multiplyValues (a, b) { return a*b; }
+        }
+	
 
 
