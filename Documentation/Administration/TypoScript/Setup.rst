@@ -2021,3 +2021,29 @@ createUsers
     to him (see ###EMAIL_NEWUSER_TEMPLATE###)
 
 
+..  _use-md5-password:
+
+useMd5Password
+--------------
+
+..  confval:: useMd5Password
+    :name: enable md5 password encryption
+    :type: boolean
+    :default: 0 (false)
+
+    Note: If set, passwords will be encrypted. Consider to install an
+    extension like kb_md5fepw and the newloginbox. 
+
+
+..  _output-folder:
+
+outputFolder
+------------
+
+..  confval:: outputFolder
+    :name: folder where the bill and delivery sheets are created
+    :type: string
+    :default: fileadmin/data
+
+
+
