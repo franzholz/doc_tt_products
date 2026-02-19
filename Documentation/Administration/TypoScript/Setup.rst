@@ -2101,3 +2101,32 @@ discountPriceMode
     This is only needed for setting the behavior of the price2 markers.
 
 
+..  _discount-field-mode:
+
+discountFieldMode
+-----------------
+
+..  confval:: discountFieldMode
+    :name: discount field mode
+    :type: integer
+
+    If set the discount field in the product and category table will be used 
+    to get a reducted price for a product.
+    Modes:
+    *   1 ... the highest discount from product and categories will be used
+    *   2 ... use the product discount if set, otherwise use the highest 
+        hierarchical category discount which is set.
+
+
+..  _agb-target:
+
+AGBtarget
+---------
+
+..  confval:: AGBtarget
+    :name: AGB target
+    :type: string
+    :default: _blank
+
+     target for the PIDagb link
+
