@@ -2304,6 +2304,43 @@ warningInStockLimit
     Amount of items in stock at which when reached a warning message is sent.
 
 
+..  _in-stock-pieces:
+
+inStockPieces
+-------------
+
+..  confval:: inStockPieces
+    :name: in stock pieces
+    :type: string
+    :default: pieces
+
+    This is the unit for items inStock. 
+
+
+..  _new-item-days:
+
+newItemDays
+-----------
+
+..  confval:: newItemDays
+    :name: days belonging to new items
+    :type: string
+    :default: pieces
+
+    In LISTNEWITEMS, the newly added items of the last n days will be shown.
+
+
+..  _bulkily-warning:
+
+bulkilyWarning
+--------------
+
+..  confval:: bulkilyWarning
+    :name: bulkily warning
+    :type: string
+
+    Text for ###BULKILY_WARNING### for bulk goods.
+
 
 
 
