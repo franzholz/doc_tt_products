@@ -31,6 +31,7 @@ templateFile
     You can also specify a :typoscript:`CODE` and :typoscript:`ERROR` for error cases.
     (see display mode)
 
+
     **Example:**
 
     ..  code-block::typoscript
@@ -38,8 +39,7 @@ templateFile
         
         plugin.tt_products {
             templateFile = EXT:/addons_tt_products/Resources/Private/Templates/collection/example_template_bill_de.tmpl
-        }
-	
+        }	
         plugin.tt_products {
             templateFile.LIST = EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html
         }
