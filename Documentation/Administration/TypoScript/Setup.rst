@@ -35,14 +35,13 @@ templateFile
     ..  code-block::typoscript
         :caption:  plugin.tt_products.templateFile
 
-    plugin.tt_products {
-        templateFile = EXT:/addons_tt_products/Resources/Private/Templates/collection/example_template_bill_de.tmpl
-    }
-
-    plugin.tt_products {
-        templateFile.LIST = EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html
-    }
-
+        plugin.tt_products {
+            templateFile = EXT:/addons_tt_products/Resources/Private/Templates/collection/example_template_bill_de.tmpl
+        }
+	
+        plugin.tt_products {
+            templateFile.LIST = EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html
+        }
 
 
 ..  _template-suffix:
@@ -659,12 +658,12 @@ itemMarkerArrayFunc
     **Example:**
     (provided that a function or class is included!)
 
-..  code-block:: typoscript
-    :caption: define an itemMarkerArrayFunc
-
-    itemMarkerArrayFunc = user_addFieldsMarkerArr
-    itemMarkerArrayFunc.simpleOption = 1
-
+	..  code-block:: typoscript
+	    :caption: define an itemMarkerArrayFunc
+	
+	    itemMarkerArrayFunc = user_addFieldsMarkerArr
+	    itemMarkerArrayFunc.simpleOption = 1
+	
 
 ..  _pid-item-display:
 
@@ -1512,7 +1511,7 @@ orderEmail_apostrophe		.
 ---------------------
 
 ..  confval:: orderEmail_htmlmail	
-    :name: send HTML format in order email
+    :name: apostrophe in order email
     :type: string
 
     Use these characters as apostrophe in the order email subject
@@ -1523,9 +1522,10 @@ orderEmail_apostrophe		.
 orderEmail_order2		.			
 ------------------
 
-..  confval:: orderEmail_htmlmail	
-    :name: send HTML format in order email
-    :type: string
+..  confval:: orderEmail_order2	
+    :name: send 2 order email confirmations
+    :type: boolean
+    :default: 0 (false)
 
     If set, the shop admin receives 2 email order confirmations.
     The same email like the customer with EMAIL_PLAINTEXT_TEMPLATE and also the one 
@@ -1564,25 +1564,25 @@ statusCodes		.
 	**Example:**
 
     ..  code-block:: typoscript
-        :caption: status code overview
+        :caption: status code standard setup
     
-		statusCodes {
-		    1 = Order submitted by user
-		    2 = Order is received and accepted by store
-		    10 = Shop is awaiting goods from third-party
-		    11 = Shop is awaiting customer payment
-		    12 = Shop is awaiting material from customer
-		    13 = Order has been payed
-		    20 = Goods shipped to customer
-		    30 = Other message from store
-		    50 = Customer request for cancelling
-		    51 = Message from customer to shop
-		    100 = Order shipped and closed
-		    101 = Order closed
-		    200 = Order cancelled
-		}	
-		
-	    If email-notification to the delivery email address of the customer is enabled by default for tracking
+        statusCodes {
+            1 = Order submitted by user
+            2 = Order is received and accepted by store
+            10 = Shop is awaiting goods from third-party
+            11 = Shop is awaiting customer payment
+            12 = Shop is awaiting material from customer
+            13 = Order has been payed
+            20 = Goods shipped to customer
+            30 = Other message from store
+            50 = Customer request for cancelling
+            51 = Message from customer to shop
+            100 = Order shipped and closed
+            101 = Order closed
+            200 = Order cancelled
+        }	
+
+		If email-notification to the delivery email address of the customer is enabled by default for tracking
 		(he can change it himself in the tracking module later)		
 	
 
@@ -1659,7 +1659,7 @@ displayCurrentRecord
 --------------------
 
 ..  confval:: displayCurrentRecord	
-    :name: stdWrap for credit card end time date
+    :name: display the current record
     :type: boolean
 
 	If set, certain settings are manipulated in order to let the script render a single item - the $cObj->data.
@@ -1673,7 +1673,7 @@ externalProcessing
 ------------------
 
 ..  confval:: externalProcessing	
-    :name: processing of the shopping basket
+    :name: external processing of the shopping basket
     :type: cObject
 
 	This cObject may be used to call a function which manipulates the shopping basket. 
@@ -1689,7 +1689,7 @@ externalProcessing_final
 ------------------------
 
 ..  confval:: externalProcessing_final	
-    :name: final processing of the shopping basket
+    :name: final external processing of the shopping basket
     :type: cObject
 
 	cObject for the final order confirmation template
@@ -1701,7 +1701,7 @@ externalFinalizing
 ------------------
 
 ..  confval:: externalFinalizing	
-    :name: final processing of the shopping basket
+    :name: exernal finalizing of the order system
     :type: cObject
 
 	This cObject may be used to call a function which clears settings in an external order system.
@@ -1761,7 +1761,7 @@ wrapInCode
 ----------
 
 ..  confval:: wrapInCode	
-    :name: use base class wrap 
+    :name: code wrap 
     :type: boolean *S*
 
 	If set, then the output will be wrapped by
