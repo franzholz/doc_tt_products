@@ -384,7 +384,8 @@ Selectable Payment / Shipping / Handling Items
 
     This is a list of :typoscript:`payment` settings which will be overridden if this shipping method has been selected.
 
-    Example:
+    **Example:**
+
     ..  code-block:: typoscript
         :caption: excludePayment for pickup in store
 
