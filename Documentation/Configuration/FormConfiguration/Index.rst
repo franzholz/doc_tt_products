@@ -20,7 +20,8 @@ There are several forms which can be configured. Put the code after the form set
     *   name: name of the form. 
     *   If empty, default values will be used.
 
-**Example:**
+
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: searchform for the shop
@@ -35,14 +36,14 @@ There are several forms which can be configured. Put the code after the form set
     Every entry in the dataArray is numeric and has four
     main properties
 
-    *   **label** 
-    *   **type**
-    *   **value**
-    *   **required**
+    *   :typoscript:`label` 
+    *   :typoscript:`type`
+    *   :typoscript:`value`
+    *   :typoscript:`equired`
 
-    'label' and 'value' have stdWrap properties.
+    :typoscript:`label` and :typoscript:`value` have :typoscript:`stdWrap` properties.
     
-    params ... Put additional parameters here.
+    :typoscript:`params`: Put additional parameters here.
 
     **Example:**
 
@@ -55,7 +56,7 @@ There are several forms which can be configured. Put the code after the form set
             10.params = onchange="submit();"
         }
 
-      Enhancement for the selection of variants with selectColor, … specification.
+      Enhancement for the selection of variants with :typoscript:`selectColor`, … specification.
 
     ..  code-block:: typoscript
         :caption: select for for adddresses
@@ -99,8 +100,8 @@ There are several forms which can be configured. Put the code after the form set
 
     **Example:**
     
-    This substitutes the "###INPUT###" with the input tag
-    and the "###IMAGE###' with image data.
+    This substitutes the :php:`###INPUT###` with the input tag
+    and the :php:`###IMAGE###` with image data.
     
     ..  code-block:: html
         :caption: substitution with input tag and image data
