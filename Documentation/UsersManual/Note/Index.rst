@@ -22,9 +22,6 @@ the prices with or without tax (see TAXincluded). All the calculations and confi
 the prices as they have been stored into the price field of the tt_products table. You should use a
 template with multiple columns (
 
-
-.. _users-manual-note-pluginttproductsconfttproductslistdisplaycolumns1:
-
 plugin.tt_products.conf.tt_products.LIST.displayColumns.1 = 3
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
