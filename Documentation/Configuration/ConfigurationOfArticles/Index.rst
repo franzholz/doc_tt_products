@@ -629,14 +629,14 @@ additional possible values are
 
     This determines the behaviour of the display of the subparts.
 
-    *    show:  :typoscript:`default`: if a record for a default category must be shown even if no product is found
+    *    :typoscript:`show`:  :typoscript:`default`: if a record for a default category must be shown even if no product is found
            (for cat). This is used if you have a default category on each page and the category header should always be shown.
 
 
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: field
+        :caption: set the subpart behaviour for :php:`ITEM_CATEGORY`
 
         subpart.ITEM_CATEGORY {
             show = default
