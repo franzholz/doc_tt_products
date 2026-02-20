@@ -2352,8 +2352,7 @@ javaScript
 
     Some JavaScript which will be included for :php:`###JAVASCRIPT_10###` markers..
 
-
-	**Example:**
+    **Example:**
 
     ..  code-block:: typoscript
         :caption: JavaScript functions
