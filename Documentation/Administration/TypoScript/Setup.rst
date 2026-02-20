@@ -2244,7 +2244,7 @@ CSVnotInEmail
 -------------
 
 ..  confval:: CSVnotInEmail
-    :name: CSV in one line
+    :name: CSV not in email
     :type: boolean
     :default: 0 (false)
 
