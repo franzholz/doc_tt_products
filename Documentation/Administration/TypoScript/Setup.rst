@@ -70,7 +70,6 @@ fe
     No template file is needed in this case.
 
 
-
 ..  _pid-list:
 
 pid_list
@@ -262,7 +261,7 @@ domain
     :name: domain
     :type: string
 
-    The url of the shop. If not set, it will be detected automatically. Will replace :html:`###DOMAIN###` markers.
+    The url of the shop. If not set, it will be detected automatically. Will replace :php:`###DOMAIN###` markers.
 
 
 ..  _alt-main-markers:
@@ -305,8 +304,8 @@ altMainMarkers
         altMainMarkers.BASKET_TEMPLATE =  BASKET_DESIGN2
         altMainMarkers.BASKET_TEMPLATE.wrap = ### | ###
 
-    This example changes the main subpart marker for the regular basket display from the default :html:`###BASKET_TEMPLATE###` 
-    to the custom supplied design :html:`###BASKET_DESIGN2###` (found in the same template HTML-file)
+    This example changes the main subpart marker for the regular basket display from the default :php:`###BASKET_TEMPLATE###` 
+    to the custom supplied design :php:`###BASKET_DESIGN2###` (found in the same template HTML-file)
 
 
 ..  _std-search-field-ext:
@@ -345,7 +344,7 @@ separateImage
     :type: boolean
     :default: 0
 
-    Normally all images are shown combined together. With separateImage=on you can use a :html:`###PRODUCT_IMAGE3###` 
+    Normally all images are shown combined together. With separateImage=on you can use a :php:`###PRODUCT_IMAGE3###` 
     for each image number (starting with 1) separatly.
 
 
@@ -430,7 +429,7 @@ datasheetIcon
     :type: IMAGE cObject / *Array of integers (only setup)*
     :default: see :file:`setup.typoscript`
 
-    The image icon for the datasheet. Replaces ###ICON_DATASHEET###
+    The image icon for the datasheet. Replaces :php:`###ICON_DATASHEET###`
 
     If it is an array, then it consists of a file type and a file name.
     
@@ -565,7 +564,7 @@ displayCatListType
     :default: ul
 
     Define the HTML main tag for the display of the categories in the category list view.
-    Use the new plugin 'Categories: menu' instead of the former displayCatListType=ul.	ul
+    Use the new plugin 'Categories: menu' instead of the former :typoscript:`displayCatListType=ul`.
 
 
 ..  _substitute-page-title:
@@ -647,13 +646,13 @@ itemMarkerArrayFunc
     :type: *function-name*
 
     Every time a product is displayed be it in the basket, list or single view, the method :php:`getItemMarkerArray()` 
-    in :php:`tx_ttproducts_marker` is called. This function fills in and returns an array, so called markerArray(),
+    in :php:`tx_ttproducts_marker` is called. This function fills in and returns an array, so called :php:`markerArray()`,
     with key/values for template substitution.
     If you enter a valid function name here (see datatype 'function-name' for details!) that array will be passed
     to that function as the second parameter. The first parameter will be the TypoScript properties to :php:`itemMarkerArrayFunc`.
 
     Parent PHP-Object reference:
-    .parentObj property is hardcoded to be a reference to the calling user_products object (PHP).
+    :php:`parentObj` property is hardcoded to be a reference to the calling user_products object (PHP).
     
     **Example:**
     (provided that a function or class is included!)
@@ -680,7 +679,7 @@ PIDitemDisplay
 
     If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
     If you set the type to sql, you can use conditions using several lines. The where string can contain the
-    AND condition. The pid for the first fulfilled condition will be returned.
+    :php:`AND` condition. The pid for the first fulfilled condition will be returned.
 
     **Example:**
 
@@ -715,7 +714,7 @@ PIDlistDisplay
     :name: PID for the item list display
     :type: int+/*Array of integers*
 
-    Similar to PIDitemDisplay, however the category table is used here.	
+    Similar to :typoscript:`PIDitemDisplay`, however the category table is used here.	
 
 
 ..  _pid-search:
@@ -818,7 +817,7 @@ PIDthanks
     :name: PID for the thanks page	
     :type: int+
 
-    The thanks page can be shown instead of the order confirmation. BASKET_ORDERTHANKS_TEMPLATE will be used. 
+    The thanks page can be shown instead of the order confirmation. :php:`BASKET_ORDERTHANKS_TEMPLATE` will be used. 
     You must not set PIDfinalize if you use this.
 
 
@@ -873,7 +872,7 @@ PIDagb
     :name: The ID of the agb page
     :type: int+
 
-    The PID of a page with the general trading conditions (“AGB” in germany)
+    The PID of a page with the general trading conditions (*AGB* in Germany)
     Only if this page id is set the AGB check will be active.
 
 
@@ -1230,10 +1229,10 @@ currencySymbol
 
     **Example:**
 
-    EUR
-    DKR
-    USD
-    $
+    :typoscript:`EUR`
+    :typoscript:`DKR`
+    :typoscript:`USD`
+    :typoscript:`$`
 
 
 ..  _lock-login-user-info:
@@ -1293,7 +1292,7 @@ requiredInfoFields
     
         requiredInfoFields = name,address,telephone,fax,email,company,city,zip,state,country
 
-    The subvalues 'billing' and 'delivery' are possible.
+    The subvalues :typoscript:`billing` and :typoscript:`delivery` are possible.
 
     **Example:**
 
@@ -1312,7 +1311,7 @@ orderNumberPrefix
     :name: Prefix to the order numbers
     :type: string
 
-    Max 10 chars. If this string starts with '%' then the rest will be interpreted as a PHP date format.
+    Max 10 chars. If this string starts with :typoscript:`%` then the rest will be interpreted as a PHP date format.
 
 
 ..  _order-email:
@@ -1328,7 +1327,7 @@ orderEmail
 
     *   from:    'shop' will fetch orderEmail_from, 'customer' will fetch the customer email address.
     *   to:       email of the receiver
-    *   suffix:   suffix to the '###EMAIL_PLAINTEXT_TEMPLATE_###' subpart.
+    *   suffix:   suffix to the :php:`###EMAIL_PLAINTEXT_TEMPLATE_###` subpart.
     *   returnPath: email address to use in the case of a failure to send the email
 
     **Example:**
@@ -1477,7 +1476,7 @@ orderEmail_subject
     :name: subject for order email
     :type: string
 
-    Contents of the subject line if the first line in  ###EMAIL_PLAINTEXT_TEMPLATE### is empty.			
+    Contents of the subject line if the first line in  :php:`###EMAIL_PLAINTEXT_TEMPLATE###` is empty.			
 
 
 ..  _order-email-return-path:
@@ -1502,7 +1501,7 @@ orderEmail_htmlmail
     :type: boolean / string
 
     If set, the order confirmation email is sent as HTML
-    If orderEmail_htmlmail.removeImagesWithPrefix is set, then the images and their HTML tags will not be sent in an email.
+    If :typoscript:`orderEmail_htmlmail.removeImagesWithPrefix` is set, then the images and their HTML tags will not be sent in an email.
 	
 
 ..  _order-email-htmlmail:
@@ -1528,8 +1527,8 @@ orderEmail_order2		.
     :default: 0 (false)
 
     If set, the shop admin receives 2 email order confirmations.
-    The same email like the customer with EMAIL_PLAINTEXT_TEMPLATE and also the one 
-    only for shop admins EMAIL_PLAINTEXT_TEMPLATE_SHOP if available.
+    The same email like the customer with :php:`EMAIL_PLAINTEXT_TEMPLATE` and also the one 
+    only for shop admins :php:`EMAIL_PLAINTEXT_TEMPLATE_SHOP` if available.
 	
 
 ..  _order-email-notify-default:
@@ -1558,7 +1557,7 @@ statusCodes
     Number zero is the status of a non-finalized order (and non-finalized orders in the database may by time be regarded as garbage...)
     Numbers of 50-59 is available for the customer to choose from.
     Number 1 is reserved to be selected when an order goes from zero to 1 because it's confirmed. Number 1 cannot be selected by shop admin.
-    These will be written into ###STATUS_OPTIONS###  markers.
+    These will be written into :php:`###STATUS_OPTIONS###` markers.
 
 
     **Example:**
@@ -1665,8 +1664,8 @@ displayCurrentRecord
     :type: boolean
 
 	If set, certain settings are manipulated in order to let the script render a single item - the $cObj->data.
-	If this setting is set, the subpart marked ###ITEM_SINGLE_DISPLAY_RECORDINSERT### will be used 
-	instead of the regular subpart ###ITEM_SINGLE_DISPLAY### if it is found.
+	If this setting is set, the subpart marked :php:`###ITEM_SINGLE_DISPLAY_RECORDINSERT###` will be used 
+	instead of the regular subpart :php:`###ITEM_SINGLE_DISPLAY###` if it is found.
 
 
 ..  _external-processing:
@@ -1723,7 +1722,7 @@ wrap1
     :name: Global Wrap 1. 
     :type: stdWrap
 
-    This will be splitted into the markers ###GW1B### and ###GW1E###. Don't change the input value by the settings, only wrap it in something.
+    This will be splitted into the markers :php:`###GW1B###` and :php:`###GW1E###`. Don't change the input value by the settings, only wrap it in something.
 
 
     **Example:**
@@ -1743,7 +1742,7 @@ wrap2
     :name: Global Wrap 2. 
     :type: stdWrap
 
-	(see above) markers ###GW2B### and ###GW2E###	
+	(see above) markers :php:`###GW2B###` and :php:`###GW2E###`	
 
 
 ..  _wrap-in-base-class:
@@ -1898,7 +1897,7 @@ keepProductData
     If true, the product data are kept in the article markers if they are not 
 	empty and if the product is merged with a corresponding article which fits
 	in the variant fields.
-    Only used if useArticles = 3.
+    Only used if :typoscript:`useArticles = 3`.
 
 
 ..  _no-article-single-view:
@@ -2002,7 +2001,7 @@ specialPreparation
     :name: special preparation
     :type: string
 
-    This text will substitute your ###PRODUCT_SPECIAL_PREP### markers
+    This text will substitute your :php:`###PRODUCT_SPECIAL_PREP###` markers
 
 
 ..  _create-users:
@@ -2018,7 +2017,7 @@ createUsers
     If you set this and PIDuserFolder, for each customer that is not logged in 
     and his email address is not listed as user already, a new frontend user will be created.
     An email with the username (his e-mail address) and the password will be sent 
-    to him (see ###EMAIL_NEWUSER_TEMPLATE###)
+    to him (see :php:`###EMAIL_NEWUSER_TEMPLATE###`)
 
 
 ..  _use-md5-password:
@@ -2288,7 +2287,7 @@ notInStockMessage
     :default: Not in stock
 
     See above. This will be shown if no items are in stock and 
-    showNotinStock is set.
+    :typoscript:`showNotinStock` is set.
 
 
 ..  _warning-in-stock-limit:
@@ -2327,7 +2326,7 @@ newItemDays
     :type: string
     :default: pieces
 
-    In LISTNEWITEMS, the newly added items of the last n days will be shown.
+    In :php:`LISTNEWITEMS`, the newly added items of the last n days will be shown.
 
 
 ..  _bulkily-warning:
@@ -2339,7 +2338,7 @@ bulkilyWarning
     :name: bulkily warning
     :type: string
 
-    Text for ###BULKILY_WARNING### for bulk goods.
+    Text for :php:`###BULKILY_WARNING###` for bulk goods.
 
 
 ..  _javascript:
@@ -2351,7 +2350,8 @@ javaScript
     :name: javaScript
     :type: *array of integers*
 
-    Some JavaScript which will be included for ###JAVASCRIPT_10### markers..
+    Some JavaScript which will be included for :php:`###JAVASCRIPT_10###` markers..
+
 
 	**Example:**
 
