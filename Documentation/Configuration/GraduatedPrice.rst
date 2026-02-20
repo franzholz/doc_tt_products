@@ -7,6 +7,7 @@ Setup only
 
 The graduated prices gives you the possibility to add special prices for a list of amount of products.
 
+
     **Example:**
 
     ..  code-block:: typoscript
@@ -19,7 +20,6 @@ The graduated prices gives you the possibility to add special prices for a list 
         	    factor = 3
             }
         }
-
 
 
 .. _onfiguration-graduated-price-marks:
