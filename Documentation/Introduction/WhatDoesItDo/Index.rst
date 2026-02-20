@@ -4,7 +4,7 @@
 What does it do?
 ----------------
 
-The Typo3 shop extension gives you the facility for...
+The TYPO3 shop extension gives you the facility for...
 
 - Product listings with multiple images, details and languages
 - Shopping basket
@@ -30,8 +30,5 @@ The Typo3 shop extension gives you the facility for...
 - Display orders: order can be displayed on per fe-user basis (CODE=ORDERS)
 - Creditpoint system: customers can save credit points per each order. Saved points will give them a
   discount for newer orders or certain products can be "bought" with these points.
-- Voucher system: if a new customer indicates when registrating that she/he was tipped by another
-  existing customer, this customers gets a credit point bonus. The new customer gets a discount on
-  first order.
-- Gift certificate: Users can buy certificates and send them as gifts to their friends. After
-  signing on as front end users they can transform their gift certificates into creditpoints.
+- Voucher system: if a customer enters a voucher code, he gets a discount on
+  the order.

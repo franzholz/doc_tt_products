@@ -10,4 +10,4 @@ Do not forget any texts in your shops which are required. Be very careful when y
 pages. Hundreds of lawyers are continuously searching the Internet for your mistakes in order to get
 much more money from you than you could ever imagine. **That would be damn stupid for you.**
 
-`http://www.legalshop.co.uk <http://www.legalshop.co.uk/>`__
+`Cease and Desist Letters: A Comprehensive Legal Guide <https://www.summitlawllp.co.uk/cease-and-desist-legal-guide/>`__

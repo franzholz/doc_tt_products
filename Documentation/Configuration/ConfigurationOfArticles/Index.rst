@@ -72,18 +72,18 @@ additional possible values are
     Pairs of field names and the count of the first characters to be used
     to form the name of the image file.
 
-    *   type: tablefields, foreigntable (for field of another table)
-    *   prefix ... a prefix to the image filename
-    *   field.fieldname ... name of the table field*
-    *   separator ... separator in the filename between the
+    *   :typoscript:`type`:      tablefields, foreigntable (for field of another table)
+    *   :typoscript:`prefix`:    a prefix to the image filename
+    *   :typoscript:`field.`*fieldname*: name of the *table field*
+    *   :typoscript:`separator`:  separator in the filename between the
                 matched beginning of the filename and the end part of the filename.
-    *   table ... use another table and its configuration to get the image
-    *   uid_local ... use the value of this local field of the current table
-    *   uid_foreign ... use this field of the foreign table to find a match
+    *   :typoscript:`table`:       use another table and its configuration to get the image
+    *   :typoscript:`uid_local`:   use the value of this local field of the current table
+    *   :typoscript:`uid_foreign`: use this field of the foreign table to find a match
 
-    The file names will be like :file: 41000_1.jpg . A product will
+    The file names will be like :file:`41000_1.jpg`. A product will
     have multiple images if there are more files with a
-    similar file name, e.g. :file: 41000_2.jpg  .
+    similar file name, e.g. :file:`41000_2.jpg` .
 
 
     **Example:**
@@ -115,7 +115,7 @@ additional possible values are
     :required: true
     :type: array of string
 
-    Defines how the marker for the image is composed. In this example image names like 30_P1_001.jpg can be
+    Defines how the marker for the image is composed. In this example image names like :file:`30_P1_001.jpg` can be
     used, where the second part :php:`P1` and the third part :php:`001` form the marker. So the marker will be
     :php:`###CATEGORY_IMAGE_P1_001###`.
 
@@ -171,7 +171,6 @@ additional possible values are
     List of the fields by which the items will be ordered.
 
 
-
 .. _configuration-articles-products-categories-images-fetch-image:
 
 ..  confval:: fetchImage
@@ -225,7 +224,6 @@ additional possible values are
         }
 
         [GLOBAL]
-
 
 
     **Example:**
@@ -290,10 +288,10 @@ additional possible values are
     :type: *array of string*
 
         Use only table records which apply to a filter on a field or parameter base.
-        *   param:  GET/PUT parameter (value: gp) or predefined
-        *   regexp: use a regular expression
-        *   where:  use WHERE conditions
-        *   field:  name of the field on left and value on right side
+        *   :typoscript:`param`:  GET/PUT parameter (value: gp) or predefined
+        *   :typoscript:`regexp`: use a regular expression
+        *   :typoscript:`where`:  use WHERE conditions
+        *   :typoscript:`field`:  name of the field on left and value on right side
 
 
     **Example:**
@@ -378,7 +376,6 @@ additional possible values are
          <!-- ###ITEM_SINGLE### end -->
 
 
-
 .. _configuration-articles-products-categories-images-display-header:
 
 ..  confval:: displayHeader
@@ -390,8 +387,8 @@ additional possible values are
     after it all items of this category. But sometimes you want to show the header always with each product.
 
     values:
-    *    always:  The category and product block is repeated always with each product*
-    *    current: The current category is taken and not a second category
+    *    :typoscript:`always`:  The category and product block is repeated always with each product*
+    *    :typoscript:`current`: The current category is taken and not a second category
 
 
     **Example:**
@@ -422,9 +419,9 @@ additional possible values are
     :type: *array of string*
 
     Special treatment for the table. Only used with category parameters.
-    *   all: This uid stands for all uids. 'all=all' means that all uids are always allowed. The tt_products[cat] parameter is ignored.
-    *   no:  This uid shall never be considered
-    * field: name of the field on left and value on right side
+    *   :typoscript:`all`: This uid stands for all uids. 'all=all' means that all uids are always allowed. The tt_products[cat] parameter is ignored.
+    *   :typoscript:`no`:  This uid shall never be considered
+    *   *field*: name of the field on left and value on right side
 
 
     **Example:**
@@ -452,7 +449,6 @@ additional possible values are
     If set, the child items (e.g. subcategories) will only be displayed for the current item (category).
 
 
-
 .. _configuration-articles-products-categories-images-root-childs-of-current:
 
 ..  confval:: rootChildsOfCurrent
@@ -462,7 +458,6 @@ additional possible values are
 
     If set, the child items of the currently selected item
     will be shown on the root level.
-
 
 
 .. _configuration-articles-products-categories-images-field:
@@ -532,7 +527,6 @@ additional possible values are
         }
 
 
-
 .. _configuration-articles-products-categories-images-field-link:
 
 ..  confval:: fieldLink
@@ -574,7 +568,6 @@ additional possible values are
         }
 
 
-
 .. _configuration-articles-products-categories-images-view:
 
 ..  confval:: view
@@ -582,10 +575,10 @@ additional possible values are
     :required: false
     :type: *array of string*
 
-    *    sortselect:   array of form elements
-    *    filterselect: filtering
-    *    browser:       configuration for the record browser with types div2007
-    *    showFirstLast: if the first and last link is shown.
+    *    :typoscript:`sortselect`:   array of form elements
+    *    :typoscript:`filterselect`: filtering
+    *    :typoscript:`browser`:       configuration for the record browser with types div2007
+    *    :typoscript:`showFirstLast`: if the first and last link is shown.
 
 
     **Example:**
@@ -636,13 +629,14 @@ additional possible values are
 
     This determines the behaviour of the display of the subparts.
 
-    *    show:  :typoscript:`default`: if a record for a default category must be shown even if no product is found
+    *    :typoscript:`show`:  :typoscript:`default`: if a record for a default category must be shown even if no product is found
            (for cat). This is used if you have a default category on each page and the category header should always be shown.
+
 
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: field
+        :caption: set the subpart behaviour for :php:`ITEM_CATEGORY`
 
         subpart.ITEM_CATEGORY {
             show = default
@@ -658,6 +652,7 @@ additional possible values are
 
     Self defined markers for the record.
 
+
     **Example:**
 
     ..  code-block:: typoscript
@@ -671,7 +666,6 @@ additional possible values are
                 10.wrap = Title: - | -
             }
         }
-
 
 
 .. _configuration-articles-products-categories-images-tag-mark:
