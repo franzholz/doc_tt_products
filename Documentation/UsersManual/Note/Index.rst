@@ -20,24 +20,18 @@ should finally have the convention of pricing like 89.99 and not 89.72.
 Before you start entering the prices of your products you have to decide whether you want to enter
 the prices with or without tax (see TAXincluded). All the calculations and configurations will use
 the prices as they have been stored into the price field of the tt_products table. You should use a
-template with multiple columns (
-
-plugin.tt_products.conf.tt_products.LIST.displayColumns.1 = 3
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-or higher) even if you only have one column in the list table.
+template with multiple columns
+(:typoscript:`plugin.tt_products.conf.tt_products.LIST.displayColumns.1 = 3`
+ or higher)  even if you only have one column in the list table.
 
 Use an example template from the directory tt_products/template, like the template,
 example_template_bill_de.tmpl, when you start your shop. You have to change the page id in the links
-(after the 'id=...') to the page id of the basket on your site. The marker ###DOMAIN### is the
+(after the 'id=...') to the page id of the basket on your site. The marker :php:`###DOMAIN###` is the
 placeholder for your url. There are several placeholders for the different page ids of the shop.
 This is sensible because different hosting environments will be used. In the setup of the shop
-templates, the domain marker must become mydomain.com by using the following TypoScript :
-plugin.domain=mydomain.com).
+templates, the domain marker must become mydomain.com by using the following :typoscript:`plugin.domain=mydomain.com`.
 
-tt_products is based on the Table Library (table) and Static Methods for Extensions since 2007
-(div2007). So you have to always update to the latest versions of these extensions when you update
-tt_products.
+tt_products is based on the :composer:`jambagecom/table` and :composer:`jambagecom/div2007`. So you have to always update to the latest versions of these extensions when you update tt_products.
 
 If you want to use the variant fields (colour, quantity ...), you must also set the constants
 'selectColor' and 'selectSize' at 0 or 1, 2, 3. Otherwise, the count in the product list of articles
@@ -47,4 +41,3 @@ Many adaptations can be undertaken by way of the constant editor. For entering i
 most should be directed in the template's setup field and constant editor.
 
 
-    Pluginttproductsconfttproductslistdisplaycolumns1/Index
