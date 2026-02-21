@@ -24,8 +24,5 @@ This extension only works with PHP5.
     Version/Index
     CeaseAndDesistLetters/Index
     Translations/Index
-    Upgrade/Index
     WhatDoesItDo/Index
-    Developers/Index
     Sponsors/Index
-    Support/Index
