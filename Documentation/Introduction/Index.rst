@@ -20,4 +20,4 @@ This extension only works with PHP 8.
     CeaseAndDesistLetters
     Translations/Index
     WhatDoesItDo/Index
-    Sponsors/Index
+    Sponsors
