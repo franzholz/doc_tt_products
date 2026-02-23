@@ -8,7 +8,7 @@ Configuration
     :maxdepth: 2
     :titlesonly:
 
-    Files/Index
+    Files
     BasketConfiguration
     Description
     DisplayModesCode
