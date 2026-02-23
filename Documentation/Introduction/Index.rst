@@ -9,9 +9,8 @@ You should read the `German tutorial
  or `Italian tutorial
 <http://typo3.org/documentation/document-library/extension-manuals/tut_ttproducts_it/1.0.0/view/toc/0/>`__
  or one of the books `'Der TYPO3 Webshop' <http://www.fosdoc.de/downloads/OSP_typo3webshop>`__  and
-'`TYPO3 4.2 E-Commerce
-<https://www.packtpub.com/design-build-feature-rich-online-store-using-typo3-4-2-e-commerce/book>`__
-' before you start with it. Watch this `introduction video
+:ref:'TYPO3 4.2 E-Commerce <https://www.packtpub.com/en-us/product/typo3-42-e-commerce-9781847198532>`__
+before you start with it. Watch this `introduction video
 <http://www.youtube.com/watch?v=IQFDvgVJDXA>`__ `. <http://www.youtube.com/watch?v=IQFDvgVJDXA>`__
 See the extension addons_tt_products for newer example template files.
 
