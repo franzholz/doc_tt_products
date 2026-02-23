@@ -19,5 +19,5 @@ This extension only works with PHP 8.
     Version
     CeaseAndDesistLetters
     Translations
-    WhatDoesItDo/Index
+    WhatDoesItDo
     Sponsors
