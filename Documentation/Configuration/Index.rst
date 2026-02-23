@@ -26,5 +26,5 @@ Configuration
     BillAndDelivery
     TrackingConfiguration/Index
     GraduatedPrice
-    ErrorConfiguration/Index
+    ErrorConfiguration
 
