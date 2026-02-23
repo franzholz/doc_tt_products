@@ -16,8 +16,8 @@ Before you start entering the prices of your products you have to decide whether
 the prices with or without tax (see :typoscript:`TAXincluded`). All the calculations and configurations will use
 the prices as they have been stored into the :php:`price` field of the :php:`tt_products` table. You should use a
 template with multiple columns
-(:typoscript:`plugin.tt_products.conf.tt_products.LIST.displayColumns.1 = 3`
- or higher)  even if you only have one column in the list table.
+(:typoscript:`plugin.tt_products.conf.tt_products.LIST.displayColumns.1 = 3` or higher)  
+even if you only have one column in the list table.
 
 Use an example template from the directory :file:`Resources/Private/Templates/`, like the template,
 :file:`example_locallang_xml.html`, when you start your shop. The marker :php:`###DOMAIN###` is the
