@@ -5,11 +5,6 @@
 Note:
 -----
 
-The data path is renamed from 'pi' to 'pi1', thereby tt_products will now be put together like
-standard TYPO3 extensions. If paths have been employed from previous versions 1.2.x of tt_products
-then these must now be renamed in TypoScript setup. If you newly installl or update the extension,
-please observe the Depencies in TER (online repository of the extension manager).
-
 You must fill in the product's 'In Stock (pcs)' field of your product properties, or no item will be
 shown in your frontend list if set to 0. This has been changed to the older version.
 
