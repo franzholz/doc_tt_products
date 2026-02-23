@@ -11,4 +11,7 @@ calculated from the price variables and the TAXpercentage and TAXincluded consta
 global PHP variables $this->calculatedArray and $this->itemArray to make your own price
 calculations.
 
-10.calculationScript = EXT:tt_products/pi1/products_comp_calcScript.inc
+..  code-block:: typoscript
+    :caption: set calculationScript as EXT:my_extension/Classes/Utility/MyCalculations.php
+
+    10.calculationScript = EXT:my_extension/Classes/Utility/MyCalculations.php

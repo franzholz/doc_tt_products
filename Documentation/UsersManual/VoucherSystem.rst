@@ -13,8 +13,5 @@ If a customer states in his registration that he has been recruited by another c
 referring customer gets credit points. The new customer gets a discount with his first order.
 
 Somebody (lets say user 1) can enter a voucher code if he concludes an order. Then user 1 will
-obtain a discount. This credit entry code undergoes a change with each different user name (which is
-the e-mail address). Let's say user 2 gets 5 credit points altogether and applies his code to his
-purchase. Only one entry code out of a voucher system can be used by each user. In fe_users table
-there is a field given for this "tt_products_vouchercode" which contains the used credit entry code
-(e-mail of user 2).
+obtain a discount. In table :php:`fe_users`
+there is a field given for this "tt_products_vouchercode" which contains the used credit entry code.

@@ -7,7 +7,7 @@ Introduction
 You should read one of the books `Der TYPO3 Webshop <https://www.ttproducts.de/fileadmin/user_upload/home/OSP_typo3webshop.pdf>`_  and
 `TYPO3 4.2 E-Commerce <https://www.packtpub.com/en-us/product/typo3-42-e-commerce-9781847198532>`_
 before you start with it. Watch this `introduction video
-<https://www.youtube.com/watch?v=IQFDvgVJDXA>`_. 
+<https://www.youtube.com/watch?v=IQFDvgVJDXA>`_.
 See the extension :composer:`jambagecom/addons-tt-products` for a collection of example template files.
 
 This extension only works with PHP 8.
@@ -16,8 +16,8 @@ This extension only works with PHP 8.
     :maxdepth: 2
     :titlesonly:
 
-    Version/Index
-    CeaseAndDesistLetters/Index
-    Translations/Index
-    WhatDoesItDo/Index
-    Sponsors/Index
+    Version
+    CeaseAndDesistLetters
+    Translations
+    WhatDoesItDo
+    Sponsors
