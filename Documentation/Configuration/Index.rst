@@ -12,7 +12,7 @@ Configuration
     BasketConfiguration
     Description/Index
     DisplayModesCode/Index
-    ConfigurationOfArticles/Index
+    ConfigurationOfArticles
     FormConfiguration/Index
     ControlConfiguration/Index
     DownloadConfiguration/Index
