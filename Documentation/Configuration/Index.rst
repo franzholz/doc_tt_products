@@ -13,7 +13,7 @@ Configuration
     Description
     DisplayModesCode
     ConfigurationOfArticles
-    FormConfiguration/Index
+    FormConfiguration
     ControlConfiguration
     DownloadConfiguration
     PaymentShippingAndHandling
