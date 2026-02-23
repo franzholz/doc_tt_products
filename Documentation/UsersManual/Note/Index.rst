@@ -6,7 +6,7 @@ Note:
 -----
 
 You must fill in the product's 'In Stock (pcs)' field of your product properties, or no item will be
-shown in your frontend list if set to 0. This has been changed to the older version.
+shown in your frontend list if set to 0. 
 
 However, you should store the prices with included tax in the database; it makes it easier for you
 to reenter the price as well as for the customer to see the prices as you entered them. These prices
