@@ -13,7 +13,7 @@ Users manual
     Discount/Index
     LinkForProductsOfTheLast/Index
     OffersAndHighlights/Index
-    AgbGeneralTradingConditions/Index
+    AgbGeneralTradingConditions
     RightOfRevocation/Index
     MemoPage/Index
     VoucherSystem/Index
