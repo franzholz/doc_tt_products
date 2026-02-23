@@ -19,7 +19,7 @@ Configuration
     PaymentShippingAndHandling
     PaymentShippingHandlingItems
     PaymentShippingHandlingItemPrices
-    ShippingCostCalculation/Index
+    ShippingCostCalculation
     PricecalcDiscountpriceAnd
     VoucherSystemConfiguration
     OrderConfirmation
