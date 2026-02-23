@@ -24,7 +24,7 @@ Configuration
     VoucherSystemConfiguration
     OrderConfirmation
     BillAndDelivery
-    TrackingConfiguration/Index
+    TrackingConfiguration
     GraduatedPrice
     ErrorConfiguration
 
