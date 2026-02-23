@@ -11,7 +11,7 @@ Configuration
     Files/Index
     BasketConfiguration
     Description
-    DisplayModesCode/Index
+    DisplayModesCode
     ConfigurationOfArticles
     FormConfiguration/Index
     ControlConfiguration
