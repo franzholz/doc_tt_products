@@ -20,8 +20,8 @@ Configuration
     PaymentShippingHandlingItems
     PaymentShippingHandlingItemPrices
     ShippingCostCalculation/Index
-    PricecalcDiscountpriceAnd/Index
-    VoucherSystemConfiguration/Index
+    PricecalcDiscountpriceAnd
+    VoucherSystemConfiguration
     OrderConfirmation/Index
     BillAndDelivery
     TrackingConfiguration/Index
