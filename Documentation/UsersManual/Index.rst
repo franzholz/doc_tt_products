@@ -14,7 +14,7 @@ Users manual
     LinkForProductsOfTheLast
     OffersAndHighlights
     AgbGeneralTradingConditions
-    RightOfRevocation/Index
+    RightOfRevocation
     MemoPage
     VoucherSystem/Index
     CreditpointSystem
