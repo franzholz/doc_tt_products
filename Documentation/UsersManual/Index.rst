@@ -10,13 +10,13 @@ Users manual
 
     Note/Index
     CalculationScript
-    Discount/Index
+    Discount
     LinkForProductsOfTheLast/Index
     OffersAndHighlights/Index
     AgbGeneralTradingConditions
     RightOfRevocation/Index
     MemoPage/Index
     VoucherSystem/Index
-    CreditpointSystem/Index
+    CreditpointSystem
     ModifyThePageMenu/Index
     YouCanAddTheNumberOf/Index
