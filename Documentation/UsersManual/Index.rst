@@ -18,5 +18,5 @@ Users manual
     MemoPage
     VoucherSystem/Index
     CreditpointSystem
-    ModifyThePageMenu/Index
+    ModifyThePageMenu
     YouCanAddTheNumberOf/Index
