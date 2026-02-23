@@ -8,7 +8,7 @@ Users manual
     :maxdepth: 2
     :titlesonly:
 
-    Note/Index
+    Note
     CalculationScript
     Discount
     LinkForProductsOfTheLast
