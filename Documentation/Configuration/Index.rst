@@ -15,7 +15,7 @@ Configuration
     ConfigurationOfArticles
     FormConfiguration/Index
     ControlConfiguration
-    DownloadConfiguration/Index
+    DownloadConfiguration
     PaymentShippingAndHandling
     PaymentShippingHandlingItems
     PaymentShippingHandlingItemPrices
