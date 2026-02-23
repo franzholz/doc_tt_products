@@ -34,5 +34,5 @@ General:
     :maxdepth: 2
     :titlesonly:
 
-    Checklist/Index
+    Checklist
 
