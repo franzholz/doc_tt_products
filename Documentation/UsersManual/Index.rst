@@ -11,7 +11,7 @@ Users manual
     Note/Index
     CalculationScript
     Discount
-    LinkForProductsOfTheLast/Index
+    LinkForProductsOfTheLast
     OffersAndHighlights/Index
     AgbGeneralTradingConditions
     RightOfRevocation/Index
