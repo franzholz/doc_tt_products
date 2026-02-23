@@ -9,7 +9,7 @@ Users manual
     :titlesonly:
 
     Note/Index
-    CalculationScript/Index
+    CalculationScript
     Discount/Index
     LinkForProductsOfTheLast/Index
     OffersAndHighlights/Index
