@@ -16,8 +16,8 @@ This extension only works with PHP 8.
     :maxdepth: 2
     :titlesonly:
 
-    Version/Index
+    Version
     CeaseAndDesistLetters
-    Translations/Index
+    Translations
     WhatDoesItDo/Index
     Sponsors
