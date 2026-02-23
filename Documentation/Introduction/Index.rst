@@ -4,13 +4,13 @@
 Introduction
 ============
 
-You should read one of the books `'Der TYPO3 Webshop' <http://www.fosdoc.de/downloads/OSP_typo3webshop>`__  and
-:ref:'TYPO3 4.2 E-Commerce <https://www.packtpub.com/en-us/product/typo3-42-e-commerce-9781847198532>`__
+You should read one of the books `Der TYPO3 Webshop <https://www.ttproducts.de/fileadmin/user_upload/home/OSP_typo3webshop.pdf>`_  and
+`TYPO3 4.2 E-Commerce <https://www.packtpub.com/en-us/product/typo3-42-e-commerce-9781847198532>`_
 before you start with it. Watch this `introduction video
-<http://www.youtube.com/watch?v=IQFDvgVJDXA>`__ `. <http://www.youtube.com/watch?v=IQFDvgVJDXA>`__
-See the extension :composer:`jambagecom/addons_tt_products` for a collection of example template files.
+<https://www.youtube.com/watch?v=IQFDvgVJDXA>`_. 
+See the extension :composer:`jambagecom/addons-tt-products` for a collection of example template files.
 
-This extension only works with PHP8.
+This extension only works with PHP 8.
 
 .. toctree::
     :maxdepth: 2
