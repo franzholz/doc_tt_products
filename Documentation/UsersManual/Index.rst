@@ -16,7 +16,7 @@ Users manual
     AgbGeneralTradingConditions
     RightOfRevocation
     MemoPage
-    VoucherSystem/Index
+    VoucherSystem
     CreditpointSystem
     ModifyThePageMenu
     YouCanAddTheNumberOf/Index
