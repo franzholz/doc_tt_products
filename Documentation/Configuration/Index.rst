@@ -14,7 +14,7 @@ Configuration
     DisplayModesCode/Index
     ConfigurationOfArticles
     FormConfiguration/Index
-    ControlConfiguration/Index
+    ControlConfiguration
     DownloadConfiguration/Index
     PaymentShippingAndHandling
     PaymentShippingHandlingItems
