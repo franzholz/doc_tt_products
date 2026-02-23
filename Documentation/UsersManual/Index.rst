@@ -15,7 +15,7 @@ Users manual
     OffersAndHighlights/Index
     AgbGeneralTradingConditions
     RightOfRevocation/Index
-    MemoPage/Index
+    MemoPage
     VoucherSystem/Index
     CreditpointSystem
     ModifyThePageMenu/Index
