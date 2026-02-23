@@ -18,6 +18,5 @@ Users manual
     MemoPage/Index
     VoucherSystem/Index
     CreditpointSystem/Index
-    GiftCertificates/Index
     ModifyThePageMenu/Index
     YouCanAddTheNumberOf/Index
