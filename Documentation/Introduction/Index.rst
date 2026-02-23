@@ -4,10 +4,10 @@
 Introduction
 ============
 
-You should read one of the books :ref:`Der TYPO3 Webshop <http://www.fosdoc.de/downloads/OSP_typo3webshop>`  and
+You should read one of the books :ref:`Der TYPO3 Webshop <https://www.ttproducts.de/fileadmin/user_upload/home/OSP_typo3webshop.pdf>`  and
 :ref:`TYPO3 4.2 E-Commerce <https://www.packtpub.com/en-us/product/typo3-42-e-commerce-9781847198532>`
 before you start with it. Watch this `introduction video
-<http://www.youtube.com/watch?v=IQFDvgVJDXA>`. 
+<https://www.youtube.com/watch?v=IQFDvgVJDXA>`. 
 See the extension :composer:`jambagecom/addons-tt-products` for a collection of example template files.
 
 This extension only works with PHP 8.
