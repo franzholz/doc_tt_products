@@ -22,7 +22,7 @@ Configuration
     ShippingCostCalculation/Index
     PricecalcDiscountpriceAnd
     VoucherSystemConfiguration
-    OrderConfirmation/Index
+    OrderConfirmation
     BillAndDelivery
     TrackingConfiguration/Index
     GraduatedPrice
