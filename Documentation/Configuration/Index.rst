@@ -23,7 +23,7 @@ Configuration
     PricecalcDiscountpriceAnd/Index
     VoucherSystemConfiguration/Index
     OrderConfirmation/Index
-    BillAndDelivery/Index
+    BillAndDelivery
     TrackingConfiguration/Index
     GraduatedPrice
     ErrorConfiguration/Index
