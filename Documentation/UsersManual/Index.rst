@@ -12,7 +12,7 @@ Users manual
     CalculationScript
     Discount
     LinkForProductsOfTheLast
-    OffersAndHighlights/Index
+    OffersAndHighlights
     AgbGeneralTradingConditions
     RightOfRevocation/Index
     MemoPage
