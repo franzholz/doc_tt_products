@@ -10,7 +10,7 @@ Configuration
 
     Files/Index
     BasketConfiguration
-    Description/Index
+    Description
     DisplayModesCode/Index
     ConfigurationOfArticles
     FormConfiguration/Index
