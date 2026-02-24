@@ -1076,8 +1076,8 @@ TAXincluded
     :name: TAX is included in the prices
     :type: boolean
 
-    Set this, if TAX is included in the database prices! ( ... and of course: 
-    Clear this, if TAX is not included in the database prices and should be added in the display of items)
+    Set this, if :php:`TAX` is included in the database prices! ( ... and of course: 
+    Clear this, if :php:`TAX` is not included in the database prices and should be added in the display of items)
     All profieldLinkcessing will take this flag into account and calculate prices accordingly.
 
 
@@ -1090,7 +1090,7 @@ TAXrates
     :name: TAX rates
     :type: string
 
-    Comma separated list of tax rates. The first will be taken as tax A, the second as tax B aso.
+    Comma separated list of tax rates. The first will be taken as *tax A*, the second as *tax B* aso.
 
 
 ..  _tax-mode:
@@ -1103,8 +1103,8 @@ TAXmode
     :type: int+
     :default: 1 
 
-    *   1: The net sums are added first. The tax is added on the final total net sum.
-    *   2: The gross price is calculated for every product. The total sum is calculated on the single gross prices.	1
+    *   :typoscript:`1`: The net sums are added first. The tax is added on the final total net sum.
+    *   :typoscript:`2`: The gross price is calculated for every product. The total sum is calculated on the single gross prices.
 
 
 ..  _price-dec:
@@ -1163,8 +1163,8 @@ priceNoReseller
     :type: int+
 
     Price number for reseller, which can only be 2 at the moment. The price2 will however only be taken when its value is greater than 0. 
-    An enhancement extension must add more price fields if you want to use more price numbers.
-    Here is the way to get the price2 for a special user group:
+    An enhancement extension must add more :php:`price` fields if you want to use more *price numbers*.
+    Here is the way to get the :php:`price2` for a special user group:
 
     **Example:**
 
@@ -1251,7 +1251,7 @@ lockLoginUserInfo
     :type: boolean
     :default: 1 (true)
 
-    If set and a user is logged in, the address info of that fe_user gets filled in as billing address of the user. 
+    If set and a user is logged in, the address info of that :php:`fe_user` gets filled in as billing address of the user. 
     It is not possible to change this data.
 
 
@@ -1264,7 +1264,7 @@ editLockedLoginInfo
     :name: edit and lock login user information
     :type: boolean
 
-    If set and lockLoginUserInfo is set, then the filled in data is still editable for the order. 
+    If set and :typoscript:`lockLoginUserInfo` is set, then the filled in data is still editable for the order. 
     You have to set the input HTML tags for this.
 
 
@@ -1277,7 +1277,8 @@ loginUserInfoAddress
     :name: login user information address
     :type: boolean
 
-    If lockLoginUserInfo is set, this switch makes that the address field is filled in from address, country, zip and city of the fe_user	
+    If lockLoginUserInfo is set, this switch makes that the address field is filled in from 
+    :php:`address`, :php:`country`, :php:`zip` and :php:`city` of the :php:`fe_user`	
 
 
 ..  _required-info-address:
@@ -1289,7 +1290,7 @@ requiredInfoFields
     :name: required info fields  (only setup)
     :type: boolean
 
-    List of the fields which are re quired in the address information This example gives you all possibilities.
+    List of the fields which are required in the address information This example gives you all possibilities.
 
     **Example:**
 
