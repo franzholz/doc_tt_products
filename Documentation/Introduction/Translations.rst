@@ -5,6 +5,6 @@ Translations
 ------------
 
 A German translation of this document is available under the extension key `doc_ttproducts_de
-<http://typo3.org/documentation/document-library/extension-manuals/doc_ttproducts_de/current/view/>`__
-. A French translation is under development at `doc_ttproducts_fr
-<http://typo3.org/documentation/document-library/extension-manuals/doc_ttproducts_fr/current/>`__ .
+<https://extensions.typo3.org/extension/doc_ttproducts_de>`__
+. A French translation has been written at `doc_ttproducts_fr
+<https://extensions.typo3.org/extension/doc_ttproducts_fr>`__ .
