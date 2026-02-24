@@ -177,7 +177,7 @@ defaultDAMCategoryID
     :name: default DAM category ID
     :type: int+
 
-    See defaultCategoryID, but for DAM categories and the 'tt_products[damcat]' parameter.
+    See :typoscript:`defaultCategoryID`, but for DAM categories and the 'tt_products[damcat]' parameter.
 
 
 ..  _product-dam-category-id:
@@ -319,7 +319,7 @@ stdSearchFieldExt
     :type: *list of fields*
     :default: title,subtitle,note
 
-    Default internal list is title,subtitle,note. You can specify your default fields here.
+    Default internal list is :typoscript:`title,subtitle,note`. You can specify your default fields here.
 
 
 ..  _limit:
@@ -345,8 +345,8 @@ separateImage
     :type: boolean
     :default: 0
 
-    Normally all images are shown combined together. With separateImage=on you can use a :php:`###PRODUCT_IMAGE3###` 
-    for each image number (starting with 1) separatly.
+    Normally all images are shown combined together. With :typoscript:`separateImage=on` you can use a :php:`###PRODUCT_IMAGE3###` 
+    for each image number (starting with :php:`1`) separatly.
 
 
 ..  _image:
@@ -388,7 +388,7 @@ listImage
         }
 
     That way, attached images are not copied to and displayed from
-    :file:`/typo3temp/` (which gives trouble with transparent backgrounds) but directly linked from :file:`/uploads/pics/`.
+    :file:`/typo3temp/` (which leads into trouble with transparent backgrounds) but directly linked from :file:`/uploads/pics/`.
     The line with :typoscript:`altText` leads to the drawing of an alternative text.
 
 
@@ -404,7 +404,7 @@ listImageHasChilds
 
     The image configuration in list display if there is a filter for a category on the page and this category has childs.
 
-    see listImage
+    see :typoscript:`listImage`
 
 
 ..  _basket-image:
@@ -470,10 +470,11 @@ clickIntoBasket
     :type: boolean
     :default: 0 (false)
 
-    If set you will be directed into the basket page after putting a product into the basket. This only works if PIDbasket has been set.
+    If set you will be directed into the basket page after putting a product into the basket. 
+    This only works if :typoscript:`PIDbasket` has been set.
 
 
-..  _click-into-basket:
+..  _click-into-list:
 
 clickIntoList
 -------------
@@ -483,7 +484,8 @@ clickIntoList
     :type: boolean
     :default: 0 (false)
 
-    If set you will be directed into the list page from the single view after putting a product into the basket. This only works if PIDlistDisplay has been set.
+    If set you will be directed into the list page from the single view after putting a product into the basket. 
+    This only works if :typoscript:`PIDlistDisplay` has been set.
 
 
 ..  _max-basket-quantity:
@@ -497,8 +499,9 @@ basketMaxQuantity
     :default: 100000
 
     The maximum integer value for the quantity of an item in the basket.
-    'inStock': Only the number of items which are currently in stock can be put into the basket.
-    'creditpoint': Items can only be put into the basket if the FE user has enough credit points.
+
+    *   :typoscript:`inStock`: Only the number of items which are currently in stock can be put into the basket.
+    *   :typoscript:`creditpoint`: Items can only be put into the basket if the FE user has enough credit points.
 
 
 ..  _quantity-is-float:
@@ -511,7 +514,7 @@ quantityIsFloat
     :type: boolean
     :default: 100000
 
-    quantityIsFloat	boolean	If set the basket count can be a float value.	
+    If set the basket count can be a float value.	
 
 
 ..  _no-image-available:
@@ -633,8 +636,8 @@ NoSingleViewOnList
     :type: boolean
     :default: 0 (false)
 
-    Usually you get the link to the single item view on the display page of the LIST code. 
-    If you however want to create your own pages for single view with SINGLE code you must set this to 1.
+    Usually you get the link to the single item view on the display page of the :php:`LIST` code. 
+    If you however want to create your own pages for single view with :php:`SINGLE` code you must set this to :typoscript:`1`.
 
 
 ..  _item-marker-array-func:
@@ -648,12 +651,12 @@ itemMarkerArrayFunc
 
     Every time a product is displayed be it in the basket, list or single view, the method :php:`getItemMarkerArray()` 
     in :php:`tx_ttproducts_marker` is called. This function fills in and returns an array, so called :php:`markerArray()`,
-    with key/values for template substitution.
-    If you enter a valid function name here (see datatype 'function-name' for details!) that array will be passed
+    with :php:`key`/:php:`value` pairs for template substitution.
+    If you enter a valid function name here (see datatype *function-name* for details) that array will be passed
     to that function as the second parameter. The first parameter will be the TypoScript properties to :php:`itemMarkerArrayFunc`.
 
     Parent PHP-Object reference:
-    :php:`parentObj` property is hardcoded to be a reference to the calling user_products object (PHP).
+    :php:`parentObj` property is hardcoded to be a reference to the calling :php:`user_products` object.
     
     **Example:**
     (provided that a function or class is included!)
@@ -675,12 +678,12 @@ PIDitemDisplay
     :type: int+/*Array of integers*
 
     If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
-    If you set the type to sql, you can use conditions using several lines. The where string can contain the AND condition.
-    The pid for the first fulfilled condition will be returned.
+    If you set the type to sql, you can use conditions using several lines. The :php:`where` string can contain the :php:`AND` condition.
+    The :php:`pid` for the first fulfilled condition will be returned.
 
-    If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
-    If you set the type to sql, you can use conditions using several lines. The where string can contain the
-    :php:`AND` condition. The pid for the first fulfilled condition will be returned.
+    If you want a certain page to be used for display of item details, please enter the *PID* (page-uid) here.
+    If you set the type to sql, you can use conditions using several lines. The :php:`where` string can contain the
+    :php:`AND` condition. The :php:`pid` for the first fulfilled condition will be returned.
 
     **Example:**
 
@@ -696,7 +699,7 @@ PIDitemDisplay
              20.pid = 143 
         }
         
-    If you set the type to pid then the pid of the record will be used.
+    If you set the type to :typoscript:`pid` then the :php:`pid` of the record will be used.
 
     ..  code-block:: typoscript
         :caption: PIDitemDisplay with where conditions
@@ -711,7 +714,7 @@ PIDitemDisplay
 PIDlistDisplay
 --------------
 
-..  confval:: PIDitemDisplay
+..  confval:: PIDlistDisplay
     :name: PID for the item list display
     :type: int+/*Array of integers*
 
@@ -727,8 +730,10 @@ PIDsearch
     :name: PID for search page
     :type: int+
 
-    If you want all product searches to go to a specific page, enter the PID it here! NOTE: 
-    If you set this PID, all searchqueries will (must) be handled with a list content element with 
+    If you want all product searches to go to a specific page, enter the *PID* it here! 
+
+    **NOTE:** 
+    If you set this *PID*, all searchqueries will (must) be handled with a list content element with 
     the display mode "Products: search" on that page.
 
 
@@ -742,7 +747,7 @@ PIDsearch
     :type: int+
 
     If you want ever change the number of items anywhere to go to a specific page
-    (eg. the shopping basket page), enter the PID here.
+    (eg. the shopping basket page), enter the *PID* here.
 
 
 ..  _pid-store-root:
@@ -754,9 +759,9 @@ PIDstoreRoot
     :name: PID for store root
     :type: int+
 
-    This is the PID of the rootPage of the store. If not set the store will operate over all pages 
+    This is the *PID* of the "root page" of the store. If not set the store will operate over all pages 
     from the root of the site. But if the site has many pages, performance may improve.
-    You should better set pid_list instead of it.
+    You should better set :typoscript:`pid_list` instead of it.
 
 
 ..  _pid-store-root:
@@ -768,7 +773,7 @@ PID_sys_products_orders
     :name: PID for the sys_products_orders records.
     :type: int+
 
-    By default they will get the pid of the payment (finalize) page.	
+    By default they will get the :php:`pid` of the :php:`payment` (:php:`finalize`) page.	
 
 
 ..  _pid-info:
@@ -819,7 +824,7 @@ PIDthanks
     :type: int+
 
     The thanks page can be shown instead of the order confirmation. :php:`BASKET_ORDERTHANKS_TEMPLATE` will be used. 
-    You must not set PIDfinalize if you use this.
+    You must not set :typoscript:`PIDfinalize` if you use this.
 
 
 ..  _pid-tracking:
@@ -873,7 +878,7 @@ PIDagb
     :name: The ID of the agb page
     :type: int+
 
-    The PID of a page with the general trading conditions (*AGB* in Germany)
+    The :php:`PID` of a page with the general trading conditions (*AGB* in Germany)
     Only if this page id is set the AGB check will be active.
 
 
@@ -926,7 +931,7 @@ UIDstore
     :name: Shop data uid of fe_users
     :type: int+
 
-    comma  separated list of UIDs of the fe_users table with the data of the shop.
+    comma separated list of :php:`UID`s of the :php:`fe_users` table with the data of the shop.
 
 
 ..  _payment-activity:
@@ -939,12 +944,12 @@ paymentActivity
     :type: string
     :default: finalize
 
-    When the payment with a payment script shall be executed.
+    When the payment with a :php:`payment` script shall be executed.
     Possible values:  
 
-    *   payment
-    *   finalize
-    *   verify
+    *   :typoscript:`payment`
+    *   :typoscript:`finalize`
+    *   :typoscript:`verify`
 
 
 ..  _advance-order-number-with-integer:
@@ -961,8 +966,8 @@ advanceOrderNumberWithInteger
     a random number between [first-integer] and [second integer] to cheat a little.  
 
     **Example:**
-    *   1,10:  This will increment the counter randomly between 1 and 10
-    *   5,5:   This will increment the counter with 5 each time
+    *   :typoscript:`1,10`:  This will increment the counter randomly between :php:`1` and :php:`10`
+    *   :typoscript:`5,5` :  This will increment the counter with :php:`5` each time
 
 
 ..  _always-advance-order-number:
@@ -976,7 +981,8 @@ alwaysAdvanceOrderNumber
     :default: 0 (false)
 
     If set then the order number will always get increased and the empty order numbers are not reused. 
-    You have to set this if you use a payment script to pay via a payment system which does not accept duplicate order numbers.
+    You have to set this if you use a :php:`payment` script to pay via a payment system which does not accept 
+    duplicate order numbers.
 
 
 ..  _always-update-order-amount:
@@ -1002,7 +1008,7 @@ parseFunc
     :type: see parseFunc
 
     The product details are parsed by these properties. So if e.g. you want ot allow HTML-tags to create a table
-    in the Note field you have to set the parseFunc.allowTags or use the denyTags.
+    in the note field you have to set the :typoscript:`parseFunc.allowTags` or use the :typoscript:`denyTags`.
     To make RTE working with HTML you have to set the following into the root page template. 
 
     **Example:***
@@ -1026,7 +1032,7 @@ categoryHeader
     **Example:***
 
     ..  code-block:: typoscript
-        :caption: parseFunc
+        :caption: categoryHeader
     
         categoryHeader = TEXT
         categoryHeader.current = 1
@@ -1071,9 +1077,9 @@ TAXincluded
     :name: TAX is included in the prices
     :type: boolean
 
-    Set this, if TAX is included in the database prices! ( ... and of course: 
-    Clear this, if TAX is not included in the database prices and should be added in the display of items)
-    All profieldLinkcessing will take this flag into account and calculate prices accordingly.
+    Set this, if :php:`TAX` is included in the database prices! ( ... and of course: 
+    Clear this, if :php:`TAX` is not included in the database prices and should be added in the display of items)
+    All processing will take this flag into account and calculate prices accordingly.
 
 
 ..  _tax-rates:
@@ -1085,7 +1091,7 @@ TAXrates
     :name: TAX rates
     :type: string
 
-    Comma separated list of tax rates. The first will be taken as tax A, the second as tax B aso.
+    Comma separated list of tax rates. The first will be taken as *tax A*, the second as *tax B* aso.
 
 
 ..  _tax-mode:
@@ -1098,8 +1104,8 @@ TAXmode
     :type: int+
     :default: 1 
 
-    *   1: The net sums are added first. The tax is added on the final total net sum.
-    *   2: The gross price is calculated for every product. The total sum is calculated on the single gross prices.	1
+    *   :typoscript:`1`: The net sums are added first. The tax is added on the final total net sum.
+    *   :typoscript:`2`: The gross price is calculated for every product. The total sum is calculated on the single gross prices.
 
 
 ..  _price-dec:
@@ -1154,12 +1160,13 @@ priceNoReseller
 ---------------
 
 ..  confval:: priceNoReseller
-    :name: price number for reseller
+    :name: price number for a reduced price for resellers
     :type: int+
 
-    Price number for reseller, which can only be 2 at the moment. The price2 will however only be taken when its value is greater than 0. 
-    An enhancement extension must add more price fields if you want to use more price numbers.
-    Here is the way to get the price2 for a special user group:
+    Price number for reseller, which can be only :typoscript:`2` without the help of third party extensions. 
+    The :php:`price2` will however only be taken when its value is greater than 0. 
+    An enhancement extension must add more :php:`price` fields if you want to use more *price numbers*.
+    Here is an example based on Typoscript conditions to get the :php:`price2` for a special user group:
 
     **Example:**
 
@@ -1246,7 +1253,7 @@ lockLoginUserInfo
     :type: boolean
     :default: 1 (true)
 
-    If set and a user is logged in, the address info of that fe_user gets filled in as billing address of the user. 
+    If set and a user is logged in, the address info of that :php:`fe_user` gets filled in as billing address of the user. 
     It is not possible to change this data.
 
 
@@ -1259,8 +1266,8 @@ editLockedLoginInfo
     :name: edit and lock login user information
     :type: boolean
 
-    If set and lockLoginUserInfo is set, then the filled in data is still editable for the order. 
-    You have to set the input HTML tags for this.
+    If set and :typoscript:`lockLoginUserInfo` is set, then the filled in data are still editable for the order. 
+    You have to set the appropriate input HTML tags to get this working.
 
 
 ..  _login-user-info-address:
@@ -1272,7 +1279,8 @@ loginUserInfoAddress
     :name: login user information address
     :type: boolean
 
-    If lockLoginUserInfo is set, this switch makes that the address field is filled in from address, country, zip and city of the fe_user	
+    If :typoscript:`lockLoginUserInfo` is set, this switch makes the :php:`address` field to be filled in from 
+    :php:`address`, :php:`country`, :php:`zip` and :php:`city` of the :php:`fe_user`	
 
 
 ..  _required-info-address:
@@ -1284,7 +1292,7 @@ requiredInfoFields
     :name: required info fields  (only setup)
     :type: boolean
 
-    List of the fields which are re quired in the address information This example gives you all possibilities.
+    List of the fields which are required in the address information This example gives you all possibilities.
 
     **Example:**
 
@@ -1310,9 +1318,9 @@ orderNumberPrefix
 
 ..  confval:: orderNumberPrefix
     :name: Prefix to the order numbers
-    :type: string
+    :type: string (Max 10 chars)
 
-    Max 10 chars. If this string starts with :typoscript:`%` then the rest will be interpreted as a PHP date format.
+    If this string starts with :typoscript:`%` then the rest will be interpreted as a PHP date format.
 
 
 ..  _order-email:
@@ -1326,10 +1334,10 @@ orderEmail
 
     This defines additional confirmation emails containing suffixes, sender and receiver email addresses.
 
-    *   from:    'shop' will fetch orderEmail_from, 'customer' will fetch the customer email address.
-    *   to:       email of the receiver
-    *   suffix:   suffix to the :php:`###EMAIL_PLAINTEXT_TEMPLATE_###` subpart.
-    *   returnPath: email address to use in the case of a failure to send the email
+    *   :typoscript:`from`:    'shop' will fetch orderEmail_from, 'customer' will fetch the customer email address.
+    *   :typoscript:`to`:       email of the receiver
+    *   :typoscript:`suffix`:   suffix to the :php:`###EMAIL_PLAINTEXT_TEMPLATE_###` subpart.
+    *   :typoscript:`returnPath`: email address to use in the case of a failure to send the email
 
     **Example:**
 
@@ -1347,7 +1355,7 @@ orderEmail
                20.attachment = bill
         }
     
-    It is possible to send confirmation emails to the email address stored in a foreign table and where a foreign key has been added to the table fe_users.
+    It is possible to send confirmation emails to the email address stored in a foreign table and where a foreign key has been added to the table :php:`fe_users`.
     
     **Example:**
 
@@ -1383,7 +1391,7 @@ orderEmail_bcc
     :name: BCC for order email
     :type: array
 
-    BCC for the shop  admin's order confirmation
+    BCC for the shop admin's order confirmation
 
 
 ..  _order-email-from:
@@ -1473,7 +1481,7 @@ orderEmail_toDelivery
 orderEmail_subject		
 -------------------
 
-..  confval:: orderEmail_toDelivery	
+..  confval:: orderEmail_subject	
     :name: subject for order email
     :type: string
 
@@ -1501,16 +1509,16 @@ orderEmail_htmlmail
     :name: send HTML format in order email
     :type: boolean / string
 
-    If set, the order confirmation email is sent as HTML
+    If set, the order confirmation email is sent as HTML.
     If :typoscript:`orderEmail_htmlmail.removeImagesWithPrefix` is set, then the images and their HTML tags will not be sent in an email.
 	
 
-..  _order-email-htmlmail:
+..  _order-email-apostrophe:
 
-orderEmail_apostrophe		.			
+orderEmail_apostrophe			
 ---------------------
 
-..  confval:: orderEmail_htmlmail	
+..  confval:: orderEmail_apostrophe	
     :name: apostrophe in order email
     :type: string
 
@@ -1519,7 +1527,7 @@ orderEmail_apostrophe		.
 
 ..  _order-email-order2:
 
-orderEmail_order2		.			
+orderEmail_order2
 ------------------
 
 ..  confval:: orderEmail_order2	
@@ -1534,14 +1542,14 @@ orderEmail_order2		.
 
 ..  _order-email-notify-default:
 
-email_notify_default		.			
+email_notify_default			
 --------------------
 
 ..  confval:: email_notify_default	
     :name: email notification to the delivery address
     :type: boolean
 
-    If email-notification to the delivery email address of the customer is enabled by default for tracking
+    If email notification to the delivery email address of the customer is enabled by default for tracking
 	(he can change it himself in the tracking module later)
 
 ..  _order-status-codes:
@@ -1553,12 +1561,14 @@ statusCodes
     :name: Status codes used in the tracking module.
     :type: *Array of integers*
 
-    Numbers above 100 removes the order from the tracklist.
-    Number zero is the status of a non-finalized order (and non-finalized orders in the database may by time be regarded as garbage...)
-    Numbers of 50-59 is available for the customer to choose from.
-    Number 1 is reserved to be selected when an order goes from zero to 1 because it's confirmed. Number 1 cannot be selected by shop admin.
-    These will be written into :php:`###STATUS_OPTIONS###` markers.
+    *   Numbers above :typoscript:`100` remove the order from the tracklist.
+    *   Number :typoscript:`0` (zero) is the status of a non-finalized order 
+           (and non-finalized orders in the database may by time be regarded as garbage.)
+    *   Numbers of :typoscript:`50`-:typoscript:`59` are available for the customer to choose from.
+    *   Number :typoscript:`1` is reserved to be selected when an order goes from :php:`0` (zero) to :typoscript:`1` 
+           because it's confirmed. Number 1 cannot be selected by shop admin.
 
+    These will be written into :php:`###STATUS_OPTIONS###` markers.
 
     **Example:**
 
@@ -1579,28 +1589,28 @@ statusCodes
             100 = Order shipped and closed
             101 = Order closed
             200 = Order cancelled
-         }	
+         }
 
-    If email-notification to the delivery email address of the customer is enabled by default for tracking
+    If email notification to the delivery email address of the customer is enabled by default for tracking
     (he can change it himself in the tracking module later)		
 	
 
 ..  _order-update-codes:
 
-update_code		.			
+update_code	
 -----------
 
 ..  confval:: update_code	
     :name: update code for tracking
     :type: string
 
-	The 'password' used by the administrator of the shop to go into the tracking system in the front end.
-    The password form field will appear if a BE_USER is logged in, but this password is still needed.
+	The *password* used by the administrator of the shop to go into the tracking system in the front end.
+    The password form field will appear if a back end user is logged in, but this password is still needed.
 
 	
 ..  _status-date-std-wrap:
 
-statusDate_stdWrap		.			
+statusDate_stdWrap	
 ------------------
 
 ..  confval:: statusDate_stdWrap	
@@ -1663,7 +1673,7 @@ displayCurrentRecord
     :name: display the current record
     :type: boolean
 
-	If set, certain settings are manipulated in order to let the script render a single item - the $cObj->data.
+	If set, certain settings are manipulated in order to let the script render a single item - the :php:`$cObj->data`.
 	If this setting is set, the subpart marked :php:`###ITEM_SINGLE_DISPLAY_RECORDINSERT###` will be used 
 	instead of the regular subpart :php:`###ITEM_SINGLE_DISPLAY###` if it is found.
 
@@ -1677,11 +1687,11 @@ externalProcessing
     :name: external processing of the shopping basket
     :type: cObject
 
-	This cObject may be used to call a function which manipulates the shopping basket. 
+	This :php:`cObject` may be used to call a function which manipulates the shopping basket. 
 	This manipulation could be based on settings in an external order system. 
-	The output is included in the top of the order (HTML) on the basket-page.
-    This cObject is executed each time the main_products method of the user_products class in productsLib is called 
-	and it's executed before any of the main processing. See the class for details.
+	The output is included in the top of the order (HTML) on the basket page.
+    This cObject is executed each time the main_products method of the :php:`user_products` class in productsLib is called 
+	and it is executed before any of the main processing. See the class for details.
 
 
 ..  _external-processing-final:
@@ -1693,7 +1703,7 @@ externalProcessing_final
     :name: final external processing of the shopping basket
     :type: cObject
 
-	cObject for the final order confirmation template
+	:php:`cObject` for the final order confirmation template
 
 
 ..  _external-finalizing:
@@ -1705,12 +1715,14 @@ externalFinalizing
     :name: exernal finalizing of the order system
     :type: cObject
 
-	This cObject may be used to call a function which clears settings in an external order system.
+	This :php:`cObject` may be used to call a function which clears settings in an external order system.
 	This is a sister to the above function and they should probably be used in conjunction somehow.
 	This function is called immediately after the finalize-function has been called.
-	For instance this function would be suitable for clearing any external basket facilitated by the .externalProcessing cObject
+	For instance this function would be suitable for clearing any external basket facilitated by the :php:`.externalProcessing` cObject
 	
-	Note: The output is NOT included anywhere.
+	**Note:** 
+
+    The output is NOT included anywhere.
 
 
 ..  _wrap1:
@@ -1754,7 +1766,7 @@ wrapInBaseClass
     :name: use base class wrap 
     :type: boolean *S*
 
-	If true the output will be wrapped with <div class="tx-ttproducts-pi1"> | </div>
+	If true the output will be wrapped with :php:`<div class="tx-ttproducts-pi1"> | </div>`
 
 
 ..  _wrap-in-code:
@@ -1774,7 +1786,7 @@ wrapInCode
 	    <!-- START: tt-products-code-uid --><div id="tt-products-code-uid">
  		|</div><!-- END: tt-products-code-uid -->
 
-	'code' will be replaced by the code of the plugin. uid will be replaced by the field 'uid' of the table tt_products.
+	:html:`code` will be replaced by the code of the plugin. :html:`uid` will be replaced by the field 'uid' of the table tt_products.
 
 
 ..  _select-color:
@@ -1878,10 +1890,10 @@ useArticles
     :type: integer
     :default: 3
 
-    *   0: If you do not want to use the articles table then this must remain 0.
-    *   1: If you want to use products in different variants and have special prices for them in the articles table, then you have to set this to 1. All variants must be entered for the products and the articles. The article of a product is chosen if it contains all the selected variants. The instock of the articles table will be used instead of the products table. Articles are sold together with their related product.
-    *   2: No variants are used. No product is assigned to an article. The articles are sold without products.
-    *   3: The variants of the product need not be entered but are taken from the articles assigned to a product. No product is assigned to an article, but many articles are assigned to a product with the possibility of additional prices. Each article can have a part of the variants. If more than one article is added and can be part of the variants, then the additional prices are added and the text fields are chained.
+    *   :typoscript:`0`: If you do not want to use the articles table then this must remain :typoscript:`0`.
+    *   :typoscript:`1`: If you want to use products in different variants and have special prices for them in the articles table, then you have to set this to :typoscript:`1`. All variants must be entered for the products and the articles. The article of a product is chosen if it contains all the selected variants. The instock of the articles table will be used instead of the products table. Articles are sold together with their related product.
+    *   :typoscript:`2`: No variants are used. No product is assigned to an article. The articles are sold without products.
+    *   :typoscript:`3`: The variants of the product need not be entered but are taken from the articles assigned to a product. No product is assigned to an article, but many articles are assigned to a product with the possibility of additional prices. Each article can have a part of the variants. If more than one article is added and can be part of the variants, then the additional prices are added and the text fields are chained.
 
 
 ..  _keep-product-data:
