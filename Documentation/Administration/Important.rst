@@ -23,4 +23,4 @@ You need to have the following lines in the template files for the shop so the c
     <input type="hidden" name="mode_update" value="1">
     <input type="submit" name="products_update" value="update basket">
 
-Put this into your :html:`FORM` html of the BASKET_TEMPLATE.
+Put this into your :html:`FORM` html of the :php:`BASKET_TEMPLATE`.
