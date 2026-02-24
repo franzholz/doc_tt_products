@@ -10,8 +10,8 @@ single sites where the products are displayed. If you want to build a bigger sho
 It would take too long to enter each product manually.
 
 If you want to make bigger shops with hierarchical categories you shall install 
-:composer:`jambage.com/mbi-products-categories`. It includes also an improved version of the PHP script available in the outdated extension *nsb_cat2menu*. 
-By means of :composer:`jambage.com/mbi-products-categories` you can assign many categories to one products via a mm-table. 
+:composer:`jambagecom/mbi-products-categories`. It includes also an improved version of the PHP script available in the outdated extension *nsb_cat2menu*. 
+By means of :composer:`jambagecom/mbi-products-categories` you can assign many categories to one products via a mm-table. 
 Only with this it will be possible to show a product in the list view under multiple categories.
 
 **Example:**
