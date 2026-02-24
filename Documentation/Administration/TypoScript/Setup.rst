@@ -1078,7 +1078,7 @@ TAXincluded
 
     Set this, if :php:`TAX` is included in the database prices! ( ... and of course: 
     Clear this, if :php:`TAX` is not included in the database prices and should be added in the display of items)
-    All profieldLinkcessing will take this flag into account and calculate prices accordingly.
+    All processing will take this flag into account and calculate prices accordingly.
 
 
 ..  _tax-rates:
@@ -1159,12 +1159,13 @@ priceNoReseller
 ---------------
 
 ..  confval:: priceNoReseller
-    :name: price number for reseller
+    :name: price number for a reduced price for resellers
     :type: int+
 
-    Price number for reseller, which can only be 2 at the moment. The price2 will however only be taken when its value is greater than 0. 
+    Price number for reseller, which can be only :typoscript:`2` without the help of third party extensions. 
+    The :php:`price2` will however only be taken when its value is greater than 0. 
     An enhancement extension must add more :php:`price` fields if you want to use more *price numbers*.
-    Here is the way to get the :php:`price2` for a special user group:
+    Here is an example based on Typoscript conditions to get the :php:`price2` for a special user group:
 
     **Example:**
 
@@ -1264,8 +1265,8 @@ editLockedLoginInfo
     :name: edit and lock login user information
     :type: boolean
 
-    If set and :typoscript:`lockLoginUserInfo` is set, then the filled in data is still editable for the order. 
-    You have to set the input HTML tags for this.
+    If set and :typoscript:`lockLoginUserInfo` is set, then the filled in data are still editable for the order. 
+    You have to set the appropriate input HTML tags to get this working.
 
 
 ..  _login-user-info-address:
@@ -1277,7 +1278,7 @@ loginUserInfoAddress
     :name: login user information address
     :type: boolean
 
-    If lockLoginUserInfo is set, this switch makes that the address field is filled in from 
+    If :typoscript:`lockLoginUserInfo` is set, this switch makes the :php:`address` field to be filled in from 
     :php:`address`, :php:`country`, :php:`zip` and :php:`city` of the :php:`fe_user`	
 
 
@@ -1316,9 +1317,9 @@ orderNumberPrefix
 
 ..  confval:: orderNumberPrefix
     :name: Prefix to the order numbers
-    :type: string
+    :type: string (Max 10 chars)
 
-    Max 10 chars. If this string starts with :typoscript:`%` then the rest will be interpreted as a PHP date format.
+    If this string starts with :typoscript:`%` then the rest will be interpreted as a PHP date format.
 
 
 ..  _order-email:
@@ -1332,10 +1333,10 @@ orderEmail
 
     This defines additional confirmation emails containing suffixes, sender and receiver email addresses.
 
-    *   from:    'shop' will fetch orderEmail_from, 'customer' will fetch the customer email address.
-    *   to:       email of the receiver
-    *   suffix:   suffix to the :php:`###EMAIL_PLAINTEXT_TEMPLATE_###` subpart.
-    *   returnPath: email address to use in the case of a failure to send the email
+    *   :typoscript:`from`:    'shop' will fetch orderEmail_from, 'customer' will fetch the customer email address.
+    *   :typoscript:`to`:       email of the receiver
+    *   :typoscript:`suffix`:   suffix to the :php:`###EMAIL_PLAINTEXT_TEMPLATE_###` subpart.
+    *   :typoscript:`returnPath`: email address to use in the case of a failure to send the email
 
     **Example:**
 
