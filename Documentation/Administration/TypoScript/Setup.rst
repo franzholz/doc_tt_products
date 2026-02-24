@@ -473,7 +473,7 @@ clickIntoBasket
     This only works if :typoscript:`PIDbasket` has been set.
 
 
-..  _click-into-basket:
+..  _click-into-list:
 
 clickIntoList
 -------------
@@ -483,7 +483,8 @@ clickIntoList
     :type: boolean
     :default: 0 (false)
 
-    If set you will be directed into the list page from the single view after putting a product into the basket. This only works if PIDlistDisplay has been set.
+    If set you will be directed into the list page from the single view after putting a product into the basket. 
+    This only works if :typoscript:`PIDlistDisplay` has been set.
 
 
 ..  _max-basket-quantity:
@@ -497,8 +498,9 @@ basketMaxQuantity
     :default: 100000
 
     The maximum integer value for the quantity of an item in the basket.
-    'inStock': Only the number of items which are currently in stock can be put into the basket.
-    'creditpoint': Items can only be put into the basket if the FE user has enough credit points.
+
+    *   :typoscript:`inStock`: Only the number of items which are currently in stock can be put into the basket.
+    *   :typoscript:`creditpoint`: Items can only be put into the basket if the FE user has enough credit points.
 
 
 ..  _quantity-is-float:
@@ -511,7 +513,7 @@ quantityIsFloat
     :type: boolean
     :default: 100000
 
-    quantityIsFloat	boolean	If set the basket count can be a float value.	
+    If set the basket count can be a float value.	
 
 
 ..  _no-image-available:
@@ -633,8 +635,8 @@ NoSingleViewOnList
     :type: boolean
     :default: 0 (false)
 
-    Usually you get the link to the single item view on the display page of the LIST code. 
-    If you however want to create your own pages for single view with SINGLE code you must set this to 1.
+    Usually you get the link to the single item view on the display page of the :php:`LIST` code. 
+    If you however want to create your own pages for single view with :php:`SINGLE` code you must set this to :typoscript:`1`.
 
 
 ..  _item-marker-array-func:
@@ -648,12 +650,12 @@ itemMarkerArrayFunc
 
     Every time a product is displayed be it in the basket, list or single view, the method :php:`getItemMarkerArray()` 
     in :php:`tx_ttproducts_marker` is called. This function fills in and returns an array, so called :php:`markerArray()`,
-    with key/values for template substitution.
-    If you enter a valid function name here (see datatype 'function-name' for details!) that array will be passed
+    with :php:`key`/:php:`value` pairs for template substitution.
+    If you enter a valid function name here (see datatype *function-name* for details) that array will be passed
     to that function as the second parameter. The first parameter will be the TypoScript properties to :php:`itemMarkerArrayFunc`.
 
     Parent PHP-Object reference:
-    :php:`parentObj` property is hardcoded to be a reference to the calling user_products object (PHP).
+    :php:`parentObj` property is hardcoded to be a reference to the calling :php:`user_products` object.
     
     **Example:**
     (provided that a function or class is included!)
@@ -675,12 +677,12 @@ PIDitemDisplay
     :type: int+/*Array of integers*
 
     If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
-    If you set the type to sql, you can use conditions using several lines. The where string can contain the AND condition.
-    The pid for the first fulfilled condition will be returned.
+    If you set the type to sql, you can use conditions using several lines. The :php:`where` string can contain the :php:`AND` condition.
+    The :php:`pid` for the first fulfilled condition will be returned.
 
-    If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
-    If you set the type to sql, you can use conditions using several lines. The where string can contain the
-    :php:`AND` condition. The pid for the first fulfilled condition will be returned.
+    If you want a certain page to be used for display of item details, please enter the *PID* (page-uid) here.
+    If you set the type to sql, you can use conditions using several lines. The :php:`where` string can contain the
+    :php:`AND` condition. The :php:`pid` for the first fulfilled condition will be returned.
 
     **Example:**
 
@@ -696,7 +698,7 @@ PIDitemDisplay
              20.pid = 143 
         }
         
-    If you set the type to pid then the pid of the record will be used.
+    If you set the type to :typoscript:`pid` then the :php:`pid` of the record will be used.
 
     ..  code-block:: typoscript
         :caption: PIDitemDisplay with where conditions
@@ -711,7 +713,7 @@ PIDitemDisplay
 PIDlistDisplay
 --------------
 
-..  confval:: PIDitemDisplay
+..  confval:: PIDlistDisplay
     :name: PID for the item list display
     :type: int+/*Array of integers*
 
@@ -727,8 +729,10 @@ PIDsearch
     :name: PID for search page
     :type: int+
 
-    If you want all product searches to go to a specific page, enter the PID it here! NOTE: 
-    If you set this PID, all searchqueries will (must) be handled with a list content element with 
+    If you want all product searches to go to a specific page, enter the *PID* it here! 
+
+    **NOTE:** 
+    If you set this *PID*, all searchqueries will (must) be handled with a list content element with 
     the display mode "Products: search" on that page.
 
 
@@ -742,7 +746,7 @@ PIDsearch
     :type: int+
 
     If you want ever change the number of items anywhere to go to a specific page
-    (eg. the shopping basket page), enter the PID here.
+    (eg. the shopping basket page), enter the *PID* here.
 
 
 ..  _pid-store-root:
@@ -754,9 +758,9 @@ PIDstoreRoot
     :name: PID for store root
     :type: int+
 
-    This is the PID of the rootPage of the store. If not set the store will operate over all pages 
+    This is the *PID* of the "root page" of the store. If not set the store will operate over all pages 
     from the root of the site. But if the site has many pages, performance may improve.
-    You should better set pid_list instead of it.
+    You should better set :typoscript:`pid_list` instead of it.
 
 
 ..  _pid-store-root:
@@ -768,7 +772,7 @@ PID_sys_products_orders
     :name: PID for the sys_products_orders records.
     :type: int+
 
-    By default they will get the pid of the payment (finalize) page.	
+    By default they will get the :php:`pid` of the :php:`payment` (:php:`finalize`) page.	
 
 
 ..  _pid-info:
@@ -819,7 +823,7 @@ PIDthanks
     :type: int+
 
     The thanks page can be shown instead of the order confirmation. :php:`BASKET_ORDERTHANKS_TEMPLATE` will be used. 
-    You must not set PIDfinalize if you use this.
+    You must not set :typoscript:`PIDfinalize` if you use this.
 
 
 ..  _pid-tracking:
@@ -873,7 +877,7 @@ PIDagb
     :name: The ID of the agb page
     :type: int+
 
-    The PID of a page with the general trading conditions (*AGB* in Germany)
+    The :php:`PID` of a page with the general trading conditions (*AGB* in Germany)
     Only if this page id is set the AGB check will be active.
 
 
@@ -926,7 +930,7 @@ UIDstore
     :name: Shop data uid of fe_users
     :type: int+
 
-    comma  separated list of UIDs of the fe_users table with the data of the shop.
+    comma separated list of :php:`UID`s of the :php:`fe_users` table with the data of the shop.
 
 
 ..  _payment-activity:
@@ -939,12 +943,12 @@ paymentActivity
     :type: string
     :default: finalize
 
-    When the payment with a payment script shall be executed.
+    When the payment with a :php:`payment` script shall be executed.
     Possible values:  
 
-    *   payment
-    *   finalize
-    *   verify
+    *   :typoscript:`payment`
+    *   :typoscript:`finalize`
+    *   :typoscript:`verify`
 
 
 ..  _advance-order-number-with-integer:
@@ -961,8 +965,8 @@ advanceOrderNumberWithInteger
     a random number between [first-integer] and [second integer] to cheat a little.  
 
     **Example:**
-    *   1,10:  This will increment the counter randomly between 1 and 10
-    *   5,5:   This will increment the counter with 5 each time
+    *   :typoscript:`1,10`:  This will increment the counter randomly between :php:`1` and :php:`10`
+    *   :typoscript:`5,5` :  This will increment the counter with :php:`5` each time
 
 
 ..  _always-advance-order-number:
@@ -976,7 +980,8 @@ alwaysAdvanceOrderNumber
     :default: 0 (false)
 
     If set then the order number will always get increased and the empty order numbers are not reused. 
-    You have to set this if you use a payment script to pay via a payment system which does not accept duplicate order numbers.
+    You have to set this if you use a :php:`payment` script to pay via a payment system which does not accept 
+    duplicate order numbers.
 
 
 ..  _always-update-order-amount:
@@ -1002,7 +1007,7 @@ parseFunc
     :type: see parseFunc
 
     The product details are parsed by these properties. So if e.g. you want ot allow HTML-tags to create a table
-    in the Note field you have to set the parseFunc.allowTags or use the denyTags.
+    in the note field you have to set the :typoscript:`parseFunc.allowTags` or use the :typoscript:`denyTags`.
     To make RTE working with HTML you have to set the following into the root page template. 
 
     **Example:***
@@ -1026,7 +1031,7 @@ categoryHeader
     **Example:***
 
     ..  code-block:: typoscript
-        :caption: parseFunc
+        :caption: categoryHeader
     
         categoryHeader = TEXT
         categoryHeader.current = 1
