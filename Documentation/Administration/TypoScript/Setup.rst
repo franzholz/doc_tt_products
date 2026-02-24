@@ -1354,7 +1354,7 @@ orderEmail
                20.attachment = bill
         }
     
-    It is possible to send confirmation emails to the email address stored in a foreign table and where a foreign key has been added to the table fe_users.
+    It is possible to send confirmation emails to the email address stored in a foreign table and where a foreign key has been added to the table :php:`fe_users`.
     
     **Example:**
 
@@ -1390,7 +1390,7 @@ orderEmail_bcc
     :name: BCC for order email
     :type: array
 
-    BCC for the shop  admin's order confirmation
+    BCC for the shop admin's order confirmation
 
 
 ..  _order-email-from:
@@ -1480,7 +1480,7 @@ orderEmail_toDelivery
 orderEmail_subject		
 -------------------
 
-..  confval:: orderEmail_toDelivery	
+..  confval:: orderEmail_subject	
     :name: subject for order email
     :type: string
 
@@ -1508,13 +1508,13 @@ orderEmail_htmlmail
     :name: send HTML format in order email
     :type: boolean / string
 
-    If set, the order confirmation email is sent as HTML
+    If set, the order confirmation email is sent as HTML.
     If :typoscript:`orderEmail_htmlmail.removeImagesWithPrefix` is set, then the images and their HTML tags will not be sent in an email.
 	
 
 ..  _order-email-htmlmail:
 
-orderEmail_apostrophe		.			
+orderEmail_apostrophe			
 ---------------------
 
 ..  confval:: orderEmail_htmlmail	
@@ -1526,7 +1526,7 @@ orderEmail_apostrophe		.
 
 ..  _order-email-order2:
 
-orderEmail_order2		.			
+orderEmail_order2
 ------------------
 
 ..  confval:: orderEmail_order2	
@@ -1541,7 +1541,7 @@ orderEmail_order2		.
 
 ..  _order-email-notify-default:
 
-email_notify_default		.			
+email_notify_default			
 --------------------
 
 ..  confval:: email_notify_default	
@@ -1595,7 +1595,7 @@ statusCodes
 
 ..  _order-update-codes:
 
-update_code		.			
+update_code	
 -----------
 
 ..  confval:: update_code	
@@ -1608,7 +1608,7 @@ update_code		.
 	
 ..  _status-date-std-wrap:
 
-statusDate_stdWrap		.			
+statusDate_stdWrap	
 ------------------
 
 ..  confval:: statusDate_stdWrap	
