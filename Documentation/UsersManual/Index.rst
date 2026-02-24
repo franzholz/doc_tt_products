@@ -19,4 +19,3 @@ Users manual
     VoucherSystem
     CreditpointSystem
     ModifyThePageMenu
-    YouCanAddTheNumberOf
