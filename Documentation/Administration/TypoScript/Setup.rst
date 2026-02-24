@@ -1512,12 +1512,12 @@ orderEmail_htmlmail
     If :typoscript:`orderEmail_htmlmail.removeImagesWithPrefix` is set, then the images and their HTML tags will not be sent in an email.
 	
 
-..  _order-email-htmlmail:
+..  _order-email-apostrophe:
 
 orderEmail_apostrophe			
 ---------------------
 
-..  confval:: orderEmail_htmlmail	
+..  confval:: orderEmail_apostrophe	
     :name: apostrophe in order email
     :type: string
 
@@ -1548,7 +1548,7 @@ email_notify_default
     :name: email notification to the delivery address
     :type: boolean
 
-    If email-notification to the delivery email address of the customer is enabled by default for tracking
+    If email notification to the delivery email address of the customer is enabled by default for tracking
 	(he can change it himself in the tracking module later)
 
 
@@ -1561,12 +1561,14 @@ statusCodes
     :name: Status codes used in the tracking module.
     :type: *Array of integers*
 
-    Numbers above 100 removes the order from the tracklist.
-    Number zero is the status of a non-finalized order (and non-finalized orders in the database may by time be regarded as garbage...)
-    Numbers of 50-59 is available for the customer to choose from.
-    Number 1 is reserved to be selected when an order goes from zero to 1 because it's confirmed. Number 1 cannot be selected by shop admin.
-    These will be written into :php:`###STATUS_OPTIONS###` markers.
+    *   Numbers above :typoscript:`100` remove the order from the tracklist.
+    *   Number :typoscript:`0` (zero) is the status of a non-finalized order 
+           (and non-finalized orders in the database may by time be regarded as garbage.)
+    *   Numbers of :typoscript:`50`-:typoscript:`59` are available for the customer to choose from.
+    *   Number :typoscript:`1` is reserved to be selected when an order goes from :php:`0` (zero) to :typoscript:`1` 
+           because it's confirmed. Number 1 cannot be selected by shop admin.
 
+    These will be written into :php:`###STATUS_OPTIONS###` markers.
 
     **Example:**
 
@@ -1587,9 +1589,9 @@ statusCodes
             100 = Order shipped and closed
             101 = Order closed
             200 = Order cancelled
-         }	
+         }
 
-    If email-notification to the delivery email address of the customer is enabled by default for tracking
+    If email notification to the delivery email address of the customer is enabled by default for tracking
     (he can change it himself in the tracking module later)		
 	
 
@@ -1602,8 +1604,8 @@ update_code
     :name: update code for tracking
     :type: string
 
-	The 'password' used by the administrator of the shop to go into the tracking system in the front end.
-    The password form field will appear if a BE_USER is logged in, but this password is still needed.
+	The *password* used by the administrator of the shop to go into the tracking system in the front end.
+    The password form field will appear if a back end user is logged in, but this password is still needed.
 
 	
 ..  _status-date-std-wrap:
@@ -1671,7 +1673,7 @@ displayCurrentRecord
     :name: display the current record
     :type: boolean
 
-	If set, certain settings are manipulated in order to let the script render a single item - the $cObj->data.
+	If set, certain settings are manipulated in order to let the script render a single item - the :php:`$cObj->data`.
 	If this setting is set, the subpart marked :php:`###ITEM_SINGLE_DISPLAY_RECORDINSERT###` will be used 
 	instead of the regular subpart :php:`###ITEM_SINGLE_DISPLAY###` if it is found.
 
@@ -1685,11 +1687,11 @@ externalProcessing
     :name: external processing of the shopping basket
     :type: cObject
 
-	This cObject may be used to call a function which manipulates the shopping basket. 
+	This :php:`cObject` may be used to call a function which manipulates the shopping basket. 
 	This manipulation could be based on settings in an external order system. 
-	The output is included in the top of the order (HTML) on the basket-page.
-    This cObject is executed each time the main_products method of the user_products class in productsLib is called 
-	and it's executed before any of the main processing. See the class for details.
+	The output is included in the top of the order (HTML) on the basket page.
+    This cObject is executed each time the main_products method of the :php:`user_products` class in productsLib is called 
+	and it is executed before any of the main processing. See the class for details.
 
 
 ..  _external-processing-final:
@@ -1701,7 +1703,7 @@ externalProcessing_final
     :name: final external processing of the shopping basket
     :type: cObject
 
-	cObject for the final order confirmation template
+	:php:`cObject` for the final order confirmation template
 
 
 ..  _external-finalizing:
@@ -1713,12 +1715,14 @@ externalFinalizing
     :name: exernal finalizing of the order system
     :type: cObject
 
-	This cObject may be used to call a function which clears settings in an external order system.
+	This :php:`cObject` may be used to call a function which clears settings in an external order system.
 	This is a sister to the above function and they should probably be used in conjunction somehow.
 	This function is called immediately after the finalize-function has been called.
-	For instance this function would be suitable for clearing any external basket facilitated by the .externalProcessing cObject
+	For instance this function would be suitable for clearing any external basket facilitated by the :php:`.externalProcessing` cObject
 	
-	Note: The output is NOT included anywhere.
+	**Note:** 
+
+    The output is NOT included anywhere.
 
 
 ..  _wrap1:
@@ -1762,7 +1766,7 @@ wrapInBaseClass
     :name: use base class wrap 
     :type: boolean *S*
 
-	If true the output will be wrapped with <div class="tx-ttproducts-pi1"> | </div>
+	If true the output will be wrapped with :php:`<div class="tx-ttproducts-pi1"> | </div>`
 
 
 ..  _wrap-in-code:
@@ -1782,7 +1786,7 @@ wrapInCode
 	    <!-- START: tt-products-code-uid --><div id="tt-products-code-uid">
  		|</div><!-- END: tt-products-code-uid -->
 
-	'code' will be replaced by the code of the plugin. uid will be replaced by the field 'uid' of the table tt_products.
+	:html:`code` will be replaced by the code of the plugin. :html:`uid` will be replaced by the field 'uid' of the table tt_products.
 
 
 ..  _select-color:
@@ -1886,10 +1890,10 @@ useArticles
     :type: integer
     :default: 3
 
-    *   0: If you do not want to use the articles table then this must remain 0.
-    *   1: If you want to use products in different variants and have special prices for them in the articles table, then you have to set this to 1. All variants must be entered for the products and the articles. The article of a product is chosen if it contains all the selected variants. The instock of the articles table will be used instead of the products table. Articles are sold together with their related product.
-    *   2: No variants are used. No product is assigned to an article. The articles are sold without products.
-    *   3: The variants of the product need not be entered but are taken from the articles assigned to a product. No product is assigned to an article, but many articles are assigned to a product with the possibility of additional prices. Each article can have a part of the variants. If more than one article is added and can be part of the variants, then the additional prices are added and the text fields are chained.
+    *   :typoscript:`0`: If you do not want to use the articles table then this must remain :typoscript:`0`.
+    *   :typoscript:`1`: If you want to use products in different variants and have special prices for them in the articles table, then you have to set this to :typoscript:`1`. All variants must be entered for the products and the articles. The article of a product is chosen if it contains all the selected variants. The instock of the articles table will be used instead of the products table. Articles are sold together with their related product.
+    *   :typoscript:`2`: No variants are used. No product is assigned to an article. The articles are sold without products.
+    *   :typoscript:`3`: The variants of the product need not be entered but are taken from the articles assigned to a product. No product is assigned to an article, but many articles are assigned to a product with the possibility of additional prices. Each article can have a part of the variants. If more than one article is added and can be part of the variants, then the additional prices are added and the text fields are chained.
 
 
 ..  _keep-product-data:
