@@ -12,6 +12,6 @@ unique code.
 If a customer states in his registration that he has been recruited by another customer, then the
 referring customer gets credit points. The new customer gets a discount with his first order.
 
-Somebody (lets say user 1) can enter a voucher code if he concludes an order. Then user 1 will
+Somebody can enter a voucher code if he concludes an order. Then he will
 obtain a discount. In table :php:`fe_users`
 there is a field given for this "tt_products_vouchercode" which contains the used credit entry code.
