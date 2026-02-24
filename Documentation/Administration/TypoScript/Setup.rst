@@ -176,7 +176,7 @@ defaultDAMCategoryID
     :name: default DAM category ID
     :type: int+
 
-    See defaultCategoryID, but for DAM categories and the 'tt_products[damcat]' parameter.
+    See :typoscript:`defaultCategoryID`, but for DAM categories and the 'tt_products[damcat]' parameter.
 
 
 ..  _product-dam-category-id:
@@ -318,7 +318,7 @@ stdSearchFieldExt
     :type: *list of fields*
     :default: title,subtitle,note
 
-    Default internal list is title,subtitle,note. You can specify your default fields here.
+    Default internal list is :typoscript:`title,subtitle,note`. You can specify your default fields here.
 
 
 ..  _limit:
@@ -344,8 +344,8 @@ separateImage
     :type: boolean
     :default: 0
 
-    Normally all images are shown combined together. With separateImage=on you can use a :php:`###PRODUCT_IMAGE3###` 
-    for each image number (starting with 1) separatly.
+    Normally all images are shown combined together. With :typoscript:`separateImage=on` you can use a :php:`###PRODUCT_IMAGE3###` 
+    for each image number (starting with :php:`1`) separatly.
 
 
 ..  _image:
@@ -387,7 +387,7 @@ listImage
         }
 
     That way, attached images are not copied to and displayed from
-    :file:`/typo3temp/` (which gives trouble with transparent backgrounds) but directly linked from :file:`/uploads/pics/`.
+    :file:`/typo3temp/` (which leads into trouble with transparent backgrounds) but directly linked from :file:`/uploads/pics/`.
     The line with :typoscript:`altText` leads to the drawing of an alternative text.
 
 
@@ -403,7 +403,7 @@ listImageHasChilds
 
     The image configuration in list display if there is a filter for a category on the page and this category has childs.
 
-    see listImage
+    see :typoscript:`listImage`
 
 
 ..  _basket-image:
@@ -469,7 +469,8 @@ clickIntoBasket
     :type: boolean
     :default: 0 (false)
 
-    If set you will be directed into the basket page after putting a product into the basket. This only works if PIDbasket has been set.
+    If set you will be directed into the basket page after putting a product into the basket. 
+    This only works if :typoscript:`PIDbasket` has been set.
 
 
 ..  _click-into-basket:
