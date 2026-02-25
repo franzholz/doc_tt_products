@@ -511,7 +511,7 @@ quantityIsFloat
 ..  confval:: quantityIsFloat
     :name: basket quantity is a float value
     :type: boolean
-    :default: 100000
+    :default: 0 (false)
 
     If set the basket count can be a float value.	
 
