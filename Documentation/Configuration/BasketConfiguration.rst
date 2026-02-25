@@ -34,9 +34,9 @@ Basket
     :required: true
     :type: array of string
 
-     maximum price which the products may reach to get a permission to buy them.
-     E.g. only products of a total price of at most 2500 shall be accepted.
-     The products which have the 'no maximum price' checked, will not be counted here.
+    maximum price which the products may reach to get a permission to buy them.
+    E.g. only products of a total price of at most 2500 shall be accepted.
+    The products which have the 'no maximum price' checked, will not be counted here.
 
     **Example:**
 
@@ -61,11 +61,11 @@ Basket
     basket view configuration
     showAmount … basket … if the amount of items in the basket is shown with each product in single and list view.
 
-    *   0     … if the default amount with each product is always zero (needed for caching)
-    *   input … input tag with radio buttons for the list view of products and the marker ###BASKET_INPUT###
-                insert the name of the radio buttons
-    *   where: SQL where condition for products
-    *   checked: preselected product uid
+    *   :typoscript:`0`     : if the default amount with each product is always zero (needed for caching)
+    *   :typoscript:`input`: input tag with radio buttons for the list view of products and the marker ###BASKET_INPUT###
+                              insert the name of the radio buttons
+    *   :typoscript:`where`:   SQL where condition for products
+    *   :typoscript:`checked`: preselected product uid
 
     **Example:**
 
@@ -73,7 +73,7 @@ Basket
         :caption: example basket.view
 
         plugin.tt_products.basket.view.input {
-            10.label = Buy:
+        10.label = Buy:
         10.type = radio
         10.where = uid IN (12,13,14,15)
         10.checked = 12
@@ -130,7 +130,7 @@ Basket
 
     Rounding format for the prices in the basket.
 
-        * round.discount ... rounding format for the discount from the discount field
+       * :typoscript:`round.discount` ... rounding format for the discount from the discount field
 
     **Example:**
 
