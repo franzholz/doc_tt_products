@@ -16,11 +16,11 @@ General:
   the `Extension Library since 2007 (div2007) <https://extensions.typo3.org/extension/div2007>`_
   and the other required extensions as described in `Shop System <https://extensions.typo3.org/extension/tt_products>`_ .
 *   Please look at the website `Wiki for_tt_products
-  <https://github.com/franzholz/tt_products/wiki>`__  .
+  <https://github.com/franzholz/tt_products/wiki>`_  .
 *   Get the latest supported version from `Upgrade licences shop for_tt_products
-  <https://www.ttproducts.de/shop>`__  .
+  <https://www.ttproducts.de/shop>`_  .
   Or have a look at the forum at `mehrsprachiges Forum zur TYPO3 Benutzerregistrierung, Shop System
-  <https://www.jambage.com/kontakt/forum>`__
+  <https://www.jambage.com/kontakt/forum>`_
 *   :file:`.htaccess` must be properly configured otherwise tt_products does not work as expected because the
   plugin can't find all necessary scripts with a poor configuration of :file:`.htaccess`.
 *   **Wrong parameters. GET/POST var 'tt_products[|]' is missing or no item with uid = x found on allowed pages (y,z)**
