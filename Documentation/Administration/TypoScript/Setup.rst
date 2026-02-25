@@ -77,9 +77,9 @@ pid_list
 
 ..  confval:: pid_list
     :name: pid list
-    :type: list of page_id's
+    :type: list of page ids
 
-    The pids from where to fetch categories, products and so on.
+    The page ids from where to fetch categories, products and so on.
     Default is the current page. Accepts multiple pids separated by comma.
 
 
