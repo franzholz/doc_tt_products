@@ -1,8 +1,8 @@
 
 .. _users-manual-discount:
 
-Discount:
----------
+Discount
+--------
 
 There are several methods to get a discount.
 
