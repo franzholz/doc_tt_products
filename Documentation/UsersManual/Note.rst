@@ -2,8 +2,8 @@
 
 .. _users-manual-note:
 
-Note:
------
+Note
+----
 
 You must fill in the product's 'In Stock (pcs)' field of your product properties, or no item will be
 shown in your frontend list if set to 0. 
