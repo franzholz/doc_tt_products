@@ -13,8 +13,6 @@ Properties
 ..  contents::
     :local:
 
-
-
 ..  _setup-template-file:
 
 templateFile
