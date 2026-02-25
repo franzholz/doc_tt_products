@@ -59,7 +59,7 @@ Basket
     :default: showAmount = basket
 
     basket view configuration
-    showAmount … basket … if the amount of items in the basket is shown with each product in single and list view.
+    :typoscript:`showAmount = basket`: if the amount of items in the basket is shown with each product in single and list view.
 
     *   :typoscript:`0`     : if the default amount with each product is always zero (needed for caching)
     *   :typoscript:`input`: input tag with radio buttons for the list view of products and the marker ###BASKET_INPUT###
@@ -91,14 +91,15 @@ Basket
 
     activity configuration
     Possible activities are:
-    basket, info, payment, verify, finalize, overview
-    *   check:
-        *   address: if the required fields have been filled in (see requiredInfoFields)
-        *   agb: if the trading conditions checkbox has been clicked
-        *   basket: if the basket has entries.
-        *   edit_variant: if the edit variants follows some restrictions
-    *   clear:
-        *   memo: If the MEMO for the items shall be cleared.
+    :php:`basket`, :php:`info`, :php:`payment`, :php:`verify`, :php:`finalize`, :php:`overview`
+
+    *   :typoscript:`check`:
+        *   :typoscript:`address`: if the required fields have been filled in (see requiredInfoFields)
+        *   :typoscript:`agb`: if the trading conditions checkbox has been clicked
+        *   :typoscript:`basket`: if the basket has entries.
+        *   :typoscript:`edit_variant`: if the edit variants follows some restrictions
+    *   :typoscript:`clear`:
+        *   :typoscript:`memo`: If the MEMO for the items shall be cleared.
 
     **Example:**
 
