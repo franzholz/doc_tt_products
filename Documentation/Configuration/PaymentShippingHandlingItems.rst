@@ -278,7 +278,7 @@ Selectable Payment / Shipping / Handling Items
 
     PHP script which is included in a “blank” method called from :php:`products_basket()` in :php:`user_products` class when the order is finalized.
     This function must take care of displaying templates during the payment process with a payment gateway as well as finalizing the order afterwards.
-    See :file:`payment_DIBS.php` in :composer:`jambage.com/addons-tt-products` for an example. A HTML-template file follows.
+    See :file:`payment_DIBS.php` in :composer:`jambagecom/addons-tt-products` for an example. A HTML-template file follows.
     Properties of the handle script is passed to the function as :php:`$conf` array. The content of the variable :php:`$content` is returned as content.
 
 
