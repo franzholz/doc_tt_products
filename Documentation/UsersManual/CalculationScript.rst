@@ -2,8 +2,8 @@
 
 .. _users-manual-calculation-script:
 
-Calculation script:
--------------------
+Calculation script
+------------------
 
 If you write and use your own calculation scripts, then you should always use only the price
 variables. The priceTax and priceNoTax variables will be deleted in August 2008 because they can be
