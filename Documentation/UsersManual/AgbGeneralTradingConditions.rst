@@ -9,5 +9,5 @@ process. A page can be defined for this with :typoscript:`PIDagb`. The AGBs have
 set the target for a link by :typoscript:`AGBtarget`.
 
 A document (e.g. a PDF file) on the server containing the AGB can be set by :typoscript:`AGBattachment`. This
-will be set to the customer as an email with an attachment to the order confirmation. The shop
-administration will not get this file. (he can get a CSV file of the order data instead, if wanted).
+will be sent to the customer as an e-mail with an attachment to the order confirmation. The shop
+administration will not get this file. He can get a XML or CSV file of the order data instead, if wanted.

@@ -20,8 +20,8 @@ These are some settings if you want to change the behaviour of the order confirm
     A confirmation email can be sent which includes only the products from specific pages.
 
     The array has these items:
-    *    pid:   a list of page ids
-    *    email: a list of email addresses
+    *    :typoscript:`pid`  : a list of page ids
+    *    :typoscript:`email`: a list of email addresses
 
 
     **Example:**
@@ -41,5 +41,4 @@ These are some settings if you want to change the behaviour of the order confirm
                 }
             }
         }
-
 

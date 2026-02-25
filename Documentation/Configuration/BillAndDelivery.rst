@@ -18,6 +18,7 @@ They are generated in the folder :file:`fileadmin/data/bill`.
     :type: string
 
     Defines the behaviour for the generation of the bill/delivery sheet.
+
     *    auto: Generation will be done when the order is finalized.
 
     **Example:**
@@ -26,11 +27,11 @@ They are generated in the folder :file:`fileadmin/data/bill`.
         :caption: automise generation of a bill without a delivery sheet
     
         plugin.tt_products.bill {
-           generation = auto
+            generation = auto
         }
         
         plugin.tt_products.delivery {
-           generation =
+            generation =
         }
 
 
@@ -42,8 +43,8 @@ They are generated in the folder :file:`fileadmin/data/bill`.
     :type: string
 
     Type of bill or delivery
-    *    html: HTML format
-    *    pdf:  PDF format (extension 'fpdf' must have been installed.)
+    *    :typoscript:`html`: HTML format
+    *    :typoscript:`pdf` : PDF format (extension :composer:'codingms/fluid-fpdf' must have been installed.)
 
 
 .. _configuration-bill-and-delivery-handle-lib:
@@ -63,8 +64,9 @@ They are generated in the folder :file:`fileadmin/data/bill`.
         bill.handleLib =  PhpWord
     
     array values:
-    path ... file path to the library, relative to the TYPO3 directory
-    rendererLibrary.path ... file path to the helper library to generate formats which the main library cannot handle
+
+    *    :typoscript:`path`  ... file path to the library, relative to the TYPO3 directory
+    *    :typoscript:`rendererLibrary.path` ... file path to the helper library to generate formats which the main library cannot handle
 
     **Example:**
 
@@ -78,8 +80,5 @@ They are generated in the folder :file:`fileadmin/data/bill`.
                path = dompdf-0.6.1
             }
         }
-
-
-
 
 

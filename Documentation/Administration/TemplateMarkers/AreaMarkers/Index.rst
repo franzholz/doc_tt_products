@@ -1,5 +1,7 @@
 
 
+
+
 .. _administration-template-markers-area-markers:
 
 area markers:
@@ -75,3 +77,19 @@ TRACKING_ENTER_NUMBER                                                           
 ----------------------------------------  -------------------------------------------------------  -----
 TRACKING_WRONG_NUMBER                                                                              top
 ========================================  =======================================================  =====
+
+
+
+.. _administration-template-area-markers-datasheet-for-the-product:
+
+datasheet for the product
+"""""""""""""""""""""""""
+
+**Example**  for a wrap:
+
+..  code-block:: html
+    :caption: wrap inside of a HTML template
+
+    <!-- ###PRODUCT_LINK_DATASHEET### begin --> datasheet for the product <!-- ###PRODUCT_LINK_DATASHEET### end -->
+
+

@@ -78,10 +78,10 @@ pid_list
 
 ..  confval:: pid_list
     :name: pid list
-    :type: list of page_id's
+    :type: list of page ids
 
-    The pids from where to fetch categories, products and so on.
-    Default is the current page. Accepts multiple pids separated by comma.
+    The page ids from where to fetch categories, products and so on.
+    Default is the current page. Accepts multiple *PID*s separated by comma.
 
 
 ..  _default-code:
@@ -250,7 +250,7 @@ recursive
     :type: int+
     :default: 99
 
-    Number of recursive sublevels of pids to select tt_products from in lists.
+    Number of recursive sublevels of *PID*s to select tt_products from in lists.
 
 
 ..  _domain:
@@ -512,7 +512,7 @@ quantityIsFloat
 ..  confval:: quantityIsFloat
     :name: basket quantity is a float value
     :type: boolean
-    :default: 100000
+    :default: 0 (false)
 
     If set the basket count can be a float value.	
 
@@ -583,11 +583,11 @@ substitutePagetitle
 
     Set the page title in single view:
 
-    *   1   : product title
-    *   2   : product subtitle
-    *  12   : product title and subtitle
-    *  21   : product subtitle and title
-    *   3   : bread crumb
+    *   :typoscript:`1`   : product title
+    *   :typoscript:`2`   : product subtitle
+    *   :typoscript:`12`  : product title and subtitle
+    *   :typoscript:`21`  : product subtitle and title
+    *   :typoscript:`3`   : bread crumb
 
 
 ..  _css:
@@ -596,10 +596,10 @@ CSS
 ---
 
 ..  confval:: CSS
-    :name: Cascading Stylesheets settings
+    :name: Cascading Stylesheets files
     :type: *see below*
 
-    Set the CSS files.
+    Set the CSS files. 
 
 
 ..  _js:
@@ -677,11 +677,11 @@ PIDitemDisplay
     :name: PID for single item display
     :type: int+/*Array of integers*
 
-    If you want a certain page to be used for display of item details, please enter the PID (page-uid) here.
+    If you want a certain page to be used for display of item details, please enter the *PID* (page uid) here.
     If you set the type to sql, you can use conditions using several lines. The :php:`where` string can contain the :php:`AND` condition.
     The :php:`pid` for the first fulfilled condition will be returned.
 
-    If you want a certain page to be used for display of item details, please enter the *PID* (page-uid) here.
+    If you want a certain page to be used for display of item details, please enter the *PID* (page uid) here.
     If you set the type to sql, you can use conditions using several lines. The :php:`where` string can contain the
     :php:`AND` condition. The :php:`pid` for the first fulfilled condition will be returned.
 
@@ -699,7 +699,7 @@ PIDitemDisplay
              20.pid = 143 
         }
         
-    If you set the type to :typoscript:`pid` then the :php:`pid` of the record will be used.
+    If you set the type to :typoscript:`pid` then the *PID* of the record will be used.
 
     ..  code-block:: typoscript
         :caption: PIDitemDisplay with where conditions
@@ -733,7 +733,7 @@ PIDsearch
     If you want all product searches to go to a specific page, enter the *PID* it here! 
 
     **NOTE:** 
-    If you set this *PID*, all searchqueries will (must) be handled with a list content element with 
+    If you set this *PID*, all search queries will (must) be handled with a list content element with 
     the display mode "Products: search" on that page.
 
 
@@ -878,7 +878,7 @@ PIDagb
     :name: The ID of the agb page
     :type: int+
 
-    The :php:`PID` of a page with the general trading conditions (*AGB* in Germany)
+    The :php:`UID` of a page with the general trading conditions (*AGB* in Germany)
     Only if this page id is set the AGB check will be active.
 
 

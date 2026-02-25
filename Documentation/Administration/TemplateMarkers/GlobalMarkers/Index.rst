@@ -33,7 +33,7 @@ The global markers are allowed to be used within all subparts on any position. Y
     :required: false
     :type: array
 
-    **Constants:**:  :typoscript:`file.markerFile`
+    **Constants:**  :typoscript:`file.markerFile`
 	 The marker file with the translations
 
 	 **Example: (Setup)**:
@@ -44,7 +44,7 @@ The global markers are allowed to be used within all subparts on any position. Y
 	    ###MY_MARKER###
 
 
-	 **Example: (Setup)**:
+	**Example: (Setup)**:
 
 	..  code-block:: typoscript
 	    :caption: markerFile for translations

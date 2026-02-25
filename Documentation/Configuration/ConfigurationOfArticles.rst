@@ -1,3 +1,4 @@
+
 .. _configuration-articles-products-categories-images:
 
 Articles, Products, Categories, Pages, Addresses and Images
@@ -202,6 +203,7 @@ additional possible values are
     The name of a language file with translations from the default language into another language.
 
     *    type:
+
         *    csv: The values are separated by ';' and newline characters
         *    noTranslation: do not use the language overlay table
         *    field: the translation is in fields
