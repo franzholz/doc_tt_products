@@ -11,9 +11,9 @@ Payment / Shipping / Handling Item Prices
     :type: string
 
     Meaning of the number:
-    *    count:  the items count
-    *    weight: the calculated weight in Gramm
-    *    price:  the total products price	
+    *    :typoscript:`count`:  the items count
+    *    :typoscript:`weight`: the calculated weight in Gramm
+    *    :typoscript:`price`:  the total products price	
 
 
 .. _configuration-payment-shipping-handling-items-prices-where-pid-min-price:
@@ -23,8 +23,8 @@ Payment / Shipping / Handling Item Prices
     :required: false
     :type: int+
 
-    Set a minimum price for shipping if there is an item in the basket which is from the sysfoldepaymentActivityr of this PID.
-    Where 155 is the PID and 7.5 is the minimum price taken for shipping costs when at least one product in the basket comes from the page with that PID.
+    Set a minimum price for shipping if there is an item in the basket which is from the sysfolder with PID :typoscript:`155`.
+    Where :typoscript:`7.5` is the minimum price taken for :typoscript:`shipping` costs when at least one product in the basket comes from the page with that *UID*.
 
     **Example:**
 
@@ -32,12 +32,12 @@ Payment / Shipping / Handling Item Prices
         :caption: price based on minimum weight for page 155
 
         plugin.tt_products.shipping { 
-             10.title = Parcel 
-             10.price.type = weight 
-             10.price.WherePIDMinPrice.155 = 7.5 
-             10.price.1 = 1.5 
-             10.price.500 = 2.5 
-             10.price.1000 = 3.5 
+            10.title = Parcel 
+            10.price.type = weight 
+            10.price.WherePIDMinPrice.155 = 7.5 
+            10.price.1 = 1.5 
+            10.price.500 = 2.5 
+            10.price.1000 = 3.5 
         }
 
 
@@ -48,7 +48,7 @@ Payment / Shipping / Handling Item Prices
     :required: false
     :type: array
 
-    the shippingcalc price calculations to be used. (see chapter shipping cost calculation)
+    the :typoscript:`shippingcalc` price calculations to be used. (see chapter shipping cost calculation)
 
     **Example:**
 
@@ -83,6 +83,4 @@ Payment / Shipping / Handling Item Prices
              10.price.noCostsAmount = 200 
              10.price.1 = 1.5 
         }
-
-
 

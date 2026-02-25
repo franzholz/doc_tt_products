@@ -4,10 +4,10 @@
 Template markers
 ----------------
 
-The following template markers for the tmpl-file are used. You have to put ### before and after
-them. There are more markers, so look into the example template files.
+The following markers for the HTML template files are available. You have to put :html:`###` characters before and after
+each marker. Look into the example template files for their usage!
 
-See: http://wiki.typo3.org/Tt_products_marker
+See: `Wiki for tt_products: Marker <https://github.com/franzholz/tt_products/wiki/Marker>`_.
 
 .. toctree::
     :maxdepth: 2

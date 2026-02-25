@@ -21,8 +21,8 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: string
 
-    *    pick_store:  pick it up from a store. The delivery address is filled from  a selected store (see UIDstore)
-    *    nocopy:      bill address will not be copied into the delivery address even if it has been left empty in the entry form.
+    *    :typoscript:`pick_store`:  pick it up from a store. The delivery address is filled from a selected store (see :typoscript:`UIDstore`)
+    *    :typoscript:`nocopy`:      bill address will not be copied into the delivery address even if it has been left empty in the entry form.
 
 
 .. _configuration-payment-shipping-handling-items-mode:
@@ -63,9 +63,9 @@ Selectable Payment / Shipping / Handling Items
     :type: double or array of integers
            see below for additional parameters
 
-   Price of item, including or excluding VAT, depends on TAXincluded.
-   You use integers to specify the minimal number of items for which the price is valid.
-   6 items and more will cost 5.8 in this example.
+    Price of item, including or excluding VAT, depends on TAXincluded.
+    You use integers to specify the minimal number of items for which the price is valid.
+    6 items and more will cost 5.8 in this example.
 
     **Example:**
 
@@ -83,7 +83,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double of integers
 
-    If set as double, the general TAXpercentage will be overridden by this value.
+    If set as double, the general :php:`TAXpercentage` will be overridden by this value.
     You can alternatively use it as an array. You give the tax to replace on the left side,
     and the new tax value on the right side. This will replace all taxes of items of zero tax
     by a tax of 8% and it will replace all items of 14% with a tax of 2,5%  instead.
@@ -95,9 +95,10 @@ Selectable Payment / Shipping / Handling Items
         :caption: replaceTAXpercentage depending on sum
 
         30.replaceTAXpercentage {
-           0 = 8
-           14 = 2.5
+            0 = 8
+            14 = 2.5
         }
+
 
 .. _configuration-payment-shipping-handling-items-price-factor-weight
 
@@ -106,7 +107,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double
 
-    Will be added to price. The weight is multiplied with this factor to increase the shipping price.
+    Will be added to price. The :php:`weight` is multiplied with this :php:`factor` to increase the shipping price.
 
 .. _configuration-payment-shipping-handling-items-price-factor-count:
 
@@ -115,7 +116,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double
 
-    Will be added to price. The product's count is multiplied with this factor to increase the shipping price.
+    Will be added to price. The product's :php:`count` is multiplied with this factor to increase the shipping price.
 
 
 .. _configuration-payment-shipping-handling-items-percentage-of-goods-total:
@@ -125,7 +126,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double
 
-    Price of item, calculated from a percentage of the total amount before payment/shipping
+    Price of item, calculated from a percentage of the total amount before :typoscript:`payment`/:typoscript:`shipping`
 
 .. _configuration-payment-shipping-handling-items-percentage-of-total-shipping:
 
@@ -146,10 +147,10 @@ Selectable Payment / Shipping / Handling Items
     Comma separated list of allowed uids for the creditcards.
     See file :file:`localland_db.xml` about the values. :php:`sys_products_cards.cc_type.I`
 
-    *    0: American Express
-    *    1 ... Diners Club
-    *    2 ... Mastercard
-    *    3 ... Visa
+    *    :typoscript:`0`: American Express
+    *    :typoscript:`1`: Diners Club
+    *    :typoscript:`2`: Mastercard
+    *    :typoscript:`3`: Visa
 
 .. _configuration-payment-shipping-handling-items-credit-card-select:
 
@@ -201,14 +202,14 @@ Selectable Payment / Shipping / Handling Items
                 label = Year
                 type = recs[creditcard][endtime_yy]=select
                 valueArray {
-                  10.label = 2010
-                  10.value = 2010
-                  20.label = 2011
-                  20.value = 2011
-                  30.label = 2012
-                  30.value = 2012
-                  40.label = 2013
-                  40.value = 2013
+                  10.label = 2026
+                  10.value = 2027
+                  20.label = 2028
+                  20.value = 2029
+                  30.label = 2030
+                  30.value = 2031
+                  40.label = 2032
+                  40.value = 2033
               }
          }
 
@@ -261,7 +262,7 @@ Selectable Payment / Shipping / Handling Items
     :type: resource
 
     PHP script which is included in a “blank” function and it should be written to manipulate amounts in the internal arrays.
-    This script could be used to calculate a special fee regarding a payment/shipping item.
+    This script could be used to calculate a special fee regarding a :php:`payment`/:php:`shipping` item.
     It is not recommended to use this feature. Write your own TYPO3 extension instead which is based on hooks.
     Properties of the calculation script is passed to the function as :php:`$confScript` array.
     The resulting prices need to be written into the variables :php:`$priceShippingTax` and
@@ -275,9 +276,9 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: resource
 
-    PHP script which is included in a “blank” method called from products_basket() in user_products class when the order is finalized.
+    PHP script which is included in a “blank” method called from :php:`products_basket()` in :php:`user_products` class when the order is finalized.
     This function must take care of displaying templates during the payment process with a payment gateway as well as finalizing the order afterwards.
-    See :file:`payment_DIBS.php` in addons_tt_products for an example. A HTML-template file follows.
+    See :file:`payment_DIBS.php` in :composer:`jambagecom/addons-tt-products` for an example. A HTML-template file follows.
     Properties of the handle script is passed to the function as :php:`$conf` array. The content of the variable :php:`$content` is returned as content.
 
 
@@ -288,14 +289,14 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: string / array
 
-    Name of the TYPO3 library to handle the Payment. Currently you can set only 'transactor' here to use the Payment Transactor Library Extension.
+    Name of the TYPO3 library to handle the Payment. Currently you can set only :composer:`jambagecom/transactor` here to use the Payment Transactor Library Extension.
 
     array values:
-    *    extName: name of the specific Payment Library (SPL) extension
-    *    paymentMethod: method of the SPL (e.g. paymentlib_transcentral_cc_mastercard)
-    *    currency:     currency to use
-    *    templateFile: template file for the display of the payment
-    *    gatewaymode:  mode of the gateway (form / request)
+    *    :typoscript:`extName`: name of the specific Payment Library (SPL) extension
+    *    :typoscript:`paymentMethod`: method of the SPL (e.g. paymentlib_transcentral_cc_mastercard)
+    *    :typoscript:`currency`:     currency to use
+    *    :typoscript:`templateFile`: template file for the display of the payment
+    *    :typoscript:`gatewaymode`:  mode of the gateway (form / request)
 
 
     **Example:**
@@ -307,11 +308,11 @@ Selectable Payment / Shipping / Handling Items
         40.handleLib = transactor
         40.image.file = EXT:tt_products/res/icons/fe/mastercard.gif
         40.handleLib {
-          extName = transcentral
-          paymentMethod = paymentlib_transcentral_cc_mastercard
-          Currency = $
-          templateFile = EXT:tt_products/template/paymentlib.tmpl
-          gatewaymode = form
+            extName = transcentral
+            paymentMethod = paymentlib_transcentral_cc_mastercard
+            Currency = $
+            templateFile = EXT:tt_products/template/paymentlib.tmpl
+            gatewaymode = form
         }
 
 .. _configuration-payment-shipping-handling-handle-url:
@@ -321,7 +322,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: string
 
-    If set, this handleURL is called instead of the THANKS-url (by PIDthanks) in order to let eg. a handleScript process the information if payment by credit card or so.
+    If set, this handleURL is called instead of the THANKS-url (by :typoscript:`PIDthanks`) in order to let eg. a :typoscript:`handleScript` process the information if payment by credit card or so.
 
 .. _configuration-payment-shipping-handling-handle-target:
 
@@ -343,7 +344,6 @@ Selectable Payment / Shipping / Handling Items
     This is a list of payment method keys (their numbers) which are not available given a certain delivery form. For instance
     if people pick up goods in the store, you don't want them to transfer money or pay online but just order the goods.
     So you can exclude those payment methods.
-
 
     **Example:**
 
@@ -381,9 +381,10 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: list of integers
 
-    This is a list of payment settings which will be overridden if this shipping method has been selected.
+    This is a list of :typoscript:`payment` settings which will be overridden if this :typoscript:`shipping` method has been selected.
 
-    Example:
+    **Example:**
+
     ..  code-block:: typoscript
         :caption: excludePayment for pickup in store
 
@@ -412,7 +413,8 @@ Selectable Payment / Shipping / Handling Items
     :default: 0
 
     If set, then this item will only get shown when there is at least this number of products in the basket.
-    *    0: always show this item
+
+    *    :typoscript:`0`: always show this item
 
 
 . _configuration-payment-shipping-handling-type:
@@ -422,7 +424,7 @@ Selectable Payment / Shipping / Handling Items
     :required: true
     :type: string
 
-    *    fe_users: the payment can be configured via the fe_users table
+    *    :typoscript:`fe_users`: the :typoscript:`payment` can be configured via the :php:`fe_users` table
 
 . _configuration-payment-shipping-handling-visible-for-group-id:
 
@@ -431,7 +433,7 @@ Selectable Payment / Shipping / Handling Items
     :required: true
     :type: string
 
-    This payment method is only available, if a user is logged in and member of this frontend user group
+    This :typoscript:`payment` method is only available, if a user is logged in and member of this front end user group
 
 
 . _configuration-payment-shipping-handling-add-required-info-fields:
@@ -441,7 +443,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: string
 
-    Additional required fields in the INFO page, if this payment method is selected. Useful for credit card payment.
+    Additional required fields in the :typoscript:`INFO` page, if this :typoscript:`payment` method is selected. Useful for credit card payment.
 
 
 . _configuration-payment-shipping-handling-where-static-countries:
@@ -451,7 +453,7 @@ Selectable Payment / Shipping / Handling Items
     :required: true
     :type: string
 
-    Set a SQL WHERE condition to follow for the selected country in the static_countries table of the static_info_tables extension.
+    Set a SQL WHERE condition to follow for the selected country in the :php:`static_countries` table of the :composer:`sjbr/static-info-tables` extension.
 
     Example:
     ..  code-block:: typoscript

@@ -1,73 +1,53 @@
 
-.. _administration-template-markers-global-markers:
+.. _administration-global-markers:
 
 global markers
 ^^^^^^^^^^^^^^
 
-The global markers are allowed to be used with all subparts. You can even define new markers.
-
-**Example:**
-
-..  code-block:: typoscript
-    :caption: define marker MY_MARKER
-
-    plugin.tt_products.marks {
-        my_marker = Come soon back to our shop!
-    }
+The global markers are allowed to be used within all subparts on any position. You can define your own markers.
 
 
-..  code-block:: html
-    :caption: use HTML template marker MY_MARKER
+	.. configuration_marks:
 
-    ###MY_MARKER###
+..  confval:: marks
+    :name: global marks
+    :required: false
+    :type: array
 
+    self defined markers
 
-.. _administration-template-markers-global-markers-pluginttproductsmarks:
+	**Example:**
+	
+	..  code-block:: typoscript
+	    :caption: define marker MY_MARKER
+	
+	    plugin.tt_products.marks {
+	        my_marker = Come soon back to our shop!
+	    }
+	
 
-: ::
+	.. configuration_marker_file:
 
-	plugin.tt_products.marks {
-	  my_marker = Come soon back to our shop!
-	}
+..  confval:: markerFile
+    :name: global marker file
+    :required: false
+    :type: array
 
+    **Constants:**  :typoscript:`file.markerFile`
+	 The marker file with the translations
 
-###MY_MARKER###
+	 **Example: (Setup)**:
 
-.. container:: ts-properties
-
-	=========================== ===================================== ====================
-	Property                    Data type                             Default
-	=========================== ===================================== ====================
-	marks_
-	markerFile_
-	Constants: file.markerFile
-	=========================== ===================================== ====================
-
-	.. _tsMarks:
-
-marks
-"""""
-.. container:: table-row
-
-   Property
-         marks
-   Data type
-         array
-   Description
-         self defined markers
+	..  code-block:: html
+	    :caption: use HTML template marker MY_MARKER
+	
+	    ###MY_MARKER###
 
 
-	.. _tsMarkerFile:
+	**Example: (Setup)**:
 
-markerFile
-""""""""""
-.. container:: table-row
+	..  code-block:: typoscript
+	    :caption: markerFile for translations
+	
+		plugin.tt_products.markerFile = EXT:myext/marker/fr.locallang.xlf
 
-   Property
-         markerFile **Constants:** file.markerFile
-   Data type
-         resource / **array of string**
-   Description
-         The marker file with the translations. (v2.9)
-         **Example: (Setup)**:
-         :typoscript:`plugin.tt_products.markerFile = EXT:myext/marker/fr.locallang.xlf` t3tsref:data-type-resource

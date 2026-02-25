@@ -8,24 +8,23 @@ Configuration
     :maxdepth: 2
     :titlesonly:
 
-    Faq/Index
-    Files/Index
+    Files
     BasketConfiguration
-    Description/Index
-    Reference/Index
-    DisplayModesCode/Index
-    ConfigurationOfArticles/Index
-    FormConfiguration/Index
-    ControlConfiguration/Index
-    DownloadConfiguration/Index
+    Description
+    DisplayModesCode
+    ConfigurationOfArticles
+    FormConfiguration
+    ControlConfiguration
+    DownloadConfiguration
     PaymentShippingAndHandling
     PaymentShippingHandlingItems
     PaymentShippingHandlingItemPrices
-    ShippingCostCalculation/Index
-    PricecalcDiscountpriceAnd/Index
-    VoucherSystemConfiguration/Index
-    OrderConfirmation/Index
-    BillAndDelivery/Index
-    TrackingConfiguration/Index
+    ShippingCostCalculation
+    PricecalcDiscountpriceAnd
+    VoucherSystemConfiguration
+    OrderConfirmation
+    BillAndDelivery
+    TrackingConfiguration
     GraduatedPrice
-    ErrorConfiguration/Index
+    ErrorConfiguration
+

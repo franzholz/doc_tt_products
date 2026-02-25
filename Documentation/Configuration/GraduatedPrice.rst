@@ -7,19 +7,18 @@ Setup only
 
 The graduated prices gives you the possibility to add special prices for a list of amount of products.
 
-    **Example:**
+**Example:**
 
-    ..  code-block:: typoscript
-        :caption: use the subtitle for translations
+..  code-block:: typoscript
+    :caption: use the subtitle for translations
 
-        plugin.tt_products.graduate {
-            10.type = count
-            10.sql.where = category = 12
-            10.marks {
-        	    factor = 3
-            }
-        }
-
+     plugin.tt_products.graduate {
+         10.type = count
+         10.sql.where = category = 12
+         10.marks {
+             factor = 3
+         }
+     }
 
 
 .. _onfiguration-graduated-price-marks:

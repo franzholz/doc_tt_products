@@ -1,23 +1,8 @@
 
-
 .. _administration-template-markers-single-markers:
 
 single markers
 ^^^^^^^^^^^^^^
-
-**Example**  for a wrap:
-
-..  code-block:: html
-    :caption: wrap inside of a HTML template
-
-    <!-- ###PRODUCT_LINK_DATASHEET### begin --> datasheet for the product <!-- ###PRODUCT_LINK_DATASHEET### end -->
-
-
-
-.. _administration-template-markers-single-markers-datasheet-for-the-product:
-
-datasheet for the product
-"""""""""""""""""""""""""
 
 =====================================================  =============  ==============================================================================  ==========================================
 Marker:                                                Type:          Description:                                                                    Area:

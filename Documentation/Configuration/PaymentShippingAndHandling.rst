@@ -1,12 +1,13 @@
 
 .. _configuration-payment-shipping-and-handling:
 
-Payment, shipping and handling configuration
---------------------------------------------
+Payment, shipping and handling
+------------------------------
 
 Setup only.
 
-Payment and shipping are very similar in configuration and therefore shared the same property list with special notes if something is for the one type only.
+:typoscript:`payment` and :typoscript:`shipping` are very similar in configuration and therefore shared the same property list with special notes 
+if something is for the one type only.
 The configuration of payment and shipping is in short a question of defining the items to choose from on the basket page. That is, a choice of one
 out of many transportation methods and one out of many payment methods. Therefore you can for instance select either radio-button representation or selector box.
 The number of the selected payment method or shipping method is reflected in the html-template certain places and you may also want special PHP scripts
@@ -86,7 +87,6 @@ executed based on the settings. That's all allowed.
     :type: boolean
     :default: 0
 
-
     If set, you get radio button layout. If not, selector-box.
 
 
@@ -98,11 +98,9 @@ executed based on the settings. That's all allowed.
     :type: string
     :default: see below
 
+    If :typoscript:`radio` is true, this string is the 'template' layout for the radio items.
 
-    If :typoscript'`radio` is true, this string is the 'template' layout for the radio items.
-
-
-    **Default:**
+    **Example for default:**
 
     ..  code-block:: typoscript
         :caption: default template in one line
@@ -117,7 +115,6 @@ executed based on the settings. That's all allowed.
     :required: false
     :type: string
     :default: see below
-
 
     If .radio is false, this string wraps the <option> tags in a <select>-tag!
 
@@ -137,10 +134,8 @@ executed based on the settings. That's all allowed.
     :type: double
     :default: from global config
 
-
     Double value (!) (means, "use . as decimal point")
     This substitutes priceNoTax. This can be different to the global tax with the same name.
-
 
     **Example:**
 
@@ -154,7 +149,7 @@ executed based on the settings. That's all allowed.
 .. _configuration-payment-shipping-handling-tax-included:
 
 ..  confval:: TAXincluded
-    :name: TAX is included in the prices
+    :name: TAX is included in the prices for shipping
     :required: false
     :type: boolean
     :default: from global
@@ -164,7 +159,7 @@ executed based on the settings. That's all allowed.
 
 .. _configuration-payment-shipping-handling-lines:
 
-..  confval:: multiple linew
+..  confval:: *multiple lines*
     :name: see example of the meaning
     :required: false
     :type: array of integers
@@ -181,12 +176,11 @@ executed based on the settings. That's all allowed.
         10.image.file = typo3/sysext/cms/tslib/media/logos/dankort.gif
         10.price =
         10.percentOfGoodstotal = 0
-        10.calculationScript = EXT:tt_products/pi1/products_comp_calcScript.inc
+        10.calculationScript = MyDomain/MyExtension/MyPath/CalculationScript.php
 
         30.title = By mail
         30.image.file = typo3/sysext/cms/tslib/media/logos/postdanmark.gif
         30.price = 40
-
 
 
 

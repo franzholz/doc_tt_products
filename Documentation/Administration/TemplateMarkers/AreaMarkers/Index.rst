@@ -1,5 +1,7 @@
 
 
+
+
 .. _administration-template-markers-area-markers:
 
 area markers:
@@ -8,79 +10,86 @@ area markers:
 ========================================  =======================================================  =====
 Marker:                                   Description:                                             Area:
 ========================================  =======================================================  =====
-BASKET_TEMPLATE                                                                                    top
+BASKET_TEMPLATE                           The view of the cart with the items to be ordered        top
 ----------------------------------------  -------------------------------------------------------  -----
 BASKET_INFO_TEMPLATE                      This is normally used to let people enter address        top
-                                          information separately from the real basket.
+                                          information or verify their data if they are logged in
 
                                           Exact same features as BASKET_TEMPLATE.
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_ORDERCONFIRMATION_TEMPLATE         the final page after the order has been processed. It
+BASKET_ORDERCONFIRMATION_TEMPLATE         the final page after the order has been processed. It    top
                                           will not be used for the display, if PIDthanks is set.
-                                          But this will always be used for the text in HTML
-                                          emails.
+                                          But it will always be used for the text in HTML
+                                          emails. It is stored in the order data.
 
                                           see: BASKET_ORDERTHANKS_TEMPLATE
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE  This HTML data will be added to the display after the
+BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE  This HTML data will be added to the display after the    down
                                           order has been stored to the database.
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_ORDERTHANKS_TEMPLATE               Used for displaying a thanks page, when PIDthanks is
+BASKET_ORDERTHANKS_TEMPLATE               Used for displaying a thanks page, when PIDthanks is     top
                                           set. This will not be used in the HTML emails.b
 
                                           see BASKET_ORDERCONFIRMATION_TEMPLATE
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_OVERVIEW_EMPTY                     message 'your basket is empty' for OVERVIEW
+BASKET_OVERVIEW_EMPTY                     message 'your basket is empty' for OVERVIEW              top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_OVERVIEW_TEMPLATE
+BASKET_OVERVIEW_TEMPLATE                  Used for the mini basket display.                        top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_PAYMENT_TEMPLATE
+BASKET_PAYMENT_TEMPLATE                   Verification of address data and payment gateway         top
+                                          connection
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_REQUIRED_INFO_MISSING
+BASKET_REQUIRED_INFO_MISSING              warning display for missing address data                 top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_TEMPLATE_EMPTY                     message 'your basket is empty'
+BASKET_TEMPLATE_EMPTY                     message 'your basket is empty'                           top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_TEMPLATE_NOT_LOGGED_IN             error message that the user has not logged in
+BASKET_TEMPLATE_NOT_LOGGED_IN             error message that the user is not logged in             top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_TEMPLATE_INVALID_GIFT_UNIQUE_ID    error message that a wrong unique id for a gift product
-                                          has been entered
+BILL_TEMPLATE                             how your bill file will look like                        top
 ----------------------------------------  -------------------------------------------------------  -----
-BILL_TEMPLATE                             how your bill file will look like
+DELIVERY_TEMPLATE                         for the file of your delivery sheet                      top
 ----------------------------------------  -------------------------------------------------------  -----
-DELIVERY_TEMPLATE                         for the file of your delivery sheet
-----------------------------------------  -------------------------------------------------------  -----
-EMAIL_PLAINTEXT_TEMPLATE                  the email notification text
+EMAIL_PLAINTEXT_TEMPLATE                  the email notification text                              top
 
                                           The first line is the subject.
 ----------------------------------------  -------------------------------------------------------  -----
-EMAIL_NEWUSER_TEMPLATE                    email after creation of new frontend use
+EMAIL_NEWUSER_TEMPLATE                    email after creation of new front end use                top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_LIST_TEMPLATE                        the listing of products on the starting LIST page
+ITEM_LIST_TEMPLATE                        the listing of products on the starting LIST page        top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_LIST_GIFTS_TEMPLATE                  listing of the gift products
+ITEM_SEARCH                                                                                        top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SEARCH
+ITEM_SEARCH_EMPTY                                                                                  top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SEARCH_EMPTY
+ITEM_SINGLE_DISPLAY                       single                                                   top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY
+ITEM_SINGLE_DISPLAY_NOT_IN_STOCK          single display when item is not in stock                 top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY_GIFT                  single display used when this is a gift product
+ITEM_SINGLE_DISPLAY_RECORDINSERT          see displayCurrentRecord: render the $cObj->data         top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY_NOT_IN_STOCK          single display when item is not in stock
+MEMO_TEMPLATE                             memorization of items                                    top 
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY_RECORDINSERT          see displayCurrentRecord: render the $cObj->data
+MEMO_NOT_LOGGED_IN                        error message that use has not been logged in for MEMO   top
 ----------------------------------------  -------------------------------------------------------  -----
-MEMO_TEMPLATE
+ORDERS_LIST_TEMPLATE                      display of the order list                                top
 ----------------------------------------  -------------------------------------------------------  -----
-MEMO_NOT_LOGGED_IN                        error message that use has not been logged in for MEMO
+TRACKING_ENTER_NUMBER                                                                              top
 ----------------------------------------  -------------------------------------------------------  -----
-ORDERS_LIST_TEMPLATE                      display of the order list
-----------------------------------------  -------------------------------------------------------  -----
-TRACKING_EMAIL_GIFTNOTIFY_TEMPLATE        notification to the gift recipient in the order
-                                          tracking
-----------------------------------------  -------------------------------------------------------  -----
-TRACKING_ENTER_NUMBER
-----------------------------------------  -------------------------------------------------------  -----
-TRACKING_WRONG_NUMBER
+TRACKING_WRONG_NUMBER                                                                              top
 ========================================  =======================================================  =====
+
+
+
+.. _administration-template-area-markers-datasheet-for-the-product:
+
+datasheet for the product
+"""""""""""""""""""""""""
+
+**Example**  for a wrap:
+
+..  code-block:: html
+    :caption: wrap inside of a HTML template
+
+    <!-- ###PRODUCT_LINK_DATASHEET### begin --> datasheet for the product <!-- ###PRODUCT_LINK_DATASHEET### end -->
+
+
