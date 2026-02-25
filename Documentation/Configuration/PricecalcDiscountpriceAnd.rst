@@ -25,9 +25,9 @@ table. The discount price will be used for all users who belong to the group set
 
     Special Prices for the products. Where 1 product costs 4.99, 2 products will cost 8.99. 
     With discount price this will form the price for one product. With :typoscript:`pricecalc` it is the price 
-    for all products together where 1 has cost 4.99 in the products folder. The :typoscript:`discountprice` overrides 
-    the :typoscript:`pricecalc` if possible, because this should be cheaper then. A price calculation from here will get replaced if price2 is used.
-    Attention: :typoscript:`getDiscountPrice` must be 1 if you want to allow it for all customers.
+    for all products together where 1 has cost :typoscript:`4.99` in the products folder. The :typoscript:`discountprice` overrides 
+    the :typoscript:`pricecalc` if possible, because this should be cheaper then. A price calculation from here will get replaced if :php:`price2` is used.
+    Attention: :typoscript:`getDiscountPrice` must be :typoscript:`1` if you want to allow it for all customers.
 
     **Example:**
 
@@ -51,7 +51,7 @@ table. The discount price will be used for all users who belong to the group set
 
     *    discountprice: discount price calculation
 
-    Here the single prices for products are calculated depending on the count of articles, if type=count.
+    Here the single prices for products are calculated depending on the count of articles, if :typoscript:`type = count`.
     The :typoscript:`additive` settings tells if all the products are counted together even from different lines.
     Use :typoscript:`type = count` and :typoscript:`prod.type = percent` if you want to give a rebate in percentage instead of the total price. 
     But you must set a sql condition in this case in order not all products will offer this reduction.
@@ -71,7 +71,7 @@ table. The discount price will be used for all users who belong to the group set
     **Example:**
 
     ..  code-block:: typoscript
-        :caption: discount price calculation for red colored products
+        :caption: discount price calculation for red coloured products
 
         discountprice.50 {
             type = count
@@ -105,7 +105,7 @@ table. The discount price will be used for all users who belong to the group set
     *    Credit points:
 
     This tells you how many credit points someone will get if he buys articles in the shop. 
-    The right values are the percentage of the price of the ordered articles, if type=price.
+    The right values are the percentage of the price of the ordered articles, if :typoscript:`type = price`.
 
     **Example:**
 
@@ -139,8 +139,8 @@ table. The discount price will be used for all users who belong to the group set
     :type: string
   
     Meaning of the right edge integer which usually gets calculated:
-    *    count: the products count  (:typoscript:`pricecalc` and :typoscript:`discountprice` only)
-    *    price: the total price of all articles is used (creditpoints only)
+    *    :typoscript:`count`: the products count  (:typoscript:`pricecalc` and :typoscript:`discountprice` only)
+    *    :typoscript:`price`: the total price of all articles is used (creditpoints only)
 
 .. _configuration-pricecalc-discountprice-sql:
 
@@ -150,7 +150,6 @@ table. The discount price will be used for all users who belong to the group set
     :type: string
   
     SQL conditions over the records
-
 
 
 .. _configuration-creditpoints:
@@ -170,7 +169,7 @@ See above for the main configuration of creditpoints.
     :default: 0
 
     Used to calculate how much money someone will get for his creditpoints. 
-    2 creditpoins will give 1 Euro or the currency of your choice.
+    2 creditpoins will give 1 Euro or it will be in the currency of your choice.
     In this example one creditpoint of a product will have the value of 50 Cent.
 
     **Example:**
@@ -191,7 +190,7 @@ See above for the main configuration of creditpoints.
     :type: string
 
     Normally you must create you HTML template with entry fields for the amount of creditpoins you want to use.
-    Change this to the mode 'auto'. Then all necessary creditpoints wil be used automatically.
+    Change this to the mode :typoscript:`auto`. Then all necessary creditpoints wil be used automatically.
 
 
     **Example:**
