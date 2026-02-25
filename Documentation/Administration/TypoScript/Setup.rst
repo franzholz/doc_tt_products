@@ -582,11 +582,11 @@ substitutePagetitle
 
     Set the page title in single view:
 
-    *   1   : product title
-    *   2   : product subtitle
-    *  12   : product title and subtitle
-    *  21   : product subtitle and title
-    *   3   : bread crumb
+    *   :typoscript:`1`   : product title
+    *   :typoscript:`2`   : product subtitle
+    *   :typoscript:`12`  : product title and subtitle
+    *   :typoscript:`21`  : product subtitle and title
+    *   :typoscript:`3`   : bread crumb
 
 
 ..  _css:
@@ -595,10 +595,10 @@ CSS
 ---
 
 ..  confval:: CSS
-    :name: Cascading Stylesheets settings
+    :name: Cascading Stylesheets files
     :type: *see below*
 
-    Set the CSS files.
+    Set the CSS files. 
 
 
 ..  _js:
