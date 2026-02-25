@@ -6,10 +6,6 @@ Shop System tt_products
 
 Shop system extension for the TYPO3 CMS
 
-TEST backslash here
-===================
-
-Test only:  "\\"
 
 ..  note::
     This documentation guide was automatically created by the init command of
