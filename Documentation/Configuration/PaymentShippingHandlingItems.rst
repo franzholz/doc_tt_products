@@ -34,16 +34,16 @@ Selectable Payment / Shipping / Handling Items
 
     Possible payment options:
 
-    *    :typoscript:`bank_transfer` ... payment via account
-    *    :typoscript:`credit_card`
-    *    :typoscript:`cash`
-    *    :typoscript:`PayPal`
-    *    :typoscript:`Saferpay`
-    *    :typoscript:`iPayment`
-    *    :typoscript:`Payone`
-    *    :typoscript:`ClickandBuy`
-    *    :typoscript:`vrepay`
-    *    :typoscript:`Authorize.net`
+    *    bank_transfer ... payment via account
+    *    credit_card
+    *    cash
+    *    PayPal
+    *    Saferpay
+    *    iPayment
+    *    Payone
+    *    ClickandBuy
+    *    vrepay
+    *    Authorize.net
 
 .. _configuration-payment-shipping-handling-items-image:
 
@@ -67,7 +67,6 @@ Selectable Payment / Shipping / Handling Items
     You use integers to specify the minimal number of items for which the price is valid.
     6 items and more will cost 5.8 in this example.
 
-
     **Example:**
 
     ..  code-block:: typoscript
@@ -84,7 +83,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double of integers
 
-    If set as double, the general TAXpercentage will be overridden by this value.
+    If set as double, the general :php:`TAXpercentage` will be overridden by this value.
     You can alternatively use it as an array. You give the tax to replace on the left side,
     and the new tax value on the right side. This will replace all taxes of items of zero tax
     by a tax of 8% and it will replace all items of 14% with a tax of 2,5%  instead.
@@ -100,6 +99,7 @@ Selectable Payment / Shipping / Handling Items
             14 = 2.5
         }
 
+
 .. _configuration-payment-shipping-handling-items-price-factor-weight
 
 ..  confval:: priceFactWeight
@@ -107,7 +107,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double
 
-    Will be added to price. The weight is multiplied with this factor to increase the shipping price.
+    Will be added to price. The :php:`weight` is multiplied with this :php:`factor` to increase the shipping price.
 
 .. _configuration-payment-shipping-handling-items-price-factor-count:
 
@@ -116,7 +116,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double
 
-    Will be added to price. The product's count is multiplied with this factor to increase the shipping price.
+    Will be added to price. The product's :php:`count` is multiplied with this factor to increase the shipping price.
 
 
 .. _configuration-payment-shipping-handling-items-percentage-of-goods-total:
@@ -126,7 +126,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: double
 
-    Price of item, calculated from a percentage of the total amount before payment/shipping
+    Price of item, calculated from a percentage of the total amount before :typoscript:`payment`/:typoscript:`shipping`
 
 .. _configuration-payment-shipping-handling-items-percentage-of-total-shipping:
 
@@ -202,14 +202,14 @@ Selectable Payment / Shipping / Handling Items
                 label = Year
                 type = recs[creditcard][endtime_yy]=select
                 valueArray {
-                  10.label = 2010
-                  10.value = 2010
-                  20.label = 2011
-                  20.value = 2011
-                  30.label = 2012
-                  30.value = 2012
-                  40.label = 2013
-                  40.value = 2013
+                  10.label = 2026
+                  10.value = 2027
+                  20.label = 2028
+                  20.value = 2029
+                  30.label = 2030
+                  30.value = 2031
+                  40.label = 2032
+                  40.value = 2033
               }
          }
 
@@ -262,7 +262,7 @@ Selectable Payment / Shipping / Handling Items
     :type: resource
 
     PHP script which is included in a “blank” function and it should be written to manipulate amounts in the internal arrays.
-    This script could be used to calculate a special fee regarding a payment/shipping item.
+    This script could be used to calculate a special fee regarding a :php:`payment`/:php:`shipping` item.
     It is not recommended to use this feature. Write your own TYPO3 extension instead which is based on hooks.
     Properties of the calculation script is passed to the function as :php:`$confScript` array.
     The resulting prices need to be written into the variables :php:`$priceShippingTax` and
@@ -278,7 +278,7 @@ Selectable Payment / Shipping / Handling Items
 
     PHP script which is included in a “blank” method called from :php:`products_basket()` in :php:`user_products` class when the order is finalized.
     This function must take care of displaying templates during the payment process with a payment gateway as well as finalizing the order afterwards.
-    See :file:`payment_DIBS.php` in addons_tt_products for an example. A HTML-template file follows.
+    See :file:`payment_DIBS.php` in :composer:`jambage.com/addons-tt-products` for an example. A HTML-template file follows.
     Properties of the handle script is passed to the function as :php:`$conf` array. The content of the variable :php:`$content` is returned as content.
 
 
@@ -289,7 +289,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: string / array
 
-    Name of the TYPO3 library to handle the Payment. Currently you can set only 'transactor' here to use the Payment Transactor Library Extension.
+    Name of the TYPO3 library to handle the Payment. Currently you can set only :composer:`jambagecom/transactor` here to use the Payment Transactor Library Extension.
 
     array values:
     *    :typoscript:`extName`: name of the specific Payment Library (SPL) extension
@@ -345,7 +345,6 @@ Selectable Payment / Shipping / Handling Items
     if people pick up goods in the store, you don't want them to transfer money or pay online but just order the goods.
     So you can exclude those payment methods.
 
-
     **Example:**
 
     ..  code-block:: typoscript
@@ -382,7 +381,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: list of integers
 
-    This is a list of :typoscript:`payment` settings which will be overridden if this shipping method has been selected.
+    This is a list of :typoscript:`payment` settings which will be overridden if this :typoscript:`shipping` method has been selected.
 
     **Example:**
 
@@ -414,6 +413,7 @@ Selectable Payment / Shipping / Handling Items
     :default: 0
 
     If set, then this item will only get shown when there is at least this number of products in the basket.
+
     *    :typoscript:`0`: always show this item
 
 
@@ -424,7 +424,7 @@ Selectable Payment / Shipping / Handling Items
     :required: true
     :type: string
 
-    *    :typoscript:`fe_users`: the payment can be configured via the fe_users table
+    *    :typoscript:`fe_users`: the :typoscript:`payment` can be configured via the :php:`fe_users` table
 
 . _configuration-payment-shipping-handling-visible-for-group-id:
 
@@ -433,7 +433,7 @@ Selectable Payment / Shipping / Handling Items
     :required: true
     :type: string
 
-    This :typoscript:`payment` method is only available, if a user is logged in and member of this frontend user group
+    This :typoscript:`payment` method is only available, if a user is logged in and member of this front end user group
 
 
 . _configuration-payment-shipping-handling-add-required-info-fields:
@@ -443,7 +443,7 @@ Selectable Payment / Shipping / Handling Items
     :required: false
     :type: string
 
-    Additional required fields in the :typoscript:`INFO` page, if this payment method is selected. Useful for credit card payment.
+    Additional required fields in the :typoscript:`INFO` page, if this :typoscript:`payment` method is selected. Useful for credit card payment.
 
 
 . _configuration-payment-shipping-handling-where-static-countries:
@@ -453,7 +453,7 @@ Selectable Payment / Shipping / Handling Items
     :required: true
     :type: string
 
-    Set a SQL WHERE condition to follow for the selected country in the static_countries table of the static_info_tables extension.
+    Set a SQL WHERE condition to follow for the selected country in the :php:`static_countries` table of the :composer:`sjbr/static-info-tables` extension.
 
     Example:
     ..  code-block:: typoscript
