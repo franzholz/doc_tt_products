@@ -14,7 +14,7 @@ General:
 
 *   Always use the version of the `Table Library (table) <https://extensions.typo3.org/extension/table>`_ ,
   the `Extension Library since 2007 (div2007) <https://extensions.typo3.org/extension/div2007>`_
-  and the other required extensions as described in `Shop System <https://extensions.typo3.org/extension/tt_products>`_ .
+  and the other required extensions as described in `Shop System tt_products <https://extensions.typo3.org/extension/tt_products>`_ .
 *   Please look at the website `Wiki for_tt_products
   <https://github.com/franzholz/tt_products/wiki>`_ .
 *   Get the latest supported version from `Upgrade licences shop for_tt_products
