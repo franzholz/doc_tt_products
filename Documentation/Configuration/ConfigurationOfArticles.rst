@@ -5,7 +5,7 @@ Articles, Products, Categories, Pages, Addresses and Images
 -----------------------------------------------------------
 Setup only.
 
-The last but one/two value will be the name of the view. It can be :typoscript:`ALL`, if it is valid for all views.
+The last but one/two value will be the name of the view. :typoscript:`ALL` means it is valid for all views.
 
 Views correspond to the code field:
 
@@ -13,7 +13,7 @@ Views correspond to the code field:
 *   :typoscript:`LIST`
 *   :typoscript:`BASKET`
 
-additional possible values are
+Additional possible values are
 
 *   :typoscript:`EMAIL`
 *   :typoscript:`PAYMENT`
@@ -47,8 +47,8 @@ additional possible values are
 
     Pairs of field names and the count of the first characters to be used to
     form the name of the image file.
-    *    type:     tablefields
-    *    fieldname name of the table field
+    *    type:      tablefields
+    *    fieldname: name of the table field
 
 
     **Example:**
@@ -98,6 +98,12 @@ additional possible values are
 
             separator = _
         }
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: select the image path by the article table
 
         ALL.generateImage {
             type = foreigntable
