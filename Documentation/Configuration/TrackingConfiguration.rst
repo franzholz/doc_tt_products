@@ -12,8 +12,11 @@ These are some settings if you want to change the display of the tracking page.
 
 .. _configuration-tracking-fields:
 
-..  confval:: fields
-    :name: fields in selector box
+tracking.fields
+~~~~~~~~~~~~~~~
+
+..  confval:: tracking.fields
+    :name: fields in tracking selector box
     :required: false
     :type: string
 
@@ -31,7 +34,10 @@ These are some settings if you want to change the display of the tracking page.
 
 .. _configuration-tracking-record-line:
 
-..  confval:: recordLine
+tracking.recordLine
+~~~~~~~~~~~~~~~~~~~
+
+..  confval:: tracking.recordLine
     :name: HTML record line completion
     :required: false
     :type: string
@@ -50,6 +56,9 @@ These are some settings if you want to change the display of the tracking page.
 
 .. _configuration-tracking-record-type:
 
+tracking.recordType
+~~~~~~~~~~~~~~~~~~~
+
 ..  confval:: recordType
     :name: record type
     :required: false
@@ -61,6 +70,9 @@ These are some settings if you want to change the display of the tracking page.
     *    checkbox
 
 .. _configuration-tracking-record-box:
+
+tracking.recordBox
+~~~~~~~~~~~~~~~~~~
 
 ..  confval:: recordBox
     :name: box around record
@@ -79,7 +91,10 @@ These are some settings if you want to change the display of the tracking page.
 
 .. _configuration-tracking-sql-where:
 
-..  confval:: sql.where
+tracking.sql.where
+~~~~~~~~~~~~~~~~~~
+
+..  confval:: tracking.sql.where
     :name: SQL Where condition
     :required: true
     :type: string
@@ -97,6 +112,9 @@ These are some settings if you want to change the display of the tracking page.
 
 
 .. _configuration-tracking-sql-order-by:
+
+tracking.sql.orderBy
+~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: sql.orderBy
     :name: SQL Order By aggregate function
