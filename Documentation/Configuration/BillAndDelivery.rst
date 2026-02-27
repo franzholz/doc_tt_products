@@ -12,6 +12,9 @@ They are generated in the folder :file:`fileadmin/data/bill`.
 
 .. _configuration-bill-and-delivery-generation:
 
+generation
+~~~~~~~~~~
+
 ..  confval:: generation
     :name: generation type of a sheet
     :required: true
@@ -37,6 +40,9 @@ They are generated in the folder :file:`fileadmin/data/bill`.
 
 .. _configuration-bill-and-delivery-type:
 
+type
+~~~~
+
 ..  confval:: type
     :name: type of generation
     :required: true
@@ -48,6 +54,9 @@ They are generated in the folder :file:`fileadmin/data/bill`.
 
 
 .. _configuration-bill-and-delivery-handle-lib:
+
+handleLib
+~~~~~~~~~
 
 ..  confval:: handleLib
     :name: name of the PHP library  * PDF only
