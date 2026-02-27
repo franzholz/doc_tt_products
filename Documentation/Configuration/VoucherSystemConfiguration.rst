@@ -15,7 +15,10 @@ to guess to obtain a price reduction.
 
 .. _configuration-voucher-system-table:
 
-..  confval:: table
+voucher.table
+~~~~~~~~~~~~~
+
+..  confval:: voucher.table
     :name: table name
     :required: false
     :type: string
@@ -33,23 +36,23 @@ to guess to obtain a price reduction.
         }
 
 
-.. _configuration-voucher-system-price-reduction:
+.. _configuration-voucher-system-table-fields:
 
-..  confval:: amount
-    :name: price reduction
-    :required: false
-    :type: double
+voucher table fields
+~~~~~~~~~~~~~~~~~~~~
 
-    Price reduction for the voucher if the fe_users table is used.
+.. _configuration-voucher-system-table-field-amount:
 
+amount
+    Type: double
 
-.. _configuration-voucher-system-price:
+    Amount of price reduction for the voucher if the :php:`fe_users` table is used.
 
-..  confval:: price
-    :name: system price
-    :required: false
-    :type: double
+.. _configuration-voucher-system-table-field-price:
 
-    Price for a voucher when used as a refund for the invitation of a friend
+price
+    Type: double
+
+    Price for a voucher when used as a refund
 
 
