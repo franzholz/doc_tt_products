@@ -12,6 +12,9 @@ list of tags for the error messages.
 
 .. _configuration-error-wrong-parameter-redirect:
 
+redirect
+~~~~~~~~
+
 ..  confval:: redirect
     :name: redirect page id
     :required: false
