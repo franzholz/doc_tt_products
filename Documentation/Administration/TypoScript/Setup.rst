@@ -734,7 +734,7 @@ PIDsearch
     the display mode "Products: search" on that page.
 
 
-..  _pid-search:
+..  _pid-basket:
 
 PIDbasket
 ---------
@@ -1403,10 +1403,10 @@ orderEmail_from
     From email address for the confirmation email to customer
 
 
-..  _order-email-from:
+..  _order-email-from-name:
 
-orderEmail_from
----------------
+orderEmail_fromName
+-------------------
 
 ..  confval:: orderEmail_fromName		
     :name: From name for order email
