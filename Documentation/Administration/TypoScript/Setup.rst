@@ -736,14 +736,14 @@ PIDsearch
 
 ..  _pid-search:
 
-PIDsearch
+PIDbasket
 ---------
 
 ..  confval:: PIDbasket
     :name: PID for the basket page
     :type: int+
 
-    If you want ever change the number of items anywhere to go to a specific page
+    If the change in the number of items shall lead to a specific page
     (eg. the shopping basket page), enter the *PID* here.
 
 
