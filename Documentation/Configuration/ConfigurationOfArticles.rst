@@ -35,6 +35,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-generate-path:
 
+generatePath
+~~~~~~~~~~~~
+
 ..  confval:: generatePath
     :name: path and file name generation for the images
     :required: true
@@ -64,6 +67,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-generate-image:
+
+generateImage
+~~~~~~~~~~~~~
 
 ..  confval:: generateImage
     :name: image generation
@@ -117,6 +123,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-image-marker:
 
+imageMarker
+~~~~~~~~~~~
+
 ..  confval:: imageMarker
     :name: image markers
     :required: true
@@ -138,6 +147,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-limit:
+
+limit
+~~~~~
 
 ..  confval:: limit
     :name: Max items displayed
@@ -169,6 +181,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-order-by:
 
+orderBy
+~~~~~~~
+
 ..  confval:: orderBy
     :name: SQL Order By
     :required: true
@@ -179,6 +194,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-fetch-image:
+
+fetchImage
+~~~~~~~~~~
 
 ..  confval:: fetchImage
     :name:  fetch images from another table
@@ -200,6 +218,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-language:
+
+language
+~~~~~~~~
 
 ..  confval:: language
     :name:  language file for translation
@@ -247,6 +268,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-image:
 
+image
+~~~~~
+
 ..  confval:: image
     :name:  image cObject
     :required: false
@@ -271,6 +295,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-joined-images-wrap:
 
+joinedImagesWrap
+~~~~~~~~~~~~~~~~
+
 ..  confval:: joinedImagesWrap
     :name:  wrap around joined images
     :required: false
@@ -289,6 +316,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-filter:
+
+filter
+~~~~~~
 
 ..  confval:: filter
     :name:  filter on table records
@@ -335,6 +365,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-urlparams:
 
+urlparams
+~~~~~~~~~
+
 ..  confval:: urlparams
     :name:  tt_products URL parameter
     :required: false
@@ -346,6 +379,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-display-columns:
+
+displayColumns
+~~~~~~~~~~~~~~
 
 ..  confval:: displayColumns
     :name:  Number of columns on the display
@@ -386,6 +422,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-display-header:
 
+displayHeader
+~~~~~~~~~~~~~
+
 ..  confval:: displayHeader
     :name:  Header of the display
     :required: false
@@ -411,6 +450,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-required-fields:
 
+requiredFields
+~~~~~~~~~~~~~~
+
 ..  confval:: requiredFields
     :name:  required fields for the database tables in list views
     :required: false
@@ -420,6 +462,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-special:
+
+special
+~~~~~~~
 
 ..  confval:: special
     :name:  special treatment
@@ -449,6 +494,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-only-childs-of-current:
 
+onlyChildsOfCurrent
+~~~~~~~~~~~~~~~~~~~
+
 ..  confval:: onlyChildsOfCurrent
     :name:  show only the childs of the current category
     :required: false
@@ -458,6 +506,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-root-childs-of-current:
+
+rootChildsOfCurrent
+~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: rootChildsOfCurrent
     :name:  show only the childs of the root categories
@@ -469,6 +520,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-field:
+
+field
+~~~~~
 
 ..  confval:: field
     :name:  cObject IMAGE for a field
@@ -497,6 +551,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-control-fields:
 
+controlFields
+~~~~~~~~~~~~~
+
 ..  confval:: controlFields
     :name:  use fields for control
     :required: false
@@ -516,6 +573,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-display-fields:
+
+displayFields
+~~~~~~~~~~~~~
 
 ..  confval:: displayFields
     :name:  display configuration for fields
@@ -537,6 +597,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-field-link:
 
+fieldLink
+~~~~~~~~~
+
 ..  confval:: fieldLink
     :name:  The definition for the field links
     :required: false
@@ -556,6 +619,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-control-feusers:
+
+fe_users
+~~~~~~~~
 
 ..  confval:: fe_users
     :name:  FE user fields for limitations
@@ -577,6 +643,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-view:
+
+view
+~~~~
 
 ..  confval:: view
     :name:  code view configuration
@@ -630,6 +699,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-subpart:
 
+subpart
+~~~~~~~
+
 ..  confval:: subpart
     :name:  subpart behaviour
     :required: false
@@ -652,6 +724,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-marks:
+
+marks
+~~~~~
 
 ..  confval:: marks
     :name:  marks
@@ -678,6 +753,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-tag-mark:
 
+tagmark
+~~~~~~~
+
 ..  confval:: tagmark (only categories in LIST)
     :name:  tag mark
     :required: false
@@ -698,6 +776,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-hide-id:
 
+hideID
+~~~~~~
+
 ..  confval:: hideID
     :name:  hide id
     :required: false
@@ -710,6 +791,9 @@ Additional possible values are
 
 .. _configuration-articles-products-categories-images-hide-zero:
 
+hideZero
+~~~~~~~~
+
 ..  confval:: hideZero
     :name:  hide with no parameter (only categories)
     :required: false
@@ -719,6 +803,9 @@ Additional possible values are
 
 
 .. _configuration-articles-products-categories-images-hide-childless:
+
+hideChildless
+~~~~~~~~~~~~~
 
 ..  confval:: hideChildless
     :name:  hide childs (only with hierarchical categories)

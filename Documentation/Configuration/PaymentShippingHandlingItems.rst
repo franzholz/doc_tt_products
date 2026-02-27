@@ -5,6 +5,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-items-title:
 
+title
+~~~~~
+
 ..  confval:: title
     :name: title of item
     :required: false
@@ -16,6 +19,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-items-type:
 
+type
+~~~~
+
 ..  confval:: type
     :name: type of shipping
     :required: false
@@ -26,6 +32,9 @@ Selectable Payment / Shipping / Handling Items
 
 
 .. _configuration-payment-shipping-handling-items-mode:
+
+mode
+~~~~
 
 ..  confval:: mode
     :name: mode of payment (only for payment)
@@ -57,6 +66,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-items-price:
 
+price
+~~~~~
+
 ..  confval:: price
     :name: price of item
     :required: false
@@ -77,6 +89,9 @@ Selectable Payment / Shipping / Handling Items
         30.price.6 = 5.8
 
 .. _configuration-payment-shipping-handling-items-replace-tax-percentage:
+
+replaceTAXpercentage
+~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: replaceTAXpercentage
     :name: replacement of previously configured tax. see TAXpercentage
@@ -102,6 +117,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-items-price-factor-weight
 
+priceFactWeight
+~~~~~~~~~~~~~~~
+
 ..  confval:: priceFactWeight
     :name: Price is calculated from weight of all products - shipping ONLY
     :required: false
@@ -110,6 +128,9 @@ Selectable Payment / Shipping / Handling Items
     Will be added to price. The :php:`weight` is multiplied with this :php:`factor` to increase the shipping price.
 
 .. _configuration-payment-shipping-handling-items-price-factor-count:
+
+priceFactCount
+~~~~~~~~~~~~~~
 
 ..  confval:: priceFactCount
     :name: Price is calculated from count of all products.  - shipping ONLY
@@ -121,6 +142,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-items-percentage-of-goods-total:
 
+percentOfGoodstotal
+~~~~~~~~~~~~~~~~~~~
+
 ..  confval:: percentOfGoodstotal
     :name: Percent of the total of goods prices
     :required: false
@@ -130,6 +154,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-items-percentage-of-total-shipping:
 
+percentOfTotalShipping
+~~~~~~~~~~~~~~~~~~~~~~
+
 ..  confval:: percentOfTotalShipping
     :name: Percent of the total of shipping prices - payment only
     :required: false
@@ -138,6 +165,9 @@ Selectable Payment / Shipping / Handling Items
     If set the payment costs are calculated in the percentage of the total product tax price inclusive the shipping tax price.
 
 .. _configuration-payment-shipping-handling-items-credit-cards:
+
+creditcards
+~~~~~~~~~~~
 
 ..  confval:: creditcards
     :name: credit cards  - payment only
@@ -153,6 +183,9 @@ Selectable Payment / Shipping / Handling Items
     *    :typoscript:`3`: Visa
 
 .. _configuration-payment-shipping-handling-items-credit-card-select:
+
+creditcardSelect
+~~~~~~~~~~~~~~~~
 
 ..  confval:: creditcardSelect
     :name: credit cards selection - payment only
@@ -213,7 +246,11 @@ Selectable Payment / Shipping / Handling Items
               }
          }
 
+
 .. _configuration-payment-shipping-handling-items-accounts:
+
+accounts
+~~~~~~~~
 
 ..  confval:: accounts
     :name: allowed bank account - payment only
@@ -222,7 +259,11 @@ Selectable Payment / Shipping / Handling Items
 
     If set the payment with booking from the entered bank account will be allowed.
 
+
 .. _configuration-payment-shipping-handling-items-asterisk:
+
+useAsterisk
+~~~~~~~~~~~
 
 ..  confval:: useAsterisk
     :name: use asterisk - payment only
@@ -235,6 +276,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-bulkily-addition:
 
+bulkilyAddition
+~~~~~~~~~~~~~~~
+
 ..  confval:: bulkilyAddition
     :name: bulkily addition - shipping only
     :required: false
@@ -246,6 +290,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-items-bulkily-fee-tax:
 
+bulkilyFeeTax
+~~~~~~~~~~~~~
+
 ..  confval:: bulkilyFeeTax
     :name: bulkily fee tax - shipping only
     :required: false
@@ -255,6 +302,9 @@ Selectable Payment / Shipping / Handling Items
 
 
 .. _configuration-payment-shipping-handling-calculation-script:
+
+calculationScript
+~~~~~~~~~~~~~~~~~
 
 ..  confval:: calculationScript
     :name: calculation script - shipping only
@@ -271,6 +321,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-handle-script:
 
+handleScript
+~~~~~~~~~~~~
+
 ..  confval:: handleScript
     :name: handle script
     :required: false
@@ -283,6 +336,9 @@ Selectable Payment / Shipping / Handling Items
 
 
 .. _configuration-payment-shipping-handling-handle-lib:
+
+handleLib
+~~~~~~~~~
 
 ..  confval:: handleLib
     :name: handle library - payment only
@@ -317,6 +373,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-handle-url:
 
+handleURL
+~~~~~~~~~
+
 ..  confval:: handleURL
     :name: handle url
     :required: false
@@ -324,7 +383,11 @@ Selectable Payment / Shipping / Handling Items
 
     If set, this handleURL is called instead of the THANKS-url (by :typoscript:`PIDthanks`) in order to let eg. a :typoscript:`handleScript` process the information if payment by credit card or so.
 
+
 .. _configuration-payment-shipping-handling-handle-target:
+
+handleTarget
+~~~~~~~~~~~~
 
 ..  confval:: handleTarget
     :name: handle form target
@@ -335,6 +398,9 @@ Selectable Payment / Shipping / Handling Items
 
 
 .. _configuration-payment-shipping-handling-exclude-payment:
+
+excludePayment
+~~~~~~~~~~~~~~
 
 ..  confval:: excludePayment
     :name: exclude payment options - shipping only
@@ -356,6 +422,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-exclude-handling:
 
+excludeHandling
+~~~~~~~~~~~~~~~
+
 ..  confval:: excludeHandling
     :name: exclude handling options - shipping only
     :required: false
@@ -376,6 +445,9 @@ Selectable Payment / Shipping / Handling Items
 
 .. _configuration-payment-shipping-handling-replace-payment:
 
+replacePayment
+~~~~~~~~~~~~~~
+
 ..  confval:: replacePayment
     :name: replace payment options - shipping only
     :required: false
@@ -393,7 +465,10 @@ Selectable Payment / Shipping / Handling Items
         40.replacePayment.10.price = 100
 
 
-. _configuration-payment-shipping-handling-show:
+.. _configuration-payment-shipping-handling-show:
+
+show
+~~~~
 
 ..  confval:: show
     :name: show this item
@@ -404,7 +479,10 @@ Selectable Payment / Shipping / Handling Items
     If set, the item is shown  in the list.
 
 
-. _configuration-payment-shipping-handling-show-limit:
+.. _configuration-payment-shipping-handling-show-limit:
+
+showLimit
+~~~~~~~~~
 
 ..  confval:: showLimit
     :name: show with as many items in the basket
@@ -417,7 +495,10 @@ Selectable Payment / Shipping / Handling Items
     *    :typoscript:`0`: always show this item
 
 
-. _configuration-payment-shipping-handling-type:
+.. _configuration-payment-shipping-handling-type:
+
+type
+~~~~
 
 ..  confval:: type
     :name: type of handling - payment only
@@ -426,7 +507,11 @@ Selectable Payment / Shipping / Handling Items
 
     *    :typoscript:`fe_users`: the :typoscript:`payment` can be configured via the :php:`fe_users` table
 
-. _configuration-payment-shipping-handling-visible-for-group-id:
+
+.. _configuration-payment-shipping-handling-visible-for-group-id:
+
+visibleForGroupID
+~~~~~~~~~~~~~~~~~
 
 ..  confval:: visibleForGroupID
     :name: visible for front end group - payment only
@@ -436,7 +521,10 @@ Selectable Payment / Shipping / Handling Items
     This :typoscript:`payment` method is only available, if a user is logged in and member of this front end user group
 
 
-. _configuration-payment-shipping-handling-add-required-info-fields:
+.. _configuration-payment-shipping-handling-add-required-info-fields:
+
+addRequiredInfoFields
+~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: addRequiredInfoFields
     :name: additional required fields for a selected payment option - payment only
@@ -446,7 +534,10 @@ Selectable Payment / Shipping / Handling Items
     Additional required fields in the :typoscript:`INFO` page, if this :typoscript:`payment` method is selected. Useful for credit card payment.
 
 
-. _configuration-payment-shipping-handling-where-static-countries:
+.. _configuration-payment-shipping-handling-where-static-countries:
+
+where_static_countries
+~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: where_static_countries
     :name: SQL Where for countries - shipping only

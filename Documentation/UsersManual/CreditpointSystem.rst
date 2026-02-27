@@ -9,15 +9,15 @@ his user's account. If he purchases more items at a later time, he can redeem cr
 the purchase price. The customer can gather credit points with each purchase.
 
 
-..  code-block:: php
-    :caption: EXT:my_extension/ext_localconf.php
+..  code-block:: typoscript
+    :caption: creditpoints
 
     creditpoints { 
         pricefactor = 0.5
-        10.type = price 
+        10.type     = price 
         10.prod.1   = 0.02 
         10.prod.101 = 0.04 
-       10.prod.501 = 0.06 
+        10.prod.501 = 0.06 
     }
 
 

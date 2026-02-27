@@ -9,9 +9,12 @@ The pricecalc gives you the possibility to build the price sum of products using
 table. The discount price will be used for all users who belong to the group set in
 :typoscript:`discountGroupName`.
 
-.. _configuration-pricecalc-discountprice-prod:
+.. _configuration-pricecalc-prod:
 
-..  confval:: type
+pricecalc.prod
+~~~~~~~~~~~~~~
+
+..  confval:: pricecalc.prod
     :name: product calculations 
     :required: false
     :type: two-edged list of integers
@@ -49,7 +52,17 @@ table. The discount price will be used for all users who belong to the group set
             20.prod.5 = 29.99
         }
 
-    *    discountprice: discount price calculation
+
+.. _configuration-discountprice-prod:
+
+discountprice.prod
+~~~~~~~~~~~~~~~~~~
+
+..  confval:: discountprice.prod
+    :name: discount price calculations 
+    :required: false
+    :type: two-edged list of integers
+    :default: 0
 
     Here the single prices for products are calculated depending on the count of articles, if :typoscript:`type = count`.
     The :typoscript:`additive` settings tells if all the products are counted together even from different lines.
@@ -102,7 +115,16 @@ table. The discount price will be used for all users who belong to the group set
         }
 
 
-    *    Credit points:
+.. _configuration-creditpoints-prod:
+
+creditpoints.prod
+~~~~~~~~~~~~~~~~~
+
+..  confval:: creditpoints.prod
+    :name: creditpoints calculations 
+    :required: false
+    :type: two-edged list of integers
+    :default: 0
 
     This tells you how many credit points someone will get if he buys articles in the shop. 
     The right values are the percentage of the price of the ordered articles, if :typoscript:`type = price`.
@@ -120,9 +142,13 @@ table. The discount price will be used for all users who belong to the group set
             10.prod.501 = 0.06
         }
 
-.. _configuration-pricecalc-discountprice-additive:
 
-..  confval:: additive
+.. _configuration-discountprice-additive:
+
+discountprice.additive
+~~~~~~~~~~~~~~~~~~~~~~
+
+..  confval:: discountprice.additive
     :name: counting together of parts - only for discount price
     :required: false
     :type: double
@@ -133,7 +159,10 @@ table. The discount price will be used for all users who belong to the group set
 
 .. _configuration-pricecalc-discountprice-type:
 
-..  confval:: type
+discountprice.type (also: pricecalc, creditpoints)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  confval:: discountprice.type
     :name: meaning of the right part
     :required: false
     :type: string
@@ -142,9 +171,13 @@ table. The discount price will be used for all users who belong to the group set
     *    :typoscript:`count`: the products count  (:typoscript:`pricecalc` and :typoscript:`discountprice` only)
     *    :typoscript:`price`: the total price of all articles is used (creditpoints only)
 
+
 .. _configuration-pricecalc-discountprice-sql:
 
-..  confval:: sql
+discountprice.sql (pricecalc, creditpoints)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  confval:: discountprice.sql
     :name: SQL condition
     :required: false
     :type: string
@@ -152,17 +185,12 @@ table. The discount price will be used for all users who belong to the group set
     SQL conditions over the records
 
 
-.. _configuration-creditpoints:
-
-Creditpoints Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-See above for the main configuration of creditpoints.
-
-
 .. _configuration-creditpoints-pricefactor:
 
-..  confval:: pricefactor
+creditpoints.pricefactor
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  confval:: creditpoints.pricefactor
     :name: price factor for creditpoint to price conversion
     :required: false
     :type: double
@@ -184,7 +212,10 @@ See above for the main configuration of creditpoints.
 
 .. _configuration-creditpoints-mode:
 
-..  confval:: mode
+creditpoints.mode
+~~~~~~~~~~~~~~~~~
+
+..  confval:: creditpoints.mode
     :name: mode of treatment for credit points
     :required: false
     :type: string

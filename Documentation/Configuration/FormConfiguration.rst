@@ -9,8 +9,12 @@ Setup only.
 
 There are several forms which can be configured. Put the code after the form settings.
 
+.. _configuration-form-data:
 
-..  confval:: data
+form.data
+~~~~~~~~~
+
+..  confval:: form.data
     :name: data of form
     :type: string/->stdWrap
     :default: *depends on codefield*
@@ -29,8 +33,13 @@ There are several forms which can be configured. Put the code after the form set
         plugin.tt_products.form.SEARCH.data.name = ShopSearchForm
 
 
-..  confval:: dataArray
-    :name: data array
+.. _configuration-form-data-array:
+
+form.dataArray
+~~~~~~~~~~~~~~
+
+..  confval:: form.dataArray
+    :name: data array of form
     :type: *[array of form elements]*
 
     Every entry in the dataArray is numeric and has four
@@ -59,12 +68,17 @@ There are several forms which can be configured. Put the code after the form set
       Enhancement for the selection of variants with :typoscript:`selectColor`, … specification.
 
     ..  code-block:: typoscript
-        :caption: select for for adddresses
+        :caption: select color for product variants
 
         form.ALL.selectColor.dataArray {
             10.params = onchange="submit();"
         }
 
+
+.. _configuration-form-image:
+
+form.image
+~~~~~~~~~~
 
 ..  confval:: image
     :name: image
@@ -92,6 +106,11 @@ There are several forms which can be configured. Put the code after the form set
         }
 
 
+.. _configuration-form-layout:
+
+form.layout
+~~~~~~~~~~~
+
 ..  confval:: layout
     :name: layout
     :type: string 
@@ -108,6 +127,11 @@ There are several forms which can be configured. Put the code after the form set
       
         <tr><td>###INPUT###</td><td>###IMAGE###</td></tr>
 
+
+.. _configuration-form-panel:
+
+form.panel
+~~~~~~~~~~
 
 ..  confval:: panel
     :name: panel only for ORDERS

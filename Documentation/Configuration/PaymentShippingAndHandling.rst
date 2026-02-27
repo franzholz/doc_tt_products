@@ -81,6 +81,9 @@ executed based on the settings. That's all allowed.
 
 .. _configuration-payment-shipping-handling-radio:
 
+radio
+~~~~~
+
 ..  confval:: radio
     :name: radio button layout
     :required: false
@@ -91,6 +94,9 @@ executed based on the settings. That's all allowed.
 
 
 .. _configuration-payment-shipping-handling-template:
+
+template
+~~~~~~~~
 
 ..  confval:: template (radio layout only)
     :name: layout for radio buttons
@@ -110,8 +116,11 @@ executed based on the settings. That's all allowed.
 
 .. _configuration-payment-shipping-handling-wrap:
 
+wrap
+~~~~
+
 ..  confval:: wrap
-    :name: layout for select option
+    :name: wrap for select option
     :required: false
     :type: string
     :default: see below
@@ -128,8 +137,11 @@ executed based on the settings. That's all allowed.
 
 .. _configuration-payment-shipping-handling-tax-percentage:
 
+TAXpercentage
+~~~~~~~~~~~~~
+
 ..  confval:: TAXpercentage
-    :name: TAX/VAT percentage
+    :name: TAX/VAT percentage payment shipping handling
     :required: false
     :type: double
     :default: from global config
@@ -148,8 +160,11 @@ executed based on the settings. That's all allowed.
 
 .. _configuration-payment-shipping-handling-tax-included:
 
+TAXincluded
+~~~~~~~~~~~
+
 ..  confval:: TAXincluded
-    :name: TAX is included in the prices for shipping
+    :name: TAX included for payment shipping handling
     :required: false
     :type: boolean
     :default: from global
@@ -158,6 +173,9 @@ executed based on the settings. That's all allowed.
 
 
 .. _configuration-payment-shipping-handling-lines:
+
+*multiple lines*
+~~~~~~~~~~~~~~~~
 
 ..  confval:: *multiple lines*
     :name: see example of the meaning

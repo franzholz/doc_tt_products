@@ -11,6 +11,9 @@ You can configure the behaviour of the control for the views here. Insert the :t
 
 .. _configuration-control-param:
 
+param
+~~~~~
+
 ..  confval:: param
     :name: behaviour of the control parameters
     :required: false
@@ -37,6 +40,9 @@ You can configure the behaviour of the control for the views here. Insert the :t
 
 .. _configuration-control-links:
 
+links
+~~~~~
+
 ..  confval:: links
     :name: typo links
     :required: false
@@ -54,5 +60,4 @@ You can configure the behaviour of the control for the views here. Insert the :t
                 useCacheHash = 0
             }
         }
-
 

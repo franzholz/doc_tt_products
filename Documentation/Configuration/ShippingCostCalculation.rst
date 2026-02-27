@@ -15,14 +15,17 @@ The highest price will be used by default.
 
 .. _configuration-shipping-cost-calculation-type:
 
+type
+~~~~
+
 ..  confval:: type
     :name: type of calculation
     :required: false
     :type: string
 
-    A special price calculation only valid for some products. Identical to discountprice.
+    A special price calculation only valid for some products. Identical to :typoscript:`discountprice`.
 
-    *    percent: in percent of the price
+    *    :typoscript:`percent`: in percent of the price
 
     In this example a shipping price of  25% from  the product's price will be added, if the products total price is more than 0.
 
@@ -40,6 +43,9 @@ The highest price will be used by default.
 
 
 .. _configuration-shipping-cost-calculation-sql:
+
+sql
+~~~
 
 ..  confval:: sql
     :name: calculation SQL condition
