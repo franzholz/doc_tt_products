@@ -5,6 +5,11 @@ Basket
 ------
 
 
+..  _configuration-basket-min-price:
+
+basket.minPrice
+~~~~~~~~~~~~~~~~
+
 ..  confval:: basket.minPrice
     :name: minimum allowed price
     :required: true
@@ -27,7 +32,10 @@ Basket
         }
 
 
-.. _configuration-basket-maxprice:
+..  _configuration-basket-max-price:
+
+basket.maxPrice
+~~~~~~~~~~~~~~~~
 
 ..  confval:: basket.maxPrice
     :name: maximum allowed price
@@ -50,7 +58,10 @@ Basket
         }
 
 
-.. _configuration-basket-basket-view:
+..  _configuration-basket-view:
+
+basket.view
+~~~~~~~~~~~
 
 ..  confval:: basket.view
     :name: basket view
@@ -82,7 +93,10 @@ Basket
     }
 
 
-.. _configuration-basket-activity:
+..  _configuration-basket-activity:
+
+basket.activity
+~~~~~~~~~~~~~~~
 
 ..  confval:: basket.activity
     :name: basket activity
@@ -111,7 +125,10 @@ Basket
         }
 
 
-.. _configuration-basket-store:
+..  _configuration-basket-store:
+
+basket.store
+~~~~~~~~~~~~
 
 ..  confval:: basket.store
     :name: store former items in the basket
@@ -122,7 +139,10 @@ Basket
     site. Then items are added to the basket only once.
 
 
-.. _configuration-basket-round:
+..  _configuration-basket-round:
+
+basket.round
+~~~~~~~~~~~~
 
 ..  confval:: basket.round
     :name: round format of basket items
