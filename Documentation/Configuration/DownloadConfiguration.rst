@@ -11,6 +11,9 @@ You can configure the generation of downloads here.
 
 .. _configuration-download-where:
 
+download.where
+~~~~~~~~~~~~~~
+
 ..  confval:: download.where
     :name: SQL where for download
     :required: false
@@ -41,8 +44,11 @@ You can configure the generation of downloads here.
 
 .. _configuration-download-generated-path:
 
-..  confval:: generatePath
-    :name: generate path
+download.generatePath
+~~~~~~~~~~~~~~~~~~~~~~
+
+..  confval:: download.generatePath
+    :name: generate path for download
     :required: false
     :type: array of string
 
@@ -69,7 +75,10 @@ You can configure the generation of downloads here.
 
 .. _configuration-download-generate-download:
 
-..  confval:: generateDownload
+download.generateDownload
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  confval:: download.generateDownload
     :name: generate download file names
     :required: false
     :type: array of string
