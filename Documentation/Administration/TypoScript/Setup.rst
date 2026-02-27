@@ -2106,7 +2106,7 @@ discountPriceMode
          discount = (price2 – price) / price2
          ... where price contains the discounts
 
-    This is only needed for setting the behavior of the price2 markers.
+    This is only needed for setting the behaviour of the price2 markers.
 
 
 ..  _discount-field-mode:
@@ -2120,10 +2120,11 @@ discountFieldMode
 
     If set the discount field in the product and category table will be used 
     to get a reducted price for a product.
+
     Modes:
     *   1 ... the highest discount from product and categories will be used
     *   2 ... use the product discount if set, otherwise use the highest 
-        hierarchical category discount which is set.
+          hierarchical category discount which is set.
 
 
 ..  _agb-target:
@@ -2136,7 +2137,7 @@ AGBtarget
     :type: string
     :default: _blank
 
-     target for the PIDagb link
+     target for the *PIDagb* link
 
 
 ..  _agb-attachment:
@@ -2150,7 +2151,7 @@ AGBattachment
     :default: fileadmin/agb.pdf
 
     If this file exists, it will be attached to the order confirmation email
-    to the customer. The shop administrator won't receive the agb attachment,
+    to the customer. Undependent from this the shop administrator won't receive the agb attachment,
     but the CSV if you enable it
 
 
@@ -2179,9 +2180,9 @@ XMLdestination
     :default: ../xmlorders/
 
     The directory on the server, where the XML files should be saved.
-    This directory should not be accessible over http, because everyone
+    This directory should not be accessible over https, because everyone
     can read your customers and their orders.
-    So don't put this directory unter fileadmin, or rename it to 
+    So don't put this directory unter fileadmin. Rename it to 
     something cryptical at least.
 
 
@@ -2197,7 +2198,7 @@ generateCSV
 
     Generates a CSV file from each order. This file will be saved on 
     the server and sent to the shop administrator per email 
-    (with the order confirmation)
+    (together with the order confirmation)
 
 
 ..  _csv-destination:
