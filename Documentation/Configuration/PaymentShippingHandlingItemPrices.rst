@@ -5,7 +5,10 @@ Payment / Shipping / Handling Item Prices
 
 .. _configuration-payment-shipping-handling-items-prices-type:
 
-..  confval:: type
+price.type
+~~~~~~~~~~
+
+..  confval:: price.type
     :name: type of the price
     :required: false
     :type: string
@@ -18,7 +21,10 @@ Payment / Shipping / Handling Item Prices
 
 .. _configuration-payment-shipping-handling-items-prices-where-pid-min-price:
 
-..  confval:: WherePIDMinPrice
+price.WherePIDMinPrice
+~~~~~~~~~~~~~~~~~~~~~~
+
+..  confval:: price.WherePIDMinPrice
     :name: minimum price - shipping only
     :required: false
     :type: int+
@@ -43,6 +49,9 @@ Payment / Shipping / Handling Item Prices
 
 .. _configuration-payment-shipping-handling-items-prices-calc:
 
+price.calc
+~~~~~~~~~~
+
 ..  confval:: calc
     :name: price calculations - shipping only
     :required: false
@@ -65,7 +74,10 @@ Payment / Shipping / Handling Item Prices
 
 .. _configuration-payment-shipping-handling-items-prices-no-costs-amount:
 
-..  confval:: noCostsAmount
+price.noCostsAmount
+~~~~~~~~~~~~~~~~~~~
+
+..  confval:: price.noCostsAmount
     :name: no cost for minimum amount - shipping only
     :required: false
     :type: double
