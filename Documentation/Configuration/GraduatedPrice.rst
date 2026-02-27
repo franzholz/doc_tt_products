@@ -21,9 +21,12 @@ The graduated prices gives you the possibility to add special prices for a list 
      }
 
 
-.. _onfiguration-graduated-price-marks:
+.. _configuration-graduated-price-marks:
 
-..  confval:: marks
+price.marks
+~~~~~~~~~~~
+
+..  confval:: price.marks
     :name: markers for price
     :required: false
     :type: array
