@@ -11,6 +11,9 @@ These are some settings if you want to change the behaviour of the order confirm
 
 .. _configuration-order-confirmation-products-filter:
 
+productsFilter
+~~~~~~~~~~~~~~
+
 ..  confval:: productsFilter
     :name: filter for products
     :required: false
