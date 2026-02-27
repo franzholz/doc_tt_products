@@ -1717,10 +1717,9 @@ externalFinalizing
 	This is a sister to the above function and they should probably be used in conjunction somehow.
 	This function is called immediately after the finalize-function has been called.
 	For instance this function would be suitable for clearing any external basket facilitated by the :php:`.externalProcessing` cObject
-	
-	**Note:** 
 
-    The output is NOT included anywhere.
+	..  note::
+	    The output is NOT included anywhere.
 
 
 ..  _wrap1:
