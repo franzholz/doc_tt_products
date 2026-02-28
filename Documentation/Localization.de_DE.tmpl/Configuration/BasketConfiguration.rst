@@ -1,0 +1,166 @@
+.. _configuration-basket
+
+
+Basket
+------
+
+
+..  _configuration-basket-min-price:
+
+basket.minPrice
+~~~~~~~~~~~~~~~~
+
+..  confval:: basket.minPrice
+    :name: minimum allowed price
+    :required: true
+    :type: array of string
+
+    minimum price which the products must reach to get a permission to buy them. E.g. only products of a total
+    price of at least 250 shall be accepted. The products which have the 'no minimum price checked, will not be
+    counted here.
+
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: example basket.minPrice
+
+        plugin.tt_products.basket.minPrice {
+            type = price
+            collect = goodstotal
+            value = 250
+        }
+
+
+..  _configuration-basket-max-price:
+
+basket.maxPrice
+~~~~~~~~~~~~~~~~
+
+..  confval:: basket.maxPrice
+    :name: maximum allowed price
+    :required: true
+    :type: array of string
+
+    maximum price which the products may reach to get a permission to buy them.
+    E.g. only products of a total price of at most 2500 shall be accepted.
+    The products which have the 'no maximum price' checked, will not be counted here.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: example basket.maxPrice
+
+        plugin.tt_products.basket.maxPrice {
+            type = price
+            collect = goodstotal
+            value = 2500
+        }
+
+
+..  _configuration-basket-view:
+
+basket.view
+~~~~~~~~~~~
+
+..  confval:: basket.view
+    :name: basket view
+    :required: true
+    :type: array of string
+    :default: showAmount = basket
+
+    basket view configuration
+    :typoscript:`showAmount = basket`: if the amount of items in the basket is shown with each product in single and list view.
+
+    *   :typoscript:`0`     : if the default amount with each product is always zero (needed for caching)
+    *   :typoscript:`input`: input tag with radio buttons for the list view of products and the marker ###BASKET_INPUT###
+                              insert the name of the radio buttons
+    *   :typoscript:`where`:   SQL where condition for products
+    *   :typoscript:`checked`: preselected product uid
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: example basket.view
+
+        plugin.tt_products.basket.view.input {
+        10.label = Buy:
+        10.type = radio
+        10.where = uid IN (12,13,14,15)
+        10.checked = 12
+        10.name = Radiobox1
+        10.params =
+    }
+
+
+..  _configuration-basket-activity:
+
+basket.activity
+~~~~~~~~~~~~~~~
+
+..  confval:: basket.activity
+    :name: basket activity
+    :required: true
+    :type: array of string
+
+    activity configuration
+    Possible activities are:
+    :php:`basket`, :php:`info`, :php:`payment`, :php:`verify`, :php:`finalize`, :php:`overview`
+
+    *   :typoscript:`check`:
+        *   :typoscript:`address`: if the required fields have been filled in (see requiredInfoFields)
+        *   :typoscript:`agb`: if the trading conditions checkbox has been clicked
+        *   :typoscript:`basket`: if the basket has entries.
+        *   :typoscript:`edit_variant`: if the edit variants follows some restrictions
+    *   :typoscript:`clear`:
+        *   :typoscript:`memo`: If the MEMO for the items shall be cleared.
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: example basket.activity
+
+        basket.activity.payment {
+            check = address,agb,basket
+        }
+
+
+..  _configuration-basket-store:
+
+basket.store
+~~~~~~~~~~~~
+
+..  confval:: basket.store
+    :name: store former items in the basket
+    :required: true
+    :type: boolean
+
+    If set to 0, then no basket will be stored. This is only usefull, if you have several shop plugins on a
+    site. Then items are added to the basket only once.
+
+
+..  _configuration-basket-round:
+
+basket.round
+~~~~~~~~~~~~
+
+..  confval:: basket.round
+    :name: round format of basket items
+    :required: true
+    :type: string
+
+    Rounding format for the prices in the basket.
+
+       * :typoscript:`round.discount` ... rounding format for the discount from the discount field
+
+    **Example:**
+
+    ..  code-block:: typoscript
+        :caption: example basket.round
+
+        basket {
+              round = .XX
+              round.discount = .XX
+        }
+
+
