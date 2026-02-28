@@ -13,6 +13,6 @@ See: `Wiki for tt_products: Marker <https://github.com/franzholz/tt_products/wik
     :maxdepth: 2
     :titlesonly:
 
-    AreaMarkers/Index
-    SingleMarkers/Index
-    GlobalMarkers/Index
+    AreaMarkers
+    SingleMarkers
+    GlobalMarkers

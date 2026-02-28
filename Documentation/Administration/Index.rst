@@ -20,7 +20,7 @@ user guidance.
     :titlesonly:
 
     HandlingOfCategories
-    TemplateMarkers/Index
+    TemplateMarkers
     AutomaticCreationOfFrontend
     Important
     TypoScript/Setup
