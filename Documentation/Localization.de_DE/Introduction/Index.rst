@@ -4,13 +4,13 @@
 Introduction
 ============
 
-You should read one of the books `Der TYPO3 Webshop <https://www.ttproducts.de/fileadmin/user_upload/home/OSP_typo3webshop.pdf>`_  and
+Bevor Sie mit dem Shop beginnen, sollten Sie eines der Bücher `Der TYPO3 Webshop <https://www.ttproducts.de/fileadmin/user_upload/home/OSP_typo3webshop.pdf>`_  und
 `TYPO3 4.2 E-Commerce <https://www.packtpub.com/en-us/product/typo3-42-e-commerce-9781847198532>`_
-before you start with it. Watch this `introduction video
-<https://www.youtube.com/watch?v=IQFDvgVJDXA>`_.
-See the extension :composer:`jambagecom/addons-tt-products` for a collection of example template files.
+durchgearbeitet haben. Sehen Sie das Video `introduction video
+<https://www.youtube.com/watch?v=IQFDvgVJDXA>`_ an.
+Siehe die Erweiterungen :composer:`jambagecom/addons-tt-products` für eine Sammlung an Beispiel Template Dateien.
 
-This extension only works with PHP 8.
+Diese TYPO3 Erweiterung läuft nur unter PHP 8.
 
 .. toctree::
     :maxdepth: 2
