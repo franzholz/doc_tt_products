@@ -3,19 +3,21 @@
 Mini Basket
 -----------
 
-Besides of a "normal" basket which shows a complete list of the entered products in a given sorting order
-there is also a "mini basket" which only shows the number of products in the basket and the total sum.
-During your presence in the shop it continously refreshes the contents of the basket above the general view 
-(or where you wish). The place where the "mini basket" is shown can be configured via TypoScript. 
-In order to use the mini basket you insert a new page content element "Plugin: products" and enter "OVERVIEW" into the Code-field. 
+Neben dem “normalen” Warenkorb, der eine komplette Liste der eingegebenen Produkte in einer gewissen
+Sortierreihenfolge anzeigt, gibt es auch einen "Mini-Warenkorb", der nur die Anzahl der Produkte im
+Warenkorb und den Gesamtpreis anzeigt.
+Dieser zeigt Ihnen während der Verweildauer im Shop ständig aktualisiert den Inhalt Ihres Warenkorbes
+oberhalb der normalen Ansicht (oder wo Sie wünschen) an. Die Stelle, an der der “Mini-Warenkorb” angezeigt
+werden soll, kann über Typoscript gesteuert werden. Um diesen Mini-Warenkorb verwenden zu können, fügen
+Sie ein neues Seiteninhaltselement "Plugin: Produkte" ein und tragen in das CODE-Feld OVERVIEW ein.
 
 Verwenden Sie die folgenden Markierungen in Ihrem tt_products Template um den Mini-Warenkorb zu
 aktivieren und anzupassen:
 
-Code Listing:
+Code Anzeige:
 
-..  code-block:: php
-    :caption: EXT:my_extension/ext_localconf.php
+..  code-block:: html
+    :caption: Mini Warenkorb HTMl Template
 
     <!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
     <div class="shop_minibasket">
