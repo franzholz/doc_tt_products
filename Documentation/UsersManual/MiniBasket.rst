@@ -15,7 +15,7 @@ Use the following markers in your tt_products template to activate the mini bask
 
 Code Listing:
 
-..  code-block:: php
+..  code-block:: html
     :caption: mini basket HTML template
 
     <!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
