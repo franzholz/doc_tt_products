@@ -11,14 +11,19 @@ In order to use the mini basket you insert a new page content element "Plugin: p
 
 Verwenden Sie die folgenden Markierungen in Ihrem tt_products Template um den Mini-Warenkorb zu
 aktivieren und anzupassen:
+
 Code Listing:
-<!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
-<div class="shop_minibasket">
-<div class="shop_minibasket_image"><!--###LINK_BASKET###-->###IMAGE_BASKET###<!--
-###LINK_BASKET###--></div>
-<p>###NUMBER_GOODSTOTAL### Produkte (EUR ###PRICE_GOODSTOTAL_TAX###.-)</p>
-<!-- ###BASKET_OVERVIEW_TEMPLATE### end -->
-<!-- ###BASKET_OVERVIEW_EMPTY### begin -->
-<p>Keine Produkte im Warenkorb.</p>
-<!-- ###BASKET_OVERVIEW_EMPTY### end -->
-</div>
+
+..  code-block:: php
+    :caption: EXT:my_extension/ext_localconf.php
+
+    <!-- ###BASKET_OVERVIEW_TEMPLATE### begin -->
+    <div class="shop_minibasket">
+      <div class="shop_minibasket_image"><!--###LINK_BASKET###-->###IMAGE_BASKET###<!--
+      ###LINK_BASKET###--></div>
+      <p>###NUMBER_GOODSTOTAL### Produkte (EUR ###PRICE_GOODSTOTAL_TAX###.-)</p>
+    <!-- ###BASKET_OVERVIEW_TEMPLATE### end -->
+    <!-- ###BASKET_OVERVIEW_EMPTY### begin -->
+      <p>Keine Produkte im Warenkorb.</p>
+    <!-- ###BASKET_OVERVIEW_EMPTY### end -->
+    </div>
