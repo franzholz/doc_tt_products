@@ -2,8 +2,9 @@
 
 .. _users-manual-offers-and-highlights:
 
-Offers and highlights
----------------------
+Angebote und Highlights
+-----------------------
 
-You have to use the plugin code :php:`LISTOFFERS` for the items marked as 'offer' and :php:`LISTHIGHLIGHTS` for
-the highlight items.
+Sie müssen den Plugin Code :php:`LISTOFFERS` zur Anzeige der als 'Angebot' markierten Produkte verwenden. Und
+mit :php:`LISTHIGHLIGHTS` erhalten Sie eine Liste besonderer Produkte (Highlights).
+
