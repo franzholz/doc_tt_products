@@ -2,12 +2,16 @@
 
 .. _introduction-cease-and-desist-letters:
 
-Cease and Desist Letters
-------------------------
+Abmahngefahr
+------------
 
-Do not use trademarks, photographs and maps in your shop which you do not own and made by yourself.
-Do not forget any texts in your shops which are required. Be very careful when you link to other
-pages. Hundreds of lawyers are continuously searching the Internet for your mistakes in order to get
-much more money from you than you could ever imagine. **That would be damn stupid for you.**
+Bitte achten Sie in den Shops und beim Verkauf über eBay sehr genau darauf, dass Sie keine Markennamen
+verwenden, keine nicht selbst gemachten Fotos und Textbeschreibungen verwenden und auf ein 14-tägiges
+Rückgaberecht hinweisen. Das Impressum auf der Homepage muss vollständig sein. Es darf keine Links auf
+Seiten mit Kartenausschnitten geben, und weiteres wäre zu beachten.
+Viele Anwälte durchforsten in Deutschland mit ihren Helfern ständig das Internet nach fehlenden oder
+unzureichenden Angaben und versenden selbst bei kleinsten Verstößen massenhaft gleichlautende
+Abmahnungen um einige tausend Euro pro Fall. **Das wäre saublöd für Sie.**
 
-`Cease and Desist Letters: A Comprehensive Legal Guide <https://www.summitlawllp.co.uk/cease-and-desist-legal-guide/>`_
+`Legalershop - Digitale Rechtslösungen <https://www.legalershop.de/>`_
+`Rechtstipps für Shopbetreiber <https://www.ihk-muenchen.de/ratgeber/recht/internetrecht/onlinehandel-e-commerce/>`_
