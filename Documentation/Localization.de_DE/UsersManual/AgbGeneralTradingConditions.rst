@@ -1,13 +1,16 @@
 
 .. _users-manual-agb-general-trading-conditions:
 
-AGB General Trading Conditions
-------------------------------
+AGB Allgemeine Geschäftsbedingungen
+-----------------------------------
 
-You have to accept the general trading conditions before you can make an order and continue with the
-process. A page can be defined for this with :typoscript:`PIDagb`. The AGBs have to be displayed there. You can
-set the target for a link by :typoscript:`AGBtarget`.
+Sie müssen die Allgemeinen Geschäftsbedingungen akzeptieren bevor Sie eine Bestellung machen und mit
+dem Bestellvorgang fortfahren können. Zu diesem Zweck kann eine Seite als :typoscript:`PIDagb` definiert werden.
+Die AGBs müssen hier angezeigt werden. Sie können das auch als das Ziel eines Links über:typoscript:`AGBtarget setzen.
 
-A document (e.g. a PDF file) on the server containing the AGB can be set by :typoscript:`AGBattachment`. This
-will be sent to the customer as an e-mail with an attachment to the order confirmation. The shop
-administration will not get this file. He can get a XML or CSV file of the order data instead, if wanted.
+Ein Dokument (z.B. eine PDF Datei) auf dem Server, welche die AGB enthält, kann über :typoscript:`AGBattachment`
+gesetzt werden. Diese wird als Anhang an eine E-Mail mit der Bestellbestätigung an den Kunden geschickt.
+Die Shop Administration wird diese Datei nicht erhalten. Er kann stattdessen eine CSV Datei mit den
+Bestelldaten erhalten, falls gewünscht.
+
+
