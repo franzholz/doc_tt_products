@@ -1,34 +1,33 @@
 
 .. _introduction-what-does-it-do:
 
-What does it do?
-----------------
+Wofür ist das gut?
+------------------
 
-The TYPO3 shop extension gives you the facility for...
+Die Typo3 Shop Extension gibt Ihnen die Möglichkeit zu...
 
-- product listings with multiple images, details and languages
-- shopping basket
-- payment page - The orders will be indicated and can be checked over before the products are
-  finalized.
-- sponsors only: Payment gateways with Transactor Library extension - Paypal
-- tracking customers order status
-- automatic creation of bill and delivery sheet
-- different tax percentages per item, shipping and payment
-- basic stock management
-- send a XML or CSV for each order to the shop admin (2 choosable file formats)
-- e-mail attachments for the confirmation mails (for example AGB in German = general trading
-  conditions)
-- choosable item variants (colours, sizes, gradings, descriptions, materials and qualities)
-- force customer to accept the General trading conditions (AGB) per checkbox
-- offers, highlights and newly added items
-- special preparation, weight and bulkily (can be used to calculate the shipping fee)
-- ability to limit payment methods to specific user groups
-- automatic creation of front end users at first order
-- remember items in a memo, when a user is logged in
-- discount percentage per user
-- some methods for price calculation with rebate for resellers
-- display orders: order can be displayed on per fe-user basis (CODE=ORDERS)
-- creditpoint system: customers can save credit points per each order. Saved points will give them a
-  discount for newer orders or certain products can be "bought" with these points.
-- voucher system: if a customer enters a voucher code, he gets a discount on
-  the order.
+-  Produkte mit mehreren Bildern, Details und in mehreren Sprachen auflisten
+-  Einkaufskorb
+-  “Bezahlen” Seite - Hier wird die Bestellung angezeigt, und sie kann überprüft werden, 
+   bevor die Produkte endgültig bestellt werden.
+-  für Sponsoren: Bezahlsysteme über die Transactor Library Extension - Paypal
+-  Nachverfolgen des Zustands einer Kundenbestellung (Tracking)
+-  Automatische Erzeugung einer Rechnung und eines Lieferscheins
+-  Verschiedene Steuersätze pro Produkt, für den Versand und die Bezahlung
+-  einfache Lagerverwaltung
+-  Versenden einer XML- oder CSV-Datei für jede Bestellung an den Shop Administrator (2 auswählbare Dateiformate)
+-  E-Mail-Anhänge für Bestätigungs-E-Mails (zum Beispiel AGB = Allgemeine Geschäftsbedingungen)
+-  auswählbare Produktvarianten (Farben, Größen, Staffelungen, Beschreibung, Material und Qualität)
+-  Zwang zum Akzeptieren der Allgemeinen Geschäftsbedingungen (AGB) durch den Kunden über eine Checkbox
+-  Angebote, Highlights und neu hinzugefügte Produkte
+-  Spezialanfertigung, Gewicht und Sperrgut (kann für die Berechnung der Versandkosten verwendet werden)
+-  Möglichkeit, die Zahlungsmethoden auf besondere Benutzergruppen einzuschränken
+-  Automatische Erzeugung eines Frontend Benutzers bei der ersten Bestellung
+-  Vormerkliste für Produkte – eingeloggter Benutzer kann mit der Memo-Funktion Produkte vormerken/speichern
+-  Rabatt in Prozent pro Benutzer
+-  Methoden der Preisberechnung mit Rabatten für Wiederverkäufer/Gruppen
+-  Anzeige der Bestellungen: Die Bestellung kann über eine Auswahl des Frontend Benutzers angezeigt werden. (CODE=ORDERS)
+-  Gutscheinpunkte System: Kunden können mit jeder Bestellung Gutscheinpunkte sammeln. Die
+   gespeicherten Gutscheinpunkte kann der Kunde bei einer neuen Bestellung einlösen . Ggf.
+   können mit diesen Gutscheinen auch nur bestimmte Produkte gekauft werden.
+-  Gutscheinsystem: Wenn ein Kunden einen Gutschein-Code eingibt, erhält er einen Rabatt auf die Bestellung.

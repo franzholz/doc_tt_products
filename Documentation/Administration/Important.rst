@@ -5,7 +5,8 @@ Important
 ^^^^^^^^^
 
 Some of the TypoScript settings do not function via the constants area and can be entered in the setup area only. 
-Only those settings which can be found using the Constants Editor or in the file :file:`static/css_styled/constants.txt`
+Only those settings which can be found using the Constants Editor or in the file :file:`Configuration/TypoScript/PluginSetup/Main
+/constants.typoscript`
 are valid constants. 
 
 
