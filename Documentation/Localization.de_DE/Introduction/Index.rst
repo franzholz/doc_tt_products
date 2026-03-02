@@ -1,8 +1,8 @@
 
 .. _introduction:
 
-Introduction
-============
+Einleitung
+==========
 
 Bevor Sie mit dem Shop beginnen, sollten Sie eines der Bücher `Der TYPO3 Webshop <https://www.ttproducts.de/fileadmin/user_upload/home/OSP_typo3webshop.pdf>`_  und
 `TYPO3 4.2 E-Commerce <https://www.packtpub.com/en-us/product/typo3-42-e-commerce-9781847198532>`_
