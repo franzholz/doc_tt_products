@@ -4,8 +4,13 @@
 Sponsors
 --------
 
-- Multi-categories per product with multilingual listings, import scripts for XML files from
-  inventory control systems, custom shop tables, advanced search mask with producer select box,
-  traffic light symbols to display the availability of articles. Sponsored by Geo.net IT, which has been changed into `Geonet GmbH
-  <https://www.geonet.eu/>`_ .
+-  Mehrfachkategorien je Produkt mit mehrsprachiger Listenansicht, Importskripte für XML-Dateien aus
+   Warenwirtschaftssystem, benutzerdefinierte Shop Tabellen, erweiterte Suchmaske mit Hersteller-Select-
+   Box, Ampelsymbole über die Lieferbarkeit von Produkten. Gesponsert von Geo.net IT GmbH die in die `Geonet GmbH
+   <https://www.geonet.eu/>`_ übergegangen ist.
+
+
+
+
+
 
