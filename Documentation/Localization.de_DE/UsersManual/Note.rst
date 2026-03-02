@@ -2,15 +2,23 @@
 
 .. _users-manual-note:
 
-Note
-----
+Hinweis
+-------
 
-You must fill in the product's 'In Stock (pcs)' field of your product properties, or no item will be
-shown in your front end list if set to 0. 
+Sie müssen das Feld 'Am Lager (St.)' in den Eigenschaften des Produktes ausfüllen. Ansonsten wird bei der
+Ausgabe im Frontend kein Produkt angezeigt, da der Wert dann auf 0 gesetzt ist. Null gesetzte Produkte gelten als nicht
+vorhanden
 
 However, you should store the prices with included tax in the database; it makes it easier for you
 to reenter the price as well as for the customer to see the prices as you entered them. These prices
 should finally have the convention of pricing like :php:`89.99` and not :php:`89.72`.
+
+Vor der Eingabe der Produktpreise haben Sie die Möglichkeit zu entscheiden, ob die Preise mit oder ohne
+Steuern eingegeben werden (siehe :typoscript:`TAXincluded`). Alle Berechnungen und Konfigurationen werden die
+Preisangaben im Feld :php:`price` verwenden, mit denen sie in der Tabelle :php:`tt_products` gespeichert sind.
+Sie sollten jedoch am besten die Preise inkl. Mehrwertsteuer in die Datenbank eintragen.
+Das erleichtert es Ihnen, die Preise gleich so eingeben zu können, wie sie auch der Kunde sehen wird. 
+Diese Preise sollten schließlich den Konventionen der Preisgestaltung wie :php:`€ 1,99` haben und nicht :php:`€ 1,72` entsprechen.
 
 Before you start entering the prices of your products you have to decide whether you want to enter
 the prices with or without tax (see :typoscript:`TAXincluded`). All the calculations and configurations will use
