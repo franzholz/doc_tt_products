@@ -1,14 +1,15 @@
 
 .. _users-manual-discount:
 
-Discount
---------
+Rabatt
+------
 
-There are several methods to get a discount.
+Es gibt mehrere Methoden um einen Rabatt zu erhalten.
 
-#.  Use the :php:`discount` field for a front end user and enter the percent of discount.
-#.  Use the :php:`price2` field for special front end user groups or other things. This setting is done in TypoScript
-    via the IF-statement.
-#.  Use the :php:`discountprice` calculation where the discount depends on the value of the total number of
-    the products which have a special price. This will be available for the front end user 
-    group :typoscript:`discountGroupName`.
+#.  Verwenden des Rabatt Feldes :php:`discount` eines Frontend Benutzers und Eingabe der Prozente für den Discount.
+#.  Verwenden des Feldes :php:`price2` für besondere Frontend Benutzer Gruppen und andere Dinge. Sie können das in
+TypoScript über die IF-Anweisung setzen.
+#.  Verwenden der :php:`discountprice` Berechnung. Der Rabatt hängt von der Gesamtanzahl der Produkte mit
+einem besonderen Preis ab. Dieser Rabatt wird für die Frontend-Benutzer der Gruppe 'discountGroupName'
+gewährt.
+
