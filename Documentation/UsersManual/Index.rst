@@ -9,6 +9,7 @@ Users manual
     :titlesonly:
 
     Note
+    MiniBasket         
     CalculationScript
     Discount
     LinkForProductsOfTheLast
