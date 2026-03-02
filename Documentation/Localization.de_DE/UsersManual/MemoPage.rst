@@ -1,9 +1,11 @@
 
 .. _users-manual-memo-page:
 
-MEMO page
----------
+MEMO-Vormerk Seite
+------------------
 
-You can add items to a memo page when a user is logged in or not. This memo page will be saved in
-the :php:`fe_users` table or in the front end session. Simply create a new page with the shop plugin as content
-and choose the display mode "Memo Items". 
+Ein eingeloggter Benutzer kann, ebenso wie ein nicht eingeloggter, Produkte zu einer Vormerk-Seite
+hinzufügen. Diese Memo Seite wird in der :php:`fe_users` Tabelle oder in der Frontend Sitzung gespeichert. Erzeugen Sie
+einfach einen neue Seite mit dem Shop Plugin als Inhalt und geben Sie den Anzeige-Modus "Memo Items"ein. Sie müssen
+auch den Anfangspunkt setzen, wie auf den SEARCH Seiten.
+
