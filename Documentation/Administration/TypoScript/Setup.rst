@@ -24,7 +24,8 @@ templateFile
 
     Same as :typoscript:`file.templateFile` from Constants.
     The template-file.
-    See example in :composer:`jambagecom/addons-tt-products` :file:`Resources/Private/Templates/collection/products_template.tmpl`
+    See example in :composer:`jambagecom/addons-tt-products`:
+      :file:`Resources/Private/Templates/collection/products_template.tmpl`
     You can also specify a :typoscript:`CODE` and :typoscript:`ERROR` for error cases.
     (see display mode)
 
@@ -1548,7 +1549,6 @@ email_notify_default
 
     If email notification to the delivery email address of the customer is enabled by default for tracking
 	(he can change it himself in the tracking module later)
-
 
 ..  _order-status-codes:
 
