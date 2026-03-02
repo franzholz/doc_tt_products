@@ -4,5 +4,5 @@
 Version
 -------
 
-This document is for version 2.12.0 of tt_products. You can get the code of the next version of
-tt_products at `ttproducts.de <http://ttproducts.de/>`_  .
+Dieses Dokument gilt für tt_products Version 2.12.0. Sie erhalten die nächste Version von tt_products bereits
+jetzt unter `ttproducts.de <http://ttproducts.de/>`_  gegen eine Beteiligung an den Entwicklungskosten.
