@@ -17,7 +17,7 @@ The TYPO3 shop extension gives you the facility for...
 -  basic stock management
 -  send a XML or CSV for each order to the shop admin (2 choosable file formats)
 -  e-mail attachments for the confirmation mails (for example AGB in German = general trading
-  conditions)
+   conditions)
 -  choosable item variants (colours, sizes, gradings, descriptions, materials and qualities)
 -  force customer to accept the General trading conditions (AGB) per checkbox
 -  offers, highlights and newly added items
@@ -30,5 +30,13 @@ The TYPO3 shop extension gives you the facility for...
 -  display orders: order can be displayed on per fe-user basis (CODE=ORDERS)
 -  creditpoint system: customers can save credit points per each order. Saved points will give them a
    discount for newer orders or certain products can be "bought" with these points.
--  voucher system: if a customer enters a voucher code, he gets a discount on
+-  voucher system based on voucher extension: if a customer enters a voucher code, he gets a discount on
    the order.
+-  scale of prices
+-  field EAN for the entry of EAN codes.  
+-  possibility to limiting of the category selection at product entry in the back end
+-  range check of the weight field in milligram
+-  check of the  Prüfung der bank code, if the required extension static_info_tables_banks_de is activated.
+-  change of the display at alteration of variant select box
+-  improved category lists with multiple markers (also for FAL)
+-  arbitrary many text descriptions for each product (IRRE)
