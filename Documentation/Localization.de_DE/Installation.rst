@@ -21,8 +21,8 @@ Siehe auch `Installing extensions, TYPO3 Getting started <https://docs.typo3.org
 
 ..  _installation-classic:
 
-Installiere des Shop Systems tt_products im klassischen Modus
-=============================================================
+Installieren des Shop Systems tt_products im klassischen Modus
+==============================================================
 
 Oder laden Sie die Erweiterung von `https://www.ttproducts.de <https://www.ttproducts.de>`_ herunter und installieren Sie diese über den
 Extension Manager.
