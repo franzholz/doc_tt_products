@@ -31,5 +31,4 @@ Checkbox
 - Gutscheinpunkte System: Kunden können mit jeder Bestellung Gutscheinpunkte sammeln. Die
   gespeicherten Gutscheinpunkte kann der Kunde bei einer neuen Bestellung einlösen . Ggf.
   können mit diesen Gutscheinen auch nur bestimmte Produkte gekauft werden.
-- voucher system: if a customer enters a voucher code, he gets a discount on
-  the order.
+- Gutscheinsystem: Wenn ein Kunden einen Gutschein-Code eingibt, erhält er einen Rabatt auf die Bestellung.
