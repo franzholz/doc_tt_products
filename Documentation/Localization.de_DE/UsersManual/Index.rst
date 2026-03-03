@@ -21,3 +21,4 @@ Users manual
     CreditpointSystem
     ModifyThePageMenu
     ArticlePrices
+    EditVariant
