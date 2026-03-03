@@ -20,4 +20,5 @@ Users manual
     VoucherSystem
     CreditpointSystem
     ModifyThePageMenu
+    ArticlePrices
     EditVariant
