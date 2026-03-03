@@ -5,22 +5,23 @@
 Artikel mit Preisen
 -------------------
 
-Products in different sizes can be sold with different prices. The same is possible with colours and all other variants.
+Produkte können in verschiedenen Größen zu verschiedenen Preisen verkauft werden.
+Das selbe Verfahren können Sie auch mit Farben und den anderen Varianten anwenden.
 
-Variants:
+Varianten:
 
-*  Description (variant 3)
-*  Color (variant 1)
-*  2nd Color (variant 6)
-*  3rd Color (variant 7)
-*  Size length (variant 2)
-*  2nd Size width (variant 8)
-*  3rd Size height (variant 9)
-*  Gradings (variant 4)
-*  Material (variant 10)
-*  Quality (variant 11)
+*  Description (Variante 3)
+*  1. Farbe (Variante 1)
+*  2. Farbe (Variante 6)
+*  3. Farbe (Variante 7)
+*  1. Größe Länge (Variante 2)
+*  2. Größe Breite (Variante 8)
+*  3. Größe Höhe (Variante 9)
+*  Staffeln (Variante 4)
+*  Material (Variante 10)
+*  Qualität (Variante 11)
 
-*  Additional (special variant 5)
+*  Zusätzliches (spezielle Variante 5)
 
 
 #.  Im TSSetup für das Template geben Sie ein
