@@ -28,7 +28,7 @@ Gültigkeit überprüft.
           evalValues {
             1 = required, wwwURL
           }
-          error = <div class="fehlerbox"><div style="font-size:16px;"> Hint:</div> Sie müssen
+          error = <div class="fehlerbox"><div style="font-size:16px;"> Hinweis:</div> Sie müssen
           eine Internet <span style="color:red;">Domäne</span> angeben.</div></div>
         }
       }
