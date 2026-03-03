@@ -63,10 +63,15 @@ Variants:
        Vaterprodukts in der Listen- und Einzelansicht angezeigt. Der Preis der Variante wird erst im
        Warenkorb sichtbar, wenn eine bestimmt Größe (oder Farbe etc.) ausgewählt worden ist. Wenn
        keine Varianten zur Auswahl stehen, dann wird das Wort 'Ab' auch nicht angezeigt.
+
        Code Beispiel:
-<!-- ###display_variant1### -->
-Farbe:><select name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select>
-<!-- ###display_variant1### --><!-- ###display_variant2### -->
-Gr&ouml;e:>< select name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select>
-<!-- ###display_variant2### -->
- 
+
+       ..  code-block:: html
+           :caption: HTML template example for product variants
+        
+           <!-- ###display_variant1### -->
+           Farbe:><select name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select>
+           <!-- ###display_variant1### --><!-- ###display_variant2### -->
+           Gr&ouml;e:>< select name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select>
+           <!-- ###display_variant2### -->
+         
