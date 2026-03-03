@@ -64,7 +64,7 @@ Variants:
        Warenkorb sichtbar, wenn eine bestimmt Größe (oder Farbe etc.) ausgewählt worden ist. Wenn
        keine Varianten zur Auswahl stehen, dann wird das Wort 'Ab' auch nicht angezeigt.
 
-       Code Beispiel:
+       **Beispiel:**
 
        ..  code-block:: html
            :caption: HTML template example for product variants
