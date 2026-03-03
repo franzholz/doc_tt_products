@@ -41,11 +41,11 @@ Variants:
     *  auf Lager (muss mindestens 1 betragen, damit es im Frontend angezeigt wird)
     *  Kategorie (falls benötigt)
     *  Preis (das sollte der niedrigste Preis für die billigste Größe sein – das entspricht dem billigsten
-Produkt Artikel, den wir als nächstes eingeben werden)
+       Produkt Artikel, den wir als nächstes eingeben werden)
     *  Größe (dasselbe gilt für Farbe/Beschreibung/Staffelung falls benötigt)
-Es ist unbedingt notwendig, um im Frontend die Möglichkeit zu haben, eine Produktvariante
-auswählen zu können, dass alle Größenvarianten in eine durch Strichpunkt getrennten Liste
-eingegeben werden, z.B.: S;M;X;XL . Diese Artikel wollen wir als nächste eingeben.
+       Es ist unbedingt notwendig, um im Frontend die Möglichkeit zu haben, eine Produktvariante
+       auswählen zu können, dass alle Größenvarianten in eine durch Strichpunkt getrennten Liste
+       eingegeben werden, z.B.: S;M;X;XL . Diese Artikel wollen wir als nächste eingeben.
     *  Bemerkung    
     *   Bild    
     *  Datenblatt (falls benötigt).
