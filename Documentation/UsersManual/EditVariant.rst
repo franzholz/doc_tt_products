@@ -6,7 +6,7 @@ Edit Variant
 ------------
 
 You can add freely definable texts at the product level. You can enter a text 
-or a number, which the basket ists a single porduct variant. You can change 
+or a number, which the basket ists a single product variant. You can change 
 the number of a product variant in the same manner as with normal variants.
 
 **Example:**
@@ -36,7 +36,7 @@ The products with uid 52 will have the entry field of a web domain. The web doma
 HTML:
 ~~~~~
 
-See example HTML template EXT:tt_products/template/example_locallang_xml.html .
+See example HTML template :file:`EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html` .
 You must insert the following subpart Marker and text markers.
 
 Single/List view of a product:
