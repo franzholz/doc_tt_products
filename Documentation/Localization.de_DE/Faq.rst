@@ -9,21 +9,21 @@ Frequently Asked Questions (FAQ)
 ..  accordion::
     :name: faq
 
-    ..  accordion-item:: How can I install this extension?
+    ..  accordion-item:: Wie kann ich diese Erweiterung installieren?
         :name: installation
         :header-level: 2
         :show:
 
-        See chapter :ref:`installation`.
+        Siehe Kapitel :ref:`installation`.
 
-    ..  accordion-item:: How can I include the TypoScript?
+    ..  accordion-item:: Wie kann ich TypoScript einfügen?
         :name: configuration
         :header-level: 2
 
-        See chapter :ref:`configuration`.
+        Siehe Kapitel :ref:`configuration`.
 
-    ..  accordion-item:: Where to get help?
+    ..  accordion-item:: Wo bekommt man Hilfe?
         :name: help
         :header-level: 2
 
-        See chapter :ref:`help`.
+        Siehe Kapitel :ref:`help`.

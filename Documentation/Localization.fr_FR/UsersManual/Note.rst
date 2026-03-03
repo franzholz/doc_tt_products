@@ -10,7 +10,7 @@ shown in your front end list if set to 0.
 
 However, you should store the prices with included tax in the database; it makes it easier for you
 to reenter the price as well as for the customer to see the prices as you entered them. These prices
-should finally have the convention of pricing like :php:`89.99` and not :php:`89.72`.
+should finally have the convention of pricing like php:`€ 1,99` and not :php:`€ 1,72`.
 
 Before you start entering the prices of your products you have to decide whether you want to enter
 the prices with or without tax (see :typoscript:`TAXincluded`). All the calculations and configurations will use

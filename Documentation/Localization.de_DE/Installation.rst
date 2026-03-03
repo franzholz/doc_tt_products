@@ -8,32 +8,32 @@ Installation
 
 ..  _installation-composer:
 
-Install Shop System tt_products with Composer
-=============================================
+Installieren des Shop Systems tt_products über Composer
+=======================================================
 
-Install the extension via Composer:
+Installieren Sie die Erweiterung über Composer:
 
 ..  code-block:: bash
 
     composer req jambagecom/tt-products
 
-See also `Installing extensions, TYPO3 Getting started <https://docs.typo3.org/permalink/t3start:installing-extensions>`_.
+Siehe auch `Installing extensions, TYPO3 Getting started <https://docs.typo3.org/permalink/t3start:installing-extensions>`_.
 
 ..  _installation-classic:
 
-Install Shop System tt_products in Classic Mode
-===============================================
+Installieren des Shop Systems tt_products im klassischen Modus
+==============================================================
 
-Or download the extension from `https://www.ttproducts.de <https://www.ttproducts.de>`_ and install it in
-the Extension Manager.
+Oder laden Sie die Erweiterung von `https://www.ttproducts.de <https://www.ttproducts.de>`_ herunter und installieren Sie diese über den
+Extension Manager.
 
 
 ..  _recommended-third-party:
 
-Recommended Third Party Extensions
-==================================
+Empfohlene Drittanbieter Erweiterungen
+======================================
 
-This extension works best in union with :composer:`sjbr/static-info-tables`, :composer:`jambagecom/static-info-tables-taxes`,
+Diese Erweiterung funktioniert am besten in Verbindung mit :composer:`sjbr/static-info-tables`, :composer:`jambagecom/static-info-tables-taxes`,
 :composer:`jambagecom/agency`, :composer:`typo3/cms-rte-ckeditor`, :composer:`jambagecom/mbi-products-categories`,
-:composer:`jambagecom/transactor` and :composer:`jambagecom/taxajax`.
+:composer:`jambagecom/transactor` und :composer:`jambagecom/taxajax`.
 

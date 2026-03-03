@@ -1,8 +1,9 @@
 
 .. _users-manual-right-of-revocation:
 
-Right of Revocation
--------------------
+Widerrufsbelehrung
+------------------
 
-In Germany you must add a link to a page with the display of the right of revocation. A page can be
-defined for this with :typoscript:`PIDrevocation`. The right of revocation has to be displayed there.
+In Deutschland müssen Sie im Warenkorb eine Widerrufsbelehrung anzeigen. Zu diesem Zweck kann eine
+Seite als :typoscript:`PIDrevocation` definiert werden. Die Widerrufsbelehrung muss hier angezeigt werden.
+

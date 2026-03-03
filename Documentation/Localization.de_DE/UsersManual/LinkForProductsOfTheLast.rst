@@ -1,10 +1,11 @@
 
 .. _users-manual-link-for-products-of-the-last:
 
-Link for products of the last X days
+Link für Produkte der letzten X Tage
 ------------------------------------
 
-This is practical for “What is new?” pages. Create simply a link to the :typoscript:`SEARCH `page and add
-"newitemdays" as parameters.  :html:`https://www.big-typo3-shop.com/index.php?id=8&newitemdays=10` 
-The search result will contain all the products of the last 10 days if available. You have to use the plugin code
-:php:`LISTNEWITEMS`. You can also set the constant :typoscript:`newItemDays`.
+Das ist praktisch für Seiten “Was ist neu?”. Erzeugen Sie einfach einen Link zur :typoscript:`SEARCH ` Seite und geben Sie
+"newitemdays" als Parameter an. :html:`https://www.big-typo3-shop.com/index.php?id=8&newitemdays=10` 
+Die Suche wird alle Produkte der letzten 10 Tage liefern. Sie müssen den Plugin Code :php:`LISTNEWITEMS` eintragen. Sie
+können stattdessen auch die Konstante :typoscript:`newItemDays` setzen.
+

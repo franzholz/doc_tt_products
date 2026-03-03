@@ -30,4 +30,12 @@ Die Typo3 Shop Extension gibt Ihnen die Möglichkeit zu...
 -  Gutscheinpunkte System: Kunden können mit jeder Bestellung Gutscheinpunkte sammeln. Die
    gespeicherten Gutscheinpunkte kann der Kunde bei einer neuen Bestellung einlösen . Ggf.
    können mit diesen Gutscheinen auch nur bestimmte Produkte gekauft werden.
--  Gutscheinsystem: Wenn ein Kunden einen Gutschein-Code eingibt, erhält er einen Rabatt auf die Bestellung.
+-  Gutscheinsystem über Voucher Extension: Wenn ein Kunden einen Gutschein-Code eingibt, erhält er einen Rabatt auf die Bestellung.
+-  Preisstaffeln
+-  Feld EAN für die Eingabe des EAN Codes-  
+-  Möglichkeit zur Einschränkung der Kategorieauswahl bei der Produkteingabe im Backend
+-  Wertebereichprüfung des Gewichtsfeldes bis zu Miligramm
+-  Prüfung der Bankleitzahl, wenn die dafür erforderliche Extension static_info_tables_banks_de installiert ist
+-  Änderung der Anzeige bei Auswahl aus einer Varianten-Select Box
+-  verbesserte Kategorielisten mit mehr Markern (auch für FAL)
+-  beliebig viele Textbeschreibungen zu jedem Produkt (IRRE)

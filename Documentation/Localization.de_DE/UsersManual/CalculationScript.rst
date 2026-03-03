@@ -2,13 +2,12 @@
 
 .. _users-manual-calculation-script:
 
-Calculation script
-------------------
+Berechnungsskript
+-----------------
 
-If you write and use your own calculation scripts, then you should always use only the price
-variables. Use the price variables and the :typoscript:`TAXpercentage` and :typoscript:`TAXincluded` constants. 
-You can use the
-local PHP variables :php:`$calculatedArray` and
+Wenn Sie Ihr eigenes Berechnungsskript schreiben und verwenden wollen, dann sollten Sie immer die Preise
+inkl. Mehrwertsteuer eingeben. Verwenden Sie die price Variablen und die Konstanten :typoscript:`TAXpercentage` und :typoscript:`TAXincluded`.
+Sie können die global PHP-Variablen :php:`$calculatedArray und
 
 ..  code-block:: php
     :caption: basket calculation example
@@ -19,7 +18,7 @@ local PHP variables :php:`$calculatedArray` and
     $basketObj = GeneralUtility::makeInstance(Basket::class);
     $itemArray = $basketObj->getItemArray();
 
-to make your own price calculations.
+für Ihre eigenen Preisberechnungen verwenden.
 
 ..  code-block:: typoscript
     :caption: set calculationScript as EXT:my_extension/Classes/Utility/MyCalculations.php

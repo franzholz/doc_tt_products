@@ -2,10 +2,10 @@
 
 .. _users-manual-modify-the-page-menu:
 
-Modify the page menu
---------------------
+Ergänzung zum Seitenmenü
+------------------------
 
-You can add the number of products found in the subpages to your page menu.
+Sie können die Anzahl der in den Unterseiten gefundenen Produkte an die Anzeige des Seitentitels anhängen.
 
 **Example:**
 

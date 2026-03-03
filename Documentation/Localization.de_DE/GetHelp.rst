@@ -1,17 +1,17 @@
-:navigation-title: Get Help
+:navigation-title: Hilfe bekommen
 
 ..  _help:
 
-=================
-Where to get help
-=================
+====================
+Wo bekommt man Hilfe
+====================
 
-Find an answer or ask a new question in the `official TYPO3 forum <https://www.jambage.com/kontakt/forum/shop-system>`_
-or via email `Contact <https://www.jambage.com/kontakt>`_.
+Finden Sie die Antwort oder stellen Sie im `offiziellen TYPO3 Shop Forum <https://www.jambage.com/kontakt/forum/shop-system>`_
+oder über E-Mail `Kontakt <https://www.jambage.com/kontakt>`_ neue Fragen. 
 
 ..  _report-issues:
 
-Report Issues
+Fehler melden
 =============
 
-Report issues at `https://github.com/franzholz/tt_products/issues <https://github.com/franzholz/tt_products/issues>`_.
+Fehler auf `https://github.com/franzholz/tt_products/issues <https://github.com/franzholz/tt_products/issues>`_ melden.

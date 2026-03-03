@@ -9,6 +9,7 @@ Users manual
     :titlesonly:
 
     Note
+    MiniBasket         
     CalculationScript
     Discount
     LinkForProductsOfTheLast
@@ -19,3 +20,4 @@ Users manual
     VoucherSystem
     CreditpointSystem
     ModifyThePageMenu
+    ArticlePrices
