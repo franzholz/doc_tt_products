@@ -1,12 +1,14 @@
 
 .. _users-manual-creditpoint-system:
 
-Creditpoint System
-------------------
+Gutscheinpunkte System
+----------------------
 
-If a customer purchases a certain number of items, then he gains credit points which are stored in
-his user's account. If he purchases more items at a later time, he can redeem credit points against
-the purchase price. The customer can gather credit points with each purchase.
+Wenn ein Kunde eine gewisse Anzahl an Waren gekauft hat, dann gewinnt er dadurch Gutscheinpunkte, die
+auf seinem Benutzerkonto gespeichert werden. Zu einem späteren Zeitpunkt, wenn er weitere Waren kauft,
+kann er diese Gutscheinpunkte in Waren einlösen und beim Kauf einen besonderen Rabatt kalkulieren. Die
+Kunden können bei jedem Kauf Gutscheinpunkte sammeln.
+
 
 
 ..  code-block:: typoscript
