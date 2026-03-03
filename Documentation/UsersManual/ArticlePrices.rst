@@ -47,7 +47,26 @@ Variants:
        auswählen zu können, dass alle Größenvarianten in eine durch Strichpunkt getrennten Liste
        eingegeben werden, z.B.: S;M;X;XL . Diese Artikel wollen wir als nächste eingeben.
     *  Bemerkung    
-    *   Bild    
+    *  Bild    
     *  Datenblatt (falls benötigt).
 
-
+#.  Anpassungen im HTML Template
+    Sie müssen neue Felder in die :html:`###ITEM_LIST_TEMPLATE###` und
+    :html:`###ITEM_SINGLE_DISPLAY###` Bereiche einfügen
+    *  Der folgende HTML Code muss für die Anzeige der Auswahlbox der Varianten eingefügt
+       werden, und zwar innerhalb der Form-Tags. Außerdem wird jede Information innerhalb von
+       :html:`###display_variant1###` oder :html:`###display_variant2###` Kommentaren nicht angezeigt,
+       wenn diese Variante nicht verwendet wird. Das ist sehr nützlich, wenn das Wort 'Ab' vor dem
+       :html:`###PRICE_TAX###` Wert innerhalb der :html:`###display_variant2###` Kommentare eingefügt
+       wird. So wird z.B. 'Ab $200' wenn die billigste Größe €200 kosten soll (deshalb wird der
+       niedrigste Preis im Vaterprodukt eingetragen. - standardmäßig wird der Preis des
+       Vaterprodukts in der Listen- und Einzelansicht angezeigt. Der Preis der Variante wird erst im
+       Warenkorb sichtbar, wenn eine bestimmt Größe (oder Farbe etc.) ausgewählt worden ist. Wenn
+       keine Varianten zur Auswahl stehen, dann wird das Wort 'Ab' auch nicht angezeigt.
+       Code Beispiel:
+<!-- ###display_variant1### -->
+Farbe:><select name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select>
+<!-- ###display_variant1### --><!-- ###display_variant2### -->
+Gr&ouml;e:>< select name="###FIELD_SIZE_NAME###" rows="1">###PRODUCT_SIZE###</select>
+<!-- ###display_variant2### -->
+ 
