@@ -20,6 +20,6 @@ Variants:
 *  Material (variant 10)
 *  Quality (variant 11)
 
-*  Additonal (special variant 5)
+*  Additional (special variant 5)
 
 
