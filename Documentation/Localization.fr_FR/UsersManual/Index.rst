@@ -20,3 +20,4 @@ Users manual
     VoucherSystem
     CreditpointSystem
     ModifyThePageMenu
+    EditVariant
