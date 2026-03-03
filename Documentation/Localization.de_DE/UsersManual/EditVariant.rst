@@ -37,13 +37,13 @@ Gültigkeit überprüft.
 HTML:
 ~~~~~
 
-Siehe Beispiel HTML Template EXT:tt_products/template/example_locallang_xml.html .
-Sie müssen folgende Subpart Markers und Text Marker einfügen.
+Siehe Beispiel HTML Template :file:`EXT:tt_products/Resources/Private/Templates/example_locallang_xml.html`  .
+Sie müssen folgende Subpart Marker und Text Marker einfügen.
 
 Einzel/Listenansicht des Produktes:
 
 ..  code-block:: html
-    :caption: Template for Edit Variant
+    :caption: Template für Edit Variant
 
     <!-- ###edit_variant_domain### begin -->
     <b>###P_DOMAIN###</b> ###EDIT_VARIANT###
