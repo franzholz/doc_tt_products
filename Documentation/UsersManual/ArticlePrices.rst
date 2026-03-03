@@ -23,32 +23,31 @@ Variants:
 *  Additional (special variant 5)
 
 
-#.  Im TSSetup für das Template geben Sie ein
+#.  In the TypoScript for the template you enter a
     :typoscript:`plugin.tt_products.useArticles = 1`
-    Wenn Sie Spalten für die Listenanzeige der Produkte verwenden, wie im Bananaguard Beispiel, dann
-    benötigen Sie auch
+    If you use columns for the list view of the products then you also need
     :typoscript:`plugin.tt_products.conf.tt_products.LIST.displayColumns = 1`
 
-    Alles das teilt dem Shop mit, dass die Daten aus der Produkte Artikel Tabelle gelesen werden und dass
-    eine Auswahlbox dargestellt wird, wenn Varianten verwendet werden.
+    All  this tells the shop that the date are read from the article table and that
+    a select box is shown if variants are used.
 
-#.  Geben Sie das Vaterprodukt an.
-    Das ist die erste Information, die in der Frontend Liste und in Einzelansichten angezeigt wird, z.B. in
-    der Beschreibung und über die Bilder. Erzeugen Sie einen neuen Eintrag im Web > Liste Modul.
-    Wählen Sie das Produkt aus..
-    Sie müssen folgende Felder ausfüllen.
-    *  Titel
-    *  auf Lager (muss mindestens 1 betragen, damit es im Frontend angezeigt wird)
-    *  Kategorie (falls benötigt)
-    *  Preis (das sollte der niedrigste Preis für die billigste Größe sein – das entspricht dem billigsten
-       Produkt Artikel, den wir als nächstes eingeben werden)
-    *  Größe (dasselbe gilt für Farbe/Beschreibung/Staffelung falls benötigt)
-       Es ist unbedingt notwendig, um im Frontend die Möglichkeit zu haben, eine Produktvariante
-       auswählen zu können, dass alle Größenvarianten in eine durch Strichpunkt getrennten Liste
-       eingegeben werden, z.B.: S;M;X;XL . Diese Artikel wollen wir als nächste eingeben.
-    *  Bemerkung    
-    *  Bild    
-    *  Datenblatt (falls benötigt).
+#.  Choose the father product.
+    This is the first information which is shown in the front end list and in the single views, e.g. in
+    the description and about images. Create a new entry in the backend list module.
+    Choose the product ..
+   You have to fill in the following fields.
+    *  Title
+    *  in Stock (must be at least 1 to be shown in the front end)
+    *  category (if needed)
+    *  Price (this should be the lowest price for the cheapes size - this corresponds to the cheapest 
+       article, which will be entered next.
+    *  Sieze (the same is valid for colour/description/grading if needed)
+       Is is by all means necessary to have the possibility to select a product variant in the front end.
+       where all size variants are entered in a list separeted by a semicolon, 
+       e.g.: S;M;X;XL . These articles we want to enter next.
+    *  Note    
+    *  Image    
+    *  Datasheet (if needed).
 
 #.  Anpassungen im HTML Template
     Sie müssen neue Felder in die :html:`###ITEM_LIST_TEMPLATE###` und
