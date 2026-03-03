@@ -27,7 +27,7 @@ The products with uid 52 will have the entry field of a web domain. The web doma
           evalValues {
             1 = required, wwwURL
           }
-          error = <div class="fehlerbox"><div style="font-size:16px;"> Hint:</div> You must enter
+          error = <div class="errorbox"><div style="font-size:16px;"> Hint:</div> You must enter
           an internet <span style="color:red;">Domain</span> !</div></div>
         }
       }
