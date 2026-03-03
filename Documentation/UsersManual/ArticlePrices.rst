@@ -53,6 +53,7 @@ Variants:
 #.  Anpassungen im HTML Template
     Sie müssen neue Felder in die :html:`###ITEM_LIST_TEMPLATE###` und
     :html:`###ITEM_SINGLE_DISPLAY###` Bereiche einfügen
+
     *  Der folgende HTML Code muss für die Anzeige der Auswahlbox der Varianten eingefügt
        werden, und zwar innerhalb der Form-Tags. Außerdem wird jede Information innerhalb von
        :html:`###display_variant1###` oder :html:`###display_variant2###` Kommentaren nicht angezeigt,
