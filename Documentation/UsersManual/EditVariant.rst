@@ -36,9 +36,10 @@ The products with uid 52 will have the entry field of a web domain. The web doma
 HTML:
 ~~~~~
 
-Siehe Beispiel HTML Template EXT:tt_products/template/example_locallang_xml.html .
-Sie müssen folgende Subpart Markers und Text Marker einfügen.
-Einzel/Listenansicht des Produktes:
+See example HTML template EXT:tt_products/template/example_locallang_xml.html .
+You must insert the following subpart Marker and text markers.
+
+Single/List view of a product:
 
 ..  code-block:: html
     :caption: Template for Edit Variant
@@ -47,14 +48,14 @@ Einzel/Listenansicht des Produktes:
     <b>###P_DOMAIN###</b> ###EDIT_VARIANT###
     <br />
     <!-- ###edit_variant_domain### end -->
-    Warenkorb Ansicht des Produktes:
+    Basket view of product:
     <!-- ###edit_variant_domain### begin -->
     ###P_DOMAIN###
     ###EDIT_VARIANT###<br />
     <!-- ###edit_variant_domain### end -->
-    Payment Ansicht des Produktes:
+    Payment view of product:
     <td valign=top colspan=3><b>###PRODUCT_TITLE### <!-- ###edit_variant_domain### begin -->|
     ###EDIT_VARIANT###<!-- ###edit_variant_domain### end --></b>
-    Bestell Bestätigung für ein Produkt:
+    Order confirmation of product:
     <td valign=top><b>###PRODUCT_TITLE### <!-- ###edit_variant_domain### begin -->| ###EDIT_VARIANT###<!--
     ###edit_variant_domain### end --></b>
