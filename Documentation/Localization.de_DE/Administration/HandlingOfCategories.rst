@@ -2,19 +2,22 @@
 
 .. _administration-handling-of-categories:
 
-Handling of Categories
-----------------------
+Behandlung der Kategorien
+-------------------------
 
-There are multiple ways to create a shop. The usual way is to create :ref:`folders <t3coreapi:list-of-page-types-sysfolder>` for the products and lists and 
-single sites where the products are displayed. If you want to build a bigger shop with TYPO3, then you should write your own import scripts for your products.
-It would take too long to enter each product manually.
+Es gibt mehrere Möglichkeiten ein Shop aufzubauen. Der normale Weg läuft über die Erzeugung
+von :ref:`Folder <t3coreapi:list-of-page-types-sysfolder>` für die Produkte, damit
+sie in Listen- und Einzelansichten angezeigt werden. 
+Für den Aufbau eines größeren Shops mit TYPO3 wäre das etwas unpraktisch.
+Wenn Sie größere Shops mit hierarchischen Kategorien anlegen wollen, dann sollten 
+Sie die :composer:`jambagecom/mbi-products-categories` Extension installieren. 
+Sie verwendet eine mm-Tabelle, mit der man jedem Produkt eine
+beliebige Anzahl an Kategorien zuordnen kann. 
+Es enthält auißerdem eine verbesserte Version des PHP Skript aus der veralteten
+Extension *nsb_cat2menu*. 
+Nur damit wird es möglich sein ein Produkt in der Listenansicht unterhalb mehrerer Kategorien anzuzeigen. Der Bau eines Shops mit FAL Bildern wird außerdem nur damit möglich sein.
 
-If you want to make bigger shops with hierarchical categories you shall install 
-:composer:`jambagecom/mbi-products-categories`. It includes also an improved version of the PHP script available in the outdated extension *nsb_cat2menu*. 
-By means of :composer:`jambagecom/mbi-products-categories` you can assign many categories to one products via a mm-table. 
-Only with this it will be possible to show a product in the list view under multiple categories.
-
-**Example:**
+**Beispiel:**
 
 ..  code-block:: php
     :caption: tt_products/ext_localconf.php unset pageAsCategory
