@@ -15,6 +15,9 @@ oder die Kategorie wird nicht benutzt sondern komplett durch die Seite ersetzt (
 Das hat historische Gründe als es noch keinen Kategoriebaum gegeben hat und weil der Seitenbaum im TYPO3 Backend eine
 bessere Benutzerführung bietet.
 
+Wenn Sie einen größeren Shop mit TYPO3 bauen wollen, dann sollten Sie Ihre eigenen Import-Skripte für Ihre Produkte schreiben. 
+Es würe zu lange dauern, jedes Produkt einzeln einzugeben.
+
 .. toctree::
     :maxdepth: 2
     :titlesonly:
