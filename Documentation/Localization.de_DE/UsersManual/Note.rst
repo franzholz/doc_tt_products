@@ -26,7 +26,7 @@ Verwenden Sie ein Beispiel Template aus dem Verzeichnis
 :file:`example_locallang_xml.html`, wenn Sie mit Ihrem Shop beginnen. Der Marker :php:`###DOMAIN###` 
 ist der Platzhalter für Ihre Url. Es gibt mehrere Platzhalter für die verschiedenen Seiten-Ids des Shops.
 Das ist sinnvoll wenn verschiedene Umgebungen verwendet werden. 
-Im Setup des Shoptemplates muss die Domaineinstellung für :typoscript:`mydomain.com` über ein Setup
+Im Setup des Shoptemplates muss die Domain-Einstellung für :typoscript:`mydomain.com` über ein Setup
 :typoscript:`plugin.tt_products.domain = mydomain.com` vorgenommen werden.
 
 :composer:`jambagecom/tt-products` baut auf :composer:`jambagecom/table` und :composer:`jambagecom/div2007` auf. Sie müssen immer auf die letzten Versionen dieser Extensions aktualisieren, wenn Sie ein Update für
