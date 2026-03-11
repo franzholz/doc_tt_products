@@ -15,6 +15,9 @@ The only advantage of the latter is that you simply place the records on a page 
 This has historical reasons when no category tree had been available and because the back end page tree has the better
 user guidance.
 
+If you want to build a bigger shop with TYPO3, then you should write your own import scripts for your products.
+It would take too long to enter each product manually.
+
 .. toctree::
     :maxdepth: 2
     :titlesonly:
