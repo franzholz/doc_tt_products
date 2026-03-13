@@ -2,8 +2,8 @@
 
 .. _users-manual-edit-variant:
 
-Edit Variante
--------------
+Editierbare Variante
+--------------------
 
 Sie können auf der Produkt Ebene Eingabefelder als frei definierbare Texte hinzufügen. Sie können einen Text
 oder einen Zahlwert eingeben, der im Warenkorb einzeln als Produkt Variante aufgelistet wird. Sie können die
@@ -14,7 +14,7 @@ Das Produkt mit der uid 52 wird ein Eingabefeld einer Web Domäne erhalten. Die 
 Gültigkeit überprüft.
 
 ..  code-block:: typoscript
-    :caption: Setup für Edit Variante
+    :caption: Setup für Editierbare Variante
 
     plugin.tt_products {
       ### DOMAIN
@@ -43,7 +43,7 @@ Sie müssen folgende Subpart Marker und Text Marker einfügen.
 Einzel/Listenansicht des Produktes:
 
 ..  code-block:: html
-    :caption: Template für Edit Variant
+    :caption: Template für Editierbare Variant
 
     <!-- ###edit_variant_domain### begin -->
     <b>###P_DOMAIN###</b> ###EDIT_VARIANT###
