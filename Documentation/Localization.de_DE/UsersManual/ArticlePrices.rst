@@ -10,7 +10,7 @@ Das selbe Verfahren können Sie auch mit Farben und den anderen Varianten anwend
 
 Varianten:
 
-*  Description (Variante 3)
+*  Behreibung (Variante 3)
 *  1. Farbe (Variante 1)
 *  2. Farbe (Variante 6)
 *  3. Farbe (Variante 7)
@@ -69,7 +69,7 @@ Varianten:
        **Beispiel:**
     
        ..  code-block:: html
-           :caption: HTML template example for product variants
+           :caption: HTML Template Beispiel for Produkt Varianten
         
            <!-- ###display_variant1### -->
            Farbe:><select name="###FIELD_COLOR_NAME###" rows="1">###PRODUCT_COLOR###</select>

@@ -5,15 +5,18 @@ Administration
 ==============
 
 
-In the normal case the categories from the category table are used. You have to set
+Im Normalfall werden die Kategorien über die Kategorietabelle und ihre Erweiterungen angezeigt. Um das zu
+nutzen, muss
 
 :php:`$TYPO3_CONF_VARS['EXTCONF']['tt_products']['pageAsCategory'] = 0;`
 
-to be able to use them. Otherwise the pages will be taken for categories and the category will be used as
-the subcategory (:php:`= 1`) of a page or not used at all but replaced by the page (:php:`= 2`).
-The only advantage of the latter is that you simply place the records on a page without the need to assign a category.
-This has historical reasons when no category tree had been available and because the back end page tree has the better
-user guidance.
+eingestellt sein. Andernfalls bestimmen die Seite die Kategorie und die Kategorie ist die Unterkategorie (=1)
+oder die Kategorie wird nicht benutzt sondern komplett durch die Seite ersetzt (=2).
+Das hat historische Gründe als es noch keinen Kategoriebaum gegeben hat und weil der Seitenbaum im TYPO3 Backend eine
+bessere Benutzerführung bietet.
+
+Wenn Sie einen größeren Shop mit TYPO3 bauen wollen, dann sollten Sie Ihre eigenen Import-Skripte für Ihre Produkte schreiben. 
+Es würe zu lange dauern, jedes Produkt einzeln einzugeben.
 
 .. toctree::
     :maxdepth: 2
