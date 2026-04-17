@@ -1,33 +1,34 @@
 
 .. _administration-template-markers-single-markers:
 
-single markers
-^^^^^^^^^^^^^^
+Einzelmarker
+^^^^^^^^^^^^
 
 =====================================================  =============  ==============================================================================  ==========================================
 Marker:                                                Type:          Description:                                                                    Area:
 =====================================================  =============  ==============================================================================  ==========================================
-BROWSE_LINKS                                                          for browsing the display list over several pages
+BROWSE_LINKS                                                          Zum Durchblättern über mehrere Seiten in der
+Anzeige
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-DELIVERYCOSTS                                          value          sum of delivery costs and payment costs
+DELIVERYCOSTS                                          value          Summe der Lieferkosten und Kosten für die Bezahlung
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-DELIVERY\_... NOTE NOTE_DISPLAY DESIRED_DATE            value          see also PERSON\_...                                                             BASKET_INFO_TEMPLATE
+DELIVERY\_... NOTE NOTE_DISPLAY DESIRED_DATE            value         Siehe auch PERSON\_...                                                           BASKET_INFO_TEMPLATE
 
-                                                                      input field note for order output field note with <br>
-                                                                      instead of linebreaks desired delivery date of the
-                                                                      order
+                                                                      Eingabefeld Bemerkung zur Bestellung Ausgabe Bemerkung mit <br> für den
+                                                                      Zeilenumbruch 
+                                                                      gewünschtes Lieferdatum
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-EXTERNAL_COBJECT                                       value          extra preprocessing Cobject
+EXTERNAL_COBJECT                                       value          zusätzliches Cobject
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-FIELD_NAME                                             value in form  the name of a field in a form
+FIELD_NAME                                             value in form  Name eines Feldes in einem HTML Formular
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-FIELD_NAME_BASKET                                      value in form  the basket data in encrypted format
+FIELD_NAME_BASKET                                      value in form  Die Daten des Warenkorbs in verschlüsselter Form.
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-GC1, GC2, GC3                                          value          global colours                                                                  all
+GC1, GC2, GC3                                          value          globale Farben                                                                  all
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-GW1B, GW2B, GW1E, GW2E                                 wrap           global wraps                                                                    all
+GW1B, GW2B, GW1E, GW2E                                 wrap           globale Wraps (HTML-Umrandungen)                                                all
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-PRICE_TAX                                              value          price/price2 of the item with, without and only VAT                             ITEM_SINGLE
+PRICE_TAX                                              value          price/price2 des Produkts, mit oder ohne oder nur SteuerT                       ITEM_SINGLE
 
 PRICE_NO_TAX
 
@@ -39,15 +40,15 @@ PRICE2_NO_TAX
 
 PRICE2_ONLY_TAX
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-PRICE_TOTAL_TAX                                        value          total sum of the items with shipping and payment costs                          all
+PRICE_TOTAL_TAX                                        value          Gesamtbetrag aller Produkte inkl. Kosten für                                    all
 
 PRICE_TOTAL_NO_TAX
 
 PRICE_TOTAL_ONLY_TAX
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-PRICE_GOODSTOTAL_TAX                                   value          total sum ot the items for price or price2                                      all
+PRICE_GOODSTOTAL_TAX                                   value          Gesamtsummer der Produkte aus price oder price2                                 all
 
-PRICE_GOODSTOTAL_NO_TAX
+PRICE_GOODSTOTAL_NO_TAX                                               Bezahlsystem und Versand
 
 PRICE2_GOODSTOTAL_TAX
 
@@ -55,10 +56,10 @@ PRICE2_GOODSTOTAL_NO_TAX
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
 LINK_BASKET                                            wrap           link to the basket page                                                         basket
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-PRODUCT_LINK_DATASHEET                                 wrap           link to the datasheet file set in the constant
-                                                                      file.datasheetIcon.
+PRODUCT_LINK_DATASHEET                                 wrap           Link auf die Datenblatt Datei, die in der Konstante
+                                                                      file.datasheetIcon gesetzt worden ist.
 
-                                                                      **Example** :
+                                                                      **Beispiel** :
 
                                                                       <!-- ###PRODUCT_LINK_DATASHEET1### begin -->
 
@@ -74,15 +75,14 @@ PRODUCT_LINK_DATASHEET                                 wrap           link to th
 
                                                                       <!-- ###PRODUCT_LINK_DATASHEET2### end -->
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-ORDER_STATUS_TIME,                                     value          order values                                                                    TRACKING_DISPLAY_INFO
+ORDER_STATUS_TIME,                                     value          Daten zur Bestellung                                                            TRACKING_DISPLAY_INFO
 
 ORDER_STATUS, ORDER_STATUS_INFO, ORDER_STATUS_COMMENT
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-PERSON\_... NAME, ADDRESS, TELEPHONE,                   value          address information fields have to be connected with a
-                                                                      prefix PERSON\_... the customer of the order
+PERSON\_... NAME, ADDRESS, TELEPHONE,                  value          Felder für die Adressinformation
+                                                                      Präfix PERSON\_... der Kunde der Bestellung
 FAX, EMAIL,
-                                                                      DELIVERY\_... the recipient of the order
-COMPANY,
+                                                                      DELIVERY\_... der Empfänger der Bestellung
 
 CITY,
 
@@ -92,12 +92,13 @@ STATE,
 
 COUNTRY
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-PID_TRACKING                                           value          the tracking pid
+PID_TRACKING                                           value          Die Seitennummer für den Rückverfolgung über den
+                                                                      Status der Bestellung
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-STATUS_CODE_60                                         wrap           used to allow the disappearance of the text with status                         TRACKING_DISPLAY_INFO
-                                                                      code by the shop
+STATUS_CODE_60                                         wrap           wird verwendet, damit das Zusenden von E-Mails an den Empfänger eines           TRACKING_DISPLAY_INFO
+                                                                      Geschenkgutscheins erst nach der Bezahlung erscheint
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-STATUS_OPTIONS                                         value          Select menu of state options                                                    ADMIN_CONTROL inside TRACKING_DISPLAY_INFO
+STATUS_OPTIONS                                         value          Auswahlmenü für Zustände in der Bestellungsverwaltung                           ADMIN_CONTROL inside TRACKING_DISPLAY_INFO
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-SHOPADMIN_EMAIL                                        value          Email-Address of the shop admin                                                 all
+SHOPADMIN_EMAIL                                        value          E-Mail-Adresse des Shop-Adminstrators                                           all
 =====================================================  =============  ==============================================================================  ==========================================
