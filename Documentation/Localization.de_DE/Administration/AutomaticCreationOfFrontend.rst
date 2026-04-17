@@ -2,16 +2,20 @@
 
 .. _administration-automatic-creation-of-frontend-users:
 
-Automatic creation of front end users and address fields
---------------------------------------------------------
+Automatisches Erzeugen von Frontend Benutzern
+---------------------------------------------
 
-It is possible to create front end users automatically after each order. You have to set :typoscript:`createUsers` to :typoscript:`1`, 
-enter the *PID* of the sysfolder as :typoscript:`PIDuserFolder` in the Setup field. Then you have to set :typoscript:`memberOfGroup` to
-the *ID* of your front end user group.  The customer will get an email with his account data after his first order. 
-This email will contain his account name, which is his email address, and his automatically created password.
+Es ist möglich nach jeder Bestellung automatisch Frontend Benutzer anzulegen. Sie müssen 
+:typoscript:`createUsers`auf:typoscript:`1` setzen, die *PID* des Sysfolder als :typoscript:`PIDuserFolder`
+im Setup Feld eintragen. Dann müssen Sie die memberOfGroup auf die ID Ihrer Frontend Benutzergruppe setzen.
+Nach der ersten Bestellung erhält der Kunde eine E-Mail mit seinen Zugangsdaten. 
+Diese E-Mail wird den Namen des Kontos enthalten, welcher
+ident mit der E-Mail Adresse ist, und sein automatisch erzeugtes Passwort.
 
-If you do not want to use a single address field, but a separate address field for the name of the street, the house number and 
-additional fields for the ZIP, city and country, then you have to insert the appropriate parts in your template file. 
-If you install extension :composer:`sjbr/static-info-tables` and set :typoscript:`useStaticInfoCountry = 1` then 
-the small field :code:`static_info_country` of the :code:`fe_users` will be used instead of a :code:`country` string. 
-It is customer friendly to have a select box for the country.
+Wenn Sie kein einzelnes Textfeld für die Adresse haben wollen, sondern eine für die Straßenbezeichnung und
+Hausnummer, und zusätzliche Felder für PLZ, Stadt und Land, dann müssen Sie die Template-Datei
+entsprechend anpassen. Wenn Sie :composer:`sjbr/static-info-tables` installieren und 
+:typoscript:`useStaticInfoCountry = 1`  setzen, dann
+wird das kleine Feld static_info_country der :code:`fe_users` Tabelle anstelle des :code:`country` Feldes verwendet.
+Es ist benutzerfreundlich, wenn Sie eine Select Box zur Auswahl des Landes machen.
+
