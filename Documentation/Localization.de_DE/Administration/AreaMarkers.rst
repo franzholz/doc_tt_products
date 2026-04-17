@@ -28,10 +28,11 @@ BASKET_ORDERCONFIRMATION_TEMPLATE         Die letzte Seite, nach Ausführung der
 BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE  Diese HTML-Daten werden angezeigt, nachdem die           down
                                           Bestellung in der Datenbank gespeichert worden ist.
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_ORDERTHANKS_TEMPLATE               Used for displaying a thanks page, when PIDthanks is     top
-                                          set. This will not be used in the HTML emails.b
+BASKET_ORDERTHANKS_TEMPLATE               Anzeige einer 'Danke schön' Seite, wenn PIDthanks 
+                                          gesetzt ist. Für den Versand von HTML-E-Mails wird das 
+                                          aber nicht verwendet.
 
-                                          see BASKET_ORDERCONFIRMATION_TEMPLATE
+                                          siehe BASKET_ORDERCONFIRMATION_TEMPLATE
 ----------------------------------------  -------------------------------------------------------  -----
 BASKET_OVERVIEW_EMPTY                     Meldung 'Ihr Warenkorb ist noch leer.' für OVERVIEW      top
 ----------------------------------------  -------------------------------------------------------  -----
@@ -62,17 +63,17 @@ ITEM_SEARCH                                                                     
 ----------------------------------------  -------------------------------------------------------  -----
 ITEM_SEARCH_EMPTY                                                                                  top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY                       single                                                   top
+ITEM_SINGLE_DISPLAY                       Einzelansicht                                            top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY_NOT_IN_STOCK          single display when item is not in stock                 top
+ITEM_SINGLE_DISPLAY_NOT_IN_STOCK          Einzelansicht, wenn Produkt nicht auf Lager ist          top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_SINGLE_DISPLAY_RECORDINSERT          see displayCurrentRecord: render the $cObj->data         top
+ITEM_SINGLE_DISPLAY_RECORDINSERT          siehe displayCurrentRecord: Anzeige $cObj->data          top
 ----------------------------------------  -------------------------------------------------------  -----
-MEMO_TEMPLATE                             memorization of items                                    top 
+MEMO_TEMPLATE                             Merkliste der Produkte                                   top 
 ----------------------------------------  -------------------------------------------------------  -----
-MEMO_NOT_LOGGED_IN                        error message that use has not been logged in for MEMO   top
+MEMO_NOT_LOGGED_IN                        Fehlermeldung nicht eingeloggter Benutzer für MEMO       top
 ----------------------------------------  -------------------------------------------------------  -----
-ORDERS_LIST_TEMPLATE                      display of the order list                                top
+ORDERS_LIST_TEMPLATE                      Anzeige der Bestellliste                                 top
 ----------------------------------------  -------------------------------------------------------  -----
 TRACKING_ENTER_NUMBER                                                                              top
 ----------------------------------------  -------------------------------------------------------  -----
@@ -83,14 +84,14 @@ TRACKING_WRONG_NUMBER                                                           
 
 .. _administration-template-area-markers-datasheet-for-the-product:
 
-datasheet for the product
-"""""""""""""""""""""""""
+Datenblatt für ein Produkt
+""""""""""""""""""""""""""
 
-**Example**  for a wrap:
+**Beispiel**  for a wrap:
 
 ..  code-block:: html
-    :caption: wrap inside of a HTML template
+    :caption: Wrap innerhalb eines HTML Templates
 
-    <!-- ###PRODUCT_LINK_DATASHEET### begin --> datasheet for the product <!-- ###PRODUCT_LINK_DATASHEET### end -->
+    <!-- ###PRODUCT_LINK_DATASHEET### begin --> Datenblatt für das Produkt <!-- ###PRODUCT_LINK_DATASHEET### end -->
 
 
