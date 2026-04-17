@@ -1,12 +1,13 @@
 
 .. _administration-important:
 
-Important
-^^^^^^^^^
+Wichtige Hinweise
+^^^^^^^^^^^^^^^^^
 
-Some of the TypoScript settings do not function via the constants area and can be entered in the setup area only. 
-Only those settings which can be found using the Constants Editor or in the file :file:`Configuration/TypoScript/PluginSetup/Main
-/constants.typoscript` are valid constants. 
+Einige der TypoScript Einstellungen funktionieren nicht über das Constants Feld und müssen im Setup Feld
+eingetragen werden. Nur die Konfigurationen, die im Konstanteneditor oder in der Datei
+:file:`Configuration/TypoScript/PluginSetup/Main/constants.typoscript` vorkommen, 
+sind gültige Konstantenwerte. 
 
 
 
