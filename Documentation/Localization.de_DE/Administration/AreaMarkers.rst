@@ -4,58 +4,59 @@
 
 .. _administration-template-markers-area-markers:
 
-area markers:
-^^^^^^^^^^^^^
+Bereichsmarker:
+^^^^^^^^^^^^^^^
 
 ========================================  =======================================================  =====
 Marker:                                   Description:                                             Area:
 ========================================  =======================================================  =====
-BASKET_TEMPLATE                           The view of the cart with the items to be ordered        top
+BASKET_TEMPLATE                           Ansicht des Warenkorbs mit zu bestellenden Produkten     top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_INFO_TEMPLATE                      This is normally used to let people enter address        top
-                                          information or verify their data if they are logged in
+BASKET_INFO_TEMPLATE                      Das wird normalerweise dazu verwendet, damit die Kunden  top
+                                          ihre Adressdaten außerhalb des Warenkorbs eingeben.
+                                          Es hat dieselben Eigenschaften wie  BASKET_TEMPLATE.
+----------------------------------------  -------------------------------------------------------  -----
+BASKET_ORDERCONFIRMATION_TEMPLATE         Die letzte Seite, nach Ausführung der Bestellung         top
+                                          Wenn PIDthanks gesetzt ist, wird das nicht für die 
+                                          Anzeige benutzt.
+                                          Aber diese Teile werden immer für die Benachrichtigungs
+                                          E-Mails verwendet, wenn HTML-E-Mails aktiviert sind.
+                                          :typoscript:`orderEmail_htmlmail = 1` 
 
-                                          Exact same features as BASKET_TEMPLATE.
+                                          siehe: BASKET_ORDERTHANKS_TEMPLATE
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_ORDERCONFIRMATION_TEMPLATE         the final page after the order has been processed. It    top
-                                          will not be used for the display, if PIDthanks is set.
-                                          But it will always be used for the text in HTML
-                                          emails. It is stored in the order data.
-
-                                          see: BASKET_ORDERTHANKS_TEMPLATE
-----------------------------------------  -------------------------------------------------------  -----
-BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE  This HTML data will be added to the display after the    down
-                                          order has been stored to the database.
+BASKET_ORDERCONFIRMATION_NOSAVE_TEMPLATE  Diese HTML-Daten werden angezeigt, nachdem die           down
+                                          Bestellung in der Datenbank gespeichert worden ist.
 ----------------------------------------  -------------------------------------------------------  -----
 BASKET_ORDERTHANKS_TEMPLATE               Used for displaying a thanks page, when PIDthanks is     top
                                           set. This will not be used in the HTML emails.b
 
                                           see BASKET_ORDERCONFIRMATION_TEMPLATE
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_OVERVIEW_EMPTY                     message 'your basket is empty' for OVERVIEW              top
+BASKET_OVERVIEW_EMPTY                     Meldung 'Ihr Warenkorb ist noch leer.' für OVERVIEW      top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_OVERVIEW_TEMPLATE                  Used for the mini basket display.                        top
+BASKET_OVERVIEW_TEMPLATE                  Für die Mini-Warenkorb Anzeige                           top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_PAYMENT_TEMPLATE                   Verification of address data and payment gateway         top
-                                          connection
+BASKET_PAYMENT_TEMPLATE                   Überprüfung der Adressdaten und Bezahl-Gateway           top
+                                          Verbindung
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_REQUIRED_INFO_MISSING              warning display for missing address data                 top
+BASKET_REQUIRED_INFO_MISSING              Warnung für fehlende Adressdaten                         top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_TEMPLATE_EMPTY                     message 'your basket is empty'                           top
+BASKET_TEMPLATE_EMPTY                     Meldung 'Ihr Warenkorb ist noch leer.'                   top
 ----------------------------------------  -------------------------------------------------------  -----
-BASKET_TEMPLATE_NOT_LOGGED_IN             error message that the user is not logged in             top
+BASKET_TEMPLATE_NOT_LOGGED_IN             Fehlermeldung, dass sich Benutzer nicht eingeloggt hat   top
 ----------------------------------------  -------------------------------------------------------  -----
-BILL_TEMPLATE                             how your bill file will look like                        top
+BILL_TEMPLATE                             zur Erzeugung der Rechnung                               top
 ----------------------------------------  -------------------------------------------------------  -----
-DELIVERY_TEMPLATE                         for the file of your delivery sheet                      top
+DELIVERY_TEMPLATE                         Erzeugung der Datei des Lieferscheins                    top
 ----------------------------------------  -------------------------------------------------------  -----
-EMAIL_PLAINTEXT_TEMPLATE                  the email notification text                              top
+EMAIL_PLAINTEXT_TEMPLATE                  Text für die E-Mail Benachrichtigung                     top
 
-                                          The first line is the subject.
+                                          Die erste Zeile wird für das Betreff Feld verwendet.
 ----------------------------------------  -------------------------------------------------------  -----
-EMAIL_NEWUSER_TEMPLATE                    email after creation of new front end use                top
+EMAIL_NEWUSER_TEMPLATE                    E-Mail nach der Erzeugung eines Frontend Benutzers       top
 ----------------------------------------  -------------------------------------------------------  -----
-ITEM_LIST_TEMPLATE                        the listing of products on the starting LIST page        top
+ITEM_LIST_TEMPLATE                        Auflistung der Produkte auf der Startsetite LIST         top
 ----------------------------------------  -------------------------------------------------------  -----
 ITEM_SEARCH                                                                                        top
 ----------------------------------------  -------------------------------------------------------  -----
