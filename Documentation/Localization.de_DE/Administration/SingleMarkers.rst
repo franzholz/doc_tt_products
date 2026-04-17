@@ -54,7 +54,7 @@ PRICE2_GOODSTOTAL_TAX
 
 PRICE2_GOODSTOTAL_NO_TAX
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
-LINK_BASKET                                            wrap           link to the basket page                                                         basket
+LINK_BASKET                                            wrap           Link auf die Warenkorb Seite                                                    basket
 -----------------------------------------------------  -------------  ------------------------------------------------------------------------------  ------------------------------------------
 PRODUCT_LINK_DATASHEET                                 wrap           Link auf die Datenblatt Datei, die in der Konstante
                                                                       file.datasheetIcon gesetzt worden ist.
