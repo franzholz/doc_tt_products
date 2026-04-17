@@ -1,13 +1,13 @@
 
 .. _administration-template-markers:
 
-Template markers
-----------------
+Template Marker
+---------------
 
-The following markers for the HTML template files are available. You have to put :html:`###` characters before and after
-each marker. Look into the example template files for their usage!
+Die folgenden Template Marker werden für die Template-Datei verwendet. Sie müssen :php:`###` vorher und
+danach eingeben. Es gibt noch einige andere Marker, die Sie bitte den Beispiel-Templates entnehmen.
 
-See: `Wiki for tt_products: Marker <https://github.com/franzholz/tt_products/wiki/Marker>`_.
+Siehe: `Wiki for tt_products: Marker <https://github.com/franzholz/tt_products/wiki/Marker>`_.
 
 .. toctree::
     :maxdepth: 2
