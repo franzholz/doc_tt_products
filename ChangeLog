@@ -1,4 +1,10 @@
+2026-04-17  Franz Holzinger <franz@ttproducts.de>
+
+    * German translation until "Produkt Eigenschaften:"
+
+    Documentation/Localization.de_DE/Administration
+
 2018-12-19  Franz Holzinger <franz@ttproducts.de>
 
     * important for TYPO3 since 7.6.32 and 8.7.22: $GLOBALS['TYPO3_CONF_VARS']['FE']['enableRecordRegistration']=true;
-    
+

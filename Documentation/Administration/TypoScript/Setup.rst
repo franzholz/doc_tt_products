@@ -24,7 +24,8 @@ templateFile
 
     Same as :typoscript:`file.templateFile` from Constants.
     The template-file.
-    See example in :composer:`jambagecom/addons-tt-products` :file:`Resources/Private/Templates/collection/products_template.tmpl`
+    See example in :composer:`jambagecom/addons-tt-products`:
+      :file:`Resources/Private/Templates/collection/products_template.tmpl`
     You can also specify a :typoscript:`CODE` and :typoscript:`ERROR` for error cases.
     (see display mode)
 
@@ -734,16 +735,16 @@ PIDsearch
     the display mode "Products: search" on that page.
 
 
-..  _pid-search:
+..  _pid-basket:
 
-PIDsearch
+PIDbasket
 ---------
 
 ..  confval:: PIDbasket
     :name: PID for the basket page
     :type: int+
 
-    If you want ever change the number of items anywhere to go to a specific page
+    If the change in the number of items shall lead to a specific page
     (eg. the shopping basket page), enter the *PID* here.
 
 
@@ -1403,10 +1404,10 @@ orderEmail_from
     From email address for the confirmation email to customer
 
 
-..  _order-email-from:
+..  _order-email-from-name:
 
-orderEmail_from
----------------
+orderEmail_fromName
+-------------------
 
 ..  confval:: orderEmail_fromName		
     :name: From name for order email
@@ -1548,7 +1549,6 @@ email_notify_default
 
     If email notification to the delivery email address of the customer is enabled by default for tracking
 	(he can change it himself in the tracking module later)
-
 
 ..  _order-status-codes:
 
@@ -1717,10 +1717,9 @@ externalFinalizing
 	This is a sister to the above function and they should probably be used in conjunction somehow.
 	This function is called immediately after the finalize-function has been called.
 	For instance this function would be suitable for clearing any external basket facilitated by the :php:`.externalProcessing` cObject
-	
-	**Note:** 
 
-    The output is NOT included anywhere.
+	..  note::
+	    The output is NOT included anywhere.
 
 
 ..  _wrap1:
@@ -2107,7 +2106,7 @@ discountPriceMode
          discount = (price2 – price) / price2
          ... where price contains the discounts
 
-    This is only needed for setting the behavior of the price2 markers.
+    This is only needed for setting the behaviour of the price2 markers.
 
 
 ..  _discount-field-mode:
@@ -2121,10 +2120,11 @@ discountFieldMode
 
     If set the discount field in the product and category table will be used 
     to get a reducted price for a product.
+
     Modes:
     *   1 ... the highest discount from product and categories will be used
     *   2 ... use the product discount if set, otherwise use the highest 
-        hierarchical category discount which is set.
+          hierarchical category discount which is set.
 
 
 ..  _agb-target:
@@ -2137,7 +2137,7 @@ AGBtarget
     :type: string
     :default: _blank
 
-     target for the PIDagb link
+     target for the *PIDagb* link
 
 
 ..  _agb-attachment:
@@ -2151,7 +2151,7 @@ AGBattachment
     :default: fileadmin/agb.pdf
 
     If this file exists, it will be attached to the order confirmation email
-    to the customer. The shop administrator won't receive the agb attachment,
+    to the customer. Undependent from this the shop administrator won't receive the agb attachment,
     but the CSV if you enable it
 
 
@@ -2180,9 +2180,9 @@ XMLdestination
     :default: ../xmlorders/
 
     The directory on the server, where the XML files should be saved.
-    This directory should not be accessible over http, because everyone
+    This directory should not be accessible over https, because everyone
     can read your customers and their orders.
-    So don't put this directory unter fileadmin, or rename it to 
+    So don't put this directory unter fileadmin. Rename it to 
     something cryptical at least.
 
 
@@ -2198,7 +2198,7 @@ generateCSV
 
     Generates a CSV file from each order. This file will be saved on 
     the server and sent to the shop administrator per email 
-    (with the order confirmation)
+    (together with the order confirmation)
 
 
 ..  _csv-destination:
