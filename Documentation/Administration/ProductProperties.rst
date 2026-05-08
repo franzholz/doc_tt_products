@@ -2,10 +2,11 @@
 
 .. _administration-product-properties:
 
-Produkteigenschaften
---------------------
+Product Properties
+------------------
 
-Die Produkteigenschaften werden im Systemfolder für die jeweiligen Produkt im Backend eingegeben.
+The product properties are entered in the folder of the corresponding product in the back end.
+
 
 .. toctree::
     :maxdepth: 2
