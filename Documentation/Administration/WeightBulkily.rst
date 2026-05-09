@@ -2,14 +2,21 @@
 
 .. _administration-weight-bulkily-special:
 
-Gewicht, Sperrgut und Spezialanfertigung
-----------------------------------------
+Weight, Bulkily Goods and Special Production
+--------------------------------------------
 
-Jedes Produkt kann ein Gewicht haben und als Sperrgut deklariert werden `Ja/Nein`. Das Gesamtgewicht der bestellten Artikel wird berechnet und kann in der Preisberechnung für die Versandkosten berücksichtigt werden.
-Wenn ein Produkt als Sperrgut markiert worden ist, dann wird bei dessen Anzeige eine Warnung als 'Sperrgut' angezeigt. (:typoscript:`bulkilyWarning`). Durch das Setzen von :typoscript:`bulkilyAddition` können Sie zusätzliche Versandkosten für dieses Sperrgut dazuaddieren. Ein Spezialanfertigung beinhaltet keine weitere Funktionalität. Es wird nur eine Markierung (ähnlich wie bei `BulkilyWarning`) geschrieben. Sie können hier einen Link auf die E-Mail Seite setzen.
+Each product can have a weight and be declared as special production `Yes/No`. The
+total weight of the ordered articles is calculated and can be considered in the
+calculation of the shipping costs.
+If a product has been declared as speical production, its display will show a warning
+"special production".
+(:typoscript:`bulkilyWarning`). By setting :typoscript:`bulkilyAddition` you can add
+additional shipping costs for this special production.
+A special production contains no further functionality. Only a marker is replaced
+(similar to `BulkilyWarning`). You can set a link to the e-mail page.
 
 
-**Beispiel:**
+**Example:**
 
 ..  code-block:: typoscript
     :caption: define marker MY_MARKER

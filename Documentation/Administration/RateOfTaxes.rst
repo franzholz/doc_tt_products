@@ -1,8 +1,8 @@
 
 .. _administration-rate-of-taxes:
 
-Mehrere Steuersätze
--------------------
+Multiple tax rates
+------------------
 
-Zu jedem Produkt können Sie den Steuersatz eingeben.
+You can enter the tax rate with each product.
 

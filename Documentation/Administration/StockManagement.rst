@@ -1,9 +1,19 @@
 
 .. _administration-simple-stock-management:
 
-Einfache Lagerverwaltung
-------------------------
+Simple Stock Management
+-----------------------
 
-Das Feld inStock kann für eine Lagerverwaltung verwendet werden. Wenn `in stock` auf `0` gesetzt ist, wird der Artikel für die Benutzer nicht mehr sichtbar sein. Nach jeder Bestellung wird die Anzahl der bestellten Artikel von `in stock` abgezogen.
-Wenn ein neuer Artikel angelegt wird, wird dessen Wert standardmäßig auf `1` gesetzt. Wenn Sie :typoscript:`alwaysInStock=1` gesetzt haben, dann werden diese Artikel immer verfügbar und sichtbar sein. Ansonsten wird die Anzahl der Artikel bei jeder Bestellung reduziert, auch auf negative Werte. Ein negativer Wert bedeutet, dass ein Produkt nun schleunigst beim Lieferanten bestellt werden muss.
-Sie können, um einzelne Artikel immer auf Lager zu halten, die entsprechende Checkbox ankreuzen. Dies gilt aber nur für den jeweiligen Artikel. Sie können die Einheiten der Waren auf dem Lager über `inStockPieces` setzen, wie z.B. `Stück`.  oder `Bundle`. Diese Mengeneinheit kann jedoch nur einmal gesetzt werden und gilt dann für alle Produkte.
+The field :sql:`inStock` can be used for stock management. If `in stock` is set to `0`,
+the article will not longer be visible for users. After each order the number of ordered
+articles will be reduced from `in stock`. When a new article is created, it value is
+by default set to `1`.
+If you have set :typoscript:`alwaysInStock=1` the articles will always be available and
+visible. Otherwise the number of articles is reduced with each order, even down to
+negative values. A negative value means that a product needs to be ordered immediately
+at the provider.
+You can use the corresponding checkbox to have single articles always on stock.
+That applies however only for the particular articles.
+You can set the units of the goods on stock by  :typoscript:`inStockPieces`,
+e.g. `Pieces`  or `bundles`. This unit can however be set only once and is valid
+for all products.
