@@ -27,3 +27,4 @@ It would take too long to enter each product manually.
     AutomaticCreationOfFrontend
     Important
     TypoScript/Setup
+    ProductProperties
